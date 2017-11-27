@@ -17,6 +17,7 @@
     <link href="../css/sunfriend2.css" rel="stylesheet">
     <link href="../css/sub-sunfriend.css" rel="stylesheet">
     <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.css" rel="stylesheet">
     <!--思源黑體 -->
     <style type="text/css">
     @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
@@ -158,10 +159,21 @@
                     <h3>財務資訊<div class="titleline"></div></h3>
                 </div>
             </div>
-            <h4>中文財務報表資料</h4>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <table class="table table2">
+                    <select class="selectpicker selectbtn">
+                        <option>107</option>
+                        <option>106</option>
+                        <option>105</option>
+                    </select>
+                </div>
+                </br>
+                </br>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h4>中文財務報表資料</h4>
+                    <table class="table table2 ">
                         <tr>
                             <th width="60%">檔案名稱</th>
                             <th width="10%" style="text-align: center;">檔案下載</th>
@@ -176,19 +188,21 @@
             <div class="back99"></div>
         </div>
         <div class="container">
-        <h4>英文財務報表資料</h4>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <table class="table table2">
-                        <tr>
-                            <th width="60%">檔案名稱</th>
-                            <th width="10%" style="text-align: center;">檔案下載</th>
-                        </tr>
-                        <tr>
-                            <td data-th="檔案名稱">2017 Consolidated Financial Statements Season1</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
-                        </tr>
-                    </table>
+                    <h4>英文財務報表資料</h4>
+                    <div class="table-responsive dragscroll">
+                        <table class="table table2">
+                            <tr>
+                                <th width="60%">檔案名稱</th>
+                                <th width="10%" style="text-align: center;">檔案下載</th>
+                            </tr>
+                            <tr>
+                                <td data-th="檔案名稱">2017 Consolidated Financial Statements Season1</td>
+                                <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="back99"></div>
@@ -258,6 +272,7 @@
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/scrollanimated.js"></script>
     <script src="../js/bootstrap-dropdownhover.min.js"></script>
+    <script src="../js/bootstrap-select.js"></script>
     <script>
     new WOW().init();
     </script>

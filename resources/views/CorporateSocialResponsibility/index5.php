@@ -160,11 +160,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <p>土豆鳥文學誌收錄了日友公司與元長鄉公所辦理之徵文比賽優秀作品、日友文學寫作營優秀作品、元長鄉活動花絮、社區之美、藝文活動…等等，贈送每位就讀元長地區學校的學生及教師，內容豐富多元深入地方，廣獲各界人士及學子們的好評，也為近年來日友敦親睦鄰的重點項目之一。</br>
-                        </br>
-                    </p>
-                </div>
             </div>
              <h5 style="color: #009943;">下載觀看&nbsp;<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h5>
             <div class="row">

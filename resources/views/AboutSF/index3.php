@@ -119,7 +119,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.html">環保單位查核行程</a></li>
+                                   <li><a href="../Environmentalprotection/index.html">環保單位查核行程</a></li>
                                     <li><a href="../Environmentalprotection/index2.html">環境監測</a></li>
                                 </ul>
                             </li>
@@ -131,58 +131,93 @@
             <div class="Gradientline"></div>
         </div>
     </header>
-    <!--banner-->
+<!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/stackholder/Business People Meeting Discussion Working Concept.jpg">
+        <img class="img-responsive" src="../assets/images/about/about_banner.jpg">
         <div class="titleBox clearfix">
-            <h2>利害關係人</h2>
+            <h2>關於日友</h2>
         </div>
     </div>
-    <div class="wow fadeInDown" data-wow-delay="0.5s">
-        <div class="container">
-            <div class="row">
-                <div class="breads">
-                    <a href="../index.html">首頁</a>
-                    <span>></span>
-                    <span>環境保護</span>
-                    <span>></span>
-                    <b>環保單位查核行程</b>
+
+<div class="wow fadeInDown" data-wow-delay="0.5s">
+    <div class="container">
+        <div class="row">
+            <div class="breads">
+                <a href="../index.html">首頁</a>
+                <span>></span>
+                <span>關於日友</span>
+                <span>></span>
+                <b>公司架構圖</b>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--公司架構圖-->
+<div class="back3 wow fadeInDown" data-wow-delay="0.5s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <h3>公司架構圖<div class="titleline"></div></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <img alt="Brand" class="img-responsive center-block" src="../assets/images/about/公司架構圖.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <img alt="Brand" class="img-responsive center-block back1991" src="../assets/images/house-01.svg">
+                <div class="about-text text-center">
+                    <h4>日友彰濱廠<h5>(中區事業廢棄物綜合處理中心)</h5></h4>
+                    
+                    <p>國內唯一同時具有焚化、物化、固化等中間處理設施及掩埋場最終處置設施之有害事業廢棄物綜合處理廠，可處理國內事業產生之各類廢棄物。</p>
+                    <br>
+                    <p>彰化縣線西鄉彰濱工業區彰濱西五路2號
+                    <br>TEL：(04)7910135(代表號)
+                    <br>FAX：(04)7910127</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <img alt="Brand" class="img-responsive center-block back1991" src="../assets/images/house-01.svg">
+                <div class="about-text text-center">
+                    <h4>良衛環保工程(股)公司</h4>
+                    <p>服務北部醫療院所，民國92年配合環保署清理和平醫院SARS廢棄物。</p>
+                    <br>
+                    <p>桃園市觀音區大潭里1鄰桃大一街37號
+                    <br>TEL: (03)2868997(代表號)
+                    <br>FAX: (03)4737215</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <img alt="Brand" class="img-responsive center-block back1991" src="../assets/images/house-01.svg">
+                <div class="about-text text-center">
+                    <h4>青新環境工程(股)公司</h4>
+                    <p>服務中部地區醫療院所、全台灣事業廢棄物清理、廢水處理…等業務。</p>
+                    <br>
+                    <p>雲林縣長北村元長鄉元東路1-20號
+                    <br>TEL：(05)7883515(代表號)
+                    <br>FAX：(05)7887933</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <img alt="Brand" class="img-responsive center-block back1991" src="../assets/images/house-01.svg">
+                <div class="about-text text-center">
+                    <h4>正新環保工程(股)公司</h4>
+                    <p>服務南台灣、東部及離島等地區之醫療院所。</p>
+                    <br>
+                    <p>台南市仁德區一甲里忠義三街55號
+                    <br>TEL：(06)2709121(代表號)
+                    <br>FAX：(06)2709494</p>
                 </div>
             </div>
         </div>
     </div>
-    <!--公司治理-->
-    <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <h3>環保單位查核行程<div class="titleline"></div></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <center>
-                        <div class="table-responsive dragscroll">
-                            <table class="table table2">
-                                <tr >
-                                    <th >日期</th>
-                                    <th >事項</th>
-                                    <th >主辦機關</th>
-                                    <th >結果</th>
-                                </tr>
-                                <tr>
-                                    <td data-th="日期">106.09.27</td>
-                                    <td data-th="事項">環境影響評估監督業務(106 年度-3)</td>
-                                    <td data-th="主辦機關">雲林縣環保局</td>
-                                    <td data-th="結果">待執行</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+
     <!--footer start from here-->
     <footer class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
@@ -247,7 +282,6 @@
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/scrollanimated.js"></script>
     <script src="../js/bootstrap-dropdownhover.min.js"></script>
-    <script src="../js/dragscroll.js"></script>
     <script>
     new WOW().init();
     </script>

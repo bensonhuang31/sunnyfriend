@@ -17,6 +17,7 @@
     <link href="../css/sunfriend2.css" rel="stylesheet">
     <link href="../css/sub-sunfriend.css" rel="stylesheet">
     <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.css" rel="stylesheet">
     <!--思源黑體 -->
     <style type="text/css">
     @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
@@ -119,7 +120,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                   <li><a href="../Environmentalprotection/index.html">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/index.html">環保單位查核行程</a></li>
                                     <li><a href="../Environmentalprotection/index2.html">環境監測</a></li>
                                 </ul>
                             </li>
@@ -159,7 +160,19 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <select class="selectpicker selectbtn">
+                        <option>107</option>
+                        <option>106</option>
+                        <option>105</option>
+                    </select>
+                </div>
+                </br>
+                </br>
+            </div>
+            <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>2017每月營收(2017 Monthly Revenue)</p>
                     <p>單位：新台幣仟元(In Thousands of New Taiwan Dollars)</p>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -315,6 +328,7 @@
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/scrollanimated.js"></script>
     <script src="../js/bootstrap-dropdownhover.min.js"></script>
+    <script src="../js/bootstrap-select.js"></script>
     <script>
     new WOW().init();
     </script>

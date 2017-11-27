@@ -17,6 +17,7 @@
     <link href="../css/sunfriend2.css" rel="stylesheet">
     <link href="../css/sub-sunfriend.css" rel="stylesheet">
     <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.css" rel="stylesheet">
     <!--思源黑體 -->
     <style type="text/css">
     @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
@@ -119,7 +120,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                   <li><a href="../Environmentalprotection/index.html">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/index.html">環保單位查核行程</a></li>
                                     <li><a href="../Environmentalprotection/index2.html">環境監測</a></li>
                                 </ul>
                             </li>
@@ -160,23 +161,25 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <button class="btn-default" id="btn107">107</button>
-                    <button class="btn-default">106</button>
-                    <button class="btn-default">105</button>
-                    <button class="btn-default">104</button>
-                    <button class="btn-default">103</button>
-                    <button class="btn-default">102</button>
+                    <select class="selectpicker selectbtn">
+                        <option>107</option>
+                        <option>106</option>
+                        <option>105</option>
+                    </select>
                 </div>
-                </br></br>
+                </br>
+                </br>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <table class="table table2">
                         <tr>
+                            <th width="10%" style="text-align: center;">股東會性質</th>
                             <th width="60%">檔案名稱</th>
                             <th width="10%" style="text-align: center;">檔案下載</th>
                         </tr>
                         <tr>
+                            <td data-th="股東會性質" style="text-align: center;"></td>
                             <td data-th="檔案名稱"></td>
                             <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
@@ -185,17 +188,6 @@
             </div>
         </div>
     </div>
-    <script>
-    var obj = JSON.parse('[{"id":1,"name":"2017","title":"","keywords":"","description":"","view":0,"order":"0","pid":0},{"id":2,"name":"2016","title":"","keywords":"","description":"","view":0,"order":"0","pid":0},{"id":3,"name":"2015","title":"","keywords":"","description":"","view":0,"order":"0","pid":0}]');
-    var arr = [];
-    console.log(obj);
-    for (var i = 0; i < obj.length; i++) {
-        if (obj[i].name == "2017") {
-            arr.push(obj[i]);
-        }
-    }
-    console.log(arr);
-    </script>
     <!--footer start from here-->
     <footer class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
@@ -260,6 +252,7 @@
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/scrollanimated.js"></script>
     <script src="../js/bootstrap-dropdownhover.min.js"></script>
+    <script src="../js/bootstrap-select.js"></script>
     <script>
     new WOW().init();
     </script>
