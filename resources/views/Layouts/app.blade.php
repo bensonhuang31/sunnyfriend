@@ -17,6 +17,7 @@
     <link href="../css/sunfriend2.css" rel="stylesheet">
     <link href="../css/sub-sunfriend.css" rel="stylesheet">
     <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.css" rel="stylesheet">
     <!--思源黑體 -->
     <style type="text/css">
     @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
@@ -208,6 +209,7 @@ function scrollFunction() {
     <script src="../js/scrollanimated.js"></script>
     <script src="../js/bootstrap-dropdownhover.min.js"></script>
     <script src="../js/dragscroll.js"></script>
+    <script src="../js/bootstrap-select.js"></script>
 
 
     @yield('script')
