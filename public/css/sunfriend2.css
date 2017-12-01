@@ -237,7 +237,11 @@ img {
 }
 }
 
-
+@media screen and (max-width: 1024px){
+nav.navbar-default {
+    padding: 5px 10px !important;
+}
+}
 
 /*漢堡在1006px就出現*/
 @media (max-width: 1023px) {
@@ -1071,10 +1075,9 @@ padding: 40px 0px 80px 0px ;
 
 @media (max-width: 468px){
 .btnn {
-    right: 33%; 
+    right: 30%; 
 }
 }
-
 /*幻燈片*/
 
 .carousel-control {
