@@ -74,8 +74,8 @@
                             <li class="dropdown">
                                 <a href="News/index.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="News/index.php">最新消息</a></li>
-                                    <li><a href="News/index2.php">重大訊息</a></li>
+                                    <li><a href="News/index4.php">最新消息</a></li>
+                                    <li><a href="News/index2.php">重要訊息</a></li>
                                     <li><a href="News/index3.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -247,7 +247,7 @@
                         <div class="about-text">
                             <h3><em>關於日友&nbsp;<span>About sunny friend</span></em></h3>
                             <p>日友公司成立於1994年，是臺灣第一家專業生物醫療廢棄物焚化處理廠，2012年取得中區事業廢棄物綜合處理中心經營權(日友彰濱廠)，並於2015年正式掛牌上市，這也是日友永續經營的重要里程碑，日友公司成立二十多年來，以「新環境創造者」為目標穩健經營，本著自主管理、技術創新、環保意識提昇、環境維護及持續改善之核心價值，為員工健康生活及環境保護盡最大之努力。</p>
-                            <div class="btn btn-default btnn ">繼續閱讀</div>
+                            <a href="AboutSF/index.php"><div class="btn btn-default btnn ">繼續閱讀</div></a>
                         </div>
                     </div>
                 </div>
@@ -375,11 +375,11 @@
                         <img class=" icon_img" src="assets/images/owl_icon/newsLOGO-02.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
-                                <h1>重要消息</h1>
+                                <h1>最新消息</h1>
                                 <h4>公開資訊觀測站</h4>
                                 <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。(查詢代號：8341)......</p>
                             </div>
-                            <img class="img-responsive img" src="assets/images/news/new01.jpg">
+                            <a href="News/index4.php"><img class="img-responsive img" src="assets/images/news/new01.jpg"></a>
                             <div class="info"></div>
                         </div>
                     </div>
@@ -406,7 +406,7 @@
                                 <h4>相關環保資訊</h4>
                                 <p>日友彰濱廠(中區事業廢棄物綜合處理中心)青新環境工程(股)公司......</p>
                             </div>
-                            <img class="img-responsive img" src="assets/images/news/new03.jpg">
+                            <a href="News/index3.php"><img class="img-responsive img" src="assets/images/news/new03.jpg"></a>
                             <div class="info"></div>
                         </div>
                     </div>

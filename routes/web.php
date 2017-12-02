@@ -30,6 +30,8 @@ Route::view('/AboutSF/index7.php', 'AboutSF.index7');
 Route::view('/News/index.php', 'News.index');
 Route::view('/News/index2.php', 'News.index2');
 Route::view('/News/index3.php', 'News.index3');
+Route::view('/News/index4.php', 'News.index4');
+Route::view('/News/news-subindex.php', 'News.news-subindex');
 //公司治理
 Route::view('/CorporateGovernance/index.php', 'CorporateGovernance.index');
 Route::view('/CorporateGovernance/index2.php', 'CorporateGovernance.index2');

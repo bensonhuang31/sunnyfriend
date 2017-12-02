@@ -75,8 +75,8 @@
                             <li class="dropdown">
                                 <a href="../News/index.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/index.php">最新消息</a></li>
-                                    <li><a href="../News/index2.php">重大訊息</a></li>
+                                    <li><a href="../News/index4.php">最新消息</a></li>
+                                    <li><a href="../News/index2.php">重要訊息</a></li>
                                     <li><a href="../News/index3.php">環保連結</a></li>
                                 </ul>
                             </li>
