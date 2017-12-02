@@ -31,7 +31,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <select class="selectpicker selectbtn">
+                    <select class="selectpicker selectbtn"  id="changeyear">
                         <option>2017</option>
                         <option>2016</option>
                         <option>2015</option>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="table-responsive dragscroll">
-                        <table class="table table2">
+                        <table class="table table2 each-table">
                             <thead>
                                 <tr style="background-color: #AACD03;text-align: center;">
                                     <td class="middle" rowspan="2">月
@@ -62,6 +62,7 @@
                                     </tr>
                             </thead>
                             <tbody class="middle" style="text-align: center;">
+                            <!--
                                 <tr>
                                     <td>一月(Jan.)</td>
                                     <td></td>
@@ -122,11 +123,13 @@
                                     <td></td>
                                     <td></td>
                                 </tr>
+                                
                                 <tr>
                                     <td>本年累計(Total)</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
+                                -->
                             </tbody>
                         </table>
                     </div>
@@ -134,4 +137,39 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+
+<script>
+    $( document ).ready(function() {
+        changeyear($("#changeyear").val());
+        $('#changeyear').on('change',function(){
+            $(".each-table tbody").html("");
+            changeyear($(this).val());
+        });
+    });
+
+
+    function changeyear(year){
+        var values = [];
+        var json = @json($data);
+
+        for(var i = 0; i < json.length; i++){
+            if(json[i].Year==year){
+                values.push(json[i]);
+            }
+        }
+
+        var eachTable = $(".each-table tbody");
+            $.each(values, function(index, element) {
+                eachTable.append("<tr>" +
+                                    "<td>"+ element.Month +"</td>"+
+                                    "<td>"+ element.Amount +"</td>"+
+                                    "<td>"+ element.Consolidated +"</td>"+
+                                "</tr>");
+            });
+    }
+</script>
+
 @endsection

@@ -31,6 +31,7 @@ Route::view('/News/index.php', 'News.index');
 Route::view('/News/index2.php', 'News.index2');
 Route::view('/News/index3.php', 'News.index3');
 Route::view('/News/index4.php', 'News.index4');
+Route::get('/News/index4.php','NewsController@index');
 Route::view('/News/news-subindex.php', 'News.news-subindex');
 //公司治理
 Route::view('/CorporateGovernance/index.php', 'CorporateGovernance.index');
@@ -39,8 +40,8 @@ Route::view('/CorporateGovernance/index3.php', 'CorporateGovernance.index3');
 Route::view('/CorporateGovernance/index4.php', 'CorporateGovernance.index4');
 Route::view('/CorporateGovernance/index5.php', 'CorporateGovernance.index5');
 //投資人專區
-Route::view('/Investor/index.php', 'Investor.index');
-Route::view('/Investor/index2.php', 'Investor.index2');
+Route::get('/Investor/index.php','InvestorController@index');
+Route::get('/Investor/index2.php','InvestorController@revenue');
 Route::view('/Investor/index3.php', 'Investor.index3');
 Route::view('/Investor/index4.php', 'Investor.index4');
 Route::view('/Investor/index5.php', 'Investor.index5');
@@ -49,8 +50,7 @@ Route::view('/Investor/index6.php', 'Investor.index6');
 Route::view('/CorporateSocialResponsibility/index.php', 'CorporateSocialResponsibility.index');
 Route::view('/CorporateSocialResponsibility/index2.php', 'CorporateSocialResponsibility.index2');
 Route::view('/CorporateSocialResponsibility/index3.php', 'CorporateSocialResponsibility.index3');
-Route::view('/CorporateSocialResponsibility/index4.php', 'CorporateSocialResponsibility.index4');
-Route::view('/CorporateSocialResponsibility/index5.php', 'CorporateSocialResponsibility.index5');
+Route::get('/CorporateSocialResponsibility/index4.php','CorporateSocialResponsibilityController@csr');
 Route::get('/CorporateSocialResponsibility/index5.php','CorporateSocialResponsibilityController@index');
 //利害關係人
 Route::view('/Stakeholder/index.php', 'Stakeholder.index');

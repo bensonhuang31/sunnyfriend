@@ -31,7 +31,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <select class="selectpicker selectbtn">
+                    <select class="selectpicker selectbtn" id="changeyear">
                         <option>2017</option>
                         <option>2016</option>
                         <option>2015</option>
@@ -42,20 +42,55 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <table class="table table2">
-                        <tr>
-                            <th width="10%" style="text-align: center;">股東會性質</th>
-                            <th width="60%">檔案名稱</th>
-                            <th width="10%" style="text-align: center;">檔案下載</th>
-                        </tr>
-                        <tr>
-                            <td data-th="股東會性質" style="text-align: center;"></td>
-                            <td data-th="檔案名稱"></td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
-                        </tr>
+                    <table class="table table2 each-table">
+                        <thead>
+                            <tr>
+                                <th width="10%" style="text-align: center;">股東會性質</th>
+                                <th width="60%">檔案名稱</th>
+                                <th width="10%" style="text-align: center;">檔案下載</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+	                    </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+
+@section('script')
+
+<script>
+    $( document ).ready(function() {
+        changeyear($("#changeyear").val());
+        $('#changeyear').on('change',function(){
+            $(".each-table tbody").html("");
+            changeyear($(this).val());
+        });
+    });
+
+
+    function changeyear(year){
+        var values = [];
+        var json = @json($data);
+
+        for(var i = 0; i < json.length; i++){
+            if(json[i].Year==year){
+                values.push(json[i]);
+            }
+        }
+
+        var eachTable = $(".each-table tbody");
+            $.each(values, function(index, element) {
+                eachTable.append("<tr>" +
+                                    "<td data-th='股東會性質' style='text-align: center;'>"+ element.Type +"</td>"+
+                                    "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
+                                    "<td data-th='檔案下載'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></td>"+
+                                "</tr>");
+            });
+    }
+</script>
+
 @endsection
