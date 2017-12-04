@@ -143,15 +143,31 @@
 
 <script>
     $( document ).ready(function() {
-        changeyear($("#changeyear").val());
+        getYear();
+        changeYear($("#changeyear").val());
         $('#changeyear').on('change',function(){
             $(".each-table tbody").html("");
-            changeyear($(this).val());
+            changeYear($(this).val());
         });
     });
 
+    function getYear(){
+        $("#changeyear").html("");
+        var d = new Date();
+        var n = d.getFullYear();
+        var years = [];
+        for(var y=0; y<5; y++){
+            years.push(n);
+            n--;
+        }
 
-    function changeyear(year){
+        var eachTable = $("#changeyear");
+            $.each(years, function(index, element) {
+                eachTable.append("<option>"+ element +"</option>");
+            });
+    }
+
+    function changeYear(year){
         var values = [];
         var json = @json($data);
 
@@ -162,13 +178,22 @@
         }
 
         var eachTable = $(".each-table tbody");
+        var AmountTotal = 0;
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td>"+ element.Month +"</td>"+
                                     "<td>"+ element.Amount +"</td>"+
                                     "<td>"+ element.Consolidated +"</td>"+
                                 "</tr>");
+                AmountTotal+=parseInt(element.Amount);
+                
             });
+
+            eachTable.append("<tr>" +
+                                "<td>本年累計(Total)</td>"+
+                                "<td>"+ AmountTotal +"</td>"+
+                                "<td></td>"+
+                            "</tr>");
     }
 </script>
 

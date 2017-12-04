@@ -13,4 +13,10 @@ class NewsController extends Controller
         $latestnews = LatestNews::all();
         return view('News.index4')->with('data',$latestnews);
     }
+
+    public function detail($id)
+    {        
+        $newsdetail = LatestNews::find($id);
+        return view('News.news-subindex')->with('data',$newsdetail);
+    }
 }

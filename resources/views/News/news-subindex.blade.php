@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="{{ app()->getLocale() }}">
 
 <head>
     <meta charset="utf-8">
@@ -8,15 +8,15 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>日友環保科技股份有限公司</title>
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/owl.carousel.min.css" rel="stylesheet">
-    <link href="../css/owl.theme.default.css" rel="stylesheet">
-    <link href="../css/font-awesome.css" rel="stylesheet">
-    <link href="../css/animate.css" rel="stylesheet">
-    <link href="../css/ihover2.css" rel="stylesheet">
-    <link href="../css/sunfriend2.css" rel="stylesheet">
-    <link href="../css/sub-sunfriend.css" rel="stylesheet">
-    <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../css/owl.theme.default.css" rel="stylesheet">
+    <link href="../../css/font-awesome.css" rel="stylesheet">
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/ihover2.css" rel="stylesheet">
+    <link href="../../css/sunfriend2.css" rel="stylesheet">
+    <link href="../../css/sub-sunfriend.css" rel="stylesheet">
+    <link href="../../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
     <!--思源黑體 -->
     <style type="text/css">
     @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
@@ -24,9 +24,9 @@
         font-family: 'Noto Sans TC', sans-serif;
     }
     </style>
-    <script src="../js/jquery.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/owl.carousel.js"></script>
+    <script src="../../js/owl.carousel.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,77 +50,77 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="../index.html" class="navbar-brand"><img alt="Brand" class="img-responsive" style="width:100%" src="../assets/images/LOGO-01-01.svg"></a>
+                        <a href="../../index.php" class="navbar-brand"><img alt="Brand" class="img-responsive" style="width:100%" src="../../assets/images/LOGO-01-01.svg"></a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="lan"><i class=" wow fa fa-globe" aria-hidden="true"></i> ENGLISH</div>
                         <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="fadeInUp" data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown">
                             <li class=" dropdown ">
-                                <a href="../AboutSF/index.html" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../AboutSF/index.php" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../AboutSF/index.html">基本資料</a></li>
-                                    <li><a href="../AboutSF/index2.html">營業項目與範圍</a></li>
-                                    <li><a href="../AboutSF/index3.html">公司架構圖</a></li>
-                                    <li><a href="../AboutSF/index4.html">經營團隊</a></li>
-                                    <li><a href="../AboutSF/index5.html">公司組織圖</a></li>
-                                    <li><a href="../AboutSF/index6.html">股權結構</a></li>
-                                    <li><a href="../AboutSF/index7.html">法說會</a></li>
+                                    <li><a href="../../AboutSF/index.php">基本資料</a></li>
+                                    <li><a href="../../AboutSF/index2.php">營業項目與範圍</a></li>
+                                    <li><a href="../../AboutSF/index3.php">公司架構圖</a></li>
+                                    <li><a href="../../AboutSF/index4.php">經營團隊</a></li>
+                                    <li><a href="../../AboutSF/index5.php">公司組織圖</a></li>
+                                    <li><a href="../../AboutSF/index6.php">股權結構</a></li>
+                                    <li><a href="../../AboutSF/index7.php">法說會</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../News/index.html" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../News/index.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/index.html">最新消息</a></li>
-                                    <li><a href="../News/index2.html">重大訊息</a></li>
-                                    <li><a href="../News/index3.html">環保連結</a></li>
+                                    <li><a href="../../News/index.php">最新消息</a></li>
+                                    <li><a href="../../News/index2.php">重大訊息</a></li>
+                                    <li><a href="../../News/index3.php">環保連結</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../CorporateGovernance/index.html" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../CorporateGovernance/index.php" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../CorporateGovernance/index.html">公司治理</a></li>
-                                    <li><a href="../CorporateGovernance/index2.html">運作規章</a></li>
-                                    <li><a href="../CorporateGovernance/index3.html">內稽組織運作</a></li>
-                                    <li><a href="../CorporateGovernance/index4.html">董事會</a></li>
-                                    <li><a href="../CorporateGovernance/index5.html">董事成員多元化</a></li>
+                                    <li><a href="../../CorporateGovernance/index.php">公司治理</a></li>
+                                    <li><a href="../../CorporateGovernance/index2.php">運作規章</a></li>
+                                    <li><a href="../../CorporateGovernance/index3.php">內稽組織運作</a></li>
+                                    <li><a href="../../CorporateGovernance/index4.php">董事會</a></li>
+                                    <li><a href="../../CorporateGovernance/index5.php">董事成員多元化</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../Investor/index.html" class="dropdown-toggle" data-toggle="dropdown">投資人專區 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../Investor/index.php" class="dropdown-toggle" data-toggle="dropdown">投資人專區 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../Investor/index.html">股東會相關資訊</a></li>
-                                    <li><a href="../Investor/index2.html">盈收公告</a></li>
-                                    <li><a href="../Investor/index3.html">財務資訊</a></li>
-                                    <li><a href="../Investor/index4.html">重大訊息參考網站</a></li>
-                                    <li><a href="../Investor/index5.html">股利資訊</a></li>
-                                    <li><a href="../Investor/index6.html">投資人連絡窗口</a></li>
+                                    <li><a href="../../Investor/index.php">股東會相關資訊</a></li>
+                                    <li><a href="../../Investor/index2.php">盈收公告</a></li>
+                                    <li><a href="../../Investor/index3.php">財務資訊</a></li>
+                                    <li><a href="../../Investor/index4.php">重大訊息參考網站</a></li>
+                                    <li><a href=".././Investor/index5.php">股利資訊</a></li>
+                                    <li><a href="../../Investor/index6.php">投資人連絡窗口</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../CorporateSocialResponsibility/index.html" class="dropdown-toggle" data-toggle="dropdown">企業社會責任 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../CorporateSocialResponsibility/index.php" class="dropdown-toggle" data-toggle="dropdown">企業社會責任 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../CorporateSocialResponsibility/index.html">導言</a></li>
-                                    <li><a href="../CorporateSocialResponsibility/index2.html">企業社會責任政策</a></li>
-                                    <li><a href="../CorporateSocialResponsibility/index3.html">具體作為及計畫</a></li>
-                                    <li><a href="../CorporateSocialResponsibility/index4.html">企業社會責任報告書</a></li>
-                                    <li><a href="../CorporateSocialResponsibility/index5.html">土豆鳥文學誌</a></li>
+                                    <li><a href="../../CorporateSocialResponsibility/index.php">導言</a></li>
+                                    <li><a href="../../CorporateSocialResponsibility/index2.php">企業社會責任政策</a></li>
+                                    <li><a href="../../CorporateSocialResponsibility/index3.php">具體作為及計畫</a></li>
+                                    <li><a href="../../CorporateSocialResponsibility/index4.php">企業社會責任報告書</a></li>
+                                    <li><a href="../../CorporateSocialResponsibility/index5.php">土豆鳥文學誌</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../Stakeholder/index.html" class="dropdown-toggle" data-toggle="dropdown">利害關係人  <i class="fa fa-angle-down"></i></a>
+                                <a href="../../Stakeholder/index.php" class="dropdown-toggle" data-toggle="dropdown">利害關係人  <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Stakeholder/index.html">關係人鑑別議題與措施</a></li>
-                                    <li><a href="../Stakeholder/index2.html">員工福利措施</a></li>
-                                    <li><a href="../Stakeholder/index3.html">供應商管理政策</a></li>
-                                    <li><a href="../Stakeholder/index4.html">申訴管道</a></li>
-                                    <li><a href="../Stakeholder/index5.html">不道德行為檢舉制度</a></li>
+                                    <li><a href="../../Stakeholder/index.php">關係人鑑別議題與措施</a></li>
+                                    <li><a href="../../Stakeholder/index2.php">員工福利措施</a></li>
+                                    <li><a href="../../Stakeholder/index3.php">供應商管理政策</a></li>
+                                    <li><a href="../../Stakeholder/index4.php">申訴管道</a></li>
+                                    <li><a href="../../Stakeholder/index5.php">不道德行為檢舉制度</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                   <li><a href="../Environmentalprotection/index.html">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.html">環境監測</a></li>
+                                   <li><a href="../../Environmentalprotection/index.php">環保單位查核行程</a></li>
+                                    <li><a href="../../Environmentalprotection/index2.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -133,7 +133,7 @@
     </header>
 <!--banner-->
 <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-    <img class="img-responsive" src="../assets/images/news/new_banner01.jpg">
+    <img class="img-responsive" src="../../assets/images/news/new_banner01.jpg">
     <div class="titleBox clearfix">
         <h2>最新消息</h2>
     </div>
@@ -144,7 +144,7 @@
     <div class="container">
         <div class="row">
             <div class="breads">
-                <a href="../index.html">首頁</a>
+                <a href="../../index.php">首頁</a>
                 <span>></span>
                 <span>最新消息</span>
             </div>
@@ -158,13 +158,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
-                    <h3>重要訊息-公開資訊觀測站<div class="titleline"></div></h3>
-                    <p>2017/11/30</p>
+                    <h3>{{$data->Title}}<div class="titleline"></div></h3>
+                    <p>{{$data->Date}}</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <p>日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力</p>
+                    <p>{{$data->Content}}</p>
                     <div class="btn btn-default">檔案下載</div>
                 </div>
             </div>
@@ -172,7 +172,7 @@
         </div>
     </div>
                 <div class="text-center">
-            <div class="btn btn-default ">返回上一頁</div>
+            <div class="btn btn-default " onclick="window.history.go(-1);">返回上一頁</div>
         </div>
     </div>
 </div>
@@ -184,7 +184,7 @@
                 <div class="col-md-4 col-sm-6 footerleft">
                     <div class="logofooter">關於日友</div>
                     <p>本公司於2000年通過ISO14001(NSF) 環境管理系統標準驗證，並將環境政策徹底落實。本公司為提供客戶更完善服務，所經營業務廣泛，但以事業廢棄物之清除、處理、掩埋與政府焚化廠之承攬、興建、操作為主要業務。</p>
-                    <div><img alt="Brand" class="img-responsive" src="../assets/images/footerLOGO.svg"></div>
+                    <div><img alt="Brand" class="img-responsive" src="../../assets/images/footerLOGO.svg"></div>
                 </div>
                 <div class="col-md-8 col-sm-6 paddingtop-bottom">
                     <div class="heading7">聯繫我們</div>
@@ -235,12 +235,12 @@
     </div>
     <!--HEADER END-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/wow.js"></script>
-    <script src="../js/tutorial.js"></script>
-    <script src="../js/jquery.easing.1.3.js"></script>
-    <script src="../js/scrollanimated.js"></script>
-    <script src="../js/bootstrap-dropdownhover.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/wow.js"></script>
+    <script src="../../js/tutorial.js"></script>
+    <script src="../../js/jquery.easing.1.3.js"></script>
+    <script src="../../js/scrollanimated.js"></script>
+    <script src="../../js/bootstrap-dropdownhover.min.js"></script>
     <script>
     new WOW().init();
     </script>

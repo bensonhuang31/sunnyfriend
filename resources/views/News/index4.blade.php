@@ -32,7 +32,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <p class="JQellipsis">{{$v->Content}}</p>
-                        <a href="news-subindex.php">
+                        <a href="{{url('News/Detail/'.$v->id)}}">
                             <div class="btn btn-default">閱讀更多</div>
                         </a>
                     </div>

@@ -32,7 +32,7 @@ Route::view('/News/index2.php', 'News.index2');
 Route::view('/News/index3.php', 'News.index3');
 Route::view('/News/index4.php', 'News.index4');
 Route::get('/News/index4.php','NewsController@index');
-Route::view('/News/news-subindex.php', 'News.news-subindex');
+Route::get('/News/Detail/{id}','NewsController@detail');
 //公司治理
 Route::view('/CorporateGovernance/index.php', 'CorporateGovernance.index');
 Route::view('/CorporateGovernance/index2.php', 'CorporateGovernance.index2');
@@ -42,7 +42,7 @@ Route::view('/CorporateGovernance/index5.php', 'CorporateGovernance.index5');
 //投資人專區
 Route::get('/Investor/index.php','InvestorController@index');
 Route::get('/Investor/index2.php','InvestorController@revenue');
-Route::view('/Investor/index3.php', 'Investor.index3');
+Route::get('/Investor/index3.php','InvestorController@finance');
 Route::view('/Investor/index4.php', 'Investor.index4');
 Route::view('/Investor/index5.php', 'Investor.index5');
 Route::view('/Investor/index6.php', 'Investor.index6');

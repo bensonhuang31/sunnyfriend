@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Model\ShareholdersInfo;
 use App\Http\Model\RevenueInfo;
+use App\Http\Model\FinanceInfo;
 use Validator;
 
 class InvestorController extends Controller
@@ -19,5 +20,11 @@ class InvestorController extends Controller
     {        
         $revenueinfo = RevenueInfo::all();
         return view('Investor.index2')->with('data',$revenueinfo);
+    }
+
+    public function finance()
+    {        
+        $financeinfo = FinanceInfo::all();
+        return view('Investor.index3')->with('data',$financeinfo);
     }
 }
