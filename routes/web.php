@@ -62,3 +62,18 @@ Route::view('/Stakeholder/index5.php', 'Stakeholder.index5');
 
 //語系
 Route::get('/lang/set/{lang}', 'LanguageController@set_lang');
+
+//後台
+Route::view('/Admin', 'Admin.index');
+
+Route::view('/Admin/CorporateSocialResponsibility/index.php', 'Admin.CorporateSocialResponsibility.index');
+Route::view('/Admin/CorporateSocialResponsibility/index2.php', 'Admin.CorporateSocialResponsibility.index2');
+
+Route::view('/Admin/Environmentprotect/index.php', 'Admin.Environmentprotect.index');
+Route::view('/Admin/Environmentprotect/index2.php', 'Admin.Environmentprotect.index2');
+
+Route::view('/Admin/News/index.php', 'Admin.News.index');
+
+Route::view('/Admin/Stakeholder/index.php', 'Admin.Stakeholder.index');
+Route::view('/Admin/Stakeholder/index2.php', 'Admin.Stakeholder.index2');
+Route::view('/Admin/Stakeholder/index3.php', 'Admin.Stakeholder.index3');
