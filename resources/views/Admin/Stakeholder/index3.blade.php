@@ -104,22 +104,6 @@
         <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <h3>財務資訊<div class="titleline"></div></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <select class="selectpicker selectbtn">
-                            <option>107</option>
-                            <option>106</option>
-                            <option>105</option>
-                        </select>
-                    </div>
-                    </br>
-                    </br>
-                </div>
-                <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <h4>中文財務報表資料</h4>
                         <table class="table table2 ">

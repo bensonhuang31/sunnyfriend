@@ -190,3 +190,81 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+
+
+.table-responsive {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
+    margin-bottom: 20px;
+}
+
+.table>tbody>tr td {
+    border-top: 1px solid #f5f5f5;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 8px;
+    line-height: 1.7;
+}
+
+table {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
+    margin-bottom: 0px!important;
+    border-collapse: collapse;
+    cursor: move;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+tr:nth-child(odd) {
+    background: #e3f5c9;
+}
+
+
+
+.table2 th {
+    background-color: #AACD03;
+    white-space: nowrap;
+    padding: 20px 8px 20px 20px!important;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #555555;
+    font-size: 15px;
+}
+
+
+
+.table2 td {
+    white-space: nowrap;
+    padding: 10px 8px 10px 20px!important;
+    line-height: 1.7!important;
+}
+
+.table3 th {
+    background-color: #AACD03;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 5px 5px 5px 5px!important;
+}
+
+.table3 td {
+    white-space: nowrap;
+    padding: 5px 5px 5px 5px!important;
+    line-height: 1.7!important;
+}
+
+
+.table4 td {
+    vertical-align: middle !important;
+}
+
+
+.footerline {
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

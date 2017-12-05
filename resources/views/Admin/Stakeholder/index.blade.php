@@ -13,6 +13,7 @@
                     <div class="col-sm-4 col-md-2" id="content">
                         <h4>選擇年度</h4>
                         <select class="selectpicker selectbtn">
+                            <option>全部</option>
                             <option>107</option>
                             <option>106</option>
                             <option>105</option>
@@ -91,37 +92,55 @@
         </div>
         <!-- /.container-fluid -->
         <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <h3>股東會相關資訊<div class="titleline"></div></h3>
-                    </div>
-                </div>
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
-                        <select class="selectpicker selectbtn">
-                            <option>107</option>
-                            <option>106</option>
-                            <option>105</option>
-                        </select>
-                    </div>
-                    </br>
-                    </br>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <table class="table table2">
+                        <table class="table table2 ">
                             <tr>
-                                <th width="10%" style="text-align: center;">股東會性質</th>
-                                <th width="60%">檔案名稱</th>
-                                <th width="10%" style="text-align: center;">檔案下載</th>
+                                <th>年度</th>
+                                <th>股東會性質</th>
+                                <th>檔案名稱</th>
+                                <th>檔案</th>
+                                <th> </th>
+                            </tr>
+                            </tr>
                             </tr>
                             <tr>
-                                <td data-th="股東會性質" style="text-align: center;"></td>
-                                <td data-th="檔案名稱"></td>
-                                <td data-th="檔案下載"><img class="img-responsive center-block" src="../../assets/images/CorporateGovernance/pdf_download.png"></td>
+                                <td data-th="年度">106</td>
+                                <td data-th="股東會性質">常會</td>
+                                <td data-th="檔案名稱">股東會議事錄</td>
+                                <td data-th="檔案下載">XXXXX.pdf</td>
+                                <td data-th=" "><img class="img-responsive center-block" src="../assets/images/edit.png"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="年度">106</td>
+                                <td data-th="股東會性質">常會</td>
+                                <td data-th="檔案名稱">股東會議事錄</td>
+                                <td data-th="檔案下載">XXXXX.pdf</td>
+                                <td data-th=" "><img class="img-responsive center-block" src="../assets/images/edit.png"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="年度">106</td>
+                                <td data-th="股東會性質">常會</td>
+                                <td data-th="檔案名稱">股東會議事錄</td>
+                                <td data-th="檔案下載">XXXXX.pdf</td>
+                                <td data-th=" "><img class="img-responsive center-block" src="../assets/images/edit.png"></td>
                             </tr>
                         </table>
+                    </div>
+                </div>
+                 <div class="footerline"></div>
+                 <div class="row">
+                    <div class="col-md-12" style="right">
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

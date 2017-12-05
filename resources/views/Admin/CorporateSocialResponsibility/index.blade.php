@@ -73,27 +73,28 @@
                     </div>
                 </div>
                 <div class="row">
-
                 </div>
                 <h5 style="color: #009943;">下載觀看&nbsp;<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h5>
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../../assets/images/CorporateSocialResponsibility/csr報告書/2014.jpg">
+                            <img class="img-responsive img" src="../assets/images/2014.jpg">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../../assets/images/CorporateSocialResponsibility/csr報告書/2015.jpg">
+                            <img class="img-responsive img" src="../assets/images/2015.jpg">
                         </div>
                     </div>
                     <div class="clearfix visible-xs-block"></div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../../assets/images/CorporateSocialResponsibility/csr報告書/2016.jpg">
+                            <img class="img-responsive img" src="../assets/images/2016.jpg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
 @endsection

@@ -33,21 +33,6 @@
     <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <select class="selectpicker selectbtn">
-                            <option>107</option>
-                            <option>106</option>
-                            <option>105</option>
-                        </select>
-                    </div>
-                    </br>
-                    </br>
-            </div>
-            <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <p>2017每月營收(2017 Monthly Revenue)</p>
-                        <p>單位：新台幣仟元(In Thousands of New Taiwan Dollars)</p>
-                    </div>
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="table-responsive dragscroll">
                             <table class="table table2">
