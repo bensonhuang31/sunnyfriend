@@ -11,7 +11,7 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../../css/bootstrap-select.css" rel="stylesheet">
-    <script src="../../js/bootstrap-select.js"></script>
+    
 </head>
 
 <body>
@@ -87,7 +87,8 @@
         });
     })
     </script>
-
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <script src="../../js/bootstrap-filestyle.min.js"></script>
     @yield('script')
 </body>
 
