@@ -10,34 +10,29 @@
                     </div>
                 </div>
                 <div class="row" id="main">
-                    <div class="col-sm-2 col-md-1" id="content">
+                    <div class="col-sm-2 col-md-2" id="content">
                         <div class="dropdown">
                             <h4>選擇年度</h4>
-                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
-                                全部<span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu1" id="dropdownyear3">
-                                <li><a>106</a></li>
-                                <li><a>105</a></li>
-                            </ul>
+                            <select class="selectpicker selectbtn">
+                                <option>107</option>
+                                <option>106</option>
+                                <option>105</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-md-1" id="content">
+                    <div class="col-sm-2 col-md-2" id="content">
                         <div class="dropdown">
                             <h4>選擇類型</h4>
-                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
-                                全部<span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu1" id="dropdownclass2">
-                                <li><a>106</a></li>
-                                <li><a>105</a></li>
-                            </ul>
+                            <select class="selectpicker selectbtn">
+                                <option>中文財報</option>
+                                <option>英文財報</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="col-sm-8 col-md-10" id="content">
+                    <div class="col-sm-2 col-md-2" id="content">
                         </br>
                         </br>
-                        <button class="btnn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增檔案</button>
+                        <button class="btn btnn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增檔案</button>
                         </br>
                         </br>
                         <!-- Modal -->
@@ -95,4 +90,52 @@
             <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
+                <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <table class="table table2 ">
+                            <tr>
+                                <th >日期</th>
+                                <th >事項</th>
+                                <th >主辦機關</th>
+                                <th >結果</th>
+                            </tr>
+                            <tr>
+                                <td data-th="日期">106.09.27</td>
+                                <td data-th="事項">環境評估監督業務(106年度-3)</td>
+                                <td data-th="主辦機關">雲林縣環保局</td>
+                                <td data-th="結果">待執行</td>
+                            </tr>
+                            <tr>
+                                <td data-th="日期">106.06.23</td>
+                                <td data-th="事項">環境評估監督業務(106年度-2)</td>
+                                <td data-th="主辦機關">雲林縣環保局</td>
+                                <td data-th="結果">符合</td>
+                            </tr>                            <tr>
+                                <td data-th="日期">106.03.21</td>
+                                <td data-th="事項">環境評估監督業務(106年度-1)</td>
+                                <td data-th="主辦機關">雲林縣環保局</td>
+                                <td data-th="結果">符合</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="footerline"></div>
+                 <div class="row">
+                    <div class="col-md-12" style="right">
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 @endsection

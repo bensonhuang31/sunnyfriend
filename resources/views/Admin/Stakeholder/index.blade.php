@@ -42,7 +42,7 @@
                                         <form class="form-horizontal" role="form">
                                             <div class="form-row form-group">
                                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <label class="control-label" for="inputEmail3">*新增年度</label>
+                                                    <label class="control-label">*新增年度</label>
                                                     <select class="selectpicker selectbtn">
                                                         <option>107</option>
                                                         <option>106</option>
@@ -50,29 +50,30 @@
                                                     </select>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <label class="control-label" for="inputEmail3">*股東會性質</label>
+                                                    <label class="control-label">*股東會性質</label>
                                                     <input type="stakeholder" class="form-control" id="inputclass1" placeholder="請輸入性質" />
                                                 </div>
                                             </div>
                                             <div class="form-row form-group">
                                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                                    <label class="control-label" for="inputEmail3">*檔案名稱</label>
+                                                    <label class="control-label">*檔案名稱</label>
                                                     <input type="email" class="form-control" id="inputfilename2" placeholder="請輸入名稱" />
                                                 </div>
 
                                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                                 </br>
-                                                    <label class="control-label" for="inputEmail3">*夾帶PDF檔案</label>
-                                                    <button type="button" class="btn btn-default" id="btnpdffile1">請選擇檔案</button>
+                                                    <label class="control-label">*夾帶PDF檔案</label>
+                                                    <input type="file" class="filestyle" id="btnfile2" data-icon="false" accept="application/pdf">
                                                 </div>
                                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                                 </br>
-                                                    <label class="control-label" for="inputEmail3">*夾帶檔案圖示</label>
-                                                    <button type="button" class="btn btn-default" id="btnimg1">請選擇圖示</button>
+                                                    <label class="control-label">*夾帶檔案圖示</label>
+                                                    <input type="file" class="filestyle" id="btnimg2" data-icon="false" accept="image/*">
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
+
                                     <!-- Modal Footer -->
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -110,21 +111,30 @@
                                 <td data-th="股東會性質">常會</td>
                                 <td data-th="檔案名稱">股東會議事錄</td>
                                 <td data-th="檔案下載">XXXXX.pdf</td>
-                                <td data-th=" "><img class="img-responsive center-block" src="../assets/images/edit.png"></td>
+                                <td style="float:right"data-th=" ">
+                                <button style="text-align: right" class="btn btnn btn-default" data-toggle="modal" data-target="#EditInvetorInfo">編輯</button>
+                                <button style="text-align: right" class="btn btn-default" data-toggle="modal" data-target="#DeleteInvetorInfo">刪除</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td data-th="年度">106</td>
                                 <td data-th="股東會性質">常會</td>
                                 <td data-th="檔案名稱">股東會議事錄</td>
                                 <td data-th="檔案下載">XXXXX.pdf</td>
-                                <td data-th=" "><img class="img-responsive center-block" src="../assets/images/edit.png"></td>
+                                <td style="float:right"data-th=" ">
+                                <button style="text-align: right" class="btn btnn btn-default">編輯</button>
+                                <button style="text-align: right" class="btn btn-default">刪除</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td data-th="年度">106</td>
                                 <td data-th="股東會性質">常會</td>
                                 <td data-th="檔案名稱">股東會議事錄</td>
                                 <td data-th="檔案下載">XXXXX.pdf</td>
-                                <td data-th=" "><img class="img-responsive center-block" src="../assets/images/edit.png"></td>
+                                <td style="float:right"data-th=" ">
+                                <button style="text-align: right" class="btn btnn btn-default">編輯</button>
+                                <button style="text-align: right" class="btn btn-default">刪除</button>
+                                </td>
                             </tr>
                         </table>
                     </div>

@@ -37,12 +37,12 @@
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
                                                     <label class="control-label" for="inputEmail3">*夾帶PDF檔案</label>
-                                                    <button type="button" class="btn btn-default" id="btnpdffile3">請選擇檔案</button>
+                                                    <input type="file" class="filestyle" id="btnfile3" data-icon="false" accept="application/pdf">
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
                                                     <label class="control-label" for="inputEmail3">*夾帶圖片</label>
-                                                    <button type="button" class="btn btn-default" id="btnimg3">請選擇圖片</button>
+                                                    <input type="file" class="filestyle" id="btnimg3" data-icon="false" accept="image/*">
                                                 </div>
                                             </div>
                                         </form>
@@ -65,32 +65,41 @@
             <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
-        <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
-            <div class="container">
+        <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <h3>企業社會責任報告書<div class="titleline"></div></h3>
+                    <div class="col-md-12 col-sm-12">
+                        <table class="table table2 ">
+                            <tr>
+                                <th >上傳順序</th>
+                                <th >檔案名稱</th>
+                                <th >檔案</th>
+                            </tr>
+                            <tr>
+                                <td data-th="年度">1</td>
+                                <td data-th="檔案名稱">2014企業社會責任報告書</td>
+                                <td data-th="檔案">XXX.PDF</td>
+                            </tr>
+                            <tr>
+                                <td data-th="年度">2</td>
+                                <td data-th="檔案名稱">2015企業社會責任報告書</td>
+                                <td data-th="檔案">XXX.PDF</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div class="row">
-                </div>
-                <h5 style="color: #009943;">下載觀看&nbsp;<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h5>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/2014.jpg">
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/2015.jpg">
-                        </div>
-                    </div>
-                    <div class="clearfix visible-xs-block"></div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/2016.jpg">
-                        </div>
+                <div class="footerline"></div>
+                 <div class="row">
+                    <div class="col-md-12" style="right">
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
