@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use App\Http\Requests;
 use App\Http\Model\ShareholdersInfo;
 use App\Http\Model\RevenueInfo;
 use App\Http\Model\FinanceInfo;

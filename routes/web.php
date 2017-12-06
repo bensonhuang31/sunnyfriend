@@ -66,14 +66,20 @@ Route::get('/lang/set/{lang}', 'LanguageController@set_lang');
 //後台
 Route::view('/Admin', 'Admin.index');
 
-Route::view('/Admin/CorporateSocialResponsibility/index.php', 'Admin.CorporateSocialResponsibility.index');
-Route::view('/Admin/CorporateSocialResponsibility/index2.php', 'Admin.CorporateSocialResponsibility.index2');
+Route::view('/Admin/CorporateSocialResponsibility/index', 'Admin.CorporateSocialResponsibility.index');
+//Route::view('/Admin/CorporateSocialResponsibility/index2.php', 'Admin.CorporateSocialResponsibility.index2');
 
-Route::view('/Admin/Environmentprotect/index.php', 'Admin.Environmentprotect.index');
-Route::view('/Admin/Environmentprotect/index2.php', 'Admin.Environmentprotect.index2');
+Route::view('/Admin/Environmentprotect/index', 'Admin.Environmentprotect.index');
+Route::view('/Admin/Environmentprotect/index2', 'Admin.Environmentprotect.index2');
 
-Route::view('/Admin/News/index.php', 'Admin.News.index');
+Route::view('/Admin/News/index', 'Admin.News.index');
 
-Route::view('/Admin/Stakeholder/index.php', 'Admin.Stakeholder.index');
-Route::view('/Admin/Stakeholder/index2.php', 'Admin.Stakeholder.index2');
-Route::view('/Admin/Stakeholder/index3.php', 'Admin.Stakeholder.index3');
+Route::view('/Admin/Stakeholder/index', 'Admin.Stakeholder.index');
+Route::view('/Admin/Stakeholder/index2', 'Admin.Stakeholder.index2');
+Route::view('/Admin/Stakeholder/index3', 'Admin.Stakeholder.index3');
+
+Route::get('/Admin/CorporateSocialResponsibility/index2', 'CorporateSocialResponsibilityController@UploadFileindex');
+Route::group(['middleware' => ['web']], function () {
+    
+    Route::post('/Admin/CorporateSocialResponsibility/index2','CorporateSocialResponsibilityController@showUploadFile');
+});
