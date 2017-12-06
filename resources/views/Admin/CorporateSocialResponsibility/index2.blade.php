@@ -33,7 +33,6 @@
                                             <div class="form-row form-group">
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
-<<<<<<< HEAD
                                                     <label class="control-label" for="file">*請選擇PDF檔案</label>
                                                     {!! Form::file('file', array('class' => 'btn btn-default','style'=>'width:100%')) !!}
                                                 </div>
@@ -41,15 +40,6 @@
                                                     </br>
                                                     <label class="control-label" for="image">*請選擇圖片</label>
                                                     {!! Form::file('image', array('class' => 'btn btn-default','style'=>'width:100%')) !!}
-=======
-                                                    <label class="control-label" for="inputEmail3">*夾帶PDF檔案</label>
-                                                    <input type="file" class="filestyle" id="btnfile4" data-icon="false" accept="application/pdf">
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                                    </br>
-                                                    <label class="control-label" for="inputEmail3">*夾帶圖片</label>
-                                                    <input type="file" class="filestyle" id="btnimg4" data-icon="false" accept="image/*">
->>>>>>> 78509d941f82ecafc947e93a451cd58cd3c88c62
                                                 </div>
                                             </div>
                                             
@@ -71,7 +61,6 @@
             <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
-<<<<<<< HEAD
         <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container">
             <div>
@@ -90,10 +79,8 @@
                         <h3>土豆鳥文學誌<div class="titleline"></div></h3>
                     </div>
                 </div>
-=======
                 <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">
->>>>>>> 78509d941f82ecafc947e93a451cd58cd3c88c62
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <table class="table table2 ">
