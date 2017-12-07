@@ -33,12 +33,12 @@
                                             <div class="form-row form-group">
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
-                                                    <label class="control-label" for="inputEmail3">*請選擇PDF檔案</label>
+                                                    <label class="control-label" >*請選擇PDF檔案</label>
                                                     {!! Form::file('file', array('class' => 'filestyle','style'=>'width:100%','accept'=>'application/pdf')) !!}
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
-                                                    <label class="control-label" for="inputEmail3">*請選擇圖片</label>
+                                                    <label class="control-label" >*請選擇圖片</label>
                                                     {!! Form::file('image', array('class' => 'filestyle','style'=>'width:100%','accept'=>'application/image/*')) !!}
                                                 </div>
                                             </div>

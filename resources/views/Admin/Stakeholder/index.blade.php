@@ -57,18 +57,13 @@
                                             <div class="form-row form-group">
                                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                                     <label class="control-label">*檔案名稱</label>
-                                                    <input type="email" class="form-control" id="inputfilename2" placeholder="請輸入名稱" />
+                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" />
                                                 </div>
 
                                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                                 </br>
                                                     <label class="control-label">*夾帶PDF檔案</label>
                                                     <input type="file" class="filestyle" id="btnfile2" data-icon="false" accept="application/pdf">
-                                                </div>
-                                                <div class="col-lg-6 col-md-12 col-sm-12">
-                                                </br>
-                                                    <label class="control-label">*夾帶檔案圖示</label>
-                                                    <input type="file" class="filestyle" id="btnimg2" data-icon="false" accept="image/*">
                                                 </div>
                                             </div>
                                         </form>
@@ -77,7 +72,7 @@
                                     <!-- Modal Footer -->
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            Close
+                                            關閉
                                         </button>
                                         <button type="button" class="btn btn-primary">
                                             確認上傳
@@ -91,6 +86,91 @@
             </div>
             <!-- /.row -->
         </div>
+
+
+
+                        <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                 <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">編輯</h4>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    <label class="control-label">*新增年度</label>
+                                                    <select class="selectpicker selectbtn">
+                                                        <option>107</option>
+                                                        <option>106</option>
+                                                        <option>105</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    <label class="control-label">*股東會性質</label>
+                                                    <input type="stakeholder" class="form-control" id="inputclass1" placeholder="請輸入性質" />
+                                                </div>
+                                            </div>
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <label class="control-label">*檔案名稱</label>
+                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" />
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                </br>
+                                                    <label class="control-label">*夾帶PDF檔案</label>
+                                                    <input type="file" class="filestyle" id="btnfile2" data-icon="false" accept="application/pdf">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Modal Footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            關閉
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                            確認
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <label class="control-label">確認刪除嗎？</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Modal Footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            關閉
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                            確認
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
         <!-- /.container-fluid -->
         <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">
@@ -102,7 +182,8 @@
                                 <th>股東會性質</th>
                                 <th>檔案名稱</th>
                                 <th>檔案</th>
-                                <th> </th>
+                                <th>修改</th>
+
                             </tr>
                             </tr>
                             </tr>
@@ -111,9 +192,9 @@
                                 <td data-th="股東會性質">常會</td>
                                 <td data-th="檔案名稱">股東會議事錄</td>
                                 <td data-th="檔案下載">XXXXX.pdf</td>
-                                <td style="float:right"data-th=" ">
-                                <button style="text-align: right" class="btn btnn btn-default" data-toggle="modal" data-target="#EditInvetorInfo">編輯</button>
-                                <button style="text-align: right" class="btn btn-default" data-toggle="modal" data-target="#DeleteInvetorInfo">刪除</button>
+                                <td data-th="修改">
+                                <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
+                                <button class="btn btn-default" data-toggle="modal" data-target="#DelInfo">刪除</button>
                                 </td>
                             </tr>
                             <tr>
@@ -121,9 +202,9 @@
                                 <td data-th="股東會性質">常會</td>
                                 <td data-th="檔案名稱">股東會議事錄</td>
                                 <td data-th="檔案下載">XXXXX.pdf</td>
-                                <td style="float:right"data-th=" ">
-                                <button style="text-align: right" class="btn btnn btn-default">編輯</button>
-                                <button style="text-align: right" class="btn btn-default">刪除</button>
+                                <td data-th="修改">
+                                <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
+                                <button class="btn btn-default" data-toggle="modal" data-target="#DelInfo">刪除</button>
                                 </td>
                             </tr>
                             <tr>
@@ -131,9 +212,9 @@
                                 <td data-th="股東會性質">常會</td>
                                 <td data-th="檔案名稱">股東會議事錄</td>
                                 <td data-th="檔案下載">XXXXX.pdf</td>
-                                <td style="float:right"data-th=" ">
-                                <button style="text-align: right" class="btn btnn btn-default">編輯</button>
-                                <button style="text-align: right" class="btn btn-default">刪除</button>
+                                <td data-th="修改">
+                                <button class="btn btnn btn-default" data-target="#EditInfo">編輯</button>
+                                <button class="btn btn-default" data-toggle="modal" data-target="#DelInfo">刪除</button>
                                 </td>
                             </tr>
                         </table>
