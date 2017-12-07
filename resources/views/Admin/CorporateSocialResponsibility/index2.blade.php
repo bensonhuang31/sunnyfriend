@@ -70,9 +70,10 @@
                         <p>{{$error}}</p>
                     @endforeach
                 @else
-                    <p><?php echo('1243');?></p>
+                    <p>{{(string)$errors}}</p>
                 @endif
             @endif
+
             </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
@@ -89,16 +90,13 @@
                                 <th >檔案名稱</th>
                                 <th >檔案</th>
                             </tr>
-                            <tr>
-                                <td data-th="年度">1</td>
-                                <td data-th="檔案名稱">土豆鳥文學誌第一期</td>
-                                <td data-th="檔案">XXX.PDF</td>
-                            </tr>
-                            <tr>
-                                <td data-th="年度">2</td>
-                                <td data-th="檔案名稱">土豆鳥文學誌第二期</td>
-                                <td data-th="檔案">XXX.PDF</td>
-                            </tr>
+                            @foreach($data as $potato)
+                                <tr>
+                                    <td data-th="年度">{{$potato->id}}</td>
+                                    <td data-th="檔案名稱">{{$potato->OriFileName}}</td>
+                                    <td data-th="檔案">{{$potato->FileName}}</td>
+                                </tr>
+                            @endforeach
                         </table>
                     </div>
                 </div>

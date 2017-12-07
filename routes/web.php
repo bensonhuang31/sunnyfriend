@@ -78,8 +78,9 @@ Route::view('/Admin/Stakeholder/index', 'Admin.Stakeholder.index');
 Route::view('/Admin/Stakeholder/index2', 'Admin.Stakeholder.index2');
 Route::view('/Admin/Stakeholder/index3', 'Admin.Stakeholder.index3');
 
-Route::get('/Admin/CorporateSocialResponsibility/index2', 'CorporateSocialResponsibilityController@UploadFileindex');
-Route::group(['middleware' => ['web']], function () {
-    
-    Route::post('/Admin/CorporateSocialResponsibility/index2','CorporateSocialResponsibilityController@showUploadFile');
+Route::group(['middlewareGroups' => ['web']], function () {
+    Route::get('/Admin/CorporateSocialResponsibility/index', 'CorporateSocialResponsibilityController@AdminCsrIndex');
+    Route::post('/Admin/CorporateSocialResponsibility/index','CorporateSocialResponsibilityController@AdminCsrUploadFile');
+    Route::get('/Admin/CorporateSocialResponsibility/index2', 'CorporateSocialResponsibilityController@AdminPotatoIndex');
+    Route::post('/Admin/CorporateSocialResponsibility/index2','CorporateSocialResponsibilityController@AdminPotatoUploadFile');
 });
