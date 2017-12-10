@@ -18,7 +18,7 @@
                     <div class="col-sm-8 col-md-10" id="content">
                         </br>
                         </br>
-                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增檔案</button>
+                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
                         </br>
                         </br>
                         <!-- Modal -->
@@ -49,15 +49,15 @@
                                                 </div>
                                             </div>
                                             <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="col-lg-12 col-md-12 col-sm-12" >
                                                     <label class="control-label">*檔案名稱</label>
                                                     <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" name="filename"/>
                                                 </div>
 
                                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                                 </br>
-                                                    <label class="control-label">*夾帶PDF檔案</label>
-                                                    {!! Form::file('file', array('class' => 'filestyle','accept'=>'application/pdf')) !!}
+                                                    <label class="control-label" >*夾帶PDF檔案</label>
+                                                    {!! Form::file('file', array('class' => 'filestyle','accept'=>'application/pdf','onchange' => 'checkfile(this)')) !!}
                                                 </div>
                                             </div>
                                         </form>
@@ -79,7 +79,7 @@
             </div>
             <!-- /.row -->
         </div>
-                        
+
         <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -232,7 +232,16 @@
                 eachTable.append("<option>"+ element +"</option>");
             });
     }
+    
 
+    function checkfile(obj){
+        pdffile = obj.value.substr(obj.value.lastIndexOf(".")).toLowerCase();
+        if (pdffile != '.pdf'){
+        alert("請上傳PDF檔案");
+        $(obj).empty();
+        return false;
+    }
+}
 </script>
 
 @endsection

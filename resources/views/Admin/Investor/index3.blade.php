@@ -6,7 +6,6 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12">
                         <h3>財務資訊</h3>
-                        <!-- Page Heading -->
                     </div>
                 </div>
                 <div class="row" id="main">
@@ -14,6 +13,10 @@
                         <div class="dropdown">
                             <h4>選擇年度</h4>
                             <select class="selectpicker selectbtn">
+                                <option>全部</option>
+                                <option>107</option>
+                                <option>106</option>
+                                <option>105</option>
                             </select>
                         </div>
                     </div>
@@ -29,7 +32,7 @@
                     <div class="col-sm-2 col-md-2" id="content">
                         </br>
                         </br>
-                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增檔案</button>
+                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">

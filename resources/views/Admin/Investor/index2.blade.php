@@ -3,10 +3,14 @@
 @section('content')
     <div id="page-wrapper">
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h3>盈收公告</h3>
+                    </div>
+                </div>
                 <!-- Page Heading -->
                 <div class="row" id="main">
-                    <div class="col-sm-12 col-md-12" id="content">
-                        <h3>盈收公告</h3>
+                    <div class="col-sm-2 col-md-2" id="content">
                         <div>
                             <div>
                                 <h4>選擇年度</h4>
@@ -15,19 +19,71 @@
                                         <select class="selectpicker selectbtn" id="changeyear">
                                         </select>
                                     </div>
-                                    </br>
-                                    </br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="content">
+                        </br>
+                        </br>
+                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">財務資訊</h4>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-6">
+                                                    <label class="control-label" for="inputEmail3">*新增年度</label>
+                                                    <select class="selectpicker selectbtn">
+                                                        <option>107</option>
+                                                        <option>106</option>
+                                                        <option>105</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <label class="control-label">*月</label>
+                                                    <input type="email" class="form-control" id="inputmonth" placeholder="請輸入月" />
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <label class="control-label">*營收金額</label>
+                                                    <input type="email" class="form-control" id="inputmoney" placeholder="請輸入營收金額" />
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <label class="control-label">*年度增(減)比例</label>
+                                                    <input type="email" class="form-control" id="inputradio" placeholder="請輸入年度增(減)比例" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Modal Footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                            確認上傳
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /.row -->
             </div>
-            <!-- /.container-fluid -->
     </div>
-        <!-- /#page-wrapper -->
-
     <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
