@@ -42,29 +42,29 @@
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-0"><i class="fa fa-fw fa-star"></i>最新消息<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                         <ul id="submenu-0" class="collapse">
-                            <li><a href="Admin/News/index.php">最新消息</a></li>
+                            <li><a href="Admin/News/index">最新消息</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-star"></i>投資人專區<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                         <ul id="submenu-1" class="collapse">
-                            <li><a href="Admin/Stakeholder/index.php">股東會相關資訊</a></li>
-                            <li><a href="Admin/Stakeholder/index2.php">盈收公告</a></li>
-                            <li><a href="Admin/Stakeholder/index3.php">財務資訊</a></li>
+                            <li><a href="Admin/Investor/index">股東會相關資訊</a></li>
+                            <li><a href="Admin/Investor/index2">盈收公告</a></li>
+                            <li><a href="Admin/Investor/index3">財務資訊</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>企業社會責任<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                         <ul id="submenu-2" class="collapse">
-                            <li><a href="Admin/CorporateSocialResponsibility/index.php">企業社會責任報告書</a></li>
-                            <li><a href="Admin/CorporateSocialResponsibility/index2.php">土豆鳥文學誌</a></li>
+                            <li><a href="Admin/CorporateSocialResponsibility/index">企業社會責任報告書</a></li>
+                            <li><a href="Admin/CorporateSocialResponsibility/index2">土豆鳥文學誌</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-3"><i class="fa fa-fw fa-star"></i>環境保護<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                         <ul id="submenu-3" class="collapse">
-                            <li><a href="Admin/Environmentprotect/index.php">環境保護查核行程</a></li>
-                            <li><a href="Admin/Environmentprotect/index2.php">環境監測</a></li>
+                            <li><a href="Admin/Environmentprotect/index">環境保護查核行程</a></li>
+                            <li><a href="Admin/Environmentprotect/index2">環境監測</a></li>
                         </ul>
                     </li>
                 </ul>

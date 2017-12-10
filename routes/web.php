@@ -74,11 +74,17 @@ Route::view('/Admin/Environmentprotect/index2', 'Admin.Environmentprotect.index2
 
 Route::view('/Admin/News/index', 'Admin.News.index');
 
-Route::view('/Admin/Stakeholder/index', 'Admin.Stakeholder.index');
-Route::view('/Admin/Stakeholder/index2', 'Admin.Stakeholder.index2');
-Route::view('/Admin/Stakeholder/index3', 'Admin.Stakeholder.index3');
+Route::view('/Admin/Investor/index', 'Admin.Investor.index');
+Route::view('/Admin/Investor/index2', 'Admin.Investor.index2');
+Route::view('/Admin/Investor/index3', 'Admin.Investor.index3');
 
 Route::group(['middlewareGroups' => ['web']], function () {
+    Route::get('/Admin/Investor/index', 'InvestorController@AdminShareholdersIndex');
+    Route::post('/Admin/Investor/index','InvestorController@AdminShareholdersUploadFile');
+    Route::get('/Admin/Investor/index2', 'InvestorController@AdminRevenueIndex');
+    Route::post('/Admin/Investor/index2','InvestorController@AdminRevenueUploadFile');
+    Route::get('/Admin/Investor/index3', 'InvestorController@AdminFinanceIndex');
+    Route::post('/Admin/Investor/index3','InvestorController@AdminFinanceUploadFile');
     Route::get('/Admin/CorporateSocialResponsibility/index', 'CorporateSocialResponsibilityController@AdminCsrIndex');
     Route::post('/Admin/CorporateSocialResponsibility/index','CorporateSocialResponsibilityController@AdminCsrUploadFile');
     Route::get('/Admin/CorporateSocialResponsibility/index2', 'CorporateSocialResponsibilityController@AdminPotatoIndex');

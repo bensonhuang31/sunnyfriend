@@ -50,9 +50,9 @@
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-star"></i>投資人專區<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                         <ul id="submenu-1" class="collapse">
-                            <li><a href="../../Admin/Stakeholder/index">股東會相關資訊</a></li>
-                            <li><a href="../../Admin/Stakeholder/index2">盈收公告</a></li>
-                            <li><a href="../../Admin/Stakeholder/index3">財務資訊</a></li>
+                            <li><a href="../../Admin/Investor/index">股東會相關資訊</a></li>
+                            <li><a href="../../Admin/Investor/index2">盈收公告</a></li>
+                            <li><a href="../../Admin/Investor/index3">財務資訊</a></li>
                         </ul>
                     </li>
                     <li>
