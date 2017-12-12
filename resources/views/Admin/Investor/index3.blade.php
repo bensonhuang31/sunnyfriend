@@ -21,15 +21,6 @@
                         </div>
                     </div>
                     <div class="col-sm-2 col-md-2" id="content">
-                        <div class="dropdown">
-                            <h4>選擇類型</h4>
-                            <select class="selectpicker selectbtn">
-                                <option>中文財報</option>
-                                <option>英文財報</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2" id="content">
                         </br>
                         </br>
                         <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
@@ -73,7 +64,7 @@
                                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                                 </br>
                                                     <label class="control-label" for="inputEmail3">*夾帶PDF檔案</label>
-                                                    <input type="file" class="filestyle" id="btnfile2" data-icon="false" accept="application/pdf">
+                                                    <input type="file" class="filestyle" id="pdfalert" data-icon="false" accept="application/pdf" onchange="checkfile(this)">
                                                 </div>
                                             </div>
                                         </form>
@@ -283,6 +274,15 @@
             $.each(years, function(index, element) {
                 eachTable.append("<option>"+ element +"</option>");
             });
+    }
+
+    function checkfile(obj){
+        pdffile = obj.value.substr(obj.value.lastIndexOf(".")).toLowerCase();
+        if (pdffile != '.pdf'){
+        alert("請上傳PDF檔案");
+        document.getElementById("pdfalert").value = "";
+        return false;
+    }
     }
 
 </script>

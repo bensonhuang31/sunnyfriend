@@ -18,46 +18,46 @@ Route::get('/', function () {
 });
 
 //關於日友
-Route::view('/AboutSF/index.php', 'AboutSF.index');
-Route::view('/AboutSF/index2.php', 'AboutSF.index2');
-Route::view('/AboutSF/index3.php', 'AboutSF.index3');
-Route::view('/AboutSF/index4.php', 'AboutSF.index4');
-Route::view('/AboutSF/index5.php', 'AboutSF.index5');
-Route::view('/AboutSF/index6.php', 'AboutSF.index6');
-Route::view('/AboutSF/index7.php', 'AboutSF.index7');
+Route::view('/AboutSF/CompanyProfile.php', 'AboutSF.CompanyProfile');
+Route::view('/AboutSF/ServiceAndArea.php', 'AboutSF.ServiceAndArea');
+Route::view('/AboutSF/Structure.php', 'AboutSF.Structure');
+Route::view('/AboutSF/ManagingTeam.php', 'AboutSF.ManagingTeam');
+Route::view('/AboutSF/Organization.php', 'AboutSF.Organization');
+Route::view('/AboutSF/Shareholding.php', 'AboutSF.Shareholding');
+Route::view('/AboutSF/IIC.php', 'AboutSF.IIC');
 
 //最新消息
-Route::view('/News/index.php', 'News.index');
-Route::view('/News/index2.php', 'News.index2');
-Route::view('/News/index3.php', 'News.index3');
-Route::view('/News/index4.php', 'News.index4');
-Route::get('/News/index4.php','NewsController@index');
+Route::view('/News/NewsCenter.php', 'News.NewsCenter');
+Route::view('/News/ImportantNews.php', 'News.ImportantNews');
+Route::view('/News/WebsiteLinks.php', 'News.WebsiteLinks');
+Route::view('/News/latestNews.php', 'News.latestNews');
+Route::get('/News/latestNews.php','NewsController@index');
 Route::get('/News/Detail/{id}','NewsController@detail');
 //公司治理
-Route::view('/CorporateGovernance/index.php', 'CorporateGovernance.index');
-Route::view('/CorporateGovernance/index2.php', 'CorporateGovernance.index2');
-Route::view('/CorporateGovernance/index3.php', 'CorporateGovernance.index3');
-Route::view('/CorporateGovernance/index4.php', 'CorporateGovernance.index4');
-Route::view('/CorporateGovernance/index5.php', 'CorporateGovernance.index5');
+Route::view('/CorporateGovernance/GovernancePreface.php', 'CorporateGovernance.GovernancePreface');
+Route::view('/CorporateGovernance/Regulations.php', 'CorporateGovernance.Regulations');
+Route::view('/CorporateGovernance/InternalAuditing.php', 'CorporateGovernance.InternalAuditing');
+Route::view('/CorporateGovernance/BoardofDirectors.php', 'CorporateGovernance.BoardofDirectors');
+Route::view('/CorporateGovernance/Diversification.php', 'CorporateGovernance.Diversification');
 //投資人專區
-Route::get('/Investor/index.php','InvestorController@index');
-Route::get('/Investor/index2.php','InvestorController@revenue');
-Route::get('/Investor/index3.php','InvestorController@finance');
-Route::view('/Investor/index4.php', 'Investor.index4');
-Route::view('/Investor/index5.php', 'Investor.index5');
-Route::view('/Investor/index6.php', 'Investor.index6');
+Route::get('/Investor/IFSM.php','InvestorController@index');
+Route::get('/Investor/MonthlyRevenue.php','InvestorController@revenue');
+Route::get('/Investor/FinancialInformation..php','InvestorController@finance');
+Route::view('/Investor/ExchangeLink.php', 'Investor.ExchangeLink');
+Route::view('/Investor/DividendPolicy.php', 'Investor.DividendPolicy');
+Route::view('/Investor/InvestmentCentre.php', 'Investor.InvestmentCentre');
 //企業社會責任
-Route::view('/CorporateSocialResponsibility/index.php', 'CorporateSocialResponsibility.index');
-Route::view('/CorporateSocialResponsibility/index2.php', 'CorporateSocialResponsibility.index2');
-Route::view('/CorporateSocialResponsibility/index3.php', 'CorporateSocialResponsibility.index3');
-Route::get('/CorporateSocialResponsibility/index4.php','CorporateSocialResponsibilityController@csr');
-Route::get('/CorporateSocialResponsibility/index5.php','CorporateSocialResponsibilityController@index');
+Route::view('/CorporateSocialResponsibility/Preface.php', 'CorporateSocialResponsibility.Preface');
+Route::view('/CorporateSocialResponsibility/Policy.php', 'CorporateSocialResponsibility.Policy');
+Route::view('/CorporateSocialResponsibility/ResultsAndplans.php', 'CorporateSocialResponsibility.ResultsAndplans');
+Route::get('/CorporateSocialResponsibility/CSRReport.php','CorporateSocialResponsibilityController@csr');
+Route::get('/CorporateSocialResponsibility/VanellusLiterature.php','CorporateSocialResponsibilityController@index');
 //利害關係人
-Route::view('/Stakeholder/index.php', 'Stakeholder.index');
-Route::view('/Stakeholder/index2.php', 'Stakeholder.index2');
-Route::view('/Stakeholder/index3.php', 'Stakeholder.index3');
-Route::view('/Stakeholder/index4.php', 'Stakeholder.index4');
-Route::view('/Stakeholder/index5.php', 'Stakeholder.index5');
+Route::view('/Stakeholder/MaterialIssues.php', 'Stakeholder.MaterialIssues');
+Route::view('/Stakeholder/EmployeeBenefits.php', 'Stakeholder.EmployeeBenefits');
+Route::view('/Stakeholder/SMP.php', 'Stakeholder.SMP');
+Route::view('/Stakeholder/GrievanceMachinery.php', 'Stakeholder.GrievanceMachinery');
+Route::view('/Stakeholder/UBGM.php', 'Stakeholder.UBGM');
 //環境保護
 
 //語系

@@ -56,8 +56,8 @@
 
                                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                                 </br>
-                                                    <label class="control-label" >*夾帶PDF檔案</label>
-                                                    {!! Form::file('file', array('class' => 'filestyle','accept'=>'application/pdf','onchange' => 'checkfile(this)')) !!}
+                                                    <label class="control-label">*夾帶PDF檔案</label>
+                                                    {!! Form::file('file', array('id' => 'pdfalert','class' => 'filestyle','accept'=>'application/pdf','onchange' => 'checkfile(this)')) !!}
                                                 </div>
                                             </div>
                                         </form>
@@ -232,13 +232,12 @@
                 eachTable.append("<option>"+ element +"</option>");
             });
     }
-    
 
     function checkfile(obj){
         pdffile = obj.value.substr(obj.value.lastIndexOf(".")).toLowerCase();
         if (pdffile != '.pdf'){
         alert("請上傳PDF檔案");
-        $(obj).empty();
+        document.getElementById("pdfalert").value = "";
         return false;
     }
 }

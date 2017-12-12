@@ -11,7 +11,7 @@
                 </div>
                 <div class="row" id="main">
                     <div class="col-sm-8 col-md-10" id="content">
-                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增檔案</button>
+                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
                         </br>
                         </br>
                         <!-- Modal -->
@@ -24,7 +24,7 @@
                                             <span aria-hidden="true">&times;</span>
                                             <span class="sr-only">Close</span>
                                         </button>
-                                        <h4 class="modal-title" id="myModalLabel">環境保護查核行程</h4>
+                                        <h4 class="modal-title" id="myModalLabel">最新消息</h4>
                                     </div>
                                     <!-- Modal Body -->
                                     <div class="modal-body">
