@@ -80,11 +80,23 @@ Route::view('/Admin/Investor/index3', 'Admin.Investor.index3');
 
 Route::group(['middlewareGroups' => ['web']], function () {
     Route::get('/Admin/Investor/index', 'InvestorController@AdminShareholdersIndex');
-    Route::post('/Admin/Investor/index','InvestorController@AdminShareholdersUploadFile');
+    Route::post('/Admin/Investor/index','InvestorController@AdminShareholdersCreate');
+    Route::post('/Admin/Investor/index/edit','InvestorController@AdminShareholdersEdit');
+    Route::post('/Admin/Investor/index/delete','InvestorController@AdminShareholdersDelete');
+    
+
     Route::get('/Admin/Investor/index2', 'InvestorController@AdminRevenueIndex');
-    Route::post('/Admin/Investor/index2','InvestorController@AdminRevenueUploadFile');
+    Route::post('/Admin/Investor/index2','InvestorController@AdminRevenueCreate');
+    Route::post('/Admin/Investor/index2/edit','InvestorController@AdminRevenueEdit');
+    Route::post('/Admin/Investor/index2/delete','InvestorController@AdminRevenueDelete');
+
+
     Route::get('/Admin/Investor/index3', 'InvestorController@AdminFinanceIndex');
-    Route::post('/Admin/Investor/index3','InvestorController@AdminFinanceUploadFile');
+    Route::post('/Admin/Investor/index3','InvestorController@AdminFinanceCreate');
+    Route::post('/Admin/Investor/index3/edit','InvestorController@AdminFinanceEdit');
+    Route::post('/Admin/Investor/index3/delete','InvestorController@AdminFinanceDelete');
+
+
     Route::get('/Admin/CorporateSocialResponsibility/index', 'CorporateSocialResponsibilityController@AdminCsrIndex');
     Route::post('/Admin/CorporateSocialResponsibility/index','CorporateSocialResponsibilityController@AdminCsrUploadFile');
     Route::get('/Admin/CorporateSocialResponsibility/index2', 'CorporateSocialResponsibilityController@AdminPotatoIndex');

@@ -4,6 +4,21 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                <div>
+                    @if (session('status')=='success')
+                        <div class="alert alert-success">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @elseif (session('status')=='failed')
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @endif
+                </div>
                     <div class="col-sm-12 col-md-12">
                         <h3>股東會相關資訊</h3>
                         <!-- Page Heading -->
@@ -49,11 +64,6 @@
                                                 </div>
                                             </div>
                                             <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-12" >
-                                                    <label class="control-label">*檔案名稱</label>
-                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" name="filename"/>
-                                                </div>
-
                                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                                 </br>
                                                     <label class="control-label" >*夾帶PDF檔案</label>
@@ -80,108 +90,23 @@
             <!-- /.row -->
         </div>
 
-        <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span aria-hidden="true">&times;</span>
-                            <span class="sr-only">Close</span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">編輯</h4>
-                    </div>
-                    <!-- Modal Body -->
-                    <div class="modal-body">
-                                        <form class="form-horizontal" role="form">
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <label class="control-label">*新增年度</label>
-                                                    <select class="selectpicker selectbtn">
-                                                        <option>107</option>
-                                                        <option>106</option>
-                                                        <option>105</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <label class="control-label">*股東會性質</label>
-                                                    <input type="stakeholder" class="form-control" id="inputclass1" placeholder="請輸入性質" />
-                                                </div>
-                                            </div>
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                                    <label class="control-label">*檔案名稱</label>
-                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" />
-                                                </div>
-
-                                                <div class="col-lg-6 col-md-12 col-sm-12">
-                                                </br>
-                                                    <label class="control-label">*夾帶PDF檔案</label>
-                                                    <input type="file" class="filestyle" id="btnfile2" data-icon="false" accept="application/pdf">
-                                                </div>
-                                            </div>
-                                        </form>
-                    </div>
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            關閉
-                                        </button>
-                    <a href=""><input type="submit" style="text-align: right" class="btn btnn btn-default" value="編輯"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <!-- Modal Body -->
-                    <div class="modal-body">
-                        <form class="form-horizontal" role="form">
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                                    <label class="control-label">確認刪除嗎？</label>
-                                                </div>
-                                            </div>
-                        </form>
-                    </div>
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
-                         <button type="button" class="btn btn-primary">確認</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!-- /.container-fluid -->
         <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
-                        <table class="table table2 ">
-                            <tr>
-                                <th>年度</th>
-                                <th>股東會性質</th>
-                                <th>檔案名稱</th>
-                                <th>檔案</th>
-                                <th>修改</th>
-
-                            </tr>
-                            @foreach($data as $shareholders)
+                        <table class="table table2 each-table">
+                            <thead>
                                 <tr>
-                                    <td data-th="年度">{{$shareholders->Year}}</td>
-                                    <td data-th="股東會性質">{{$shareholders->Type}}</td>
-                                    <td data-th="檔案名稱">{{$shareholders->FileName}}</td>
-                                    <td data-th="檔案下載">{{$shareholders->FilePath}}</td>
-                                    <td data-th="修改">
-                                    <button class="btn btnn btn-default" data-target="#EditInfo">編輯</button>
-                                    <button class="btn btn-default" data-toggle="modal" data-target="#DelInfo">刪除</button>
-                                    </td>
+                                    <th style="text-align: center;">年度</th>
+                                    <th style="text-align: center;">股東會性質</th>
+                                    <th style="text-align: center;">檔案名稱</th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
-                            @endforeach
+                            </thead>
+                            <tbody>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -201,6 +126,85 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog">
+            {!! Form::open(array('url'=>'/Admin/Investor/index/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+            {{csrf_field()}}
+            <input name="id" type="hidden">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">編輯</h4>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    <label class="control-label">*新增年度</label>
+                                                    <select class="selectpicker selectbtn edityear" name="year" id="edityear">
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    <label class="control-label">*股東會性質</label>
+                                                    <input type="stakeholder" class="form-control Type" id="inputclass1" placeholder="請輸入性質" name="type" />
+                                                </div>
+                                            </div>
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <label class="control-label">*原檔案名稱</label>
+                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" name="fileName" readonly/>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                </br>
+                                                    <label class="control-label">*夾帶PDF檔案</label>
+                                                    {!! Form::file('file', array('class' => 'filestyle','accept'=>'application/pdf','onchange' => 'checkfile(this)')) !!}
+                                                </div>
+                                            </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            關閉
+                                        </button>
+                    {!! Form::submit('送出', array('class'=>'btn btn-primary')) !!}
+                    </div>
+                </div>
+            {!! Form::close() !!}
+            </div>
+        </div>
+
+        <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            {!! Form::open(array('url'=>'/Admin/Investor/index/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+            {{csrf_field()}}
+            <input name="id" type="hidden">      
+                <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <label class="control-label">確認刪除嗎？</label>
+                                                </div>
+                                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                         {!! Form::submit('確認', array('class'=>'btn btn-primary')) !!}
+                    </div>
+                </div>
+            {!! Form::close() !!}
+            </div>
+        </div>
+        
 @endsection
 
 @section('script')
@@ -208,11 +212,20 @@
 <script>
     $( document ).ready(function() {
         getYear();
+
+        changeYear($("#changeyear").val());
+        $('#changeyear').on('change',function(){
+            $(".each-table tbody").html("");
+            changeYear($(this).val());
+        });
+
+        
     });
 
     function getYear(){
         $("#changeyear").html("");
         $("#addyear").html("");
+        $("#edityear").html("");
         var d = new Date();
         var n = d.getFullYear()+1;
         var years = [];
@@ -225,6 +238,11 @@
             $.each(years, function(index, element) {
                 eachTable.append("<option>"+ element +"</option>");
             });
+        
+        var eachTable = $("#edityear");
+            $.each(years, function(index, element) {
+                eachTable.append("<option>"+ element +"</option>");
+            });
 
         var eachTable = $("#changeyear");
             eachTable.append("<option>全部</option>");
@@ -233,6 +251,52 @@
             });
     }
     
+
+    function changeYear(year){
+        var values = [];
+        var json = @json($data);
+        if(year=="全部"){
+            for(var i = 0; i < json.length; i++){  
+                    values.push(json[i]);
+            }
+        }else{
+            for(var i = 0; i < json.length; i++){
+                if(json[i].Year==year){
+                    values.push(json[i]);
+                }
+            }
+        }
+
+        var eachTable = $(".each-table tbody");
+            $.each(values, function(index, element) {
+                eachTable.append("<tr>" +
+                                    "<td data-th='年度' class='Year' style='text-align: center;'>"+ element.Year +"</td>"+
+                                    "<td data-th='股東會性質' class='Type' style='text-align: center;'>"+ element.Type +"</td>"+
+                                    "<td data-th='檔案名稱' class='FileName' style='text-align: center;'>"+ element.FileName +"</td>"+
+                                    "<td data-th='修改' style='text-align: center;'>"+
+                                        "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
+                                        "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+
+                                    "<td>"+
+                                "</tr>");
+            });
+        
+        $('.openedit').on("click", function () {
+            var tr = $(this).closest('tr');
+            var year = tr.find(".Year").text();
+            var type = tr.find(".Type").text();
+            var fileName = tr.find(".FileName").text();
+            var filePath = tr.find(".FilePath").text();
+            $('.edityear').selectpicker('val', year);
+            $("#EditInfo").find("input[name='id']").val($(this).attr('data-id'));
+            $("#EditInfo").find("input[name='type']").val(type);
+            $("#EditInfo").find("input[name='fileName']").val(fileName);
+            $("#EditInfo").find("label[name='filePath']").val(filePath);
+        });
+        $('.opendel').on("click", function () {           
+            $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
+            
+        });
+    }
 
     function checkfile(obj){
         pdffile = obj.value.substr(obj.value.lastIndexOf(".")).toLowerCase();

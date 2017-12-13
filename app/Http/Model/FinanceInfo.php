@@ -10,6 +10,6 @@ class FinanceInfo extends Model
     protected $primaryKey='id';
 
     protected $fillable = [
-       'Year', 'CHFileName', 'CHFilePath', 'ENFileName', 'ENFilePath'
+       'Year', 'Type', 'FileName', 'FilePath'
     ];
 }

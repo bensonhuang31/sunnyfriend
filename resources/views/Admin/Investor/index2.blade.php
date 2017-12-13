@@ -4,6 +4,31 @@
     <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                <div>
+                    @if (session('status')=='success')
+                        <div class="alert alert-success">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @elseif (session('status')=='failed')
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                </div>
                     <div class="col-sm-12 col-md-12">
                         <h3>盈收公告</h3>
                     </div>
@@ -30,6 +55,8 @@
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
+                            {!! Form::open(array('url'=>'/Admin/Investor/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                            {{csrf_field()}}
                                 <div class="modal-content">
                                     <!-- Modal Header -->
                                     <div class="modal-header">
@@ -41,43 +68,51 @@
                                     </div>
                                     <!-- Modal Body -->
                                     <div class="modal-body">
-                                        <form class="form-horizontal" role="form">
                                             <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-6">
+                                                <div class="col-lg-5 col-md-5 col-sm-12">
                                                     <label class="control-label" for="inputEmail3">*新增年度</label>
-                                                    <select class="selectpicker selectbtn">
-                                                        <option>107</option>
-                                                        <option>106</option>
-                                                        <option>105</option>
+                                                    <select class="selectpicker selectbtn" id="addyear" name="year">
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <label class="control-label">*月</label>
+                                                    <select class="selectpicker selectbtn" name="month">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>    
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="form-row form-group">
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <label class="control-label">*月</label>
-                                                    <input type="email" class="form-control" id="inputmonth" placeholder="請輸入月" />
-                                                </div>
+                                                
                                                 <div class="col-lg-4 col-md-4 col-sm-12">
                                                     <label class="control-label">*營收金額</label>
-                                                    <input type="email" class="form-control" id="inputmoney" placeholder="請輸入營收金額" />
+                                                    <input type="text" class="form-control" id="inputmoney" placeholder="請輸入營收金額" name="amount"/>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-12">
                                                     <label class="control-label">*年度增(減)比例</label>
-                                                    <input type="email" class="form-control" id="inputradio" placeholder="請輸入年度增(減)比例" />
+                                                    <input type="text" class="form-control" id="inputradio" placeholder="請輸入年度增(減)比例" name="consolidated"/>
                                                 </div>
                                             </div>
-                                        </form>
                                     </div>
                                     <!-- Modal Footer -->
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">
                                             Close
                                         </button>
-                                        <button type="button" class="btn btn-primary">
-                                            確認上傳
-                                        </button>
+                                        {!! Form::submit('確認上傳', array('class'=>'btn btn-primary')) !!}
                                     </div>
                                 </div>
+                            {!! Form::close() !!}
                             </div>
                         </div>
                     </div>
@@ -86,6 +121,9 @@
     </div>
     <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
+        {!! Form::open(array('url'=>'/Admin/Investor/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+        {{csrf_field()}}
+        <input name="id" type="hidden">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
@@ -97,32 +135,32 @@
                 </div>
                 <!-- Modal Body -->
                 <div class="modal-body">
-                                        <form class="form-horizontal" role="form">
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="營收金額" />
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="年度增(減)比例" />
-                                                </div>
-                                            </div>
-                                        </form>
+                    <div class="form-row form-group">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label class="control-label">*營收金額</label>
+                            <input type="text" class="form-control" id="inputfilename2" placeholder="營收金額"  name="amount"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label class="control-label">*年度增(減)比例</label>
+                            <input type="text" class="form-control" id="inputfilename2" placeholder="年度增(減)比例" name="consolidated" />
+                        </div>
+                    </div>
                 </div>
                 <!-- Modal Footer -->
                 <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            關閉
-                                        </button>
-                                        <button type="button" class="btn btn-primary">
-                                            確認
-                                        </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                 {!! Form::submit('送出', array('class'=>'btn btn-primary')) !!}
                 </div>
             </div>
+        {!! Form::close() !!}
         </div>
     </div>
 
     <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
+        {!! Form::open(array('url'=>'/Admin/Investor/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+        {{csrf_field()}}
+        <input name="id" type="hidden"> 
             <div class="modal-content">
                 <!-- Modal Body -->
                 <div class="modal-body">
@@ -136,14 +174,11 @@
                 </div>
                 <!-- Modal Footer -->
                 <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            關閉
-                                        </button>
-                                        <button type="button" class="btn btn-primary">
-                                            確認
-                                        </button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                    {!! Form::submit('確認', array('class'=>'btn btn-primary')) !!}
                 </div>
             </div>
+        {!! Form::close() !!}
         </div>
     </div>
 
@@ -168,125 +203,6 @@
                                         </tr>
                                 </thead>
                                 <tbody class="middle" style="text-align: center;">
-                                <!--
-                                    <tr>
-                                        <td>一月(Jan.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Jan" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>二月(Feb.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Feb" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>三月(Mar.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Mar" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>四月(Apr.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Apr" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>五月(May)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="May" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>六月(Jun.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Jun" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>七月(Jul.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Jul" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>八月(Aug.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Aug" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>九月(Sept.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Sep" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>十月(Oct.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Oct" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>十一月(Nov.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Nov" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>十二月(Dec.)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" id="Dec" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>本年累計(Total)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        <button class="btn btnn btn-default" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                        <button class="btn btn-default" data-toggle="modal" data-target="#DelInfo">刪除</button>
-                                        </td>
-                                    </tr>
-                                    -->
                                 </tbody>
                             </table>
                         </div>
@@ -312,7 +228,7 @@
         $("#changeyear").html("");
         $("#addyear").html("");
         var d = new Date();
-        var n = d.getFullYear();
+        var n = d.getFullYear()+1;
         var years = [];
         for(var y=0; y<5; y++){
             years.push(n);
@@ -345,12 +261,12 @@
         var AmountTotal = 0;
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
-                                    "<td>"+ element.Month +"</td>"+
-                                    "<td>"+ element.Amount +"</td>"+
-                                    "<td>"+ element.Consolidated +"</td>"+
+                                    "<td data-th='月' class='Month' style='text-align: center;'>"+ element.Month +"</td>"+
+                                    "<td data-th='營收金額' class='Amount' style='text-align: center;'>"+ element.Amount +"</td>"+
+                                    "<td data-th='年度增減比例' class='Consolidated' style='text-align: center;'>"+ element.Consolidated +"</td>"+
                                     "<td>"+
-                                        "<button class='btn btnn btn-default' data-toggle='modal' data-target='#EditInfo'>編輯</button>"+
-                                        "<button class='btn btn-default' data-toggle='modal' data-target='#DelInfo'>刪除</button>"+
+                                        "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
+                                        "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+
                                     "<td>"+
                                 "</tr>");
                 AmountTotal+=parseInt(element.Amount);
@@ -362,7 +278,22 @@
                                 "<td>"+ AmountTotal +"</td>"+
                                 "<td></td>"+"<td></td>"+"<td></td>"+
                             "</tr>");
+
+        $('.openedit').on("click", function () {
+            var tr = $(this).closest('tr');
+            var amount = tr.find(".Amount").text();
+            var consolidated = tr.find(".Consolidated").text();
+            $("#EditInfo").find("input[name='id']").val($(this).attr('data-id'));
+            $("#EditInfo").find("input[name='amount']").val(amount);
+            $("#EditInfo").find("input[name='consolidated']").val(consolidated);
+        });
+
+        $('.opendel').on("click", function () {           
+            $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));    
+        });
     }
+
+    
 
 </script>
 

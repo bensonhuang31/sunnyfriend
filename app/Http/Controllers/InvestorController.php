@@ -33,12 +33,12 @@ class InvestorController extends Controller
 
     //後台股東會相關資訊
     public function AdminShareholdersIndex(){        
-        $shareholdersinfo = ShareholdersInfo::all();
+        $shareholdersinfo = ShareholdersInfo::orderBy('Year', 'desc')->get();
         return view('Admin.Investor.index')->with('data',$shareholdersinfo);
     }
 
     
-    public function AdminShareholdersUploadFile(Request $request){
+    public function AdminShareholdersCreate(Request $request){
         /**/
 
         $input = Input::all();
@@ -70,6 +70,39 @@ class InvestorController extends Controller
         return redirect('Admin/Investor/index');
     }
 
+    public function AdminShareholdersEdit(Request $request){
+        $input=Input::except('_token','_method');
+        $file = $request->file('file');
+        $shareholders = Shareholdersinfo::find($input['id']);
+        if($file==NULL){
+            $shareholders->Year = $input['year'];
+            $shareholders->Type = $input['type'];
+            $shareholders->save();
+        }else{
+            $destinationPath = 'assets\images\CorporateGovernance';
+            $newFileName = date("YmdHis").'shareholders.'.$file->getClientOriginalExtension();
+            $shareholders->Year = $input['year'];
+            $shareholders->Type = $input['type'];
+            $shareholders->FileName = $file->getClientOriginalName();
+            $shareholders->FilePath = $newFileName;
+            $shareholders->save();
+            $file->move($destinationPath,$newFileName);            
+        }
+        return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
+    }
+
+    public function AdminShareholdersDelete(){
+        $input=Input::all();
+        $re=Shareholdersinfo::where('id',$input['id'])->delete();
+
+        if($re){
+            return redirect()->back()->with(['status' => 'success','message' => '刪除成功']);
+        }else{
+            return redirect()->back()->with(['status' => 'failed','message' => '刪除失敗']);
+        }
+        
+    }
+
     //後台營收公告
     public function AdminRevenueIndex(){        
         $revenueinfo = RevenueInfo::all();
@@ -77,36 +110,87 @@ class InvestorController extends Controller
     }
 
     
-    public function AdminRevenueUploadFile(Request $request){
+    public function AdminRevenueCreate(Request $request){
         /**/
 
         $input = Input::all();
-        $message=[
-            'file.mimes'=> '請上傳PDF'
+        
+        $rules =[
+            'amount'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
+            'consolidated'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
         ];
 
-        $this->validate($request, [
-            'file'=> 'required|mimes:pdf',
-        ],$message);
-        
-        $file = $request->file('file');
-        
-        
-        //Move Uploaded File
-        $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
+        $message=[
+            'amount.required'=> '營收金額不能為空白',
+            'consolidated.required'=> '年度增減比例不能為空白',
+            'amount.regex'=> '營收金額請輸入數字',
+            'consolidated.regex'=> '年度增減比例請輸入數字',
+        ];
 
-        $destinationPath = 'assets\images\CorporateGovernance';
-        /**/
-        $revenueinfo = new RevenueInfo;
-        $revenueinfo->Year = $input['year'];
-        $revenueinfo->Type = $input['type'];
-        $revenueinfo->FileName = $file->getClientOriginalName();
-        $revenueinfo->FilePath = $newFileName;
-        $revenueinfo->save();
-         
-        $file->move($destinationPath,$newFileName);
+        $Validator=Validator::make($input,$rules,$message);
+        
+        if($Validator->passes()){
+            $revenueinfo = RevenueInfo::all()->where('Year', '=', $input['year'])->where('Month', '=', $input['month']);
+            if($revenueinfo->isEmpty()){
+                $revenue = new RevenueInfo;
+                $revenue->Year = $input['year'];
+                $revenue->Month = $input['month'];
+                $revenue->Amount = $input['amount'];
+                $revenue->Consolidated = $input['consolidated'];
+                $revenue->save();
+    
+                return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
+            }else{
+                return redirect()->back()->with(['status' => 'failed','message' => '新增失敗']);
+            }
+        }else{
+            return back()->withErrors($Validator);
+        }
+    }
 
-        return redirect('Admin/Investor/index2');
+    public function AdminRevenueEdit(Request $request){
+
+        $input = Input::all();
+        $revenueinfo = RevenueInfo::find($input['id']);
+
+        $rules =[
+            'amount'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
+            'consolidated'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
+        ];
+
+        $message=[
+            'amount.required'=> '營收金額不能為空白',
+            'consolidated.required'=> '年度增減比例不能為空白',
+            'amount.regex'=> '營收金額請輸入數字',
+            'consolidated.regex'=> '年度增減比例請輸入數字',
+        ];
+
+        $Validator=Validator::make($input,$rules,$message);
+        
+        if($Validator->passes()){
+            $revenueinfo->Amount = $input['amount'];
+            $revenueinfo->Consolidated = $input['consolidated'];
+            $revenueinfo->save();
+            return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
+        }else{
+            return back()->withErrors($Validator);
+        }
+
+       
+
+        return redirect('Admin/Investor/index');
+    }
+
+    public function AdminRevenueDelete(){
+        $input=Input::all();
+        $re=RevenueInfo::where('id',$input['id'])->delete();
+
+        if($re){
+            return redirect()->back()->with(['status' => 'success','message' => '刪除成功']);
+        }else{
+            return redirect()->back()->with(['status' => 'failed','message' => '刪除失敗']);
+        }
+        
     }
 
     //後台財務資訊
@@ -115,8 +199,7 @@ class InvestorController extends Controller
         return view('Admin.Investor.index3')->with('data',$financeinfo);
     }
 
-    
-    public function AdminFinanceUploadFile(Request $request){
+    public function AdminFinanceCreate(Request $request){
         /**/
 
         $input = Input::all();
@@ -147,4 +230,42 @@ class InvestorController extends Controller
 
         return redirect('Admin/Investor/index3');
     }
+
+    public function AdminFinanceEdit(Request $request){
+        
+        $input = Input::all();
+        $financeinfo = FinanceInfo::find($input['id']);
+        
+        $file = $request->file('file');
+        
+        if($file==NULL){
+            $financeinfo->Year = $input['year'];
+            $financeinfo->Type = $input['type'];
+            $financeinfo->save();
+        }else{
+            $destinationPath = 'assets\images\CorporateGovernance';
+            $newFileName = date("YmdHis").'financeinfo.'.$file->getClientOriginalExtension();
+            $financeinfo->Year = $input['year'];
+            $financeinfo->Type = $input['type'];
+            $financeinfo->FileName = $file->getClientOriginalName();
+            $financeinfo->FilePath = $newFileName;
+            $financeinfo->save();
+            $file->move($destinationPath,$newFileName);            
+        }
+
+        return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
+        }
+        
+    public function AdminFinanceDelete(){
+        $input=Input::all();
+        $re=FinanceInfo::where('id',$input['id'])->delete();
+        
+        if($re){
+            return redirect()->back()->with(['status' => 'success','message' => '刪除成功']);
+        }else{
+            return redirect()->back()->with(['status' => 'failed','message' => '刪除失敗']);
+        }
+                
+    }
+        
 }
