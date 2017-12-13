@@ -8,11 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../css/backside.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
     <link href="../../css/bootstrap-select.css" rel="stylesheet">
-    <script src="../../js/layer.js"></script>
-    
 </head>
 
 <body>

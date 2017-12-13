@@ -21,18 +21,9 @@
                         </div>
                     </div>
                     <div class="col-sm-2 col-md-2" id="content">
-                        <div class="dropdown">
-                            <h4>選擇類型</h4>
-                            <select class="selectpicker selectbtn">
-                                <option>中文財報</option>
-                                <option>英文財報</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2" id="content">
                         </br>
                         </br>
-                        <button class="btn btnn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增檔案</button>
+                        <button class="btn btnn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
                         </br>
                         </br>
                         <!-- Modal -->
