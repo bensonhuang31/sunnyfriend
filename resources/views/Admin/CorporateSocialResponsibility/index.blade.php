@@ -4,6 +4,31 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                <div>
+                    @if (session('status')=='success')
+                        <div class="alert alert-success">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @elseif (session('status')=='failed')
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                </div>
                     <div class="col-sm-12 col-md-12">
                         <h3>企業社會責任報告書</h3>
                         <!-- Page Heading -->
@@ -62,17 +87,6 @@
         <!-- /.container-fluid -->
         <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">
-            <div>
-            @if(count($errors)>0)
-                @if(is_object($errors))
-                    @foreach($errors->all() as $error)
-                        <p>{{$error}}</p>
-                    @endforeach
-                @else
-                    <p>{{(string)$errors}}</p>
-                @endif
-            @endif
-            </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <table class="table table2 ">
@@ -80,6 +94,8 @@
                                 <th >上傳順序</th>
                                 <th >檔案名稱</th>
                                 <th >檔案</th>
+                                <th ></th>
+                                <th ></th>
                             </tr>
                             <tr>
                                 @foreach($data as $csr)
@@ -87,6 +103,7 @@
                                         <td data-th="年度">{{$csr->id}}</td>
                                         <td data-th="檔案名稱">{{$csr->OriFileName}}</td>
                                         <td data-th="檔案">{{$csr->FileName}}</td>
+                                        <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$csr->id}}" data-target='#DelInfo'>刪除</button><td>
                                     </tr>
                                 @endforeach
                             </tr>
@@ -110,5 +127,44 @@
             </div>
         </div>
     </div>
+
+        <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/index/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+            {{csrf_field()}}
+            <input name="id" type="hidden">
+                <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <label class="control-label">確認刪除嗎？</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                         {!! Form::submit('確認', array('class'=>'btn btn-primary')) !!}
+                    </div>
+                </div>
+            {!! Form::close() !!}
+            </div>
+        </div>
+
+@endsection
+
+@section('script')
+
+<script>
+    $( document ).ready(function() {
+        $('.opendel').on("click", function () {           
+            $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
+            
+        });
+    });
+</script>
 
 @endsection

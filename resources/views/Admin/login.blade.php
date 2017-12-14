@@ -7,7 +7,7 @@
     <title>日友環保科技股份有限公司後端登入介面</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
@@ -22,18 +22,18 @@
         <div class="card card-container">
             <h2 class='login_title text-center'>Login</h2>
             <hr>
-            <form class="form-signin">
+            {!! Form::open(array('url'=>'/Admin/Login','method'=>'POST')) !!}
                 <span id="reauth-email" class="reauth-email"></span>
                 <p class="input_title">帳號</p>
-                <input type="text" id="inputEmail" class="login_box" required autofocus>
+                <input type="text" id="inputEmail" class="login_box" name="user_name" required autofocus>
                 <p class="input_title">密碼</p>
-                <input type="password" id="inputPassword" class="login_box" required>
+                <input type="password" id="inputPassword" class="login_box" name="user_pass" required>
                 <div id="remember" class="checkbox">
                     <label>
                     </label>
                 </div>
                 <button class="btn btn-lg btn-primary" type="submit">Login</button>
-            </form>
+            {!! Form::close() !!}
             <!-- /form -->
         </div>
         <!-- /card-container -->

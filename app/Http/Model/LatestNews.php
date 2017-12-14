@@ -10,6 +10,6 @@ class LatestNews extends Model
     protected $primaryKey='id';
 
     protected $fillable = [
-       'title', 'Date', 'Content'
+       'title', 'Date', 'Content', 'FileName', 'FilePath'
     ];
 }

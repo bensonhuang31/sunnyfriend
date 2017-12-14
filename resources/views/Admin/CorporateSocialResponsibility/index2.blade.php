@@ -34,7 +34,7 @@
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
                                                     <label class="control-label">*請選擇PDF檔案</label>
-                                                    {!! Form::file('file', array('class' => 'btn btn-default filestyle','style'=>'width:100%')) !!}
+                                                    {!! Form::file('file', array('class' => 'btn btn-default filestyle','style'=>'width:100%','accept'=>'application/pdf')) !!}
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
@@ -81,12 +81,15 @@
                                 <th >上傳順序</th>
                                 <th >檔案名稱</th>
                                 <th >檔案</th>
+                                <th ></th>
+                                <th ></th>
                             </tr>
                             @foreach($data as $potato)
                                 <tr>
                                     <td data-th="年度">{{$potato->id}}</td>
                                     <td data-th="檔案名稱">{{$potato->OriFileName}}</td>
                                     <td data-th="檔案">{{$potato->FileName}}</td>
+                                    <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$potato->id}}" data-target='#DelInfo'>刪除</button><td>
                                 </tr>
                             @endforeach
                         </table>
@@ -108,4 +111,43 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+            {{csrf_field()}}
+            <input name="id" type="hidden">
+                <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <label class="control-label">確認刪除嗎？</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                         {!! Form::submit('確認', array('class'=>'btn btn-primary')) !!}
+                    </div>
+                </div>
+            {!! Form::close() !!}
+            </div>
+        </div>
+@endsection
+
+@section('script')
+
+<script>
+    $( document ).ready(function() {
+        $('.opendel').on("click", function () {           
+            $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
+            
+        });
+    });
+</script>
+
 @endsection

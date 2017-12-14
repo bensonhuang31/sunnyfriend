@@ -18,6 +18,16 @@
                             </ul>
                         </div>
                     @endif
+
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </div>
                     <div class="col-sm-12 col-md-12">
                         <h3>股東會相關資訊</h3>
@@ -60,7 +70,7 @@
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                                     <label class="control-label">*股東會性質</label>
-                                                    <input type="stakeholder" class="form-control" id="inputclass1" placeholder="請輸入性質" name="type"/>
+                                                    <input type="stakeholder" class="form-control" id="inputclass1" placeholder="請輸入性質" name="type" required/>
                                                 </div>
                                             </div>
                                             <div class="form-row form-group">
@@ -75,9 +85,7 @@
 
                                     <!-- Modal Footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            關閉
-                                        </button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
                                         {!! Form::submit('確認上傳', array('class'=>'btn btn-primary')) !!}
                                     </div>
                                 </div>
@@ -143,36 +151,33 @@
                     </div>
                     <!-- Modal Body -->
                     <div class="modal-body">
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <label class="control-label">*新增年度</label>
-                                                    <select class="selectpicker selectbtn edityear" name="year" id="edityear">
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                                    <label class="control-label">*股東會性質</label>
-                                                    <input type="stakeholder" class="form-control Type" id="inputclass1" placeholder="請輸入性質" name="type" />
-                                                </div>
-                                            </div>
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                                    <label class="control-label">*原檔案名稱</label>
-                                                    <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" name="fileName" readonly/>
-                                                </div>
-
-                                                <div class="col-lg-6 col-md-12 col-sm-12">
-                                                </br>
-                                                    <label class="control-label">*夾帶PDF檔案</label>
-                                                    {!! Form::file('file', array('class' => 'filestyle','accept'=>'application/pdf','onchange' => 'checkfile(this)')) !!}
-                                                </div>
-                                            </div>
+                        <div class="form-row form-group">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label class="control-label">*新增年度</label>
+                                <select class="selectpicker selectbtn edityear" name="year" id="edityear">
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label class="control-label">*股東會性質</label>
+                                <input type="stakeholder" class="form-control Type" id="inputclass1" placeholder="請輸入性質" name="type" required/>
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <label class="control-label">*原檔案名稱</label>
+                                <input type="text" class="form-control" id="inputfilename2" placeholder="請輸入名稱" name="fileName" readonly/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                </br>
+                                <label class="control-label">*夾帶PDF檔案</label>
+                                {!! Form::file('file', array('class' => 'filestyle','accept'=>'application/pdf','onchange' => 'checkfile(this)')) !!}
+                            </div>
+                        </div>
                     </div>
                     <!-- Modal Footer -->
                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            關閉
-                                        </button>
-                    {!! Form::submit('送出', array('class'=>'btn btn-primary')) !!}
+                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                        {!! Form::submit('送出', array('class'=>'btn btn-primary')) !!}
                     </div>
                 </div>
             {!! Form::close() !!}
@@ -187,18 +192,16 @@
                 <div class="modal-content">
                     <!-- Modal Body -->
                     <div class="modal-body">
-                        <form class="form-horizontal" role="form">
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                                    <label class="control-label">確認刪除嗎？</label>
-                                                </div>
-                                            </div>
-                        </form>
+                        <div class="form-row form-group">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <label class="control-label">確認刪除嗎？</label>
+                            </div>
+                        </div>
                     </div>
                     <!-- Modal Footer -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
-                         {!! Form::submit('確認', array('class'=>'btn btn-primary')) !!}
+                        {!! Form::submit('確認', array('class'=>'btn btn-primary')) !!}
                     </div>
                 </div>
             {!! Form::close() !!}
@@ -212,20 +215,15 @@
 <script>
     $( document ).ready(function() {
         getYear();
-
         changeYear($("#changeyear").val());
         $('#changeyear').on('change',function(){
             $(".each-table tbody").html("");
             changeYear($(this).val());
         });
-
-        
     });
 
     function getYear(){
-        $("#changeyear").html("");
-        $("#addyear").html("");
-        $("#edityear").html("");
+        $("#changeyear #addyear #edityear").html("");
         var d = new Date();
         var n = d.getFullYear()+1;
         var years = [];

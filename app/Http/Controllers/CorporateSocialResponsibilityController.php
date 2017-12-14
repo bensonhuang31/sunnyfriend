@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 use App\Http\Model\PotatoMagazine;
 use App\Http\Model\CSRMagazine;
 use Validator;
@@ -14,27 +15,27 @@ class CorporateSocialResponsibilityController extends Controller
     public function index()
     {        
         $potatomagazine = PotatoMagazine::all();
-        return view('CorporateSocialResponsibility.index5')->with('data',$potatomagazine);
+        return view('CorporateSocialResponsibility.VanellusLiterature')->with('data',$potatomagazine);
     }
 
     public function csr()
     {        
         $csrmagazine = CSRMagazine::all();
-        return view('CorporateSocialResponsibility.index4')->with('data',$csrmagazine);
+        return view('CorporateSocialResponsibility.CSRReport')->with('data',$csrmagazine);
     }
 
     //後台土豆鳥文學誌
-    public function AdminPotatoIndex()
-    {        
+    public function AdminPotatoIndex(){        
         $potatomagazine = PotatoMagazine::all();
         return view('Admin.CorporateSocialResponsibility.index2')->with('data',$potatomagazine);
     }
 
     
-    public function AdminPotatoUploadFile(Request $request){
+    public function AdminPotatoCreate(Request $request){
         /**/
         $message=[
-            'file.mimes'=> '請上傳PDF'
+            'file.mimes'=> '請上傳PDF',
+            'image.mimes'=> '請上傳圖片必須為 jpeg, png, jpg, gif, svg 的檔案'
         ];
 
         $this->validate($request, [
@@ -66,18 +67,29 @@ class CorporateSocialResponsibilityController extends Controller
         return redirect('Admin/CorporateSocialResponsibility/index2');
     }
 
+    public function AdminPotatoDelete(){
+        $input=Input::all();
+        $re=PotatoMagazine::where('id',$input['id'])->delete();
+
+        if($re){
+            return redirect()->back()->with(['status' => 'success','message' => '刪除成功']);
+        }else{
+            return redirect()->back()->with(['status' => 'failed','message' => '刪除失敗']);
+        }
+        
+    }
+
     //後台企業社會責任報告書
-    public function AdminCsrIndex()
-    {        
+    public function AdminCsrIndex(){        
         $csrmagazine = CSRMagazine::all();
         return view('Admin.CorporateSocialResponsibility.index')->with('data',$csrmagazine);
     }
 
-    
-    public function AdminCsrUploadFile(Request $request){
+    public function AdminCsrCreate(Request $request){
         /**/
         $message=[
-            'file.mimes'=> '請上傳PDF'
+            'file.mimes'=> '請上傳PDF',
+            'image.mimes'=> '請上傳圖片必須為 jpeg, png, jpg, gif, svg 的檔案'
         ];
 
         $this->validate($request, [
@@ -106,6 +118,18 @@ class CorporateSocialResponsibilityController extends Controller
         $image->move($destinationPath,$newImgName);
         $file->move($destinationPath,$newFileName);
 
-        return redirect('Admin/CorporateSocialResponsibility/index');
+        return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
+    }
+
+    public function AdminCsrDelete(){
+        $input=Input::all();
+        $re=CSRMagazine::where('id',$input['id'])->delete();
+
+        if($re){
+            return redirect()->back()->with(['status' => 'success','message' => '刪除成功']);
+        }else{
+            return redirect()->back()->with(['status' => 'failed','message' => '刪除失敗']);
+        }
+        
     }
 }

@@ -2,8 +2,8 @@
 
 @section('content')
     <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
+        <div class="container-fluid">
+            <div class="row">
                 <div>
                     @if (session('status')=='success')
                         <div class="alert alert-success">
@@ -29,9 +29,8 @@
                         </div>
                     @endif
                 </div>
-                    <div class="col-sm-12 col-md-12">
-                        <h3>盈收公告</h3>
-                    </div>
+                <div class="col-sm-12 col-md-12">
+                    <h3>盈收公告</h3>
                 </div>
                 <!-- Page Heading -->
                 <div class="row" id="main">
@@ -93,22 +92,19 @@
                                                 </div>
                                             </div>
                                             <div class="form-row form-group">
-                                                
                                                 <div class="col-lg-4 col-md-4 col-sm-12">
                                                     <label class="control-label">*營收金額</label>
-                                                    <input type="text" class="form-control" id="inputmoney" placeholder="請輸入營收金額" name="amount"/>
+                                                    <input type="text" class="form-control" id="inputmoney" placeholder="請輸入營收金額" name="amount" required/>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-12">
                                                     <label class="control-label">*年度增(減)比例</label>
-                                                    <input type="text" class="form-control" id="inputradio" placeholder="請輸入年度增(減)比例" name="consolidated"/>
+                                                    <input type="text" class="form-control" id="inputradio" placeholder="請輸入年度增(減)比例" name="consolidated" required/>
                                                 </div>
                                             </div>
                                     </div>
                                     <!-- Modal Footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            Close
-                                        </button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                         {!! Form::submit('確認上傳', array('class'=>'btn btn-primary')) !!}
                                     </div>
                                 </div>
@@ -118,7 +114,39 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
+
+    <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="table-responsive dragscroll">
+                        <table class="table table2  each-table">
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" rowspan="4">月
+                                        <br>(Month)</td>
+                                    <td class="middle" class="middle" colspan="4">合併營收
+                                        <br>(Consolidated)</td>
+                                </tr>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">營收金額
+                                            <br>(New Revenue)</td>
+                                        <td class="middle">年度增(減)比例
+                                            <br>(YoY Change)</td>
+                                        <td class="middle" colspan="2"></td>
+                                </tr>
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         {!! Form::open(array('url'=>'/Admin/Investor/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
@@ -127,29 +155,29 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">
-                                            <span aria-hidden="true">&times;</span>
-                                            <span class="sr-only">Close</span>
-                                        </button>
-                                        <h4 class="modal-title" id="myModalLabel">修改</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">修改</h4>
                 </div>
                 <!-- Modal Body -->
                 <div class="modal-body">
                     <div class="form-row form-group">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <label class="control-label">*營收金額</label>
-                            <input type="text" class="form-control" id="inputfilename2" placeholder="營收金額"  name="amount"/>
+                            <input type="text" class="form-control" id="inputfilename2" placeholder="營收金額"  name="amount" required/>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <label class="control-label">*年度增(減)比例</label>
-                            <input type="text" class="form-control" id="inputfilename2" placeholder="年度增(減)比例" name="consolidated" />
+                            <input type="text" class="form-control" id="inputfilename2" placeholder="年度增(減)比例" name="consolidated" required/>
                         </div>
                     </div>
                 </div>
                 <!-- Modal Footer -->
                 <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
-                 {!! Form::submit('送出', array('class'=>'btn btn-primary')) !!}
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                    {!! Form::submit('送出', array('class'=>'btn btn-primary')) !!}
                 </div>
             </div>
         {!! Form::close() !!}
@@ -182,34 +210,6 @@
         </div>
     </div>
 
-    <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="table-responsive dragscroll">
-                            <table class="table table2  each-table">
-                                <thead>
-                                    <tr style="background-color: #AACD03;text-align: center;">
-                                        <td class="middle" rowspan="4">月
-                                            <br>(Month)</td>
-                                        <td class="middle" class="middle" colspan="4">合併營收
-                                            <br>(Consolidated)</td>
-                                        <tr style="background-color: #AACD03;text-align: center;">
-                                            <td class="middle">營收金額
-                                                <br>(New Revenue)</td>
-                                            <td class="middle">年度增(減)比例
-                                                <br>(YoY Change)</td>
-                                            <td class="middle" colspan="2"></td>
-                                        </tr>
-                                </thead>
-                                <tbody class="middle" style="text-align: center;">
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
 @endsection
 
 @section('script')
@@ -225,8 +225,7 @@
     });
 
     function getYear(){
-        $("#changeyear").html("");
-        $("#addyear").html("");
+        $("#changeyear #addyear").html("");
         var d = new Date();
         var n = d.getFullYear()+1;
         var years = [];

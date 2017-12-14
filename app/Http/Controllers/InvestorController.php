@@ -16,19 +16,19 @@ class InvestorController extends Controller
     public function index()
     {        
         $shareholdersinfo = ShareholdersInfo::all();
-        return view('Investor.index')->with('data',$shareholdersinfo);
+        return view('Investor.IFSM')->with('data',$shareholdersinfo);
     }
 
     public function revenue()
     {        
         $revenueinfo = RevenueInfo::all();
-        return view('Investor.index2')->with('data',$revenueinfo);
+        return view('Investor.MonthlyRevenue')->with('data',$revenueinfo);
     }
 
     public function finance()
     {        
         $financeinfo = FinanceInfo::all();
-        return view('Investor.index3')->with('data',$financeinfo);
+        return view('Investor.FinancialInformation')->with('data',$financeinfo);
     }
 
     //後台股東會相關資訊
@@ -36,11 +36,8 @@ class InvestorController extends Controller
         $shareholdersinfo = ShareholdersInfo::orderBy('Year', 'desc')->get();
         return view('Admin.Investor.index')->with('data',$shareholdersinfo);
     }
-
     
     public function AdminShareholdersCreate(Request $request){
-        /**/
-
         $input = Input::all();
         $message=[
             'file.mimes'=> '請上傳PDF'
@@ -51,13 +48,12 @@ class InvestorController extends Controller
         ],$message);
         
         $file = $request->file('file');
-        
-        
+            
         //Move Uploaded File
         $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
 
         $destinationPath = 'assets\images\CorporateGovernance';
-        /**/
+
         $shareholdersinfo = new ShareholdersInfo;
         $shareholdersinfo->Year = $input['year'];
         $shareholdersinfo->Type = $input['type'];
@@ -67,11 +63,11 @@ class InvestorController extends Controller
          
         $file->move($destinationPath,$newFileName);
 
-        return redirect('Admin/Investor/index');
+        return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
     }
 
     public function AdminShareholdersEdit(Request $request){
-        $input=Input::except('_token','_method');
+        $input=Input::all();
         $file = $request->file('file');
         $shareholders = Shareholdersinfo::find($input['id']);
         if($file==NULL){
@@ -108,11 +104,8 @@ class InvestorController extends Controller
         $revenueinfo = RevenueInfo::all();
         return view('Admin.Investor.index2')->with('data',$revenueinfo);
     }
-
     
     public function AdminRevenueCreate(Request $request){
-        /**/
-
         $input = Input::all();
         
         $rules =[
@@ -149,7 +142,6 @@ class InvestorController extends Controller
     }
 
     public function AdminRevenueEdit(Request $request){
-
         $input = Input::all();
         $revenueinfo = RevenueInfo::find($input['id']);
 
@@ -175,10 +167,6 @@ class InvestorController extends Controller
         }else{
             return back()->withErrors($Validator);
         }
-
-       
-
-        return redirect('Admin/Investor/index');
     }
 
     public function AdminRevenueDelete(){
@@ -200,8 +188,6 @@ class InvestorController extends Controller
     }
 
     public function AdminFinanceCreate(Request $request){
-        /**/
-
         $input = Input::all();
         $message=[
             'file.mimes'=> '請上傳PDF'
@@ -254,7 +240,7 @@ class InvestorController extends Controller
         }
 
         return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
-        }
+    }
         
     public function AdminFinanceDelete(){
         $input=Input::all();

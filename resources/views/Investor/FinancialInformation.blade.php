@@ -105,27 +105,30 @@
     }
 
     function changeYear(year){
-        var values = [];
+        var CHvalues = [];
+        var ENvalues = [];
         var json = @json($data);
 
         for(var i = 0; i < json.length; i++){
-            if(json[i].Year==year){
-                values.push(json[i]);
+            if(json[i].Year==year && json[i].Type=="中文報表"){
+                CHvalues.push(json[i]);
+            }else if(json[i].Year==year && json[i].Type=="英文報表"){
+                ENvalues.push(json[i]);
             }
         }
 
         var eachTable = $(".CHeach-table tbody");
-            $.each(values, function(index, element) {
+            $.each(CHvalues, function(index, element) {
                 eachTable.append("<tr>" +
-                                    "<td data-th='檔案名稱'>"+ element.CHFileName +"</td>"+
+                                    "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
                                     "<td data-th='檔案下載'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></td>"+
                                 "</tr>");
             });
 
         var eachTable = $(".ENeach-table tbody");
-            $.each(values, function(index, element) {
+            $.each(ENvalues, function(index, element) {
                 eachTable.append("<tr>" +
-                                    "<td data-th='檔案名稱'>"+ element.ENFileName +"</td>"+
+                                    "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
                                     "<td data-th='檔案下載'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></td>"+
                                 "</tr>");
             });
