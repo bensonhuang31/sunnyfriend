@@ -89,39 +89,29 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
-                        <table class="table table2 ">
-                            <tr>
-                                <th >上傳順序</th>
-                                <th >檔案名稱</th>
-                                <th >檔案</th>
-                                <th ></th>
-                                <th ></th>
-                            </tr>
-                            <tr>
+                        <table class="table table2 each-table">
+                            <thead>
+                                <tr>
+                                    <!--<th>上傳順序</th>-->
+                                    <th>檔案名稱</th>
+                                    <th>圖片名稱</th>
+                                    <th>圖片</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
                                 @foreach($data as $csr)
                                     <tr>
-                                        <td data-th="年度">{{$csr->id}}</td>
+                                        <!--<td data-th="年度">{{$csr->id}}</td>-->
                                         <td data-th="檔案名稱">{{$csr->OriFileName}}</td>
-                                        <td data-th="檔案">{{$csr->FileName}}</td>
+                                        <td data-th="圖片名稱">{{$csr->OriImageName}}</td>
+                                        <td data-th="圖片"><a href="#" class=""><img src="../../assets/images/CorporateSocialResponsibility/csr報告書/{{$csr->ImageName}}" alt="..."  width="72" height="100"></a></td>
                                         <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$csr->id}}" data-target='#DelInfo'>刪除</button><td>
                                     </tr>
                                 @endforeach
-                            </tr>
+                            </tbody>
                         </table>
-                    </div>
-                </div>
-                <div class="footerline"></div>
-                 <div class="row">
-                    <div class="col-md-12" style="right">
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -160,6 +150,11 @@
 
 <script>
     $( document ).ready(function() {
+
+        $('.each-table').DataTable( {
+            "ordering": false, 
+        });
+
         $('.opendel').on("click", function () {           
             $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
             

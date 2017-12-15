@@ -118,20 +118,6 @@
                         </table>
                     </div>
                 </div>
-                 <div class="footerline"></div>
-                 <div class="row">
-                    <div class="col-md-12" style="right">
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -209,7 +195,7 @@
         </div>
         
 @endsection
-
+<script></script>
 @section('script')
 
 <script>
@@ -219,6 +205,10 @@
         $('#changeyear').on('change',function(){
             $(".each-table tbody").html("");
             changeYear($(this).val());
+        });
+
+        $('.each-table').DataTable( {
+            "ordering": false, 
         });
     });
 
@@ -270,7 +260,7 @@
                                     "<td data-th='年度' class='Year' style='text-align: center;'>"+ element.Year +"</td>"+
                                     "<td data-th='股東會性質' class='Type' style='text-align: center;'>"+ element.Type +"</td>"+
                                     "<td data-th='檔案名稱' class='FileName' style='text-align: center;'>"+ element.FileName +"</td>"+
-                                    "<td data-th='修改' style='text-align: center;'>"+
+                                    "<td data-th='修改' style='text-align: right;'>"+
                                         "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
                                         "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+
                                     "<td>"+

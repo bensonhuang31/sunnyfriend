@@ -62,69 +62,69 @@
                             <li class=" dropdown ">
                                 <a href="AboutSF/CompanyProfile.php" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="AboutSF/CompanyProfile.php">基本資料</a></li>
-                                    <li><a href="AboutSF/ServiceAndArea.php">營業項目與範圍</a></li>
-                                    <li><a href="AboutSF/Structure.php">公司架構圖</a></li>
-                                    <li><a href="AboutSF/ManagingTeam.php">經營團隊</a></li>
-                                    <li><a href="AboutSF/Organization.php">公司組織圖</a></li>
-                                    <li><a href="AboutSF/Shareholding.php">股權結構</a></li>
-                                    <li><a href="AboutSF/IIC.php">法說會</a></li>
+                                    <li><a href="AboutSF/CompanyProfile">基本資料</a></li>
+                                    <li><a href="AboutSF/ServiceAndArea">營業項目與範圍</a></li>
+                                    <li><a href="AboutSF/Structure">公司架構圖</a></li>
+                                    <li><a href="AboutSF/ManagingTeam">經營團隊</a></li>
+                                    <li><a href="AboutSF/Organization">公司組織圖</a></li>
+                                    <li><a href="AboutSF/Shareholding">股權結構</a></li>
+                                    <li><a href="AboutSF/IIC">法說會</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                             <a href="News/NewsCenter.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
+                             <a href="News/NewsCenter" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="News/latestNews.php">最新消息</a></li>
-                                    <li><a href="News/ImportantNews.php">重要訊息</a></li>
-                                    <li><a href="News/WebsiteLinks.php">環保連結</a></li>
+                                    <li><a href="News/latestNews">最新消息</a></li>
+                                    <li><a href="News/ImportantNews">重要訊息</a></li>
+                                    <li><a href="News/WebsiteLinks">環保連結</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="CorporateGovernance/index.php" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
+                                <a href="CorporateGovernance/index" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="CorporateGovernance/GovernancePreface.php">公司治理</a></li>
-                                    <li><a href="CorporateGovernance/Regulations.php">運作規章</a></li>
-                                    <li><a href="CorporateGovernance/InternalAuditing.php">內稽組織運作</a></li>
-                                    <li><a href="CorporateGovernance/BoardofDirectors.php">董事會</a></li>
-                                    <li><a href="CorporateGovernance/Diversification.php">董事成員多元化</a></li>
+                                    <li><a href="CorporateGovernance/GovernancePreface">公司治理</a></li>
+                                    <li><a href="CorporateGovernance/Regulations">運作規章</a></li>
+                                    <li><a href="CorporateGovernance/InternalAuditing">內稽組織運作</a></li>
+                                    <li><a href="CorporateGovernance/BoardofDirectors">董事會</a></li>
+                                    <li><a href="CorporateGovernance/Diversification">董事成員多元化</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                      <a href="Investor/IFSM.php" class="dropdown-toggle" data-toggle="dropdown">投資人專區 <i class="fa fa-angle-down"></i></a>
+                                      <a href="Investor/IFSM" class="dropdown-toggle" data-toggle="dropdown">投資人專區 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="Investor/IFSM.php">股東會相關資訊</a></li>
-                                    <li><a href="Investor/MonthlyRevenue.php">盈收公告</a></li>
-                                    <li><a href="Investor/FinancialInformation.php">財務資訊</a></li>
-                                    <li><a href="Investor/ExchangeLink.php">重大訊息參考網站</a></li>
-                                    <li><a href="Investor/DividendPolicy.php">股利資訊</a></li>
-                                    <li><a href="Investor/InvestmentCentre.php">投資人連絡窗口</a></li>
+                                    <li><a href="Investor/IFSM">股東會相關資訊</a></li>
+                                    <li><a href="Investor/MonthlyRevenue">盈收公告</a></li>
+                                    <li><a href="Investor/FinancialInformation">財務資訊</a></li>
+                                    <li><a href="Investor/ExchangeLink">重大訊息參考網站</a></li>
+                                    <li><a href="Investor/DividendPolicy">股利資訊</a></li>
+                                    <li><a href="Investor/InvestmentCentre">投資人連絡窗口</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="CorporateSocialResponsibility/Preface.php" class="dropdown-toggle" data-toggle="dropdown">企業社會責任 <i class="fa fa-angle-down"></i></a>
+                                <a href="CorporateSocialResponsibility/Preface" class="dropdown-toggle" data-toggle="dropdown">企業社會責任 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="CorporateSocialResponsibility/Preface.php">導言</a></li>
-                                    <li><a href="CorporateSocialResponsibility/Policy.php">企業社會責任政策</a></li>
-                                    <li><a href="CorporateSocialResponsibility/ResultsAndplans.php">具體作為及計畫</a></li>
-                                    <li><a href="CorporateSocialResponsibility/CSRReport.php">企業社會責任報告書</a></li>
-                                    <li><a href="CorporateSocialResponsibility/VanellusLiterature.php">土豆鳥文學誌</a></li>
+                                    <li><a href="CorporateSocialResponsibility/Preface">導言</a></li>
+                                    <li><a href="CorporateSocialResponsibility/Policy">企業社會責任政策</a></li>
+                                    <li><a href="CorporateSocialResponsibility/ResultsAndplans">具體作為及計畫</a></li>
+                                    <li><a href="CorporateSocialResponsibility/CSRReport">企業社會責任報告書</a></li>
+                                    <li><a href="CorporateSocialResponsibility/VanellusLiterature">土豆鳥文學誌</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                    <a href="Stakeholder/MaterialIssues.php" class="dropdown-toggle" data-toggle="dropdown">利害關係人  <i class="fa fa-angle-down"></i></a>
+                                    <a href="Stakeholder/MaterialIssues" class="dropdown-toggle" data-toggle="dropdown">利害關係人  <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="Stakeholder/MaterialIssues.php">關係人鑑別議題與措施</a></li>
-                                    <li><a href="Stakeholder/EmployeeBenefits.php">員工福利措施</a></li>
-                                    <li><a href="Stakeholder/SMP.php">供應商管理政策</a></li>
-                                    <li><a href="Stakeholder/GrievanceMachinery.php">申訴管道</a></li>
-                                    <li><a href="Stakeholder/UBGM.php">不道德行為檢舉制度</a></li>
+                                    <li><a href="Stakeholder/MaterialIssues">關係人鑑別議題與措施</a></li>
+                                    <li><a href="Stakeholder/EmployeeBenefits">員工福利措施</a></li>
+                                    <li><a href="Stakeholder/SMP">供應商管理政策</a></li>
+                                    <li><a href="Stakeholder/GrievanceMachinery">申訴管道</a></li>
+                                    <li><a href="Stakeholder/UBGM">不道德行為檢舉制度</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="Environmentalprotection/index.php">環保單位查核行程</a></li>
-                                    <li><a href="Environmentalprotection/index2.php">環境監測</a></li>
+                                    <li><a href="Environmentalprotection/index">環保單位查核行程</a></li>
+                                    <li><a href="Environmentalprotection/index2">環境監測</a></li>
                                 </ul>
                             </li>
                 

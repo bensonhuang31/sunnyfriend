@@ -4,6 +4,31 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                <div>
+                    @if (session('status')=='success')
+                        <div class="alert alert-success">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @elseif (session('status')=='failed')
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>{{session('message')}}</li>
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                </div>
                     <div class="col-sm-12 col-md-12">
                         <h3>土豆鳥文學誌</h3>
                         <!-- Page Heading -->
@@ -62,51 +87,31 @@
         <!-- /.container-fluid -->
         <div class="back2 ack3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">
-            <div>
-            @if(count($errors)>0)
-                @if(is_object($errors))
-                    @foreach($errors->all() as $error)
-                        <p>{{$error}}</p>
-                    @endforeach
-                @else
-                    <p>{{(string)$errors}}</p>
-                @endif
-            @endif
-
-            </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
-                        <table class="table table2 ">
-                            <tr>
-                                <th >上傳順序</th>
-                                <th >檔案名稱</th>
-                                <th >檔案</th>
-                                <th ></th>
-                                <th ></th>
-                            </tr>
-                            @foreach($data as $potato)
+                        <table class="table table2 each-table">
+                            <thead>
                                 <tr>
-                                    <td data-th="年度">{{$potato->id}}</td>
-                                    <td data-th="檔案名稱">{{$potato->OriFileName}}</td>
-                                    <td data-th="檔案">{{$potato->FileName}}</td>
-                                    <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$potato->id}}" data-target='#DelInfo'>刪除</button><td>
+                                    <!--<th>上傳順序</th>-->
+                                    <th>檔案名稱</th>
+                                    <th>圖片名稱</th>
+                                    <th>圖片</th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
-                            @endforeach
+                            </thead>
+                            <tbody>
+                                @foreach($data as $potato)
+                                    <tr>
+                                        <!--<td data-th="年度">{{$potato->id}}</td>-->
+                                        <td data-th="檔案名稱">{{$potato->OriFileName}}</td>
+                                        <td data-th="圖片名稱">{{$potato->OriImageName}}</td>
+                                        <td data-th="圖片"><a href="#" class=""><img src="../../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/{{$potato->ImageName}}" alt="..."  width="72" height="100"></a></td>
+                                        <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$potato->id}}" data-target='#DelInfo'>刪除</button><td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
                         </table>
-                    </div>
-                </div>
-                <div class="footerline"></div>
-                 <div class="row">
-                    <div class="col-md-12" style="right">
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -143,6 +148,11 @@
 
 <script>
     $( document ).ready(function() {
+
+        $('.each-table').DataTable( {
+            "ordering": false, 
+        });
+
         $('.opendel').on("click", function () {           
             $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
             

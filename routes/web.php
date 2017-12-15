@@ -106,3 +106,8 @@ Route::group(['middlewareGroups' => ['web']], function () {
     Route::post('/Admin/News/index/edit','NewsController@AdminNewsEdit');
     Route::post('/Admin/News/index/delete','NewsController@AdminNewsDelete');
 });
+
+
+Route::group(['middleware' => ['web','admin.login']],function(){
+    
+});

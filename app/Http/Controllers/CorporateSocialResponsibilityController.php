@@ -64,7 +64,7 @@ class CorporateSocialResponsibilityController extends Controller
         $image->move($destinationPath,$newImgName);
         $file->move($destinationPath,$newFileName);
 
-        return redirect('Admin/CorporateSocialResponsibility/index2');
+        return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
     }
 
     public function AdminPotatoDelete(){

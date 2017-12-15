@@ -11,6 +11,7 @@
     <script src="../../js/jquery-1.11.1.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <link href="../../css/bootstrap-select.css" rel="stylesheet">
+    <link href="../../css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -88,6 +89,7 @@
     </script>
     <script src="../../js/bootstrap-select.min.js"></script>
     <script src="../../js/bootstrap-filestyle.min.js"></script>
+    <script src="../../js/jquery.dataTables.min.js"></script>
     @yield('script')
 </body>
 

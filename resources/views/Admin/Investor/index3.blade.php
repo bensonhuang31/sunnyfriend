@@ -128,7 +128,6 @@
                                     <th style="text-align: center;">年度</th>
                                     <th style="text-align: center;">類型</th>
                                     <th style="text-align: center;">檔案名稱</th>
-                                    <th style="text-align: center;">檔案</th>
                                     <th></th>
                                     <th></th>
                                 </tr>
@@ -136,20 +135,6 @@
                             <tbody>
                             </tbody>
                         </table>
-                    </div>
-                </div>
-                <div class="footerline"></div>
-                 <div class="row">
-                    <div class="col-md-12" style="right">
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -244,6 +229,10 @@
             $(".each-table tbody").html("");
             changeYear($(this).val());
         });
+
+        $('.each-table').DataTable( {
+            "ordering": false, 
+        });
     });
 
     function getYear(){
@@ -295,7 +284,6 @@
                                     "<td data-th='年度' class='Year' style='text-align: center;'>"+ element.Year +"</td>"+
                                     "<td data-th='類型' class='Type' style='text-align: center;'>"+ element.Type +"</td>"+
                                     "<td data-th='檔案名稱' class='FileName' style='text-align: center;'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></td>"+
                                     "<td style='text-align: center;'>"+
                                         "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
                                         "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+

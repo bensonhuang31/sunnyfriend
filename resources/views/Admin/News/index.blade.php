@@ -96,6 +96,40 @@
             <!-- /.row -->
         </div>
 
+        <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <table class="table table2 each-table">
+                            <thead>
+                                <tr>
+                                    <th>發布日期</th>
+                                    <th>標題</th>
+                                    <th>內容</th>
+                                    <th>檔案名稱</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($data as $news)
+                                    <tr>
+                                        <td data-th="發布日期" class="Date">{{$news->Date}}</td>
+                                        <td data-th="標題" class="Title">{{$news->Title}}</td>
+                                        <td data-th="內容" class="Content" value="{{$news->Content}}">{{mb_substr($news->Content,0,50,"utf-8")}}</td>
+                                        <td data-th="檔案名稱" class="FileName">{{$news->FileName}}</td>
+                                        <td data-th="修改">
+                                        <button class="btn btnn btn-default openedit" data-id="{{$news->id}}" data-toggle="modal" data-target="#EditInfo">編輯</button>
+                                        <button class="btn btn-default opendel" data-id="{{$news->id}}" data-toggle="modal" data-target="#DelInfo">刪除</button>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                             {!! Form::open(array('url'=>'/Admin/News/index/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
@@ -178,54 +212,9 @@
             </div>
         </div>
 
-     
-        <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <table class="table table2 ">
-                            <tr>
-                                <th>發布日期</th>
-                                <th>標題</th>
-                                <th>內容</th>
-                                <th>檔案名稱</th>
-                                <th></th>
-                            </tr>
-                            @foreach($data as $news)
-                                <tr>
-                                    <td data-th="發布日期" class="Date">{{$news->Date}}</td>
-                                    <td data-th="標題" class="Title">{{$news->Title}}</td>
-                                    <td data-th="內容" class="Content" value="{{$news->Content}}">{{mb_substr($news->Content,0,50,"utf-8")}}</td>
-                                    <td data-th="檔案名稱" class="FileName">{{$news->FileName}}</td>
-                                    <td data-th="修改">
-                                    <button class="btn btnn btn-default openedit" data-id="{{$news->id}}" data-toggle="modal" data-target="#EditInfo">編輯</button>
-                                    <button class="btn btn-default opendel" data-id="{{$news->id}}" data-toggle="modal" data-target="#DelInfo">刪除</button>
-                                    </td>
-                                </tr>
-                            @endforeach
-
-                        </table>
-                    </div>
-                </div>
-                 <div class="footerline"></div>
-                 <div class="row">
-                    <div class="col-md-12" style="right">
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- /.container-fluid -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="../../js/moment.min.js"></script>
+        <script src="../../js/bootstrap-datetimepicker.min.js"></script>
 @endsection
 
 @section('script')
@@ -233,16 +222,6 @@
 <script>
 
     $( document ).ready(function() {
-        var len = 80; // 超過80個字以"..."取代
-            $(".JQellipsis").each(function(i) {
-                if ($(this).text().length > len) {
-                    $(this).attr("title", $(this).text());
-                    var text = $(this).text().substring(0, len - 1) + "...";
-                    $(this).text(text);
-                }
-            });
-
-        
         $(function() {              
            // Bootstrap DateTimePicker v4
            $('#datetimCreate').datetimepicker({
@@ -251,7 +230,12 @@
            $('#datetimeEdit').datetimepicker({
                  format: 'YYYY-MM-DD'
            });
-        });      
+        });    
+
+        $('.each-table').DataTable( {
+            "ordering": false, 
+        });
+
         $('.openedit').on("click", function () {
             var tr = $(this).closest('tr');
             var date = tr.find(".Date").text();
@@ -264,6 +248,7 @@
             $("#EditInfo").find("input[name='filename']").val(filename);
             $("#EditInfo").find("textarea[name='content']").text(content);
         });
+
         $('.opendel').on("click", function () {           
             $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
             
