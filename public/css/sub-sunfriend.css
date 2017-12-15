@@ -4,7 +4,7 @@
 
 @media (max-width: 1023px) {
     .body {
-        padding-top: 68px;
+        padding-top: 82px;
     }
 }
 
@@ -921,6 +921,23 @@ tr:nth-child(odd) {
     background: #e3f5c9;
 }
 
+.table1 th {
+    background-color: #AACD03;
+    white-space: nowrap;
+    padding: 20px 8px 20px 20px!important;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #555555;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table1 td {
+    white-space: nowrap;
+    padding: 10px 8px 10px 20px!important;
+    line-height: 1.7!important;
+    text-align: center;
+}
 
 
 .table2 th {
@@ -930,9 +947,8 @@ tr:nth-child(odd) {
     line-height: 1.7;
     font-weight: 500;
     color: #555555;
-    font-size: 15px;
+    font-size: 14px;
 }
-
 
 
 .table2 td {
@@ -966,6 +982,12 @@ tr:nth-child(odd) {
     font-size: 15px;
 }
 
+h6{
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 1pt;
+    font-weight: 400;
+}
 
 /*CSR陰影*/
 

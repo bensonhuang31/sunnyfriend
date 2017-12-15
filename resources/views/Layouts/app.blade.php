@@ -139,12 +139,12 @@
     
     @yield('content')
     <!--footer start from here-->
-    <footer class="wow fadeInDown" data-wow-delay="0.5s">
+   <footer class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 footerleft">
                     <div class="logofooter">關於日友</div>
-                    <p>本公司於2000年通過ISO14001(NSF) 環境管理系統標準驗證，並將環境政策徹底落實。本公司為提供客戶更完善服務，所經營業務廣泛，但以事業廢棄物之清除、處理、掩埋與政府焚化廠之承攬、興建、操作為主要業務。</p>
+                    <p>日友公司成立於1994年，2000年成為潤泰集團環保產業基地，也是臺灣第一家專業生物醫療廢棄物焚化處理公司，日友公司擁有從研發、設計、製圖、操作、系統改良等全方位的廢棄物處理經驗，不斷革新並擴展海外市場，使日友公司營運得以穩定成長。</p>
                     <div><img alt="Brand" class="img-responsive" src="../assets/images/footerLOGO.svg"></div>
                 </div>
                 <div class="col-md-8 col-sm-6 paddingtop-bottom">

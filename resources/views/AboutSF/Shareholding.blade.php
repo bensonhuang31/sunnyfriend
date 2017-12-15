@@ -2,7 +2,7 @@
 
 @section('content')
     <!--banner-->
-    <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
+     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../assets/images/about/about_banner.jpg">
         <div class="titleBox clearfix">
             <h2>關於日友</h2>
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.html">首頁</a>
                     <span>></span>
                     <span>關於日友</span>
                     <span>></span>
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <!--關於日友-->
+    <!--股權結構-->
     <div class=" wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
@@ -30,6 +30,72 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-12 col-sm-12">
+                        <h4>主要股東名單&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="color:#999999";>106年4月17日</span></h4>
+                    <div class="table-responsive dragscroll">
+                        <table class="table table2 ">
+                            <tr>
+                                <th width="40%">主要股東名稱</th>
+                                <th>持有股數</th>
+                                <th>持股比例</th>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">潤泰創新國際股份有限公司</td>
+                                <td data-th="持有股數">29,677,148</td>
+                                <td data-th="持股比例">26.62%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">元挺投資股份有限公司</td>
+                                <td data-th="持有股數">8,316,496</td>
+                                <td data-th="持股比例">7.46%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">富邦人壽保險股份有限公司</td>
+                                <td data-th="持有股數">5,300,000</td>
+                                <td data-th="持股比例">4.75%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">任盈實業股份有限公司</td>
+                                <td data-th="持有股數">3,884,224</td>
+                                <td data-th="持股比例">3.48%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">成智投資股份有限公司</td>
+                                <td data-th="持有股數">3,075,871</td>
+                                <td data-th="持股比例">2.76%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">潤泰全球股份有限公司</td>
+                                <td data-th="持有股數">2,309,999</td>
+                                <td data-th="持股比例">2.07%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">德銀託管雷查德小型公司股票信託投資專戶</td>
+                                <td data-th="持有股數">1,752,000</td>
+                                <td data-th="持股比例">1.57%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">臺銀保管索美塞得新興市場小型企業基金公司</td>
+                                <td data-th="持有股數">1,412,000</td>
+                                <td data-th="持股比例">1.27%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">匯豐託管馬修亞洲小型企業基金投資專戶</td>
+                                <td data-th="持有股數">1,331,000</td>
+                                <td data-th="持股比例">1.19%</td>
+                            </tr>
+                            <tr>
+                                <td data-th="主要股東名稱">國泰人壽保險股份有限公司</td>
+                                <td data-th="持有股數">1,129,900</td>
+                                <td data-th="持股比例">1.01%</td>
+                            </tr>
+                        </table>
+                    </div>
+                                            <h6>(股權比例達百分之五以上或股權比例佔前十名之股東名稱、持股數及比例)</h6>
+                </div>
+            </div>
+            <div class="back99"></div>    
+            <div class="row wow fadeInDown" data-wow-delay="0.5s">
                 <div class="col-md-12 col-sm-12">
                         <h4>法人股東之主要股東&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="color:#999999";>106年5月31日</span></h4>
                     <div class="table-responsive dragscroll">
@@ -62,7 +128,7 @@
             <div class="back99"></div>
         </div>
     </div>
-    <!--公司沿革-->
+    <!--股東代表者-->
     <div class=" back3 wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">

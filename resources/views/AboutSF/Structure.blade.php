@@ -54,7 +54,7 @@
             <div class="col-md-3 col-sm-3">
                 <img alt="Brand" class="img-responsive center-block back1991" src="../assets/images/house-01.svg">
                 <div class="about-text text-center">
-                    <h4>良衛環保工程(股)公司</h4>
+                    <h4>良衛環保工程(股)公司<h5>(甲級廢棄物清除)</h5></h4>
                     <p>服務北部醫療院所，民國92年配合環保署清理和平醫院SARS廢棄物。</p>
                     <br>
                     <p>桃園市觀音區大潭里1鄰桃大一街37號
@@ -65,7 +65,7 @@
             <div class="col-md-3 col-sm-3">
                 <img alt="Brand" class="img-responsive center-block back1991" src="../assets/images/house-01.svg">
                 <div class="about-text text-center">
-                    <h4>青新環境工程(股)公司</h4>
+                    <h4>青新環境工程(股)公司<h5>(甲級廢棄物清除)</h5></h4>
                     <p>服務中部地區醫療院所、全台灣事業廢棄物清理、廢水處理…等業務。</p>
                     <br>
                     <p>雲林縣長北村元長鄉元東路1-20號
@@ -76,7 +76,7 @@
             <div class="col-md-3 col-sm-3">
                 <img alt="Brand" class="img-responsive center-block back1991" src="../assets/images/house-01.svg">
                 <div class="about-text text-center">
-                    <h4>正新環保工程(股)公司</h4>
+                    <h4>正新環保工程(股)公司<h5>(甲級廢棄物清除)</h5></h4>
                     <p>服務南台灣、東部及離島等地區之醫療院所。</p>
                     <br>
                     <p>台南市仁德區一甲里忠義三街55號
