@@ -27,6 +27,10 @@
                     <div class="col-md-4 col-sm-6">
                         <h3>{{$v->Title}}<div class="titleline"></div></h3>
                         <p>{{$v->Date}}</p>
+                        <!--
+                        <h3>重要訊息-公開資訊觀測站<div class="titleline"></div></h3>
+                        <p>2017/11/30</p>
+                        -->
                     </div>
                 </div>
                 <div class="row">
@@ -35,6 +39,12 @@
                         <a href="{{url('News/Detail/'.$v->id)}}">
                             <div class="btn btn-default">閱讀更多</div>
                         </a>
+                        <!--
+                        <p class="JQellipsis">日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力日友環保科技股份有限公司(SUNNY FRIEND ENVIRONMENTAL TECHNOLOGY CO., LTD.)創立於1994年，在全體多位員工努力不懈下，不僅是全國第一家申請核准之感染性事業廢棄物處理機構，更於2003年SARS爆發之際，為行政院環保署指定之SARS廢棄物處理廠，本公司不惜投入大量的人力</p>
+                         <a href="news-subindex.html">
+                        <div class="btn btn-default">閱讀更多</div>
+                        -->
+                    </a>
                     </div>
                 </div>
                 <div class="back99"> </div>

@@ -47,6 +47,12 @@
                                 <th width="60%">檔案名稱</th>
                                 <th width="10%" style="text-align: center;">檔案下載</th>
                             </tr>
+                            <!--
+                            <tr>
+                            <td data-th="檔案名稱">106年 第1季合併財報</td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            </tr>
+                            -->
                         </thead>
                         <tbody>
 	                    </tbody>
@@ -64,6 +70,12 @@
                                     <th width="60%">檔案名稱</th>
                                     <th width="10%" style="text-align: center;">檔案下載</th>
                                 </tr>
+                                <!--
+                                <tr>
+                                 <td data-th="檔案名稱">2017 Consolidated Financial Statements Season1</td>
+                                 <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                                </tr>
+                                -->
                             </thead>
                             <tbody>
 	                        </tbody>

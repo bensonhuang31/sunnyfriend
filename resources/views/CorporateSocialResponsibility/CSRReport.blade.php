@@ -45,6 +45,25 @@
                         </div>
                     </div>
                 @endforeach
+                <!--
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="ih-item square effect14  csrshadow potatobirdmargin">
+                        <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2014.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="ih-item square effect14  csrshadow potatobirdmargin">
+                        <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2015.jpg">
+                    </div>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="ih-item square effect14  csrshadow potatobirdmargin">
+                        <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2016.jpg">
+                    </div>
+
+                </div>
+                -->
             </div>
         </div>
     </div>
