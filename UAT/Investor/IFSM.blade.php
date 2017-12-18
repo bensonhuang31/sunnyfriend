@@ -144,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.blade.php">首頁</a>
                     <span>></span>
                     <span>投資人專區</span>
                     <span>></span>
@@ -302,14 +302,23 @@ function scrollFunction() {
             }
         }
 
-        var eachTable = $(".each-table tbody");
+        if(year==2015){
+            var eachTable = $(".each-table tbody");
+            eachTable.append("<tr>" +
+                                    "<td data-th='股東會性質' style='text-align: center;'>2015股東會</td>"+
+                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
+                                    "<td data-th='檔案下載'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=105&mtype=F' target='_blank'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                "</tr>");
+        }else{
+            var eachTable = $(".each-table tbody");
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='股東會性質' style='text-align: center;'>"+ element.Type +"</td>"+
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/IFSM/"+ element.Year +"/"+ element.FileName +"'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/IFSM/"+ element.Year +"/"+ element.FileName +"' target='_blank'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
+        }
     }
 
 </script>

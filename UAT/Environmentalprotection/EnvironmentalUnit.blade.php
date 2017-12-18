@@ -144,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.blade.php">首頁</a>
                     <span>></span>
                     <span>環境保護</span>
                     <span>></span>

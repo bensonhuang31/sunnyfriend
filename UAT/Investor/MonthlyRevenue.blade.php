@@ -144,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.blade.php">首頁</a>
                     <span>></span>
                     <span>投資人專區</span>
                     <span>></span>
@@ -316,21 +316,36 @@ function scrollFunction() {
 
         var eachTable = $(".each-table tbody");
         var AmountTotal = 0;
+        var ConsolidatedTotal = 0;
+
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td>"+ element.Month +"</td>"+
-                                    "<td>"+ element.Amount +"</td>"+
+                                    "<td>"+ addCommas(element.Amount) +"</td>"+
                                     "<td>"+ element.Consolidated +"</td>"+
                                 "</tr>");
-                AmountTotal+=parseInt(element.Amount);
-                
+                AmountTotal += parseInt(element.Amount);
+                ConsolidatedTotal += parseFloat(element.Consolidated);
             });
 
             eachTable.append("<tr>" +
                                 "<td>本年累計(Total)</td>"+
-                                "<td>"+ AmountTotal +"</td>"+
-                                "<td></td>"+
+                                "<td>"+ addCommas(AmountTotal) +"</td>"+
+                                "<td>"+ ConsolidatedTotal +"</td>"+
                             "</tr>");
+    }
+
+    function addCommas(val) {
+        var aIntNum = val.toString().split('.');
+        var iIntPart = aIntNum[0];
+        var iFlootPart = aIntNum.length > 1 ? '.' + aIntNum[1] : ''; 
+        var rgx = /(\d+)(\d{3})/;
+        if (iIntPart.length >= 5) {
+            while (rgx.test(iIntPart)) { 
+                iIntPart = iIntPart.replace(rgx, '$1' + ',' + '$2'); 
+            } 
+        } 
+        return iIntPart + iFlootPart;
     }
 
 </script>
