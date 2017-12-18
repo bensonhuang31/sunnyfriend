@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -171,7 +171,7 @@
                                 <h4>公開資訊觀測站</h4>
                                 <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。(查詢代號：8341)......</p>
                             </div>
-                            <img class="img-responsive img" src="../assets/images/news/new01.jpg">
+                            <a href="../News/latestNews.blade.php"><img class="img-responsive img" src="../assets/images/news/new01.jpg"></a>
                             <div class="info"></div>
                         </div>
                     </div>
@@ -182,9 +182,9 @@
                             <div class="news-btn">
                                 <h1>簡介影片</h1>
                                 <h4>公司介紹</h4>
-                                <div class="btn btn-default newsbtn1 ">觀看中文版</div>
-                                <div class="btn btn-default newsbtn1 ">觀看英文版</div>
-                                <div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div>
+                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=438s"><div class="btn btn-default newsbtn1 ">觀看中文版</div></a>
+                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=318s"><div class="btn btn-default newsbtn1 ">觀看英文版</div></a>
+                                <a href="../AboutSF/IIC.blade.php"><div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div></a>
                             </div>
                             <img class="img-responsive img" src="../assets/images/news/new02.jpg">
                             <div class="info"></div>

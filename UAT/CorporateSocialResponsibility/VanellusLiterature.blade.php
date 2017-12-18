@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -182,27 +182,27 @@
             -->
                 <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第一期.jpg">
+                            <a href="../assets/file/CorporateSocialResponsibility/第一冊.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第一期.jpg"></a>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第二期.jpg">
+                            <a href="../assets/file/CorporateSocialResponsibility/第二冊.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第二期.jpg"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第三期.jpg">
+                            <a href="../assets/file/CorporateSocialResponsibility/第三冊.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第三期.jpg"></a>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第四期.jpg">
+                            <a href="../assets/file/CorporateSocialResponsibility/第四冊.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第四期.jpg"></a>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第五期.jpg">
+                            <a href="../assets/file/CorporateSocialResponsibility/第五冊.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第五期.jpg"></a>
                         </div>
                 </div>
             </div>

@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -169,7 +169,7 @@
                         </br>
                         </br>
                     </p>
-                    <p>設立日期：1994年</br>董事長兼任總經理：張芳正</br>資&nbsp;本&nbsp;額：新台幣壹拾壹億壹仟伍佰萬元</br>{{Lang::get('sunnyfriend.CompanyProfile-5')}}</p>
+                    <p>設立日期：1994年</br>董事長兼任總經理：張芳正</br>資&nbsp;本&nbsp;額：新台幣壹拾壹億壹仟伍佰萬元</br>總公司地址：雲林縣元長鄉元東路1-20號</p>
                 </div>
                 <div class="col-md-8 col-sm-6">
                     <div class="service-box1">

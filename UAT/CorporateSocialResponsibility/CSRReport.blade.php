@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -181,18 +181,18 @@
             -->
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                        <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2014.jpg">
+                        <a href="../assets/file/CSRReport/2014CSR.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2014.jpg"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                        <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2015.jpg">
+                        <a href="../assets/file/CSRReport/2015CSR.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2015.jpg"></a>
                     </div>
                 </div>
                 <div class="clearfix visible-xs-block"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                        <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2016.jpg">
+                        <a href="../assets/file/CSRReport/2016CSR.pdf"><img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/csr報告書/2016.jpg"></a>
                     </div>
 
                 </div>

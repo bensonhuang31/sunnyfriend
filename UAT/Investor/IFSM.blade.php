@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -165,7 +165,6 @@
                 <div class="col-md-12 col-sm-12">
                     <select class="selectpicker selectbtn" id="changeyear">
                         <!--
-                        <option>2017</option>
                         <option>2016</option>
                         <option>2015</option>
                         -->
@@ -281,7 +280,7 @@ function scrollFunction() {
         var d = new Date();
         var n = d.getFullYear();
         var years = [];
-        for(var y=0; y<5; y++){
+        for(var y=0; y<6; y++){
             years.push(n);
             n--;
         }
@@ -294,7 +293,8 @@ function scrollFunction() {
 
     function changeYear(year){
         var values = [];
-        var json = [{"id":8,"Year":2016,"Type":"\u80a1\u6771\u6703\u5404\u9805\u8b70\u6848\u53c3\u8003\u8cc7\u6599","FileName":"2016_\u80a1\u6771\u6703\u5404\u9805\u8b70\u6848\u53c3\u8003\u8cc7\u6599.pdf","FilePath":"20171218155417file.pdf","created_at":"2017-12-18 15:54:17","updated_at":"2017-12-18 15:54:17"},{"id":9,"Year":2016,"Type":"\u80a1\u6771\u6703\u5e74\u5831","FileName":"2016_\u80a1\u6771\u6703\u5e74\u5831.pdf","FilePath":"20171218155505file.pdf","created_at":"2017-12-18 15:55:05","updated_at":"2017-12-18 15:55:05"},{"id":10,"Year":2016,"Type":"\u80a1\u6771\u6703\u8b70\u4e8b\u9304","FileName":"2016_\u80a1\u6771\u6703\u8b70\u4e8b\u9304.pdf","FilePath":"20171218155523file.pdf","created_at":"2017-12-18 15:55:23","updated_at":"2017-12-18 15:55:23"},{"id":11,"Year":2016,"Type":"\u958b\u6703\u901a\u77e5","FileName":"2016_\u958b\u6703\u901a\u77e5.pdf","FilePath":"20171218155538file.pdf","created_at":"2017-12-18 15:55:38","updated_at":"2017-12-18 15:55:38"},{"id":12,"Year":2016,"Type":"\u8b70\u4e8b\u624b\u518a\u53ca\u6703\u8b70\u88dc\u5145\u8cc7\u6599","FileName":"2016_\u8b70\u4e8b\u624b\u518a\u53ca\u6703\u8b70\u88dc\u5145\u8cc7\u6599.pdf","FilePath":"20171218155555file.pdf","created_at":"2017-12-18 15:55:55","updated_at":"2017-12-18 15:55:55"},{"id":13,"Year":2015,"Type":"2015\u80a1\u6771\u6703","FileName":"2016_\u80a1\u6771\u6703\u5404\u9805\u8b70\u6848\u53c3\u8003\u8cc7\u6599.pdf","FilePath":"20171218155746file.pdf","created_at":"2017-12-18 15:57:46","updated_at":"2017-12-18 15:57:46"}];
+        var json = [
+        {"id":9,"Year":2017,"Type":"\u5e38\u6703","FileName":"\u80a1\u6771\u6703\u5e74\u5831","Location":"\u80a1\u6771\u6703\u5e74\u5831.pdf","FilePath":"20171218155505file.pdf","created_at":"2017-12-18 15:55:05","updated_at":"2017-12-18 15:55:05"},{"id":10,"Year":2017,"Type":"\u5e38\u6703","FileName":"\u80a1\u6771\u6703\u8b70\u4e8b\u9304","Location":"\u80a1\u6771\u6703\u8b70\u4e8b\u9304.pdf","FilePath":"20171218155523file.pdf","created_at":"2017-12-18 15:55:23","updated_at":"2017-12-18 15:55:23"},{"id":11,"Year":2017,"Type":"\u5e38\u6703","FileName":"\u958b\u6703\u901a\u77e5","Location":"\u958b\u6703\u901a\u77e5.pdf","FilePath":"20171218155538file.pdf","created_at":"2017-12-18 15:55:38","updated_at":"2017-12-18 15:55:38"},{"id":12,"Year":2017,"Type":"\u5e38\u6703","FileName":"\u8b70\u4e8b\u624b\u518a\u53ca\u6703\u8b70\u88dc\u5145\u8cc7\u6599","Location":"\u8b70\u4e8b\u624b\u518a\u53ca\u6703\u8b70\u88dc\u5145\u8cc7\u6599.pdf","FilePath":"20171218155555file","created_at":"2017-12-18 15:55:55","updated_at":"2017-12-18 15:55:55"}];
 
         for(var i = 0; i < json.length; i++){
             if(json[i].Year==year){
@@ -302,12 +302,42 @@ function scrollFunction() {
             }
         }
 
+        if(year==2016){
+            var eachTable = $(".each-table tbody");
+            eachTable.append("<tr>" +
+                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
+                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
+                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=105&mtype=F' target='_blank'>瀏覽文件</a></td>"+
+                                "</tr>");
+        }
         if(year==2015){
             var eachTable = $(".each-table tbody");
             eachTable.append("<tr>" +
-                                    "<td data-th='股東會性質' style='text-align: center;'>2015股東會</td>"+
+                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
                                     "<td data-th='檔案名稱'>股東會參考資料</td>"+
-                                    "<td data-th='檔案下載'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=105&mtype=F' target='_blank'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=104&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
+                                "</tr>");
+        }if(year==2014){
+            var eachTable = $(".each-table tbody");
+            eachTable.append("<tr>" +
+                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
+                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
+                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=103&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
+                                "</tr>");
+        }
+        if(year==2013){
+            var eachTable = $(".each-table tbody");
+            eachTable.append("<tr>" +
+                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
+                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
+                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=102&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
+                                "</tr>");
+        }if(year==2012){
+            var eachTable = $(".each-table tbody");
+            eachTable.append("<tr>" +
+                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
+                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
+                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=101&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
                                 "</tr>");
         }else{
             var eachTable = $(".each-table tbody");
@@ -315,7 +345,7 @@ function scrollFunction() {
                 eachTable.append("<tr>" +
                                     "<td data-th='股東會性質' style='text-align: center;'>"+ element.Type +"</td>"+
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/IFSM/"+ element.Year +"/"+ element.FileName +"' target='_blank'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/IFSM/"+ element.Year +"/"+ element.Location +"' target='_blank'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
         }

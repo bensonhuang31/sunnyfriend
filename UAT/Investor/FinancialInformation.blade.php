@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -188,13 +188,13 @@
             <br><br>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <h4>英文財務報表資料</h4>
+                    <h4>FINANCIAL STATEMENTS</h4>
                     <div class="table-responsive dragscroll">
                         <table class="table table2 ENeach-table">
                             <thead>
                                 <tr>
-                                    <th width="60%">檔案名稱</th>
-                                    <th width="10%" style="text-align: center;">檔案下載</th>
+                                    <th width="60%">File Name</th>
+                                    <th width="10%" style="text-align: center;">Download</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -311,7 +311,7 @@ function scrollFunction() {
     function changeYear(year){
         var CHvalues = [];
         var ENvalues = [];
-        var json = [{"id":13,"Year":2017,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2017 \u7b2c1\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161459file.pdf","created_at":"2017-12-18 16:14:59","updated_at":"2017-12-18 16:14:59"},{"id":14,"Year":2017,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2017 \u7b2c2\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161513file.pdf","created_at":"2017-12-18 16:15:13","updated_at":"2017-12-18 16:15:13"},{"id":15,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c1\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161529file.pdf","created_at":"2017-12-18 16:15:29","updated_at":"2017-12-18 16:15:29"},{"id":16,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c2\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161541file.pdf","created_at":"2017-12-18 16:15:41","updated_at":"2017-12-18 16:15:41"},{"id":17,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c3\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161554file.pdf","created_at":"2017-12-18 16:15:54","updated_at":"2017-12-18 16:15:54"},{"id":18,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c4\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161607file.pdf","created_at":"2017-12-18 16:16:07","updated_at":"2017-12-18 16:16:07"},{"id":19,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c4\u5b63\u500b\u9ad4\u8ca1\u5831.pdf","FilePath":"20171218161617file.pdf","created_at":"2017-12-18 16:16:17","updated_at":"2017-12-18 16:16:17"},{"id":20,"Year":2016,"Type":"\u82f1\u6587\u5831\u8868","FileName":"2016 Consolidated Financial Statements Season4.pdf","FilePath":"20171218161628file.pdf","created_at":"2017-12-18 16:16:28","updated_at":"2017-12-18 16:16:28"},{"id":21,"Year":2015,"Type":"\u82f1\u6587\u5831\u8868","FileName":"2015 Consolidated Financial Statements Season4.pdf","FilePath":"20171218161646file.pdf","created_at":"2017-12-18 16:16:46","updated_at":"2017-12-18 16:16:46"},{"id":22,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c1\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161657file.pdf","created_at":"2017-12-18 16:16:57","updated_at":"2017-12-18 16:16:57"},{"id":23,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c2\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161709file.pdf","created_at":"2017-12-18 16:17:09","updated_at":"2017-12-18 16:17:09"},{"id":24,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c3\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161720file.pdf","created_at":"2017-12-18 16:17:20","updated_at":"2017-12-18 16:17:20"},{"id":25,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c4\u5b63\u5408\u4f75\u8ca1\u5831.pdf","FilePath":"20171218161730file.pdf","created_at":"2017-12-18 16:17:30","updated_at":"2017-12-18 16:17:30"},{"id":26,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c4\u5b63\u500b\u9ad4\u8ca1\u5831.pdf","FilePath":"20171218161741file.pdf","created_at":"2017-12-18 16:17:41","updated_at":"2017-12-18 16:17:41"},{"id":27,"Year":2013,"Type":"\u82f1\u6587\u5831\u8868","FileName":"2013 Consolidated Financial Statements Season4.pdf","FilePath":"20171218161839file.pdf","created_at":"2017-12-18 16:18:39","updated_at":"2017-12-18 16:18:39"}];
+        var json = [{"id":13,"Year":2017,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2017 \u7b2c1\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161459file.pdf","created_at":"2017-12-18 16:14:59","updated_at":"2017-12-18 16:14:59"},{"id":14,"Year":2017,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2017 \u7b2c2\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161513file.pdf","created_at":"2017-12-18 16:15:13","updated_at":"2017-12-18 16:15:13"},{"id":15,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c1\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161529file.pdf","created_at":"2017-12-18 16:15:29","updated_at":"2017-12-18 16:15:29"},{"id":16,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c2\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161541file.pdf","created_at":"2017-12-18 16:15:41","updated_at":"2017-12-18 16:15:41"},{"id":17,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c3\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161554file.pdf","created_at":"2017-12-18 16:15:54","updated_at":"2017-12-18 16:15:54"},{"id":18,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c4\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161607file.pdf","created_at":"2017-12-18 16:16:07","updated_at":"2017-12-18 16:16:07"},{"id":19,"Year":2016,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2016 \u7b2c4\u5b63\u500b\u9ad4\u8ca1\u5831","FilePath":"20171218161617file.pdf","created_at":"2017-12-18 16:16:17","updated_at":"2017-12-18 16:16:17"},{"id":20,"Year":2016,"Type":"\u82f1\u6587\u5831\u8868","FileName":"2016 Consolidated Financial Statements Season4.pdf","FilePath":"20171218161628file.pdf","created_at":"2017-12-18 16:16:28","updated_at":"2017-12-18 16:16:28"},{"id":21,"Year":2015,"Type":"\u82f1\u6587\u5831\u8868","FileName":"2015 Consolidated Financial Statements Season4","FilePath":"20171218161646file.pdf","created_at":"2017-12-18 16:16:46","updated_at":"2017-12-18 16:16:46"},{"id":22,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c1\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161657file.pdf","created_at":"2017-12-18 16:16:57","updated_at":"2017-12-18 16:16:57"},{"id":23,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c2\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161709file.pdf","created_at":"2017-12-18 16:17:09","updated_at":"2017-12-18 16:17:09"},{"id":24,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c3\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161720file.pdf","created_at":"2017-12-18 16:17:20","updated_at":"2017-12-18 16:17:20"},{"id":25,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c4\u5b63\u5408\u4f75\u8ca1\u5831","FilePath":"20171218161730file.pdf","created_at":"2017-12-18 16:17:30","updated_at":"2017-12-18 16:17:30"},{"id":26,"Year":2015,"Type":"\u4e2d\u6587\u5831\u8868","FileName":"2015 \u7b2c4\u5b63\u500b\u9ad4\u8ca1\u5831","FilePath":"20171218161741file.pdf","created_at":"2017-12-18 16:17:41","updated_at":"2017-12-18 16:17:41"},{"id":27,"Year":2013,"Type":"\u82f1\u6587\u5831\u8868","FileName":"2013 Consolidated Financial Statements Season4","FilePath":"20171218161839file.pdf","created_at":"2017-12-18 16:18:39","updated_at":"2017-12-18 16:18:39"}];
 
         for(var i = 0; i < json.length; i++){
             if(json[i].Year==year && json[i].Type=="中文報表"){
@@ -325,7 +325,7 @@ function scrollFunction() {
             $.each(CHvalues, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/FinancialInformation/"+ element.FileName +"' target='_blank'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/FinancialInformation/"+ element.FileName+ ".pdf" +"' target='_blank'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
 

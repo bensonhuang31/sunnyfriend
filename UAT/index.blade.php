@@ -69,8 +69,8 @@
                             <li class="dropdown">
                              <a href="News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -118,8 +118,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
                 
@@ -242,7 +242,7 @@
                         <div class="about-text">
                             <h3><em>關於日友&nbsp;<span>About sunny friend</span></em></h3>
                             <p>日友公司成立於1994年，是臺灣第一家專業生物醫療廢棄物焚化處理廠，2012年取得中區事業廢棄物綜合處理中心經營權(日友彰濱廠)，並於2015年正式掛牌上市，這也是日友永續經營的重要里程碑，日友公司成立二十多年來，以「新環境創造者」為目標穩健經營，本著自主管理、技術創新、環保意識提昇、環境維護及持續改善之核心價值，為員工健康生活及環境保護盡最大之努力。</p>
-                            <a href="AboutSF/index.php"><div class="btn btn-default btnn ">繼續閱讀</div></a>
+                            <a href="AboutSF/CompanyProfile.blade.php"><div class="btn btn-default btnn ">繼續閱讀</div></a>
                         </div>
                     </div>
                 </div>
@@ -370,11 +370,11 @@
                         <img class=" icon_img" src="assets/images/owl_icon/newsLOGO-02.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
-                                <h1>最新消息</h1>
+                                <h1>重要消息</h1>
                                 <h4>公開資訊觀測站</h4>
                                 <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。(查詢代號：8341)......</p>
                             </div>
-                            <a href="News/index4.php"><img class="img-responsive img" src="assets/images/news/new01.jpg"></a>
+                            <a href="News/latestNews.blade.php"><img class="img-responsive img" src="assets/images/news/new01.jpg"></a>
                             <div class="info"></div>
                         </div>
                     </div>
@@ -385,9 +385,9 @@
                             <div class="news-btn">
                                 <h1>簡介影片</h1>
                                 <h4>公司介紹</h4>
-                                <div class="btn btn-default newsbtn1 ">觀看中文版</div>
-                                <div class="btn btn-default newsbtn1 ">觀看英文版</div>
-                                <div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div>
+                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=438s"><div class="btn btn-default newsbtn1 ">觀看中文版</div></a>
+                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=318s"><div class="btn btn-default newsbtn1 ">觀看英文版</div></a>
+                                <a href="AboutSF/IIC.blade.php"><div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div></a>
                             </div>
                             <img class="img-responsive img" src="assets/images/news/new02.jpg">
                             <div class="info"></div>
@@ -405,6 +405,20 @@
                             <div class="info"></div>
                         </div>
                     </div>
+                    <div class="item">
+                    <img class=" icon_img" src="assets/images/owl_icon/newsLOGO-05.svg">
+                        <div class="ih-item square effect13 bottom_to_top">
+                            <div class="news-btn">
+                                <h1>公司簡介</h1>
+                                <h4>詳細介紹</h4>
+                                <a href="assets/file/app/SFCP(CH).pdf"><div class="btn btn-default newsbtn3 ">公司中文簡介</div></a>
+                               <a href="assets/file/app/SFCP(EN)-20170610.pdf"> <div class="btn btn-default newsbtn3 ">English Company Profile</div></a>
+                            </div>
+                            <img class="img-responsive img" src="assets/images/news/new04.jpg">
+                            <div class="info"></div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <script>
                 $(document).ready(function() {

@@ -135,7 +135,7 @@
     
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/stackholder/Business People Meeting Discussion Working Concept.jpg">
+        <img class="img-responsive" src="../assets/images/stackholder/Stackholder banner.jpg">
         <div class="titleBox clearfix">
             <h2>利害關係人</h2>
         </div>

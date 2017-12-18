@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -166,7 +166,7 @@
                 <h4>公告本公司召開上市前業績發表會</h4>
                 <p style="text-align: left;">1.召開法人說明會之日期：104/03/04。</br>2.召開法人說明會之時間：14時30分。</br>3.召開法人說明會之地點：台北君悅飯店三樓凱悅II廳。</br>4.法人說明會 『影音連結』(<span>完整較大影片請點連結</span>)</p>
                 <br>
-                <div class="btn btn-default btnn btn-block ">完整影音連結</div>
+                 <a href="https://www.youtube.com/watch?v=O0cxefJvOx8"><div class="btn btn-default btnn btn-block ">完整影音連結</div>
             </div>
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="embed-responsive embed-responsive-16by9">

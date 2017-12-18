@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -174,35 +174,35 @@
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">公司章程</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/公司章程.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">董事會議事規範</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/董事會議事規範.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">道德行為準則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/道德行為準則.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">企業社會責任實務守則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/企業社會責任實務守則.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">誠信經營守則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/誠信經營守則.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">取得或處分資產處理程序</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/取得或處分資產處理程序.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">公司治理實務守則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/公司治理實務守則.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">防範內線交易管理作業辦法</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><a href='../assets/file/Regulations/防範內線交易管理作業辦法.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                     </table>
                 </div>

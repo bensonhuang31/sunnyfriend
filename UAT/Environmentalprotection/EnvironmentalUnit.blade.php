@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -120,8 +120,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index.blade.php">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2.blade.php">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit.blade.php">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring.blade.php">環境監測</a></li>
                                 </ul>
                             </li>
 
@@ -154,7 +154,7 @@
         </div>
     </div>
     <!--公司治理-->
-    <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
+   <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
@@ -174,9 +174,63 @@
                                 </tr>
                                 <tr>
                                     <td data-th="日期">106.09.27</td>
-                                    <td data-th="事項">環境影響評估監督業務(106 年度-3)</td>
+                                    <td data-th="事項">環境影響評估監督業務(106年度-3)</td>
                                     <td data-th="主辦機關">雲林縣環保局</td>
                                     <td data-th="結果">待執行</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">106.06.23</td>
+                                    <td data-th="事項">環境影響評估監督業務(106年度-2)</td>
+                                    <td data-th="主辦機關">雲林縣環保局</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">106.03.21</td>
+                                    <td data-th="事項">環境影響評估監督業務(106年度-1)</td>
+                                    <td data-th="主辦機關">雲林縣環保局</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">105.09.29</td>
+                                    <td data-th="事項">環境影響評估監督業務(105年度-2)</td>
+                                    <td data-th="主辦機關">雲林縣環保局</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">105.04~11</td>
+                                    <td data-th="事項">「廢棄物清除處理機構許可及專業技術人員管理」專案工作計劃</td>
+                                    <td data-th="主辦機關">行政院環保署</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">105.02.17</td>
+                                    <td data-th="事項">環境影響評估監督業務(105年度-1)</td>
+                                    <td data-th="主辦機關">雲林縣環保局</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">104.06.10</td>
+                                    <td data-th="事項">環境影響評估監督業務(104年度)</td>
+                                    <td data-th="主辦機關">雲林縣環保局</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">103.11.11</td>
+                                    <td data-th="事項">環境影響評估監督業務(103年度)</td>
+                                    <td data-th="主辦機關">雲林縣環保局</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">103.09.10</td>
+                                    <td data-th="事項">環保署辦理廢棄物產源及清除處理機構之申報作業訪視計畫(雲林廠)</td>
+                                    <td data-th="主辦機關">行政院環保署</td>
+                                    <td data-th="結果">符合</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="日期">103.07.16</td>
+                                    <td data-th="事項">廢棄物處理廠深度查核 (雲林廠)</td>
+                                    <td data-th="主辦機關">雲林縣環保局</td>
+                                    <td data-th="結果">符合</td>
                                 </tr>
                             </table>
                         </div>

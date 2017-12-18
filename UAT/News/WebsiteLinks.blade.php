@@ -71,8 +71,8 @@
                             <li class="dropdown">
                                 <a href="../News/NewsCenter.blade.php" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="../News/latestNews.blade.php">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews.blade.php">重要訊息</a></li>
+                                    <li><a href="../News/latestNews.blade.php">重要消息</a></li>
+                                    <li><a href="../News/ImportantNews.blade.php">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks.blade.php">環保連結</a></li>
                                 </ul>
                             </li>
@@ -163,21 +163,21 @@
             <div class="col-md-6 col-sm-6">
                         <img class="img-responsive center-block" src="../assets/images/news/環保署logo.png">
                         <div class="btn-group-vertical">
-                        <button class="btn btn-default btnn ">行政院環境環保署</button>
-                        <button class="btn btn-default btnn ">廢棄物管制中心</button>
-                        <button class="btn btn-default btnn ">GPS專區</button>
+                        <a style="text-decoration:none;" href="http://sfcp.sunnyfriend.com.tw"><button class="btn btn-default btnn ">行政院環境環保署</button></a>
+                        <a style="text-decoration:none;" href="https://www.epa.gov.tw/"><button class="btn btn-default btnn ">廢棄物管制中心</button></a>
+                        <a style="text-decoration:none;" href="http://waste.epa.gov.tw/"><button class="btn btn-default btnn ">GPS專區</button></a>
                         </div>
             </div>
             <div class="col-md-6 col-sm-6">
                         <img class="img-responsive center-block" src="../assets/images/news/日友link.png">
                         <div class="btn-group-vertical">
-                        <button class="btn btn-default btnn ">中區事業廢棄物處理中心</button>
+                        <a style="text-decoration:none;" href="https://gps.epa.gov.tw/"><button class="btn btn-default btnn ">中區事業廢棄物處理中心</button></a>
                         </div>
             </div>
         </div>
                 <div class="back99"> </div>
         <div class="text-center">
-            <div class="btn btn-default ">返回上一頁</div>
+            <a style="text-decoration:none;" href="NewsCenter.blade.php"><div class="btn btn-default ">返回上一頁</div></a>
         </div>
     </div>
 </div>
