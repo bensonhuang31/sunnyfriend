@@ -133,7 +133,7 @@
             $.each(CHvalues, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></td>"+
+                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/FinancialInformation/"+ element.FilePath +"'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
 
@@ -141,7 +141,7 @@
             $.each(ENvalues, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></td>"+
+                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/FinancialInformation/"+ element.FilePath +"'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
     }

@@ -7,7 +7,7 @@
         <div class="titleBox clearfix">
             <h2>投資人專區</h2>
         </div>
-    </div>
+    </div>  
     <div class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
@@ -182,18 +182,68 @@
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td>"+ element.Month +"</td>"+
-                                    "<td>"+ element.Amount +"</td>"+
+                                    "<td>"+ fnc_format(element.Amount) +"</td>"+
                                     "<td>"+ element.Consolidated +"</td>"+
                                 "</tr>");
                 AmountTotal+=parseInt(element.Amount);
                 
             });
-
+            
             eachTable.append("<tr>" +
                                 "<td>本年累計(Total)</td>"+
                                 "<td>"+ AmountTotal +"</td>"+
                                 "<td></td>"+
                             "</tr>");
+    }
+
+    function fnc_format(str){      
+        var newStr="";  
+        for(var m=0;m<str.length;m++){
+            var c=str.charAt(m);
+            if(c=='.')
+            break;
+        }
+        var b=m%3; 
+        switch(b){
+            case 1:{
+                for(var i=0;i<str.length;i++){
+                newStr=newStr+str.charAt(i);
+                    if(i==0){
+                    newStr=newStr+',';
+                    }
+                    else {
+                    if(i%3==0 && i<m-1){
+                            newStr=newStr+',' ;
+                            }
+                        }
+                    }
+                break;
+                }
+            case 2:{
+                for(var i=0;i<str.length;i++){
+                newStr=newStr+str.charAt(i);
+                    if(i==1){
+                    newStr=newStr+',';
+                    }
+                    else {
+                    if((i+2)%3==0 && i<m-1){
+                        newStr=newStr+',' ;
+                            }
+                        }
+                    }
+                break;
+                }
+            case 0:{
+                for(var i=0;i<str.length;i++){
+                newStr=newStr+str.charAt(i);
+                if((i+1)%3==0 && i<m-1){
+                        newStr=newStr+',';
+                            }
+                    }
+                break;
+                }         
+        }
+        return newStr;
     }
 </script>
 

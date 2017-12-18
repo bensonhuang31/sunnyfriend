@@ -86,7 +86,7 @@
         var d = new Date();
         var n = d.getFullYear();
         var years = [];
-        for(var y=0; y<5; y++){
+        for(var y=0; y<6; y++){
             years.push(n);
             n--;
         }
@@ -112,7 +112,7 @@
                 eachTable.append("<tr>" +
                                     "<td data-th='股東會性質' style='text-align: center;'>"+ element.Type +"</td>"+
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></td>"+
+                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/"+ element.Year +"/"+ element.FileName +"'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
     }

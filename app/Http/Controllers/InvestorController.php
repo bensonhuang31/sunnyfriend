@@ -21,7 +21,7 @@ class InvestorController extends Controller
 
     public function revenue()
     {        
-        $revenueinfo = RevenueInfo::all();
+        $revenueinfo = RevenueInfo::orderBy('Month', 'asc')->get();
         return view('Investor.MonthlyRevenue')->with('data',$revenueinfo);
     }
 
@@ -101,7 +101,7 @@ class InvestorController extends Controller
 
     //後台營收公告
     public function AdminRevenueIndex(){        
-        $revenueinfo = RevenueInfo::all();
+        $revenueinfo = RevenueInfo::orderBy('Month', 'asc')->get();
         return view('Admin.Investor.index2')->with('data',$revenueinfo);
     }
     
