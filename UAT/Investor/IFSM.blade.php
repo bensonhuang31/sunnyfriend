@@ -280,7 +280,7 @@ function scrollFunction() {
         var d = new Date();
         var n = d.getFullYear();
         var years = [];
-        for(var y=0; y<6; y++){
+        for(var y=0; y<5; y++){
             years.push(n);
             n--;
         }
@@ -316,28 +316,6 @@ function scrollFunction() {
                                     "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
                                     "<td data-th='檔案名稱'>股東會參考資料</td>"+
                                     "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=104&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
-                                "</tr>");
-        }if(year==2014){
-            var eachTable = $(".each-table tbody");
-            eachTable.append("<tr>" +
-                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
-                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
-                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=103&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
-                                "</tr>");
-        }
-        if(year==2013){
-            var eachTable = $(".each-table tbody");
-            eachTable.append("<tr>" +
-                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
-                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
-                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=102&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
-                                "</tr>");
-        }if(year==2012){
-            var eachTable = $(".each-table tbody");
-            eachTable.append("<tr>" +
-                                    "<td data-th='股東會性質' style='text-align: center;'>常會</td>"+
-                                    "<td data-th='檔案名稱'>股東會參考資料</td>"+
-                                    "<td data-th='檔案下載' style='text-align: center;'><a href='http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8341&year=101&mtype=F&' target='_blank'>瀏覽文件</a></td>"+
                                 "</tr>");
         }else{
             var eachTable = $(".each-table tbody");
