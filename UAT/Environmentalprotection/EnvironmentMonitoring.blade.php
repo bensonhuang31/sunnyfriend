@@ -137,18 +137,18 @@
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../assets/images/stackholder/Business People Meeting Discussion Working Concept.jpg">
         <div class="titleBox clearfix">
-            <h2>利害關係人</h2>
+            <h2>環境保護</h2>
         </div>
     </div>
     <div class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.blade.php">首頁</a>
+                    <a href="../index.html">首頁</a>
                     <span>></span>
-                    <span>公司治理</span>
+                    <span>環境保護</span>
                     <span>></span>
-                    <b>利害關係人鑑別議題與措施</b>
+                    <b>環境監測</b>
                 </div>
             </div>
         </div>
@@ -158,96 +158,452 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <h3>利害關係人鑑別議題與措施<div class="titleline"></div></h3>
+                    <h3>環境監測<div class="titleline"></div></h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p>經由日友公司CSR小組與外部輔導顧問考量公司產業特性及實務經驗討論後，參考AA 1000利害關係人議合指引(THE AA1000 STAKEHOLDER ENGAGEMENT STANDARD, AA1000SES 2015 version)，鑑別出股東、公部門、員工、社區鄰里、經銷商及事業機構為105年度日友環保永續發展相關之利害關係人。
-                        </br>
-                        </br>
-                    </p>
+                <div class="col-md-12 col-sm-6">
+                        <button class="btn btn-primary">煙道</button>
+                        <button class="btn btn-primary">原水</button>
+                        <button class="btn btn-primary">TCLP</button>
+                        <button class="btn btn-primary">空氣監測</button>
+                        <button class="btn btn-primary">噪音振動</button>
+                        <button class="btn btn-primary">土穰</button>
+                        <button class="btn btn-primary">地下水</button>
+                    </br></br>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-6">
+                    <h2>煙道</h2>
+                </div>  
+                <div class="col-md-12 col-sm-6">
+                    <select class="selectpicker selectbtn"  id="changeyear">
+                        <option>106</option>
+                        <option>105</option>
+                        <option>104</option>
+                    </select>
+                </br></br>
+                </div>                
+            </div>
+
+            <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <center>
                         <div class="table-responsive dragscroll">
                             <table class="table table2">
-                                <tr>
-                                    <th >利害關係人</th>
-                                    <th >關切議題</th>
-                                    <th >溝通方式</th>
-                                    <th >具體措施</th>
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" colspan="2">檢測項目內容</td>
+                                    <td class="middle" colspan="1">粒狀汙染物</td>
+                                    <td class="middle" colspan="1">二氧化硫</td>
+                                    <td class="middle" colspan="1">氮氧化合物</td>
+                                    <td class="middle" colspan="1">一氧化碳</td>
+                                    <td class="middle" colspan="1">氯化氫</td>
+                                    <td class="middle" colspan="1">鉛</td>
+                                    <td class="middle" colspan="1">鎘</td>
+                                    <td class="middle" colspan="1">汞</td>
+                                    <td class="middle" colspan="1">戴奧辛</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" colspan="2">廠別</td>
+                                        <td class="middle">(mg/Nm^3)</td>
+                                        <td class="middle">(ppm)</td>
+                                        <td class="middle">(ppm)</td>
+                                        <td class="middle">(ppm)</td>
+                                        <td class="middle">(ppm)</td>
+                                        <td class="middle">(mg/Nm^3)</td>
+                                        <td class="middle">(mg/Nm^3)</td>
+                                        <td class="middle">(mg/Nm^3)</td>
+                                        <td class="middle">(ng-TEQ/Nm3)</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第1季</td>
+                                        <td class="middle">一廠</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">二廠</td>
+                                    </tr>
+                                     <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">三廠</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第2季</td>
+                                        <td class="middle">一廠</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">二廠</td>
+                                    </tr>
+                                     <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">三廠</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第3季</td>
+                                        <td class="middle">一廠</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">二廠</td>
+                                    </tr>
+                                     <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">三廠</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第4季</td>
+                                        <td class="middle">一廠</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">二廠</td>
+                                    </tr>
+                                     <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">三廠</td>
+                                    </tr>
                                 </tr>
-                                <tr>
-                                    <td data-th="利害關係人">股東</td>
-                                    <td data-th="關切議題">經營績效</br>
-                                        公司治理</br>
-                                        資訊透明度</td>
-                                    <td data-th="溝通方式">股東會、公司網站</br>
-                                        年報、公開資訊觀測站</br>營運資訊揭露 </td>
-                                    <td data-th="具體措施">維持正派經營、穩定獲利、定期召開股東會議、主動於網站公告重要訊息</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="利害關係人">公部門</td>
-                                    <td data-th="關切議題">遵守法令</br>
-                                        環境保護</br>
-                                        社會公益</br>
-                                        政策參與</br>
-                                        節能減廢</td>
-                                    <td data-th="溝通方式">政策說明會議、公聽會</br>
-                                        政府網站、公文書往來 </td>
-                                    <td data-th="具體措施">主動參加政府辦理各項政策說明會議、法規符合度檢討、發文釋疑</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="利害關係人">事業機構</td>
-                                    <td data-th="關切議題">服務品質</br>
-                                        法規遵循</br>
-                                        妥善處理 </td>
-                                    <td data-th="溝通方式">電話訪問、親訪</br>
-                                        電子郵件、公文書往來 </td>
-                                    <td data-th="具體措施">妥善處理文件寄發、前線業務同仁訪談客戶或進行客戶滿意度調查，了解客戶</br>之反饋意見與滿意度、專屬對應窗口</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="利害關係人">經銷商</td>
-                                    <td data-th="關切議題">遵守法令</br>
-                                        服務品質</br>
-                                        信用狀況 </td>
-                                    <td data-th="溝通方式">經銷商會議、環境管理系統</br>
-                                        公文書往來 </td>
-                                    <td data-th="具體措施">定期辦理經銷商會議、環境管理系統遵行事項、參加客戶公開活動</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="利害關係人">員工</td>
-                                    <td data-th="關切議題">薪資福利</br>
-                                        職業安全衛生</br>
-                                        勞動權益</br>
-                                        職涯發展 </td>
-                                    <td data-th="溝通方式">勞資會議、職工福利委員會</br>
-                                        內部聯絡書 </td>
-                                    <td data-th="具體措施">定期召開勞資會議、職工福利委員會雙向溝通、公告員工關注事項、定期辦理</br>教育訓練</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="利害關係人">社區鄰里 </td>
-                                    <td data-th="關切議題">環境保護</br>
-                                        社會公益</td>
-                                    <td data-th="溝通方式">拜訪、公開活動</br>
-                                        公司網站、村里長辦公室</br>鄉公所 </td>
-                                    <td data-th="具體措施">主動拜訪社區及學校、參加公開活動、鄉公所政策執行情形、捐贈書籍、發行</br>刊物、辦理相關活動增加互動機會</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="利害關係人">學術及產學合作單位 </td>
-                                    <td data-th="關切議題">法規遵循</br>
-                                        空污及溫室氣體排放</br>
-                                        廢污水和廢棄物</br>
-                                        經濟績效 </td>
-                                    <td data-th="溝通方式">電話訪問、親訪</br>
-                                        電子郵件、公文書往來</br>
-                                        會議 </td>
-                                    <td data-th="具體措施">不定期專案產學合作、法規釋義、法規修訂草案、公聽會意見表達、與廢棄物</br>清除處理相關之法令及新技術開發</td>
-                                </tr>
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
                             </table>
                         </div>
                     </center>
+
+
+                    <center>
+                        <div class="table-responsive dragscroll">
+                            <table class="table table2">
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" colspan="2">檢測項目內容</td>
+                                    <td class="middle" >風速</td>
+                                    <td class="middle" >風向</td>
+                                    <td class="middle" >濕度</td>
+                                    <td class="middle" >溫度</td>
+                                    <td class="middle" >TSP</td>
+                                    <td class="middle" >SO2</td>
+                                    <td class="middle" >NOx</td>
+                                    <td class="middle" >CO</td>
+                                    <td class="middle" >THC</td>
+                                    <td class="middle" >CH4</td>
+                                    <td class="middle" >NMHC</td>
+                                    <td class="middle" >PM10</td>
+                                    <td class="middle" >PM2.5</td>
+                                    <td class="middle" >戴奧辛</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" colspan="2">內容</td>
+                                    <td class="middle" >(m/s)</td>
+                                    <td class="middle" >-</td>
+                                    <td class="middle" >%</td>
+                                    <td class="middle" >(°C)</td>
+                                    <td class="middle" >(ug/m3)</td>
+                                    <td class="middle" >(ppm)</td>
+                                    <td class="middle" >(ppm)</td>
+                                    <td class="middle" >(ppm)</td>
+                                    <td class="middle" >(ppm)</td>
+                                    <td class="middle" >(ppm)</td>
+                                    <td class="middle" >(ppm)</td>
+                                    <td class="middle" >(ug/m3)</td>
+                                    <td class="middle" >(ug/m3)</td>
+                                    <td class="middle" >(pg-TEQ/m3)</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第1季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第2季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第3季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第4季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+                                </tr>
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
+                            </table>
+                        </div>
+                    </center>
+
+                    <center>
+                        <div class="table-responsive dragscroll">
+                            <table class="table table2">
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" rowspan="2" colspan="2">檢測項目內容</td>
+                                    <td class="middle" >L日</td>
+                                    <td class="middle" >L晚</td>
+                                    <td class="middle" >L夜</td>
+                                    <td class="middle" >LV日</td>
+                                    <td class="middle" >LV夜</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" >(dB)</td>
+                                    <td class="middle" >(dB)</td>
+                                    <td class="middle" >(dB)</td>
+                                    <td class="middle" >(°C)</td>
+                                    <td class="middle" >(ug/m3)</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第1季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第2季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第3季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第4季</td>
+                                        <td class="middle">廠址</td>
+                                    </tr>
+                                </tr>
+
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
+                            </table>
+                        </div>
+                    </center>
+
+                    <center>
+                        <div class="table-responsive dragscroll">
+                            <table class="table table2">
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" rowspan="2" colspan="2">檢測項目內容</td>
+                                    <td class="middle" >鉛</td>
+                                    <td class="middle" >鎘</td>
+                                    <td class="middle" >汞</td>
+                                    <td class="middle" >戴奧辛</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" >(mg/kg)</td>
+                                    <td class="middle" >(mg/kg)</td>
+                                    <td class="middle" >(mg/kg)</td>
+                                    <td class="middle" >(ng-TEQ/Nm3)</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >廠外表土</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >廠外裡土</td>
+                                    </tr>
+                                </tr>
+
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
+                            </table>
+                        </div>
+                    </center>
+
+                    <center>
+                        <div class="table-responsive dragscroll">
+                            <table class="table table2">
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" rowspan="2" colspan="2">檢測項目內容</td>
+                                    <td class="middle" >水溫</td>
+                                    <td class="middle" rowspan="2">pH值</td>
+                                    <td class="middle" >懸浮固體</td>
+                                    <td class="middle" >化學需氧量</td>
+                                    <td class="middle" >大腸桿菌群</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" >°C</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >CFU/100mL</td>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第1季</td>
+                                        <td class="middle">原水池</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第2季</td>
+                                        <td class="middle">原水池</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第3季</td>
+                                        <td class="middle">原水池</td>
+                                    </tr>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >第4季</td>
+                                        <td class="middle">原水池</td>
+                                    </tr>
+                                </tr>
+
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
+                            </table>
+                        </div>
+                    </center>
+
+                    <center>
+                        <div class="table-responsive dragscroll">
+                            <table class="table table2">
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" colspan="3">檢測項目內容</td>
+                                    <td class="middle" >六價鉻</td>
+                                    <td class="middle" >總鎘</td>
+                                    <td class="middle" >總鉻</td>
+                                    <td class="middle" >總銅</td>
+                                    <td class="middle" >總鉛</td>
+                                    <td class="middle" >總鋇</td>
+                                    <td class="middle" >總砷</td>
+                                    <td class="middle" >總汞</td>
+                                    <td class="middle" >總硒</td>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" ></td>
+                                    <td class="middle" >地點</td>
+                                    <td class="middle" >種類</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">上半年</td>
+                                        <td class="middle">一廠</td>
+                                        <td class="middle">底渣</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >二廠</td>
+                                        <td class="middle">底渣</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >三廠</td>
+                                        <td class="middle">底渣</td>
+                                    </tr>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">上半年</td>
+                                        <td class="middle">一廠</td>
+                                        <td class="middle">底渣</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >二廠</td>
+                                        <td class="middle">底渣</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >三廠</td>
+                                        <td class="middle">底渣</td>
+                                    </tr>
+                                </tr>
+
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
+                            </table>
+                        </div>
+                    </center>
+
+                    <center>
+                        <div class="table-responsive dragscroll">
+                            <table class="table table2">
+                            <thead>
+                                <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" colspan="3">檢測項目內容</td>
+                                    <td class="middle" >六價鉻</td>
+                                    <td class="middle" >總鎘</td>
+                                    <td class="middle" >總鉻</td>
+                                    <td class="middle" >總銅</td>
+                                    <td class="middle" >總鉛</td>
+                                    <td class="middle" >總鋇</td>
+                                    <td class="middle" >總砷</td>
+                                    <td class="middle" >總汞</td>
+                                    <td class="middle" >總硒</td>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                    <td class="middle" ></td>
+                                    <td class="middle" >地點</td>
+                                    <td class="middle" >種類</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+                                    <td class="middle" >(mg/L)</td>
+
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第一季</td>
+                                        <td class="middle">一廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >二廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >三廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第二季</td>
+                                        <td class="middle">一廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle">二廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >三廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第三季</td>
+                                        <td class="middle">一廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >二廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >三廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" rowspan="3">第四季</td>
+                                        <td class="middle">一廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >二廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                    <tr style="background-color: #AACD03;text-align: center;">
+                                        <td class="middle" >三廠</td>
+                                        <td class="middle">飛灰</td>
+                                    </tr>
+                                </tr>
+
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
+                            </table>
+                        </div>
+                    </center>
+
                 </div>
             </div>
         </div>

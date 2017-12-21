@@ -49,10 +49,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index.php" class="navbar-brand"><img alt="Brand" class="img-responsive" style="width:100%" src="assets/images/LOGO-01-01.svg"></a>
+                        <a href="index.blade.php" class="navbar-brand"><img alt="Brand" class="img-responsive" style="width:100%" src="assets/images/LOGO-01-01.svg"></a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
-                        <div class="lan"><i class=" wow fa fa-globe" aria-hidden="true"></i><a href="{{ url('/lang/set/en') }}" >ENGLISH</a></div>
+                        <div class="lan"><i class=" wow fa fa-globe" aria-hidden="true"></i><a href="English/indexEN.blade.php" >ENGLISH</a></div>
                         <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="fadeInUp" data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown">
                             <li class=" dropdown ">
                                 <a href="AboutSF/CompanyProfile.blade.php" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
