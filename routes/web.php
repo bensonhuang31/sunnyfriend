@@ -59,6 +59,8 @@ Route::view('/Stakeholder/SMP', 'Stakeholder.SMP');
 Route::view('/Stakeholder/GrievanceMachinery', 'Stakeholder.GrievanceMachinery');
 Route::view('/Stakeholder/UBGM', 'Stakeholder.UBGM');
 //環境保護
+Route::view('/Environmentalprotection/EnvironmentalUnit', 'Environmentalprotection.EnvironmentalUnit');
+Route::get('/Environmentalprotection/EnvironmentMonitoring','EnvironmentalprotectionController@Monitoring');
 
 //語系
 Route::get('/lang/set/{lang}', 'LanguageController@set_lang');

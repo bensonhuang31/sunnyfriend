@@ -124,8 +124,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../Environmentalprotection/index">環保單位查核行程</a></li>
-                                    <li><a href="../Environmentalprotection/index2">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentalUnit">環保單位查核行程</a></li>
+                                    <li><a href="../Environmentalprotection/EnvironmentMonitoring">環境監測</a></li>
                                 </ul>
                             </li>
 
