@@ -34,18 +34,18 @@
                 <div class="col-md-12 col-sm-6 enchange">
                         <input type="button" class="btn btn-primary" value="煙道"></input>
                         <input type="button" class="btn btn-primary" value="原水"></input>
-                        <input type="button" class="btn btn-primary" value="TCLP"></input>
+                        <input type="button" class="btn btn-primary" value="TCLP底渣"></input>
                         <input type="button" class="btn btn-primary" value="空氣監測"></input>
                         <input type="button" class="btn btn-primary" value="噪音振動"></input>
                         <input type="button" class="btn btn-primary" value="土穰"></input>
-                        <input type="button" class="btn btn-primary" value="地下水"></input>
+                        <input type="button" class="btn btn-primary" value="TCLP飛灰"></input>
                     </br></br>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-6">
                     <h2 id="enname">煙道</h2>
-                    <h6>{{$data['enflyash']}}</h6>
+                    
                 </div>  
                 <div class="col-md-12 col-sm-6">
                     <select class="selectpicker selectbtn"  id="changeyear">
@@ -323,7 +323,7 @@
                     $(".center-airquality,.center-noisevibration,.center-soil,.center-enflue,.center-incineratorbottom,.center-enflyash").css('display','none');
                     $('.center-rawwater').css('display','block');
                     break;
-                case "TCLP":
+                case "TCLP底渣":
                     $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflue").css('display','none');
                     $('.center-enflyash').css('display','block');
                     break;
@@ -339,7 +339,7 @@
                     $(".center-airquality,.center-noisevibration,.center-enflue,.center-rawwater,.center-incineratorbottom,.center-enflyash").css('display','none');
                     $('.center-soil').css('display','block');
                     break;
-                case "地下水":
+                case "TCLP飛灰":
                     $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-enflue,.center-enflyash").css('display','none');
                     $('.center-incineratorbottom').css('display','block');
 

@@ -32,9 +32,6 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <select class="selectpicker selectbtn"  id="changeyear">
-                        <option>2017</option>
-                        <option>2016</option>
-                        <option>2015</option>
                     </select>
                 </div>
                 </br>
@@ -42,7 +39,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p>2017每月營收(2017 Monthly Revenue)</p>
+                    <p id="changename">2017每月營收(2017 Monthly Revenue)</p>
                     <p>單位：新台幣仟元(In Thousands of New Taiwan Dollars)</p>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -146,6 +143,7 @@
         getYear();
         changeYear($("#changeyear").val());
         $('#changeyear').on('change',function(){
+            $("#changename").text($(this).val()+"每月營收("+$(this).val()+" Monthly Revenue)");
             $(".each-table tbody").html("");
             changeYear($(this).val());
         });
