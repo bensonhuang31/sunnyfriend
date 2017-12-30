@@ -154,28 +154,36 @@ margin:0px auto;
 
 /*按鈕*/
 
-.btn-group-vertical>.btn {
+.btn-group-vertical a>.btn {
     display: inline;
     margin-top: 10px;
     margin-bottom: 10px;
+
+}
+
+.btn-group-vertical a>.btn, .btn-group-vertical a>.btn-group, .btn-group-vertical a>.btn-group>.btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
 }
 
 .btn-group-vertical {
     display: block;
 }
 
-.btn-group-vertical>.btn:first-child:not(:last-child) {
+.btn-group-vertical a>.btn:first-child:not(:last-child) {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
 }
 
-.btn-group-vertical>.btn:not(:first-child):not(:last-child) {
+.btn-group-vertical a>.btn:not(:first-child):not(:last-child) {
     border-radius: 4px;
 }
 
-.btn-group-vertical>.btn:last-child:not(:first-child) {
+.btn-group-vertical a>.btn:last-child:not(:first-child) {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -904,6 +912,15 @@ thead>tr>td {
     line-height: 1.7;
 }
 
+.table5>thead>tr>th {
+    border-collapse: collapse;
+    border-top: 1px solid #9aa566;
+    border-right: 1px solid #a0a77b;
+    border-left: 1px solid #9aa566;
+    border-bottom: 1px solid #9aa566;
+}
+
+
 table {
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21);
@@ -975,6 +992,16 @@ tr:nth-child(odd) {
     vertical-align: middle !important;
 }
 
+
+.table5 th {
+    white-space: nowrap;
+    padding: 10px 10px 10px 15px!important;
+    line-height: 1.7!important;
+    text-align: center;
+}
+
+
+
 .middle {
     vertical-align: middle !important;
     font-weight: 500;
@@ -987,6 +1014,12 @@ h6{
     color: #999999;
     letter-spacing: 1pt;
     font-weight: 400;
+}
+
+.TableH2 h2{
+    font-size:32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /*CSR陰影*/
