@@ -32,7 +32,7 @@
                     <h5 style="color:#009943">(1)健全公司治理，確保穩健營運。</br>(2)強化職場環境，促進員工福利。</br>(3)創新技術能力，提昇服務品質。</br>(4)落實環境保護，確實遵守法令。</br>(5)深入社會公益，具體回饋地方。</h5>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/企業社會責任.jpg">
+                    <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/SFCSR/1.jpg">
                 </div>
             </div>
         </div>
@@ -44,55 +44,55 @@
                 <div id="owl-two" class="owl-theme owl-carousel">
                     <div class="item">
                         <div class="ih-item square effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/030文學營1.jpg">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/030-1.jpg">
                         </div>
                         <p>日友文學寫作營</p>
                     </div>
                     <div class="item">
                         <div class="ih-item square effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/030文學營2.jpg">
-                        </div>
-                        <p>日友文學寫作營</p>
-                    </div>
-                    <div class="item">
-                        <div class="ih-item square effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/030文學營3.jpg">
-                        </div>
-                        <p>日友文學寫作營</p>
-                    </div>
-                    <div class="item">
-                        <div class="ih-item square  effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/030文學營4.jpg">
-                        </div>
-                        <p>日友文學寫作營</p>
-                    </div>
-                    <div class="item">
-                        <div class="ih-item square effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/031科學營1.jpg">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/031-1.jpg">
                         </div>
                         <p>日友環保科學營</p>
                     </div>
                     <div class="item">
-                        <div class="ih-item square  effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/032.jpg">
+                        <div class="ih-item square effect14 csrshadow">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/030-3.jpg">
                         </div>
-                        <p>鼓勵追夢獎助學金</p>
+                        <p>日友文學寫作營</p>
                     </div>
                     <div class="item">
                         <div class="ih-item square  effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/033.jpg">
-                        </div>
-                        <p>鼓勵追夢獎助學金</p>
-                    </div>
-                    <div class="item">
-                        <div class="ih-item square  effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/034.jpg">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/034.jpg">
                         </div>
                         <p>元長地方關懷活動</p>
                     </div>
                     <div class="item">
+                        <div class="ih-item square effect14 csrshadow">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/030-2.jpg">
+                        </div>
+                        <p>日友文學寫作營</p>
+                    </div>
+                    <div class="item">
                         <div class="ih-item square  effect14 csrshadow">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/日友公司企業社會責任/輪播/035C.jpg">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/032.jpg">
+                        </div>
+                        <p>弱勢課輔贊助</p>
+                    </div>
+                    <div class="item">
+                        <div class="ih-item square  effect14 csrshadow">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/033.jpg">
+                        </div>
+                        <p>日友獎助學金</p>
+                    </div>
+                    <div class="item">
+                        <div class="ih-item square  effect14 csrshadow">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/030-4.jpg">
+                        </div>
+                        <p>日友文學寫作營</p>
+                    </div>
+                    <div class="item">
+                        <div class="ih-item square  effect14 csrshadow">
+                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/SFCSR/Carousel/035C.jpg">
                         </div>
                         <p>兒童育樂活動</p>
                     </div>

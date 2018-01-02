@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div id="owl-two" class="owl-theme owl-carousel">
-                    <div class="item">
+                    <div class="item"><a href="../News/ImportantNews.html">
                                     <img class=" icon_img" src="../assets/images/owl_icon/newsLOGO-02.svg">
 
                         <div class="ih-item square effect13 bottom_to_top">
@@ -39,7 +39,7 @@
                                 <h4>公開資訊觀測站</h4>
                                 <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。(查詢代號：8341)......</p>
                             </div>
-                            <img class="img-responsive img" src="../assets/images/news/new01.jpg">
+                            <img class="img-responsive img" src="../assets/images/news/new01.jpg"></a>
                             <div class="info"></div>
                         </div>
                     </div>
@@ -50,15 +50,15 @@
                             <div class="news-btn">
                                 <h1>簡介影片</h1>
                                 <h4>公司介紹</h4>
-                                <div class="btn btn-default newsbtn1 ">觀看中文版</div>
-                                <div class="btn btn-default newsbtn1 ">觀看英文版</div>
-                                <div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div>
+                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看中文版</div></a>
+                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看英文版</div></a>
+                                <a href="../AboutSF/IIC.html"><div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div></a>
                             </div>
                             <img class="img-responsive img" src="../assets/images/news/new02.jpg">
                             <div class="info"></div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item"><a href="../News/WebsiteLinks.html">
                       <img class=" icon_img" src="../assets/images/owl_icon/newsLOGO-04.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">

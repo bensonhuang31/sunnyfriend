@@ -29,23 +29,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                        <img class="img-responsive center-block" src="../assets/images/news/環保署logo.png">
+                        <img class="img-responsive center-block" src="../assets/images/news/EPAELogo.png">
                         <div class="btn-group-vertical">
-                        <button class="btn btn-default btnn ">行政院環境環保署</button>
-                        <button class="btn btn-default btnn ">廢棄物管制中心</button>
-                        <button class="btn btn-default btnn ">GPS專區</button>
+                        <a style="text-decoration:none;" target="_blank" href="https://www.epa.gov.tw/mp.asp?mp=epa"><button class="btn btn-default btnn ">行政院環境環保署</button></a>
+                        <a style="text-decoration:none;" target="_blank" href="http://waste.epa.gov.tw/prog/IndexFrame.asp"><button class="btn btn-default btnn ">廢棄物管制中心</button></a>
+                        <a style="text-decoration:none;" target="_blank" href="https://gps.epa.gov.tw/"><button class="btn btn-default btnn ">GPS專區</button></a>
                         </div>
             </div>
             <div class="col-md-6 col-sm-6">
-                        <img class="img-responsive center-block" src="../assets/images/news/日友link.png">
+                        <img class="img-responsive center-block" src="../assets/images/news/SFLogo.png">
                         <div class="btn-group-vertical">
-                        <button class="btn btn-default btnn ">中區事業廢棄物處理中心</button>
+                        <a style="text-decoration:none;" target="_blank" href="http://sfcp.sunnyfriend.com.tw/about/about.asp"><button class="btn btn-default btnn ">中區事業廢棄物處理中心</button></a>
                         </div>
             </div>
         </div>
                 <div class="back99"> </div>
         <div class="text-center">
-            <div class="btn btn-default ">返回上一頁</div>
+            <a style="text-decoration:none;" href="NewsCenter.html"><div class="btn btn-default ">返回上一頁</div></a>
         </div>
     </div>
 </div>

@@ -81,7 +81,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../CorporateGovernance/index" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
+                                <a href="../CorporateGovernance/GovernancePreface" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="../CorporateGovernance/GovernancePreface">公司治理</a></li>
                                     <li><a href="../CorporateGovernance/Regulations">運作規章</a></li>
@@ -122,10 +122,11 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
+                                <a href="../Environmentalprotection/EnvironmentalUnit" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="../Environmentalprotection/EnvironmentalUnit">環保單位查核行程</a></li>
                                     <li><a href="../Environmentalprotection/EnvironmentMonitoring">環境監測</a></li>
+                                    <li><a href="../Environmentalprotection/Energysaving">節能減碳</a></li>
                                 </ul>
                             </li>
 

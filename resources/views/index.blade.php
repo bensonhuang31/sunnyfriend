@@ -60,7 +60,7 @@
                     @endif
                         <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="fadeInUp" data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown">
                             <li class=" dropdown ">
-                                <a href="AboutSF/CompanyProfile.php" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
+                                <a href="AboutSF/CompanyProfile" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="AboutSF/CompanyProfile">基本資料</a></li>
                                     <li><a href="AboutSF/ServiceAndArea">營業項目與範圍</a></li>
@@ -80,7 +80,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="CorporateGovernance/index" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
+                                <a href="CorporateGovernance/GovernancePreface" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="CorporateGovernance/GovernancePreface">公司治理</a></li>
                                     <li><a href="CorporateGovernance/Regulations">運作規章</a></li>
@@ -121,10 +121,11 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
+                                <a href="Environmentalprotection/EnvironmentalUnit" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="Environmentalprotection/EnvironmentalUnit">環保單位查核行程</a></li>
                                     <li><a href="Environmentalprotection/EnvironmentMonitoring">環境監測</a></li>
+                                    <li><a href="Environmentalprotection/Energysaving">節能減碳</a></li>
                                 </ul>
                             </li>
                 
@@ -247,7 +248,7 @@
                         <div class="about-text">
                             <h3><em>關於日友&nbsp;<span>About sunny friend</span></em></h3>
                             <p>日友公司成立於1994年，是臺灣第一家專業生物醫療廢棄物焚化處理廠，2012年取得中區事業廢棄物綜合處理中心經營權(日友彰濱廠)，並於2015年正式掛牌上市，這也是日友永續經營的重要里程碑，日友公司成立二十多年來，以「新環境創造者」為目標穩健經營，本著自主管理、技術創新、環保意識提昇、環境維護及持續改善之核心價值，為員工健康生活及環境保護盡最大之努力。</p>
-                            <a href="AboutSF/index.php"><div class="btn btn-default btnn ">繼續閱讀</div></a>
+                            <a target="_blank" href="assets/file/app/SFCP(CH).pdf"><div class="btn btn-default btnn ">日友公司中文簡介</div></a>
                         </div>
                     </div>
                 </div>
@@ -371,16 +372,16 @@
                 <h1>最新消息</h1>
                 <h2>日友最新資訊</h2>
                 <div id="owl-two" class="owl-theme owl-carousel">
-                    <div class="item">
+                    <div class="item"><a href="News/ImportantNews.html">
                         <img class=" icon_img" src="assets/images/owl_icon/newsLOGO-02.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
-                                <h1>最新消息</h1>
+                                <h1>重要消息</h1>
                                 <h4>公開資訊觀測站</h4>
                                 <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。(查詢代號：8341)......</p>
                             </div>
-                            <a href="News/index4.php"><img class="img-responsive img" src="assets/images/news/new01.jpg"></a>
-                            <div class="info"></div>
+                            <img class="img-responsive img" src="assets/images/news/new01.jpg">
+                            <div class="info"></div></a>
                         </div>
                     </div>
                     <div class="item">
@@ -390,15 +391,15 @@
                             <div class="news-btn">
                                 <h1>簡介影片</h1>
                                 <h4>公司介紹</h4>
-                                <div class="btn btn-default newsbtn1 ">觀看中文版</div>
-                                <div class="btn btn-default newsbtn1 ">觀看英文版</div>
-                                <div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div>
+                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看中文版</div></a>
+                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看英文版</div></a>
+                                <a href="AboutSF/IIC.html"><div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div></a>
                             </div>
                             <img class="img-responsive img" src="assets/images/news/new02.jpg">
                             <div class="info"></div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item"><a href="News/WebsiteLinks.html">
                       <img class=" icon_img" src="assets/images/owl_icon/newsLOGO-04.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
@@ -406,8 +407,8 @@
                                 <h4>相關環保資訊</h4>
                                 <p>日友彰濱廠(中區事業廢棄物綜合處理中心)青新環境工程(股)公司......</p>
                             </div>
-                            <a href="News/index3.php"><img class="img-responsive img" src="assets/images/news/new03.jpg"></a>
-                            <div class="info"></div>
+                            <img class="img-responsive img" src="assets/images/news/new03.jpg">
+                            <div class="info"></div></a>
                         </div>
                     </div>
                 </div>

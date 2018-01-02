@@ -60,6 +60,7 @@ Route::view('/Stakeholder/GrievanceMachinery', 'Stakeholder.GrievanceMachinery')
 Route::view('/Stakeholder/UBGM', 'Stakeholder.UBGM');
 //環境保護
 Route::view('/Environmentalprotection/EnvironmentalUnit', 'Environmentalprotection.EnvironmentalUnit');
+Route::view('/Environmentalprotection/Energysaving', 'Environmentalprotection.Energysaving');
 Route::get('/Environmentalprotection/EnvironmentMonitoring','EnvironmentalprotectionController@Monitoring');
 
 //語系

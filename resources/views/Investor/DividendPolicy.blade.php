@@ -23,9 +23,7 @@
         </div>
     </div>
 </div>
-
-
-    <!--重大消息-->
+<!--重大消息-->
 <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
     <div class="container">
         <div class="row">
@@ -36,10 +34,10 @@
                             </br>
                         </p>
                         <h4>(查詢代號：<span>8341</span>)</h4>
-                <div class="btn btn-default btnn btn-block ">前往公開資訊觀測站</div>
+                <a target="_blank" class="btn btn-default btn-block" href="http://mops.twse.com.tw/mops/web/t146sb05" role="button" style="z-index:999;">前往公開資訊觀測站</a>
             </div>
             <div class="col-md-8 col-sm-6">
-                    <img class="img-responsive" src="../assets/images/news/重大訊息.jpg">
+                    <img class="img-responsive" src="../assets/images/Investor/query.jpg">
             </div>
         </div>
     </div>

@@ -30,23 +30,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <h3>重要訊息-公開資訊觀測站<div class="titleline"></div></h3>
+                <h3>重大消息-公開資訊觀測站<div class="titleline"></div></h3>
                         <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。</br>
                             </br>
                             </br>
                         </p>
                         <h4>(查詢代號：<span>8341</span>)</h4>
                 <br>
-                <div class="btn btn-default btnn btn-block ">前往公開資訊觀測站</div>
+                <a target="_blank" class="btn btn-default btn-block" href="http://mops.twse.com.tw/mops/web/t146sb05" role="button" style="z-index:999;">前往公開資訊觀測站</a>
             </div>
             <div class="col-md-8 col-sm-6">
-                    <img class="img-responsive" src="../assets/images/Investor/股利資訊查詢.jpg">
+                    <img class="img-responsive" src="../assets/images/Investor/query.jpg">
                 </div>
             </div>
             <div class="back99"> </div>
         </div>
-                <div class="text-center">
-            <div class="btn btn-default ">返回上一頁</div>
+                            <div class="text-center">
+            <a href="../News/latestNews.html"><div class="btn btn-default ">返回上一頁</div></a>
         </div>
     </div>
 </div>

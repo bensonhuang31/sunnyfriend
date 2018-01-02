@@ -36,7 +36,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12">
-                <img alt="Brand" class="img-responsive center-block" style="width: 60%" src="../assets/images/about/組織圖-02.png">
+                <img alt="Brand" class="img-responsive center-block" style="width: 60%" src="../assets/images/about/02.png">
             </div>
         </div>
     </div>

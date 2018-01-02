@@ -1,7 +1,6 @@
 @extends('Layouts/app')
 
 @section('content')
-    <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/CSR_banner.jpg">
         <div class="titleBox clearfix">
@@ -12,7 +11,7 @@
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.html">首頁</a>
                     <span>></span>
                     <span>企業社會責任</span>
                     <span>></span>
@@ -21,7 +20,7 @@
             </div>
         </div>
     </div>
-   <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
+    <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
@@ -37,13 +36,52 @@
                     <p style="color:#009943">(二)冬令救濟活動</p>
                     <p>每年歲末年終與元長鄉公所配合，捐贈鄉內低收入戶白米、食用油、麵條等民生物資。</p>
                     <p style="color:#009943">(三)清明節環境義工</p>
-                    <p>每逢清明節，本公司為體恤元長鄉親掃墓的辛勞，免費提供飲料、杯水及環境整潔維護的服務，</p>
+                    <p>每逢清明節，本公司為體恤元長鄉親掃墓的辛勞，免費提供飲料、杯水及環境整潔維護的服務，一直以來獲得地方鄉親一致好評。</p>
                     <p style="color:#009943">(四)社團活動贊助</p>
                     <p>日友公司秉持著敦親睦鄰的精神，積極藉由對地方活動、社團活動的熱情參與，拉近本公司與鄉親的距離，建立良好的信賴關係。</p>
                     <p style="color:#009943">(五)頒發獎助學金</p>
                     <p>鼓勵元長鄉內學子，每年發放獎助學金，對學生正面鼓舞，砥礪激發其向學的精神，期望他們將來有能力時，回饋社會，造福更多學生。</p>
-                    <p style="color:#009943">(六)贈送元長國中學生腳踏車前後燈</p>
+                    <p style="color:#009943">(六)元長國中學生安全守護</p>
                     <p>捐贈腳踏車車燈活動，共同守護學生安全，除了贈送每位新生腳踏車前後車燈外，並另贈電池讓學生無經濟負擔，藉此提升孩子的行車安全，快快樂樂上學，平平安安返家。</p>
+                    <center>
+                    <h4 >2014年度-2016年度雲林地區回饋統計表</h4>
+                        <div class="table-responsive dragscroll">
+                            <table class="table table2" style="text-align: center;">
+                                <tr >
+                                    <th ></th>
+                                    <th style="text-align: center;">急難救助（人）</th>
+                                    <th style="text-align: center;">喪葬補助（人）</th>
+                                    <th style="text-align: center;">冬令救濟（人）</th>
+                                    <th style="text-align: center;">獎助學金（人）</th>
+                                    <th style="text-align: center;">車燈（人）</th>
+                                </tr>
+                                <tr>
+                                    <td data-th="">2014年</td>
+                                    <td data-th="急難救助（人）">16</td>
+                                    <td data-th="喪葬補助（人）">20</td>
+                                    <td data-th="冬令救濟（人）">158</td>
+                                    <td data-th="獎助學金（人）">184</td>
+                                    <td data-th="車燈（人）">0</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="">2015年</td>
+                                    <td data-th="急難救助（人）">10</td>
+                                    <td data-th="喪葬補助（人）">16</td>
+                                    <td data-th="冬令救濟（人）">158</td>
+                                    <td data-th="獎助學金（人）">167</td>
+                                    <td data-th="車燈（人）">200</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="">2016年</td>
+                                    <td data-th="急難救助（人）">5</td>
+                                    <td data-th="喪葬補助（人）">24</td>
+                                    <td data-th="冬令救濟（人）">169</td>
+                                    <td data-th="獎助學金（人）">92</td>
+                                    <td data-th="車燈（人）">100</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </center>
                 </div>
             </div>
         </div>
@@ -53,7 +91,7 @@
             <div class="row">
                 <div class="col-md-5 col-sm-6">
                     <h4>二、教育關懷</h4>
-                    <p>日友總公司位於雲林縣元長鄉，全鄉共有21村，總人口數約為27,000人，元長鄉居民的經濟來源多以務農及畜牧為主，經濟相對弱勢。日友公司身為在地企業，善盡企業社會責任，積極關心偏鄉的教育，故以總公司所在地「元長鄉」為起點，2011年開始延續地方回饋擴大至教育活動，捐贈圖書購置經費，舉辦徵文比賽及文學寫作營活動，創辦「土豆鳥文學誌」；進一步與「遠見天下文化教育基金會」公益合作，定期贈閱遠見天下雜誌「未來兒童」、「未來少年」，一連串的教育資源投入，期許為偏鄉教育注入活水，為弱勢的學生逆轉人生，讓他們能勇敢的做夢，看見未來。</p>
+                    <p>日友總公司位於雲林縣元長鄉，全鄉共有21村，總人口數約為27,000人，元長鄉居民的經濟來源多以務農及畜牧為主，經濟相對弱勢。日友公司身為在地企業，善盡企業社會責任，積極關心偏鄉的教育，2011年開始延續地方回饋擴大至教育活動，捐贈圖書購置經費，舉辦徵文比賽、環保科學營、文學寫作營活動，創辦「土豆鳥文學誌」；進一步與「遠見天下文化教育基金會」公益合作，定期贈閱遠見天下雜誌「未來兒童」、「未來少年」，一連串的教育資源投入，期許為偏鄉教育注入活水，為弱勢的學生逆轉人生，讓他們能大膽的做夢，看見未來的可能。</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-md-offset-1">
                     <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/022.png">
@@ -129,13 +167,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <h4>三、日友彰濱廠回饋計劃（金改計劃）</h4>
+                    <h4>三、日友彰濱廠回饋計劃</h4>
                     <p>日友公司於彰濱廠之地方回饋以「日友環保科技股份有限公司中區(彰濱廠)事業廢棄物綜合處理中心營運期間回饋金契約書」為辨理依據，凡地方回饋事項由伸港鄉公所及線西鄉公所提供協助辦理。日友公司彰濱廠與所在地方伸港鄉及線西鄉共同發起設置「中區事業廢棄物綜合處理中心環境保護監督委員會」，監督於操作營運時確實遵循環境法規、落實執行環境保護工作，以維護地方環境品質。</p>
                 </div>
             </div>
             <div class="back99"> </div>
             <div class="text-center">
-                <div class="btn btn-default ">了解更多－企業社會責任報告書</div>
+                <a href="CSRReport.html"><div class="btn btn-default ">了解更多－企業社會責任報告書</div></a>
             </div>
         </div>
     </div>
