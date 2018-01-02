@@ -13,6 +13,7 @@ use App\Http\Model\EnIncineratorbottom;
 use App\Http\Model\EnNoiseVibration;
 use App\Http\Model\EnRawwater;
 use App\Http\Model\EnSoil;
+use App\Http\Model\EnGroundwater;
 use Validator;
 
 
@@ -27,6 +28,9 @@ class EnvironmentalprotectionController extends Controller
         $ennoisevibration = EnNoiseVibration::all();
         $enrawwater = EnRawwater::all();
         $ensoil = EnSoil::all();
-        return view('Environmentalprotection.EnvironmentMonitoring')->with('data', ['enairquality' => $enairquality, 'enflue' => $enflue, 'enflyash' => $enflyash, 'enincineratorbottom' => $enincineratorbottom, 'ennoisevibration' => $ennoisevibration, 'enrawwater' => $enrawwater, 'ensoil' => $ensoil]);
+        $engroundwater = EnGroundwater::all();
+        return view('Environmentalprotection.EnvironmentMonitoring')->with('data', ['enairquality' => $enairquality, 'enflue' => $enflue, 'enflyash' => $enflyash, 
+                                                                           'enincineratorbottom' => $enincineratorbottom, 'ennoisevibration' => $ennoisevibration, 
+                                                                           'enrawwater' => $enrawwater, 'ensoil' => $ensoil, 'engroundwater' => $engroundwater]);
     }
 }
