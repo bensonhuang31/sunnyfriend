@@ -5,7 +5,7 @@
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../assets/images/Environmentalprotection/Environmentalprotection_banner.jpg">
         <div class="titleBox clearfix">
-            <h2>利害關係人</h2>
+            <h2>環境保護</h2>
         </div>
     </div>
     <div class="wow fadeInDown" data-wow-delay="0.5s">
@@ -14,9 +14,9 @@
                 <div class="breads">
                     <a href="../index.php">首頁</a>
                     <span>></span>
-                    <span>公司治理</span>
+                    <span>環境保護</span>
                     <span>></span>
-                    <b>利害關係人鑑別議題與措施</b>
+                    <b>環境監測</b>
                 </div>
             </div>
         </div>
