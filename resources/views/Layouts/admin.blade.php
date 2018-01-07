@@ -65,8 +65,8 @@
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-3"><i class="fa fa-fw fa-star"></i>環境保護<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                         <ul id="submenu-3" class="collapse">
-                            <li><a href="../../Admin/Environmentprotect/index">環境保護查核行程</a></li>
-                            <li><a href="../../Admin/Environmentprotect/index2">環境監測</a></li>
+                            <li><a href="../../Admin/Environmentalprotection/index">環境保護查核行程</a></li>
+                            <li><a href="../../Admin/Environmentalprotection/index2">環境監測</a></li>
                         </ul>
                     </li>
                 </ul>

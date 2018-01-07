@@ -165,7 +165,7 @@
                         <div class="table-responsive dragscroll">
                             <table class="table table5 table-soil">
                             <thead>
-                                <tr style="background-color: #AACD03;"">
+                                <tr style="background-color: #AACD03;">
                                     <th class="middle" rowspan="2" colspan="1">檢測項目內容</th>
                                     <th class="middle" >鉛</th>
                                     <th class="middle" >鎘</th>

@@ -74,8 +74,6 @@ Route::post('/Admin/Login','LoginController@login');
 Route::get('/Admin/Logout','LoginController@logout');
 Route::any('/Admin/crypt','LoginController@crypt');
 
-Route::view('/Admin/Environmentprotect/index', 'Admin.Environmentprotect.index');
-Route::view('/Admin/Environmentprotect/index2', 'Admin.Environmentprotect.index2');
 
 Route::group(['middlewareGroups' => ['web']], function () {
     Route::get('/Admin/Investor/index', 'InvestorController@AdminShareholdersIndex');
@@ -108,6 +106,10 @@ Route::group(['middlewareGroups' => ['web']], function () {
     Route::post('/Admin/News/index','NewsController@AdminNewsCreate');
     Route::post('/Admin/News/index/edit','NewsController@AdminNewsEdit');
     Route::post('/Admin/News/index/delete','NewsController@AdminNewsDelete');
+
+    Route::get('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringIndex');
+    Route::post('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringCreate');
+
 });
 
 
