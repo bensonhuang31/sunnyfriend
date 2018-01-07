@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/stackholder/Business People Meeting Discussion Working Concept.jpg">
+        <img class="img-responsive" src="../assets/images/Environmentalprotection/Environmentalprotection_banner.jpg">
         <div class="titleBox clearfix">
             <h2>利害關係人</h2>
         </div>
@@ -28,24 +28,23 @@
                 <div class="col-md-6 col-sm-6">
                     <h3>環境監測<div class="titleline"></div></h3>
                 </div>
-                
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-6 enchange">
-                        <input type="button" class="btn btn-primary" value="煙道"></input>
-                        <input type="button" class="btn btn-primary" value="原水"></input>
-                        <input type="button" class="btn btn-primary" value="TCLP底渣"></input>
-                        <input type="button" class="btn btn-primary" value="空氣監測"></input>
-                        <input type="button" class="btn btn-primary" value="噪音振動"></input>
-                        <input type="button" class="btn btn-primary" value="土穰"></input>
-                        <input type="button" class="btn btn-primary" value="TCLP飛灰"></input>
+                        <input type="button" class="btnEM btn-table" value="煙道"></input>
+                        <input type="button" class="btnEM btn-table" value="原水"></input>
+                        <input type="button" class="btnEM btn-table" value="空氣監測"></input>
+                        <input type="button" class="btnEM btn-table" value="噪音振動"></input>
+                        <input type="button" class="btnEM btn-table" value="土壤"></input>
+                        <input type="button" class="btnEM btn-table" value="TCLP飛灰"></input>
+                        <input type="button" class="btnEM btn-table" value="TCLP底渣"></input>
+                        <input type="button" class="btnEM btn-table" value="地下水"></input>
                     </br></br>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-6">
                     <h2 id="enname">煙道</h2>
-                    
                 </div>  
                 <div class="col-md-12 col-sm-6">
                     <select class="selectpicker selectbtn"  id="changeyear">
@@ -58,9 +57,9 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <center class="center-enflue">
                         <div class="table-responsive dragscroll">
-                            <table class="table table2 table-enflue">
+                            <table class="table table5 table-enflue">
                             <thead>
-                                <tr style="background-color: ;text-align: center;">
+                                <tr style="background-color: #AACD03;">
                                
                                     <th class="middle" colspan="2">檢測項目內容</th>
                                     <th class="middle" colspan="1">粒狀汙染物</th>
@@ -71,8 +70,7 @@
                                     <th class="middle" colspan="1">鉛</th>
                                     <th class="middle" colspan="1">鎘</th>
                                     <th class="middle" colspan="1">汞</th>
-                                    <th class="middle" colspan="1">戴奧辛</th>
-                                <tr style="background-color: ;text-align: center;">
+                                <tr style="background-color: #cce166;text-align: center;">
                                
                                     <th class="middle" colspan="2">廠別</th>
                                     <th class="middle">(mg/Nm^3)</th>
@@ -83,7 +81,6 @@
                                     <th class="middle">(mg/Nm^3)</th>
                                     <th class="middle">(mg/Nm^3)</th>
                                     <th class="middle">(mg/Nm^3)</th>
-                                    <th class="middle">(ng-TEQ/Nm3)</th>
                                 </tr>        
                             </thead>
                             <tbody class="middle" style="text-align: center;">
@@ -94,9 +91,9 @@
 
                     <center style="display:none" class="center-airquality">
                         <div class="table-responsive dragscroll">
-                            <table class="table table2 table-airquality">
+                            <table class="table table5 table-airquality">
                             <thead>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #AACD03;">
                                     <th class="middle" colspan="2">檢測項目內容</th>
                                     <th class="middle" >風速</th>
                                     <th class="middle" >風向</th>
@@ -110,10 +107,8 @@
                                     <th class="middle" >CH4</th>
                                     <th class="middle" >NMHC</th>
                                     <th class="middle" >PM10</th>
-                                    <th class="middle" >PM2.5</th>
-                                    <th class="middle" >戴奧辛</th>
                                 </tr>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #cce166;">
                                     <th class="middle" colspan="2">內容</th>
                                     <th class="middle" >(m/s)</th>
                                     <th class="middle" >-</th>
@@ -127,8 +122,6 @@
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ug/m3)</th>
-                                    <th class="middle" >(ug/m3)</th>
-                                    <th class="middle" >(pg-TEQ/m3)</th>
                                 </tr>
 
                             </thead>
@@ -141,7 +134,7 @@
 
                     <center style="display:none" class="center-noisevibration">
                         <div class="table-responsive dragscroll">
-                            <table class="table table2 table-noisevibration">
+                            <table class="table table5 table-noisevibration">
                             <thead>
                                 <tr style="background-color: #AACD03;text-align: center;">
                                     <th class="middle" rowspan="2" colspan="2">檢測項目內容</th>
@@ -151,7 +144,7 @@
                                     <th class="middle" >LV日</th>
                                     <th class="middle" >LV夜</th>
                                 </tr>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #cce166;text-align: center;">
                                     <th class="middle" >(dB)</th>
                                     <th class="middle" >(dB)</th>
                                     <th class="middle" >(dB)</th>
@@ -170,16 +163,16 @@
 
                     <center style="display:none" class="center-soil">
                         <div class="table-responsive dragscroll">
-                            <table class="table table2 table-soil">
+                            <table class="table table5 table-soil">
                             <thead>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #AACD03;"">
                                     <th class="middle" rowspan="2" colspan="1">檢測項目內容</th>
                                     <th class="middle" >鉛</th>
                                     <th class="middle" >鎘</th>
                                     <th class="middle" >汞</th>
                                     <th class="middle" >戴奧辛</th>
                                 </tr>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #cce166;">
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
@@ -196,9 +189,9 @@
 
                     <center style="display:none" class="center-rawwater">
                         <div class="table-responsive dragscroll">
-                            <table class="table table2 table-rawwater">
+                            <table class="table table5 table-rawwater">
                             <thead>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #AACD03;">
                                     <th class="middle" rowspan="2" colspan="2">檢測項目內容</th>
                                     <th class="middle" >水溫</th>
                                     <th class="middle" rowspan="2">pH值</th>
@@ -206,7 +199,7 @@
                                     <th class="middle" >化學需氧量</th>
                                     <th class="middle" >大腸桿菌群</th>
                                 </tr>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #cce166;">
                                     <th class="middle" >°C</th>
                                     <th class="middle" >(mg/L)</th>
                                     <th class="middle" >(mg/L)</th>
@@ -223,9 +216,9 @@
 
                     <center style="display:none" class="center-incineratorbottom">
                         <div class="table-responsive dragscroll">
-                            <table class="table table2 table-incineratorbottom">
+                            <table class="table table5 table-incineratorbottom">
                             <thead>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #AACD03;">
                                     <th class="middle" colspan="3">檢測項目內容</th>
                                     <th class="middle" >六價鉻</th>
                                     <th class="middle" >總鎘</th>
@@ -237,7 +230,7 @@
                                     <th class="middle" >總汞</th>
                                     <th class="middle" >總硒</th>
                                 </tr>
-                                    <tr style="background-color: #AACD03;text-align: center;">
+                                    <tr style="background-color: #cce166;">
                                         <th class="middle" ></th>
                                         <th class="middle" >地點</th>
                                         <th class="middle" >種類</th>
@@ -262,9 +255,9 @@
 
                     <center style="display:none" class="center-enflyash">
                         <div class="table-responsive dragscroll">
-                            <table class="table table2 table-enflyash">
+                            <table class="table table5 table-enflyash">
                             <thead>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #AACD03;">
                                     <th class="middle" colspan="3">檢測項目內容</th>
                                     <th class="middle" >六價鉻</th>
                                     <th class="middle" >總鎘</th>
@@ -276,7 +269,7 @@
                                     <th class="middle" >總汞</th>
                                     <th class="middle" >總硒</th>
                                 </tr>
-                                <tr style="background-color: #AACD03;text-align: center;">
+                                <tr style="background-color: #cce166;">
                                     <th class="middle" ></th>
                                     <th class="middle" >地點</th>
                                     <th class="middle" >種類</th>
@@ -301,6 +294,75 @@
                         </div>
                     </center>
 
+                    <center style="display:none" class="center-groundwater">
+                        <div class="table-responsive dragscroll">
+                            <table class="table table5 table-engroundwater">
+                            <thead>
+                                <tr style="background-color: #AACD03;">
+                               
+                                    <th class="middle" colspan="2">檢測項目內容</th>
+                                    <th class="middle" colspan="1">總有機碳</th>
+                                    <th class="middle" colspan="1">TDS</th>
+                                    <th class="middle" colspan="1">硫酸鹽</th>
+                                    <th class="middle" colspan="1">氯鹽</th>
+                                    <th class="middle" colspan="1">總硬度</th>
+                                    <th class="middle" colspan="1">硝酸鹽氮</th>
+                                    <th class="middle" colspan="1">氨氮</th>
+                                    <th class="middle" colspan="1">鉛</th>
+                                    <th class="middle" colspan="1">鉻</th>
+                                    <th class="middle" colspan="1">錳</th>
+                                    <th class="middle" colspan="1">鐵</th>
+                                    <th class="middle" colspan="1">汞</th>
+                                    <th class="middle" colspan="1">砷</th>
+                                    <th class="middle" colspan="1">鎳</th>
+                                    <th class="middle" colspan="1">鋅</th>
+                                    <th class="middle" colspan="1">銅</th>
+                                    <th class="middle" rowspan="2">PH值</th>
+                                    <th class="middle" colspan="1">溫度</th>
+                                    <th class="middle" colspan="1">濁度</th>
+                                    <th class="middle" colspan="1">導電度</th>
+                                    <th class="middle" colspan="1">比導電度</th>
+                                    <th class="middle" colspan="1">油脂</th>
+                                    <th class="middle" colspan="1">鎘</th>
+                                    <th class="middle" colspan="1">總氮</th>
+                                    <th class="middle" colspan="1">總磷</th>
+                                <tr style="background-color: #cce166;text-align: center;">
+                               
+                                    <th class="middle" colspan="2">地點</th>
+                                    <th class="middle">(mgC/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mgCaCO3/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(°C)</th>
+                                    <th class="middle">NTF</th>
+                                    <th class="middle">(umho/cm)</th>
+                                    <th class="middle">(umho/cm)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                    <th class="middle">(mg/L)</th>
+                                </tr>        
+
+                            </thead>
+                            <tbody class="middle" style="text-align: center;">
+                                
+                            </tbody>                           
+                            </table>
+                        </div>
+                    </center>
+
                 </div>
             </div>
         </div>
@@ -316,32 +378,37 @@
             $("#enname").text($(this).val());
             switch ($(this).val()) {
                 case "煙道":
-                    $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflyash").css('display','none');
+                    $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflyash,.center-groundwater").css('display','none');
                     $('.center-enflue').css('display','block');
                     break;
                 case "原水":
-                    $(".center-airquality,.center-noisevibration,.center-soil,.center-enflue,.center-incineratorbottom,.center-enflyash").css('display','none');
+                    $(".center-airquality,.center-noisevibration,.center-soil,.center-enflue,.center-incineratorbottom,.center-enflyash,.center-groundwater").css('display','none');
                     $('.center-rawwater').css('display','block');
                     break;
-                case "TCLP底渣":
-                    $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflue").css('display','none');
+                case "TCLP飛灰":
+                    $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflue,.center-groundwater").css('display','none');
                     $('.center-enflyash').css('display','block');
                     break;
                 case "空氣監測":
-                    $(".center-enflue,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflyash").css('display','none');
+                    $(".center-enflue,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflyash,.center-groundwater").css('display','none');
                     $('.center-airquality').css('display','block');
                     break;
                 case "噪音振動":
-                    $(".center-airquality,.center-enflue,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflyash").css('display','none');
+                    $(".center-airquality,.center-enflue,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflyash,.center-groundwater").css('display','none');
                     $('.center-noisevibration').css('display','block');
                     break;
-                case "土穰":
-                    $(".center-airquality,.center-noisevibration,.center-enflue,.center-rawwater,.center-incineratorbottom,.center-enflyash").css('display','none');
+                case "土壤":
+                    $(".center-airquality,.center-noisevibration,.center-enflue,.center-rawwater,.center-incineratorbottom,.center-enflyash,.center-groundwater").css('display','none');
                     $('.center-soil').css('display','block');
                     break;
-                case "TCLP飛灰":
-                    $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-enflue,.center-enflyash").css('display','none');
+                case "TCLP底渣":
+                    $(".center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-enflue,.center-enflyash,.center-groundwater").css('display','none');
                     $('.center-incineratorbottom').css('display','block');
+                    break;
+                case "地下水":
+                    $(".center-enflue,.center-airquality,.center-noisevibration,.center-soil,.center-rawwater,.center-incineratorbottom,.center-enflyash").css('display','none');
+                    $('.center-groundwater').css('display','block');
+                    break;
 
             }
         });
@@ -356,6 +423,7 @@
             $(".table-rawwater tbody").html("");
             $(".table-incineratorbottom tbody").html("");
             $(".table-enflyash tbody").html("");
+            $(".table-engroundwater tbody").html("");
             changeYear($(this).val());
         });
     });
@@ -365,7 +433,7 @@
         var d = new Date();
         var n = d.getFullYear();
         var years = [];
-        for(var y=0; y<6; y++){
+        for(var y=0; y<4; y++){
             years.push(n);
             n--;
         }
@@ -556,8 +624,7 @@
             });
 
         $(".table-enflyash td:nth-child(1):eq(0),.table-enflyash td:nth-child(1):eq(3),.table-enflyash td:nth-child(1):eq(6),.table-enflyash td:nth-child(1):eq(9)").attr( "rowspan", "3" );
-        $(".table-enflyash td:nth-child(1):eq(1),.table-enflyash td:nth-child(1):eq(2),.table-enflyash td:nth-child(1):eq(4),.table-enflyash td:nth-child(1):eq(5),.table-enflyash td:nth-child(1):eq(7),.table-enflyash td:nth-child(1):eq(8),.table-enflyash td:nth-child(1):eq(10),.table-enflyash td:nth-child(1):eq(11)").remove();
-
+        $(".table-enflyash td:nth-child(1):eq(1),.table-enflyash td:nth-child(1):eq(2),.table-enflyash td:nth-child(1):eq(4),.table-enflyash td:nth-child(1):eq(5),.table-enflyash td:nth-child(1):eq(7),.table-enflyash td:nth-child(1):eq(8),.table-enflyash td:nth-child(1):eq(10),.table-enflyash td:nth-child(1):eq(11)").remove();    
     }
 </script>
 
