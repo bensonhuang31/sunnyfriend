@@ -13,30 +13,34 @@ use Validator;
 
 class InvestorController extends Controller
 {
-    public function index()
+    //股東會相關資訊 首頁
+    public function shareholders()
     {        
         $shareholdersinfo = ShareholdersInfo::all();
         return view('Investor.IFSM')->with('data',$shareholdersinfo);
     }
 
+    //營收公告 首頁
     public function revenue()
     {        
         $revenueinfo = RevenueInfo::orderBy('Month', 'asc')->get();
         return view('Investor.MonthlyRevenue')->with('data',$revenueinfo);
     }
 
+    //財務資訊 首頁
     public function finance()
     {        
         $financeinfo = FinanceInfo::all();
         return view('Investor.FinancialInformation')->with('data',$financeinfo);
     }
 
-    //後台股東會相關資訊
+    //後台股東會相關資訊 首頁
     public function AdminShareholdersIndex(){        
         $shareholdersinfo = ShareholdersInfo::orderBy('Year', 'desc')->get();
         return view('Admin.Investor.index')->with('data',$shareholdersinfo);
     }
-    
+
+    //後台股東會相關資訊 新增
     public function AdminShareholdersCreate(Request $request){
         $input = Input::all();
         $message=[
@@ -52,41 +56,47 @@ class InvestorController extends Controller
         //Move Uploaded File
         $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
 
-        $destinationPath = 'assets\images\CorporateGovernance';
-
         $shareholdersinfo = new ShareholdersInfo;
         $shareholdersinfo->Year = $input['year'];
         $shareholdersinfo->Type = $input['type'];
         $shareholdersinfo->FileName = $file->getClientOriginalName();
         $shareholdersinfo->FilePath = $newFileName;
         $shareholdersinfo->save();
-         
+        
+        //Uploaded File Path 待修改
+        $destinationPath = 'assets\images\CorporateGovernance';
         $file->move($destinationPath,$newFileName);
 
         return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
     }
 
+    //後台股東會相關資訊 編輯
     public function AdminShareholdersEdit(Request $request){
         $input=Input::all();
         $file = $request->file('file');
         $shareholders = Shareholdersinfo::find($input['id']);
-        if($file==NULL){
+
+        if($file==NULL){//No File
             $shareholders->Year = $input['year'];
             $shareholders->Type = $input['type'];
             $shareholders->save();
-        }else{
-            $destinationPath = 'assets\images\CorporateGovernance';
-            $newFileName = date("YmdHis").'shareholders.'.$file->getClientOriginalExtension();
+        }else{//New File
             $shareholders->Year = $input['year'];
             $shareholders->Type = $input['type'];
             $shareholders->FileName = $file->getClientOriginalName();
             $shareholders->FilePath = $newFileName;
             $shareholders->save();
+
+            //Uploaded File Path 待修改
+            $destinationPath = 'assets\images\CorporateGovernance';
+            $newFileName = date("YmdHis").'shareholders.'.$file->getClientOriginalExtension();
+            //Move Uploaded File
             $file->move($destinationPath,$newFileName);            
         }
         return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
     }
 
+    //後台股東會相關資訊 刪除
     public function AdminShareholdersDelete(){
         $input=Input::all();
         $re=Shareholdersinfo::where('id',$input['id'])->delete();
@@ -99,12 +109,13 @@ class InvestorController extends Controller
         
     }
 
-    //後台營收公告
+    //後台營收公告 首頁
     public function AdminRevenueIndex(){        
         $revenueinfo = RevenueInfo::orderBy('Month', 'asc')->get();
         return view('Admin.Investor.index2')->with('data',$revenueinfo);
     }
-    
+
+    //後台營收公告 新增
     public function AdminRevenueCreate(Request $request){
         $input = Input::all();
         
@@ -140,7 +151,8 @@ class InvestorController extends Controller
             return back()->withErrors($Validator);
         }
     }
-
+    
+    //後台營收公告 編輯
     public function AdminRevenueEdit(Request $request){
         $input = Input::all();
         $revenueinfo = RevenueInfo::find($input['id']);
@@ -169,6 +181,7 @@ class InvestorController extends Controller
         }
     }
 
+    //後台營收公告 刪除
     public function AdminRevenueDelete(){
         $input=Input::all();
         $re=RevenueInfo::where('id',$input['id'])->delete();
@@ -181,12 +194,13 @@ class InvestorController extends Controller
         
     }
 
-    //後台財務資訊
+    //後台財務資訊 首頁
     public function AdminFinanceIndex(){        
-        $financeinfo = FinanceInfo::all();
+        $financeinfo = FinanceInfo::orderBy('Year', 'desc')->get();
         return view('Admin.Investor.index3')->with('data',$financeinfo);
     }
 
+    //後台財務資訊 新增
     public function AdminFinanceCreate(Request $request){
         $input = Input::all();
         $message=[
@@ -201,22 +215,23 @@ class InvestorController extends Controller
         
         
         //Move Uploaded File
-        $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
+        $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();      
 
-        $destinationPath = 'assets\images\CorporateGovernance';
-        /**/
         $financeinfo = new FinanceInfo;
         $financeinfo->Year = $input['year'];
         $financeinfo->Type = $input['type'];
         $financeinfo->FileName = $file->getClientOriginalName();
         $financeinfo->FilePath = $newFileName;
         $financeinfo->save();
-         
-        $file->move($destinationPath,$newFileName);
+        
+        //Uploaded File Path 待修改
+        $destinationPath = 'assets\images\CorporateGovernance';
+        //$file->move($destinationPath,$newFileName);
 
-        return redirect('Admin/Investor/index3');
+        return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
     }
 
+    //後台財務資訊 編輯
     public function AdminFinanceEdit(Request $request){
         
         $input = Input::all();
@@ -224,24 +239,29 @@ class InvestorController extends Controller
         
         $file = $request->file('file');
         
-        if($file==NULL){
+        if($file==NULL){//No File
             $financeinfo->Year = $input['year'];
             $financeinfo->Type = $input['type'];
             $financeinfo->save();
-        }else{
-            $destinationPath = 'assets\images\CorporateGovernance';
+        }else{//New File
+            //Move Uploaded File
             $newFileName = date("YmdHis").'financeinfo.'.$file->getClientOriginalExtension();
+
             $financeinfo->Year = $input['year'];
             $financeinfo->Type = $input['type'];
             $financeinfo->FileName = $file->getClientOriginalName();
             $financeinfo->FilePath = $newFileName;
             $financeinfo->save();
+
+            //Uploaded File Path 待修改
+            $destinationPath = 'assets\images\CorporateGovernance';
             $file->move($destinationPath,$newFileName);            
         }
 
         return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
     }
-        
+    
+    //後台財務資訊 刪除
     public function AdminFinanceDelete(){
         $input=Input::all();
         $re=FinanceInfo::where('id',$input['id'])->delete();

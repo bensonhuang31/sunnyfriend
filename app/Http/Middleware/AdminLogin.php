@@ -15,10 +15,10 @@ class AdminLogin
      */
     public function handle($request, Closure $next)
     {
-        //if(!session('user'))
-        //{
-        //    return redirect('Admin/login');
-        //}
+        if(!session('user'))
+        {
+            return redirect('Admin/Login');
+        }
         return $next($request);
     }
 }

@@ -9,25 +9,27 @@ use Validator;
 
 class NewsController extends Controller
 {
+    //最新消息首頁
     public function index()
     {        
         $latestnews = LatestNews::all();
         return view('News.latestNews')->with('data',$latestnews);
     }
 
+    //內容頁
     public function detail($id)
     {        
         $newsdetail = LatestNews::find($id);
         return view('News.news-subindex')->with('data',$newsdetail);
     }
 
-    //後台最新消息
+    //後台最新消息 首頁
     public function AdminNewsIndex(){        
         $latestnews = LatestNews::orderBy('id', 'desc')->get();
         return view('Admin.News.index')->with('data',$latestnews);
     }
 
-    
+    //後台最新消息 新增
     public function AdminNewsCreate(Request $request){
         /**/
 
@@ -56,8 +58,9 @@ class NewsController extends Controller
             //Move Uploaded File
             $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
         
+            //Uploaded File Path 待修改
             $destinationPath = 'assets\images\CorporateGovernance';
-                /**/
+
             $latestnews = new LatestNews;
             $latestnews->Date = $input['date'];
             $latestnews->Title = $input['title'];
@@ -66,7 +69,7 @@ class NewsController extends Controller
             $latestnews->FilePath = $newFileName;
             $latestnews->save();
                  
-            //$file->move($destinationPath,$newFileName);
+            $file->move($destinationPath,$newFileName);
         
             return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
         }else{
@@ -74,9 +77,8 @@ class NewsController extends Controller
         }
     }
 
+    //後台最新消息 編輯
     public function AdminNewsEdit(Request $request){
-        
-        
         $file = $request->file('file');
 
         $rules =[
@@ -99,7 +101,6 @@ class NewsController extends Controller
         $latestnews = LatestNews::find($input['id']);
         
         if($Validator->passes()){
-                /**/
             if($file==NULL){
                 $latestnews->Date = $input['date'];
                 $latestnews->Title = $input['title'];
@@ -114,7 +115,7 @@ class NewsController extends Controller
                 $latestnews->FileName = $file->getClientOriginalName();
                 $latestnews->FilePath = $newFileName;
                 $latestnews->save();      
-                //$file->move($destinationPath,$newFileName);     
+                $file->move($destinationPath,$newFileName);     
             }           
             
             return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
@@ -126,6 +127,7 @@ class NewsController extends Controller
         return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
     }
 
+    //後台最新消息 刪除
     public function AdminNewsDelete(){
         $input=Input::all();
         $re=LatestNews::where('id',$input['id'])->delete();

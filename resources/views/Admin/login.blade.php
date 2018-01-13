@@ -18,19 +18,29 @@
         <h1 class="welcome text-center">日友環保科技股份有限公司</h1>
         <div class="card card-container">
             <h2 class='login_title text-center'>登入</h2>
+                @if (session('status')=='success')
+                <div class="alert alert-success">
+                    <ul>
+                        <li>{{session('message')}}</li>
+                    </ul>
+                </div>
+                @elseif (session('status')=='failed')
+                    <div class="alert alert-danger">
+                        <ul>
+                            <li>{{session('message')}}</li>
+                        </ul>
+                    </div>
+                @endif
             <hr>
-            <form class="form-signin">
+            {!! Form::open(array('url'=>'/Admin/Login','method'=>'POST','files'=>true,'class'=>'form-signin')) !!}
+            {{csrf_field()}}
                 <span id="reauth-email" class="reauth-email"></span>
                 <p class="input_title">帳號</p>
-                <input type="text" id="inputEmail" class="login_box" required autofocus>
+                <input type="text" id="inputEmail" class="login_box" name="user_name" required autofocus>
                 <p class="input_title">密碼</p>
-                <input type="password" id="inputPassword" class="login_box" required>
-                <div id="remember" class="checkbox">
-                    <label>
-                    </label>
-                </div>
+                <input type="password" id="inputPassword" class="login_box" name="user_pass" required>
                 <button class="btn btn-lg btn-primary" type="submit">Login</button>
-            </form>
+            {!! Form::close() !!}
             <!-- /form -->
         </div>
         <!-- /card-container -->

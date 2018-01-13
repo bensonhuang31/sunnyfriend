@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use App\Http\Requests;
 use App\Http\Model\User;
 use Illuminate\Support\Facades\Input;
 use Crypt;
@@ -10,6 +12,11 @@ use Validator;
 
 class LoginController extends Controller
 {
+    public function Admin()
+    {
+        return view('Admin.index');
+    }
+
     public function index()
     {
         return view('Admin.login');
@@ -25,11 +32,12 @@ class LoginController extends Controller
             }
 
             session(['user'=>$user]);
+            
 
             return redirect('Admin');
         }else{
             
-            return redirect('Admin/login');
+            return redirect('Admin/Login');
         }
     }
 
@@ -42,6 +50,6 @@ class LoginController extends Controller
     public function logout()
     {
         session(['user'=>null]);
-        return redirect('Admin/login');
+        return redirect('Admin/Login');
     }
 }

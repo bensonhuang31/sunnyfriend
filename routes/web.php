@@ -40,7 +40,7 @@ Route::view('/CorporateGovernance/InternalAuditing', 'CorporateGovernance.Intern
 Route::view('/CorporateGovernance/BoardofDirectors', 'CorporateGovernance.BoardofDirectors');
 Route::view('/CorporateGovernance/Diversification', 'CorporateGovernance.Diversification');
 //投資人專區
-Route::get('/Investor/IFSM','InvestorController@index');
+Route::get('/Investor/IFSM','InvestorController@shareholders');
 Route::get('/Investor/MonthlyRevenue','InvestorController@revenue');
 Route::get('/Investor/FinancialInformation','InvestorController@finance');
 Route::view('/Investor/ExchangeLink', 'Investor.ExchangeLink');
@@ -67,15 +67,15 @@ Route::get('/Environmentalprotection/EnvironmentMonitoring','Environmentalprotec
 Route::get('/lang/set/{lang}', 'LanguageController@set_lang');
 
 //後台
-Route::view('/Admin', 'Admin.index');
 
 Route::get('/Admin/Login','LoginController@index');
 Route::post('/Admin/Login','LoginController@login');
-Route::get('/Admin/Logout','LoginController@logout');
 Route::any('/Admin/crypt','LoginController@crypt');
 
-
 Route::group(['middlewareGroups' => ['web']], function () {
+    Route::get('/Admin/Logout','LoginController@logout');
+    Route::get('/Admin', 'LoginController@Admin');
+
     Route::get('/Admin/Investor/index', 'InvestorController@AdminShareholdersIndex');
     Route::post('/Admin/Investor/index','InvestorController@AdminShareholdersCreate');
     Route::post('/Admin/Investor/index/edit','InvestorController@AdminShareholdersEdit');
@@ -109,10 +109,12 @@ Route::group(['middlewareGroups' => ['web']], function () {
 
     Route::get('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringIndex');
     Route::post('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringCreate');
-
+    Route::post('/Admin/Environmentalprotection/index2/edit','EnvironmentalprotectionController@AdminMonitoringEdit');
+    Route::post('/Admin/Environmentalprotection/index2/delete','EnvironmentalprotectionController@AdminMonitoringDelete');
 });
 
 
 Route::group(['middleware' => ['web','admin.login']],function(){
+    
     
 });

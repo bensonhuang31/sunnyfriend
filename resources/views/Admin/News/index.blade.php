@@ -236,22 +236,19 @@
             "ordering": false, 
         });
 
+        //編輯資料
         $('.openedit').on("click", function () {
             var tr = $(this).closest('tr');
-            var date = tr.find(".Date").text();
-            var title = tr.find(".Title").text();
-            var filename = tr.find(".FileName").text();
-            var content = tr.find(".Content").attr('value');
             $("#EditInfo").find("input[name='id']").val($(this).attr('data-id'));
-            $("#EditInfo").find("input[name='date']").val(date);
-            $("#EditInfo").find("input[name='title']").val(title);
-            $("#EditInfo").find("input[name='filename']").val(filename);
-            $("#EditInfo").find("textarea[name='content']").text(content);
+            $("#EditInfo").find("input[name='date']").val(tr.find(".Date").text());
+            $("#EditInfo").find("input[name='title']").val(tr.find(".Title").text());
+            $("#EditInfo").find("input[name='filename']").val(tr.find(".FileName").text());
+            $("#EditInfo").find("textarea[name='content']").text(tr.find(".Content").attr('value'));
         });
 
+        //刪除
         $('.opendel').on("click", function () {           
             $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
-            
         });
     });
 
