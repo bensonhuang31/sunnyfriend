@@ -142,6 +142,7 @@
     $( document ).ready(function() {
         getYear();
         changeYear($("#changeyear").val());
+        $("#changename").text($("#changeyear").val()+"每月營收("+$("#changeyear").val()+" Monthly Revenue)");
         $('#changeyear').on('change',function(){
             $("#changename").text($(this).val()+"每月營收("+$(this).val()+" Monthly Revenue)");
             $(".each-table tbody").html("");

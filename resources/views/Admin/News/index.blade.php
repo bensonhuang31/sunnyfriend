@@ -212,8 +212,8 @@
         </div>
 
         <!-- /.container-fluid -->
-        <script src="../../js/moment.min.js"></script>
-        <script src="../../js/bootstrap-datetimepicker.min.js"></script>
+        <script src="../../resources/js/moment.min.js"></script>
+        <script src="../../resources/js/bootstrap-datetimepicker.min.js"></script>
 @endsection
 
 @section('script')

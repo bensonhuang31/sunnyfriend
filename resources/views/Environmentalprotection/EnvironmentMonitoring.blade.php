@@ -58,33 +58,33 @@
                     <center class="center-enflue">
                         <div class="table-responsive dragscroll">
                             <table class="table table5 table-enflue">
-                            <thead>
-                                <tr style="background-color: #AACD03;">
-                               
-                                    <th class="middle" colspan="2">檢測項目內容</th>
-                                    <th class="middle" colspan="1">粒狀汙染物</th>
-                                    <th class="middle" colspan="1">二氧化硫</th>
-                                    <th class="middle" colspan="1">氮氧化合物</th>
-                                    <th class="middle" colspan="1">一氧化碳</th>
-                                    <th class="middle" colspan="1">氯化氫</th>
-                                    <th class="middle" colspan="1">鉛</th>
-                                    <th class="middle" colspan="1">鎘</th>
-                                    <th class="middle" colspan="1">汞</th>
-                                <tr style="background-color: #cce166;text-align: center;">
-                               
-                                    <th class="middle" colspan="2">廠別</th>
-                                    <th class="middle">(mg/Nm^3)</th>
-                                    <th class="middle">(ppm)</th>
-                                    <th class="middle">(ppm)</th>
-                                    <th class="middle">(ppm)</th>
-                                    <th class="middle">(ppm)</th>
-                                    <th class="middle">(mg/Nm^3)</th>
-                                    <th class="middle">(mg/Nm^3)</th>
-                                    <th class="middle">(mg/Nm^3)</th>
-                                </tr>        
-                            </thead>
-                            <tbody class="middle" style="text-align: center;">
-                            </tbody>                           
+                                <thead>
+                                    <tr style="background-color: #AACD03;">
+                                
+                                        <th class="middle" colspan="2">檢測項目內容</th>
+                                        <th class="middle" colspan="1">粒狀汙染物</th>
+                                        <th class="middle" colspan="1">二氧化硫</th>
+                                        <th class="middle" colspan="1">氮氧化合物</th>
+                                        <th class="middle" colspan="1">一氧化碳</th>
+                                        <th class="middle" colspan="1">氯化氫</th>
+                                        <th class="middle" colspan="1">鉛</th>
+                                        <th class="middle" colspan="1">鎘</th>
+                                        <th class="middle" colspan="1">汞</th>
+                                    <tr style="background-color: #cce166;text-align: center;">
+                                
+                                        <th class="middle" colspan="2">廠別</th>
+                                        <th class="middle">(mg/Nm^3)</th>
+                                        <th class="middle">(ppm)</th>
+                                        <th class="middle">(ppm)</th>
+                                        <th class="middle">(ppm)</th>
+                                        <th class="middle">(ppm)</th>
+                                        <th class="middle">(mg/Nm^3)</th>
+                                        <th class="middle">(mg/Nm^3)</th>
+                                        <th class="middle">(mg/Nm^3)</th>
+                                    </tr>        
+                                </thead>
+                                <tbody class="middle" style="text-align: center;">
+                                </tbody>                           
                             </table>
                         </div>
                     </center>
@@ -107,6 +107,7 @@
                                     <th class="middle" >CH4</th>
                                     <th class="middle" >NMHC</th>
                                     <th class="middle" >PM10</th>
+                                    <th class="middle" >PM2.5</th>
                                 </tr>
                                 <tr style="background-color: #cce166;">
                                     <th class="middle" colspan="2">內容</th>
@@ -121,6 +122,7 @@
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
+                                    <th class="middle" >(ug/m3)</th>
                                     <th class="middle" >(ug/m3)</th>
                                 </tr>
 
@@ -170,13 +172,11 @@
                                     <th class="middle" >鉛</th>
                                     <th class="middle" >鎘</th>
                                     <th class="middle" >汞</th>
-                                    <th class="middle" >戴奧辛</th>
                                 </tr>
                                 <tr style="background-color: #cce166;">
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
-                                    <th class="middle" >(ng-TEQ/Nm3)</th>
                                 </tr>
 
                             </thead>
@@ -296,10 +296,9 @@
 
                     <center style="display:none" class="center-groundwater">
                         <div class="table-responsive dragscroll">
-                            <table class="table table5 table-engroundwater">
+                            <table class="table table5 table-groundwater">
                             <thead>
-                                <tr style="background-color: #AACD03;">
-                               
+                                <tr style="background-color: #AACD03;">     
                                     <th class="middle" colspan="2">檢測項目內容</th>
                                     <th class="middle" colspan="1">總有機碳</th>
                                     <th class="middle" colspan="1">TDS</th>
@@ -327,7 +326,6 @@
                                     <th class="middle" colspan="1">總氮</th>
                                     <th class="middle" colspan="1">總磷</th>
                                 <tr style="background-color: #cce166;text-align: center;">
-                               
                                     <th class="middle" colspan="2">地點</th>
                                     <th class="middle">(mgC/L)</th>
                                     <th class="middle">(mg/L)</th>
@@ -423,7 +421,7 @@
             $(".table-rawwater tbody").html("");
             $(".table-incineratorbottom tbody").html("");
             $(".table-enflyash tbody").html("");
-            $(".table-engroundwater tbody").html("");
+            $(".table-groundwater tbody").html("");
             changeYear($(this).val());
         });
     });
@@ -445,13 +443,7 @@
     }
 
     function changeYear(year){
-        var values = [];
-        var values2 = [];
-        var values3 = [];
-        var values4 = [];
-        var values5 = [];
-        var values6 = [];
-        var values7 = [];
+        var values = [],values2 = [],values3 = [],values4 = [],values5 = [],values6 = [],values7 = [],values8 = [];
         var json = @json($data['enflue']);
         var json2 = @json($data['enairquality']);
         var json3 = @json($data['ennoisevibration']);
@@ -459,6 +451,8 @@
         var json5 = @json($data['enrawwater']);
         var json6 = @json($data['enincineratorbottom']);
         var json7 = @json($data['enflyash']);
+        var json8 = @json($data['engroundwater']);
+
 
 
         for(var i = 0; i < json.length; i++){
@@ -503,6 +497,12 @@
             }
         }
 
+        for(var i = 0; i < json8.length; i++){
+            if(json8[i].Year==year){
+                values8.push(json8[i]);
+            }
+        }
+
         var eachTable = $(".table-enflue tbody");
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
@@ -516,7 +516,6 @@
                                     "<td class='middle'>"+ element.Pb +"</td>"+
                                     "<td class='middle'>"+ element.Cd +"</td>"+
                                     "<td class='middle'>"+ element.Hg +"</td>"+
-                                    "<td class='middle'>"+ element.Dioxin +"</td>"+
                                 "</tr>");
             });
 
@@ -542,7 +541,6 @@
                                     "<td class='middle'>"+ element.NMHC +"</td>"+
                                     "<td class='middle'>"+ element.PM10 +"</td>"+
                                     "<td class='middle'>"+ element.PM25 +"</td>"+
-                                    "<td class='middle'>"+ element.Dioxin +"</td>"+
                                 "</tr>");
             });
 
@@ -566,7 +564,6 @@
                                     "<td class='middle'>"+ element.Pb +"</td>"+
                                     "<td class='middle'>"+ element.Cd +"</td>"+
                                     "<td class='middle'>"+ element.Hg +"</td>"+
-                                    "<td class='middle'>"+ element.Dioxin +"</td>"+
                                 "</tr>");
             });
 
@@ -625,6 +622,45 @@
 
         $(".table-enflyash td:nth-child(1):eq(0),.table-enflyash td:nth-child(1):eq(3),.table-enflyash td:nth-child(1):eq(6),.table-enflyash td:nth-child(1):eq(9)").attr( "rowspan", "3" );
         $(".table-enflyash td:nth-child(1):eq(1),.table-enflyash td:nth-child(1):eq(2),.table-enflyash td:nth-child(1):eq(4),.table-enflyash td:nth-child(1):eq(5),.table-enflyash td:nth-child(1):eq(7),.table-enflyash td:nth-child(1):eq(8),.table-enflyash td:nth-child(1):eq(10),.table-enflyash td:nth-child(1):eq(11)").remove();    
+    
+        var eachTable8 = $(".table-groundwater tbody");
+        $.each(values8, function(index, element) {
+            eachTable8.append("<tr>" +
+                "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
+                "<td class='middle' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
+                "<td class='middle'>"+ element.Toc +"</td>"+
+                "<td class='middle'>"+ element.TDS +"</td>"+
+                "<td class='middle'>"+ element.Sulfate +"</td>"+
+                "<td class='middle'>"+ element.NaCl +"</td>"+
+                "<td class='middle'>"+ element.Totalhardness +"</td>"+
+                "<td class='middle'>"+ element.Nitratenitrogen +"</td>"+
+                "<td class='middle'>"+ element.Ammonianitrogen +"</td>"+
+                "<td class='middle'>"+ element.Pb +"</td>"+
+                "<td class='middle'>"+ element.Cr +"</td>"+
+                "<td class='middle'>"+ element.Mn +"</td>"+
+                "<td class='middle'>"+ element.Iron +"</td>"+
+                "<td class='middle'>"+ element.Hg +"</td>"+
+                "<td class='middle'>"+ element.As +"</td>"+
+                "<td class='middle'>"+ element.Ni +"</td>"+
+                "<td class='middle'>"+ element.Zn +"</td>"+
+                "<td class='middle'>"+ element.Cu +"</td>"+
+                "<td class='middle'>"+ element.PHvalue +"</td>"+
+                "<td class='middle'>"+ element.Temperature +"</td>"+
+                "<td class='middle'>"+ element.Turbidity +"</td>"+
+                "<td class='middle'>"+ element.Conductivity +"</td>"+
+                "<td class='middle'>"+ element.Specificconductivity +"</td>"+
+                "<td class='middle'>"+ element.Grease +"</td>"+
+                "<td class='middle'>"+ element.Cd +"</td>"+
+                "<td class='middle'>"+ element.TotalN +"</td>"+
+                "<td class='middle'>"+ element.TotalP +"</td>"+
+                "<td>"+
+                "</tr>");
+        });
+
+        //欄位合併
+        $(".table-groundwater td:nth-child(1):eq(0),.table-groundwater td:nth-child(1):eq(2),.table-groundwater td:nth-child(1):eq(4),.table-groundwater td:nth-child(1):eq(6)").attr( "rowspan", "2" );
+        $(".table-groundwater td:nth-child(1):eq(1),.table-groundwater td:nth-child(1):eq(3),.table-groundwater td:nth-child(1):eq(5),.table-groundwater td:nth-child(1):eq(7)").remove();
+
     }
 </script>
 

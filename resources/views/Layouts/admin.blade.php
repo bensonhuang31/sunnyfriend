@@ -6,12 +6,12 @@
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>日友環保科技股份有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/backside.css" rel="stylesheet">
-    <script src="../../js/jquery-1.11.1.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <link href="../../css/bootstrap-select.css" rel="stylesheet">
-    <link href="../../css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../resources/css/backside.css" rel="stylesheet">
+    <script src="../../resources/js/jquery-1.11.1.min.js"></script>
+    <script src="../../resources/js/bootstrap.min.js"></script>
+    <link href="../../resources/css/bootstrap-select.css" rel="stylesheet">
+    <link href="../../resources/css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -87,9 +87,9 @@
         });
     })
     </script>
-    <script src="../../js/bootstrap-select.min.js"></script>
-    <script src="../../js/bootstrap-filestyle.min.js"></script>
-    <script src="../../js/jquery.dataTables.min.js"></script>
+    <script src="../../resources/js/bootstrap-select.min.js"></script>
+    <script src="../../resources/js/bootstrap-filestyle.min.js"></script>
+    <script src="../../resources/js/jquery.dataTables.min.js"></script>
     @yield('script')
 </body>
 
