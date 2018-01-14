@@ -76,7 +76,7 @@
                                 <a href="../News/NewsCenter" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="../News/latestNews">最新消息</a></li>
-                                    <li><a href="../News/ImportantNews">重要訊息</a></li>
+                                    <li><a href="../News/ImportantNews">重大訊息</a></li>
                                     <li><a href="../News/WebsiteLinks">環保連結</a></li>
                                 </ul>
                             </li>

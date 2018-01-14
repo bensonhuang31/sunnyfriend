@@ -131,26 +131,26 @@
             <div class="Gradientline"></div>
         </div>
     </header>
-<!--banner-->
-<div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-    <img class="img-responsive" src="../../resources/assets/images/news/new_banner01.jpg">
-    <div class="titleBox clearfix">
-        <h2>最新消息</h2>
+    <!--banner-->
+    <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
+        <img class="img-responsive" src="../../assets/images/news/new_banner01.jpg">
+        <div class="titleBox clearfix">
+            <h2>{{Lang::get('sunnyfriend.News')}}</h2>
+        </div>
     </div>
-</div>
 
 
-<div class="wow fadeInDown" data-wow-delay="0.5s">
-    <div class="container">
-        <div class="row">
-            <div class="breads">
-                <a href="../../index.php">首頁</a>
-                <span>></span>
-                <span>最新消息</span>
+    <div class="wow fadeInDown" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="breads">
+                    <a href="../../index.php">{{Lang::get('sunnyfriend.Home')}}</a>
+                    <span>></span>
+                    <span>{{Lang::get('sunnyfriend.News')}}</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <!--重大消息-->
@@ -165,16 +165,16 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <p>{{$data->Content}}</p>
-                    <div class="btn btn-default">檔案下載</div>
+                    <div class="btn btn-default">{{Lang::get('sunnyfriend.subindex-1')}}</div>
                 </div>
             </div>
             <div class="back99"> </div>
         </div>
     </div>
-                <div class="text-center">
-            <div class="btn btn-default " onclick="window.history.go(-1);">返回上一頁</div>
-        </div>
+    <div class="text-center">
+        <div class="btn btn-default " onclick="window.history.go(-1);">{{Lang::get('sunnyfriend.subindex-2')}}</div>
     </div>
+</div>
 </div>
 
     <!--footer start from here-->

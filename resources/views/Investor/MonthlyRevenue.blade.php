@@ -5,18 +5,18 @@
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../resources/assets/images/news/new_banner.jpg">
         <div class="titleBox clearfix">
-            <h2>投資人專區</h2>
+            <h2>{{Lang::get('sunnyfriend.Investor')}}</h2>
         </div>
     </div>  
     <div class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.php">{{Lang::get('sunnyfriend.Home')}}</a>
                     <span>></span>
-                    <span>投資人專區</span>
+                    <span>{{Lang::get('sunnyfriend.Investor')}}</span>
                     <span>></span>
-                    <b>盈收公告</b>
+                    <b>{{Lang::get('sunnyfriend.MonthlyRevenus')}}</b>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <h3>盈收公告<div class="titleline"></div></h3>
+                    <h3>{{Lang::get('sunnyfriend.MonthlyRevenus')}}<div class="titleline"></div></h3>
                 </div>
             </div>
             <div class="row">
@@ -39,23 +39,23 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p id="changename">2017每月營收(2017 Monthly Revenue)</p>
-                    <p>單位：新台幣仟元(In Thousands of New Taiwan Dollars)</p>
+                    <p id="changename">{{Lang::get('sunnyfriend.MonthlyRevenus-1')}}</p>
+                    <p>{{Lang::get('sunnyfriend.MonthlyRevenus-2')}}</p>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="table-responsive dragscroll">
                         <table class="table table2 each-table">
                             <thead>
                                 <tr style="background-color: #AACD03;text-align: center;">
-                                    <td class="middle" rowspan="2">月
-                                        <br>(Month)</td>
-                                    <td class="middle" class="middle" colspan="2">合併營收
-                                        <br>(Consolidated)</td>
+                                    <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.MonthlyRevenus-3')}}
+                                        <br>{{Lang::get('sunnyfriend.MonthlyRevenus-4')}}</td>
+                                    <td class="middle" class="middle" colspan="2">{{Lang::get('sunnyfriend.MonthlyRevenus-5')}}
+                                        <br>{{Lang::get('sunnyfriend.MonthlyRevenus-6')}}</td>
                                     <tr style="background-color: #AACD03;text-align: center;">
-                                        <td class="middle">營收金額
-                                            <br>(New Revenue)</td>
-                                        <td class="middle">年度增(減)比例
-                                            <br>(YoY Change)</td>
+                                        <td class="middle">{{Lang::get('sunnyfriend.MonthlyRevenus-7')}}
+                                            <br>{{Lang::get('sunnyfriend.MonthlyRevenus-8')}}</td>
+                                        <td class="middle">{{Lang::get('sunnyfriend.MonthlyRevenus-9')}}
+                                            <br>{{Lang::get('sunnyfriend.MonthlyRevenus-10')}}</td>
                                     </tr>
                             </thead>
                             <tbody class="middle" style="text-align: center;">

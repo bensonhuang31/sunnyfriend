@@ -5,7 +5,7 @@
 <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
     <img class="img-responsive" src="../resources/assets/images/news/new_banner01.jpg">
     <div class="titleBox clearfix">
-        <h2>最新消息</h2>
+        <h2>{{Lang::get('sunnyfriend.News')}}</h2>
     </div>
 </div>
 
@@ -16,9 +16,9 @@
     <div class="container">
         <div class="row">
             <div class="breads">
-                <a href="../index.php">首頁</a>
+                <a href="../index.php">{{Lang::get('sunnyfriend.Home')}}</a>
                 <span>></span>
-                <b>最新消息</b>
+                <b>{{Lang::get('sunnyfriend.News')}}</b>
             </div>
         </div>
     </div>
@@ -35,9 +35,9 @@
 
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
-                                <h1>重要消息</h1>
-                                <h4>公開資訊觀測站</h4>
-                                <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。(查詢代號：8341)......</p>
+                                <h1>{{Lang::get('sunnyfriend.NewsCenter-1')}}</h1>
+                                <h4>{{Lang::get('sunnyfriend.NewsCenter-2')}}</h4>
+                                <p>{{Lang::get('sunnyfriend.NewsCenter-3')}}</p>
                             </div>
                             <img class="img-responsive img" src="../resources/assets/images/news/new01.jpg"></a>
                             <div class="info"></div>
@@ -48,11 +48,11 @@
 
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-btn">
-                                <h1>簡介影片</h1>
-                                <h4>公司介紹</h4>
-                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看中文版</div></a>
-                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看英文版</div></a>
-                                <a href="../AboutSF/IIC.html"><div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div></a>
+                                <h1>{{Lang::get('sunnyfriend.NewsCenter-4')}}</h1>
+                                <h4>{{Lang::get('sunnyfriend.NewsCenter-5')}}</h4>
+                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" target="_blank"><div class="btn btn-default newsbtn1 ">{{Lang::get('sunnyfriend.NewsCenter-6')}}</div></a>
+                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=" target="_blank"><div class="btn btn-default newsbtn1 ">{{Lang::get('sunnyfriend.NewsCenter-7')}}</div></a>
+                                <a href="../AboutSF/IIC.html"><div class="btn btn-default newsbtn2 ">{{Lang::get('sunnyfriend.NewsCenter-8')}}</div></a>
                             </div>
                             <img class="img-responsive img" src="../resources/assets/images/news/new02.jpg">
                             <div class="info"></div>
@@ -62,9 +62,9 @@
                       <img class=" icon_img" src="../assets/images/owl_icon/newsLOGO-04.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
-                                <h1>環保連結</h1>
-                                <h4>相關環保資訊</h4>
-                                <p>日友彰濱廠(中區事業廢棄物綜合處理中心)青新環境工程(股)公司......</p>
+                                <h1>{{Lang::get('sunnyfriend.NewsCenter-9')}}</h1>
+                                <h4>{{Lang::get('sunnyfriend.NewsCenter-10')}}</h4>
+                                <p>{{Lang::get('sunnyfriend.NewsCenter-11')}}</p>
                             </div>
                             <img class="img-responsive img" src="../resources/assets/images/news/new03.jpg">
                             <div class="info"></div>

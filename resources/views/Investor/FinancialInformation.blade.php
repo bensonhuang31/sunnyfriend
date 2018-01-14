@@ -5,18 +5,18 @@
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../resources/assets/images/news/new_banner.jpg">
         <div class="titleBox clearfix">
-            <h2>投資人專區</h2>
+            <h2>{{Lang::get('sunnyfriend.Investor')}}</h2>
         </div>
     </div>
     <div class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.php">{{Lang::get('sunnyfriend.Home')}}</a>
                     <span>></span>
-                    <span>投資人專區</span>
+                    <span>{{Lang::get('sunnyfriend.Investor')}}</span>
                     <span>></span>
-                    <b>財務資訊</b>
+                    <b>{{Lang::get('sunnyfriend.FinancialInformation')}}</b>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <h3>財務資訊<div class="titleline"></div></h3>
+                    <h3>{{Lang::get('sunnyfriend.FinancialInformation')}}<div class="titleline"></div></h3>
                 </div>
             </div>
             <div class="row">
@@ -40,12 +40,12 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <h4>中文財務報表資料</h4>
+                    <h4>{{Lang::get('sunnyfriend.FinancialInformation-1')}}</h4>
                     <table class="table table2 CHeach-table">
                         <thead>
                             <tr>
-                                <th width="60%">檔案名稱</th>
-                                <th width="10%" style="text-align: center;">檔案下載</th>
+                                <th width="60%">{{Lang::get('sunnyfriend.FinancialInformation-2')}}</th>
+                                <th width="10%" style="text-align: center;">{{Lang::get('sunnyfriend.FinancialInformation-3')}}</th>
                             </tr>
                             <!--
                             <tr>
@@ -62,13 +62,13 @@
             <br><br>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <h4>英文財務報表資料</h4>
+                    <h4>{{Lang::get('sunnyfriend.FinancialInformation-4')}}</h4>
                     <div class="table-responsive dragscroll">
                         <table class="table table2 ENeach-table">
                             <thead>
                                 <tr>
-                                    <th width="60%">檔案名稱</th>
-                                    <th width="10%" style="text-align: center;">檔案下載</th>
+                                    <th width="60%">{{Lang::get('sunnyfriend.FinancialInformation-5')}}</th>
+                                    <th width="10%" style="text-align: center;">{{Lang::get('sunnyfriend.FinancialInformation-6')}}</th>
                                 </tr>
                                 <!--
                                 <tr>
