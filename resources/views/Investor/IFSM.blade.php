@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/news/new_banner.jpg">
+        <img class="img-responsive" src="../resources/assets/images/news/new_banner.jpg">
         <div class="titleBox clearfix">
             <h2>投資人專區</h2>
         </div>
@@ -112,7 +112,7 @@
                 eachTable.append("<tr>" +
                                     "<td data-th='股東會性質' style='text-align: center;'>"+ element.Type +"</td>"+
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/"+ element.Year +"/"+ element.FileName +"'><img class='img-responsive center-block' src='../assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/"+ element.Year +"/"+ element.FileName +"'><img class='img-responsive center-block' src='../resources/assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
     }

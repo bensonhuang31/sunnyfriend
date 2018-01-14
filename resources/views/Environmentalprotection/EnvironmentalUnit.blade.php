@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/Environmentalprotection/Environmentalprotection_banner.jpg">
+        <img class="img-responsive" src="../resources/assets/images/Environmentalprotection/Environmentalprotection_banner.jpg">
         <div class="titleBox clearfix">
             <h2>環境保護</h2>
         </div>
@@ -33,19 +33,17 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <center>
                         <div class="table-responsive dragscroll">
-                            <table class="table table2">
-                                <tr >
-                                    <th >日期</th>
-                                    <th >事項</th>
-                                    <th >主辦機關</th>
-                                    <th >結果</th>
-                                </tr>
-                                <tr>
-                                    <td data-th="日期">106.09.27</td>
-                                    <td data-th="事項">環境影響評估監督業務(106 年度-3)</td>
-                                    <td data-th="主辦機關">雲林縣環保局</td>
-                                    <td data-th="結果">待執行</td>
-                                </tr>
+                            <table class="table table2 each-table">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center;">日期</th>
+                                        <th style="text-align: center;">事項</th>
+                                        <th style="text-align: center;">主辦機關</th>
+                                        <th style="text-align: center;">結果</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
                             </table>
                         </div>
                     </center>
@@ -53,4 +51,56 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+
+<script>
+    $( document ).ready(function() {
+        getYear();
+        changeYear($("#changeyear").val());
+        $('#changeyear').on('change',function(){
+            $(".each-table tbody").html("");
+            changeYear($(this).val());
+        });
+    });
+
+    function getYear(){
+        $("#changeyear").html("");
+        var d = new Date();
+        var n = d.getFullYear();
+        var years = [];
+        for(var y=0; y<6; y++){
+            years.push(n);
+            n--;
+        }
+
+        var eachTable = $("#changeyear");
+            $.each(years, function(index, element) {
+                eachTable.append("<option>"+ element +"</option>");
+            });
+    }
+
+    function changeYear(year){
+        var values = [];
+        var json = @json($data);
+
+        for(var i = 0; i < json.length; i++){
+            if(json[i].Year==year){
+                values.push(json[i]);
+            }
+        }
+
+        var eachTable = $(".each-table tbody");
+            $.each(values, function(index, element) {
+                eachTable.append("<tr>" +
+                        "<td data-th='日期' class='Date' style='text-align: center;'>"+ element.Date +"</td>"+
+                        "<td data-th='事項' class='Notes' style='text-align: center;'>"+ element.Notes +"</td>"+
+                        "<td data-th='主辦機關' class='Organizer' style='text-align: center;'>"+ element.Organizer +"</td>"+
+                        "<td data-th='結果' class='Result' style='text-align: center;'>"+ element.Result +"</td>"+
+                        "</tr>");
+            });
+    }
+</script>
+
 @endsection

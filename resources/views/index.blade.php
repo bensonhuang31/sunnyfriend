@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/ihover2.css" rel="stylesheet">
     <link href="css/sunfriend2.css" rel="stylesheet">

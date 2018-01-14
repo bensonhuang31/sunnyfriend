@@ -60,8 +60,7 @@
                                                     <label class="control-label" for="inputEmail3">*日期</label>
                                                     <div class='input-group date' id='datetimCreate'>
                                                         <input type='text' class="form-control" name="date"/>
-                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
-                                                        </span>
+                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-6">

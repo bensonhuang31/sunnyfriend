@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/CorporateGovernance/公司治理_banner.jpg">
+        <img class="img-responsive" src="../resources/assets/images/CorporateGovernance/公司治理_banner.jpg">
         <div class="titleBox clearfix">
             <h2>公司治理</h2>
         </div>
@@ -44,7 +44,7 @@
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">內部稽核之組織及運作</td>
-                            <td data-th="檔案下載"><a href='../assets/file/InternalAuditing/InternalAuditing.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
+                            <td data-th="檔案下載"><a href='../resources/assets/file/InternalAuditing/InternalAuditing.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                     </table>
                 </div>

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/CSR_banner.jpg">
+        <img class="img-responsive" src="../resources/assets/images/CorporateSocialResponsibility/CSR_banner.jpg">
         <div class="titleBox clearfix">
             <h2>企業社會責任</h2>
         </div>
@@ -94,7 +94,7 @@
                     <p>日友總公司位於雲林縣元長鄉，全鄉共有21村，總人口數約為27,000人，元長鄉居民的經濟來源多以務農及畜牧為主，經濟相對弱勢。日友公司身為在地企業，善盡企業社會責任，積極關心偏鄉的教育，2011年開始延續地方回饋擴大至教育活動，捐贈圖書購置經費，舉辦徵文比賽、環保科學營、文學寫作營活動，創辦「土豆鳥文學誌」；進一步與「遠見天下文化教育基金會」公益合作，定期贈閱遠見天下雜誌「未來兒童」、「未來少年」，一連串的教育資源投入，期許為偏鄉教育注入活水，為弱勢的學生逆轉人生，讓他們能大膽的做夢，看見未來的可能。</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-md-offset-1">
-                    <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/022.png">
+                    <img class="img-responsive" src="../resources/assets/images/CorporateSocialResponsibility/022.png">
                 </div>
             </div>
             </br>

@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/stackholder/Business People Meeting Discussion Working Concept.jpg">
+        <img class="img-responsive" src="../resources/assets/images/stackholder/Business People Meeting Discussion Working Concept.jpg">
         <div class="titleBox clearfix">
             <h2>利害關係人</h2>
         </div>
@@ -44,7 +44,7 @@
                     <p style="color:#009943">(3)定期健康檢查：</br><span style="color:#555555">為提供同仁安全衛生之工作環境及預防職業災害之發生，定期為同仁辦理免費健康檢查，廠務人員為每半年排定一次健康檢查，司機及業務人員為每年排定一次健康檢查，行政人員則為每二年排定一次健康檢查。</span></p>
                 </div>
                 <div class="col-md-5 col-sm-12 col-xs-12">
-                    <img class="img-responsive center-block" src="../assets/images/stackholder/036員工2.jpg">
+                    <img class="img-responsive center-block" src="../resources/assets/images/stackholder/036員工2.jpg">
                 </div>
             </div>
             <div class="row">
@@ -57,7 +57,7 @@
                     <p style="color:#009943">(7)現金增資員工認股：</br><span style="color:#555555">為凝聚員工對公司向心力，參與公司經營，並分享公司未來經營成果，依照公司法規定，保留部分發行新股之股份由公司員工承購，並依本公司『員工認股辦法』辦理。</span></p>
                 </div>
                 <div class="col-md-5 col-sm-12 col-xs-12 col-md-pull-7">
-                    <img class="img-responsive center-block" src="../assets/images/stackholder/036員工6.jpg">
+                    <img class="img-responsive center-block" src="../resources/assets/images/stackholder/036員工6.jpg">
                 </div>
             </div>
             <div class="back99"></div>

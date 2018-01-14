@@ -133,7 +133,7 @@
     </header>
 <!--banner-->
 <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-    <img class="img-responsive" src="../../assets/images/news/new_banner01.jpg">
+    <img class="img-responsive" src="../../resources/assets/images/news/new_banner01.jpg">
     <div class="titleBox clearfix">
         <h2>最新消息</h2>
     </div>

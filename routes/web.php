@@ -59,9 +59,9 @@ Route::view('/Stakeholder/SMP', 'Stakeholder.SMP');
 Route::view('/Stakeholder/GrievanceMachinery', 'Stakeholder.GrievanceMachinery');
 Route::view('/Stakeholder/UBGM', 'Stakeholder.UBGM');
 //環境保護
-Route::view('/Environmentalprotection/EnvironmentalUnit', 'Environmentalprotection.EnvironmentalUnit');
 Route::view('/Environmentalprotection/Energysaving', 'Environmentalprotection.Energysaving');
 Route::get('/Environmentalprotection/EnvironmentMonitoring','EnvironmentalprotectionController@Monitoring');
+Route::get('/Environmentalprotection/EnvironmentalUnit','EnvironmentalprotectionController@alUnit');
 
 //語系
 Route::get('/lang/set/{lang}', 'LanguageController@set_lang');
@@ -106,6 +106,11 @@ Route::group(['middlewareGroups' => ['web']], function () {
     Route::post('/Admin/News/index','NewsController@AdminNewsCreate');
     Route::post('/Admin/News/index/edit','NewsController@AdminNewsEdit');
     Route::post('/Admin/News/index/delete','NewsController@AdminNewsDelete');
+
+    Route::get('/Admin/Environmentalprotection/index', 'EnvironmentalprotectionController@AdminAlUnitIndex');
+    Route::post('/Admin/Environmentalprotection/index', 'EnvironmentalprotectionController@AdminAlUnitCreate');
+    Route::post('/Admin/Environmentalprotection/index/edit','EnvironmentalprotectionController@AdminAlUnitEdit');
+    Route::post('/Admin/Environmentalprotection/index/delete','EnvironmentalprotectionController@AdminAlUnitDelete');
 
     Route::get('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringIndex');
     Route::post('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringCreate');

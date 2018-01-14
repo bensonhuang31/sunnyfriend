@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/CorporateGovernance/公司治理_banner.jpg">
+        <img class="img-responsive" src="../resources/assets/images/CorporateGovernance/公司治理_banner.jpg">
         <div class="titleBox clearfix">
             <h2>公司治理</h2>
         </div>
@@ -42,35 +42,35 @@
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">公司章程</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">董事會議事規範</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">道德行為準則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">企業社會責任實務守則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">誠信經營守則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">取得或處分資產處理程序</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">公司治理實務守則</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">防範內線交易管理作業辦法</td>
-                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></td>
+                            <td data-th="檔案下載"><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                     </table>
                 </div>

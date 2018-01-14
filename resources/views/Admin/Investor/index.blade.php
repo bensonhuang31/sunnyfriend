@@ -139,7 +139,7 @@
             <div class="modal-body">
                 <div class="form-row form-group">
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <label class="control-label">*新增年度</label>
+                        <label class="control-label">*年度</label>
                         <select class="selectpicker selectbtn edityear" name="year" id="edityear">
                         </select>
                     </div>
@@ -195,7 +195,7 @@
 </div>
 
 @endsection
-<script></script>
+
 @section('script')
 
 <script>

@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/CSR_banner.jpg">
+        <img class="img-responsive" src="../resources/assets/images/CorporateSocialResponsibility/CSR_banner.jpg">
         <div class="titleBox clearfix">
             <h2>企業社會責任</h2>
         </div>
@@ -42,7 +42,7 @@
                 @foreach($data as $img)
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="{{url('assets/images/CorporateSocialResponsibility/土豆鳥雜誌/'.$img->OriFileName)}}">
+                            <img class="img-responsive img" src="{{url('resources/assets/images/CorporateSocialResponsibility/土豆鳥雜誌/'.$img->OriFileName)}}">
                         </div>
                     </div>
                 @endforeach
