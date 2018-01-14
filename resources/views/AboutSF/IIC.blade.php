@@ -5,7 +5,7 @@
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../assets/images/about/about_banner.jpg">
         <div class="titleBox clearfix">
-            <h2>關於日友</h2>
+            <h2>{{Lang::get('sunnyfriend.AboutSF')}}</h2>
         </div>
     </div>
 
@@ -13,11 +13,11 @@
     <div class="container">
         <div class="row">
             <div class="breads">
-                <a href="../index.php">首頁</a>
+                <a href="../index.php">{{Lang::get('sunnyfriend.Home')}}</a>
                 <span>></span>
-                <span>關於日友</span>
+                <span>{{Lang::get('sunnyfriend.AboutSF')}}</span>
                 <span>></span>
-                <b>法說會</b>
+                <b>{{Lang::get('sunnyfriend.IICName')}}</b>
             </div>
         </div>
     </div>
@@ -30,11 +30,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 col-sm-5 col-xs-12">
-                <h3>法說會<div class="titleline"></div></h3>
-                <h4>公告本公司召開上市前業績發表會</h4>
-                <p style="text-align: left;">1.召開法人說明會之日期：2015/03/04。</br>2.召開法人說明會之時間：14時30分。</br>3.召開法人說明會之地點：台北君悅飯店三樓凱悅II廳。</br>4.法人說明會 『影音連結』(<span>完整較大影片請點連結</span>)</p>
+                <h3>{{Lang::get('sunnyfriend.IICName')}}<div class="titleline"></div></h3>
+                <h4>{{Lang::get('sunnyfriend.IIC-1')}}</h4>
+                <p style="text-align: left;">{{Lang::get('sunnyfriend.IIC-2')}}</br>{{Lang::get('sunnyfriend.IIC-3')}}</br>{{Lang::get('sunnyfriend.IIC-4')}}</br>{{Lang::get('sunnyfriend.IIC-5')}}<span>{{Lang::get('sunnyfriend.IIC-6')}}</span>{{Lang::get('sunnyfriend.IIC-7')}}</p>
                 <br>
-                 <a  class="btn btn-default btn-block" href="https://www.youtube.com/watch?v=O0cxefJvOx8" target="_blank" role="button" style="z-index:999;">完整影音連結</a>
+                 <a  class="btn btn-default btn-block" href="https://www.youtube.com/watch?v=O0cxefJvOx8" target="_blank" role="button" style="z-index:999;">{{Lang::get('sunnyfriend.IIC-8')}}</a>
             </div>
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="embed-responsive embed-responsive-16by9">

@@ -5,18 +5,18 @@
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../assets/images/CorporateSocialResponsibility/CSR_banner.jpg">
         <div class="titleBox clearfix">
-            <h2>企業社會責任</h2>
+            <h2>{{Lang::get('sunnyfriend.CorporateSocialResponsibility')}}</h2>
         </div>
     </div>
     <div class="wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.php">{{Lang::get('sunnyfriend.Home')}}</a>
                     <span>></span>
-                    <span>企業社會責任</span>
+                    <span>{{Lang::get('sunnyfriend.CorporateSocialResponsibility')}}</span>
                     <span>></span>
-                    <b>土豆鳥文學誌</b>
+                    <b>{{Lang::get('sunnyfriend.VanellusLiterature')}}</b>
                 </div>
             </div>
         </div>
@@ -26,18 +26,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4">
-                    <h3>土豆鳥文學誌<div class="titleline"></div></h3>
+                    <h3>{{Lang::get('sunnyfriend.VanellusLiterature')}}<div class="titleline"></div></h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <p>土豆鳥文學誌收錄了日友公司與元長鄉公所辦理之徵文比賽優秀作品、日友文學寫作營優秀作品、元長鄉活動花絮、社區之美、藝文活動…等等，贈送每位就讀元長地區學校的學生及教師，內容豐富多元深入地方，廣獲各界人士及學子們的好評，也為近年來日友敦親睦鄰的重點項目之一。
+                    <p>{{Lang::get('sunnyfriend.VanellusLiterature-1')}}
                     </br>
                     </br>
                     </p>
                 </div>
             </div>
-             <h5 style="color: #009943;">下載觀看&nbsp;<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h5>
+             <h5 style="color: #009943;">{{Lang::get('sunnyfriend.VanellusLiterature-2')}}&nbsp;<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h5>
             <div class="row">
                 @foreach($data as $img)
                     <div class="col-md-4 col-sm-4 col-xs-6">
