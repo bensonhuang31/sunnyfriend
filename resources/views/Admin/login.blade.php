@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>日友環保科技股份有限公司後台登入介面</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/login.css" rel="stylesheet">
-    <script src="../js/jquery-1.11.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../resources/css/login.css" rel="stylesheet">
+    <script src="../resources/js/jquery-1.11.1.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
 </head>
 
 <body>

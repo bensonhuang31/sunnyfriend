@@ -14,11 +14,17 @@ use App\Http\Model\EnNoiseVibration;
 use App\Http\Model\EnRawwater;
 use App\Http\Model\EnSoil;
 use App\Http\Model\EnGroundwater;
+use App\Http\Model\AlUnit;
 use Validator;
 
 
 class EnvironmentalprotectionController extends Controller
 {
+    public function alUnit()
+    {
+        $alunit = AlUnit::orderBy('Date', 'desc')->get();
+        return view('Environmentalprotection.EnvironmentalUnit')->with('data',$alunit);
+    }
     public function Monitoring()
     {        
         $enairquality = EnAirQuality::all();
@@ -32,6 +38,80 @@ class EnvironmentalprotectionController extends Controller
         return view('Environmentalprotection.EnvironmentMonitoring')->with('data', ['enairquality' => $enairquality, 'enflue' => $enflue, 'enflyash' => $enflyash, 
                                                                            'enincineratorbottom' => $enincineratorbottom, 'ennoisevibration' => $ennoisevibration, 
                                                                            'enrawwater' => $enrawwater, 'ensoil' => $ensoil, 'engroundwater' => $engroundwater]);
+    }
+
+    //後台環境保護查核行程 首頁
+    public function AdminAlUnitIndex()
+    {
+        $alunit = AlUnit::orderBy('Date', 'desc')->get();
+        return view('Admin.Environmentalprotection.index')->with('data',$alunit);
+    }
+
+    //後台環境保護查核行程 新增
+    public function AdminAlUnitCreate()
+    {
+        $input = Input::all();
+
+        $rules =[
+            'date'=> '',
+        ];
+
+        $message=[
+            'date.required'=> '',
+        ];
+
+        $Validator=Validator::make($input,$rules,$message);
+        
+        if($Validator->passes()){
+            $alunit = new AlUnit;
+            $alunit->Date = $input['Date'];
+            $alunit->Notes = $input['Notes'];
+            $alunit->Organizer = $input['Organizer'];
+            $alunit->Result = $input['Result'];
+            $alunit->save();
+        
+            return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
+        }else{
+            return back()->withErrors($Validator);
+        }
+    }
+
+    //後台環境保護查核行程 編輯
+    public function AdminAlUnitEdit(){
+        $rules =[
+        ];
+
+        $message=[
+        ];
+
+        $input=Input::all();
+        $Validator=Validator::make($input,$rules,$message);
+        $alunit = AlUnit::find($input['id']);
+        
+        if($Validator->passes()){
+            $alunit->Date = $input['Date'];
+            $alunit->Notes = $input['Notes'];
+            $alunit->Organizer = $input['Organizer'];
+            $alunit->Result = $input['Result'];
+            $alunit->save();
+ 
+            return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
+        }else{
+            return back()->withErrors($Validator);
+        }
+    }
+
+    //後台環境保護查核行程 刪除
+    public function AdminAlUnitDelete(){
+        $input=Input::all();
+        $re=AlUnit::where('id',$input['id'])->delete();
+
+        if($re){
+            return redirect()->back()->with(['status' => 'success','message' => '刪除成功']);
+        }else{
+            return redirect()->back()->with(['status' => 'failed','message' => '刪除失敗']);
+        }
+        
     }
 
     //後台環境監測 首頁
@@ -179,13 +259,13 @@ class EnvironmentalprotectionController extends Controller
             case "engroundwater":
                 $engroundwater = array(
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
-                    array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
+                    array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'二號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '2','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
-                    array('Year'=>$input['Year'], 'Season'=> '2','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
+                    array('Year'=>$input['Year'], 'Season'=> '2','Location'=>'二號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '3','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
-                    array('Year'=>$input['Year'], 'Season'=> '3','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
+                    array('Year'=>$input['Year'], 'Season'=> '3','Location'=>'二號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '4','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
-                    array('Year'=>$input['Year'], 'Season'=> '4','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''), 
+                    array('Year'=>$input['Year'], 'Season'=> '4','Location'=>'二號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','As'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''), 
                 );
                 $engroundwaterinfo = EnGroundwater::all()->where('Year', '=', $input['Year']);
                 if($engroundwaterinfo->isEmpty()){
