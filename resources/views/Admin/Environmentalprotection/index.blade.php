@@ -168,10 +168,10 @@
             <div class="col-md-12 col-sm-12">
                 <table class="table table2 ">
                     <tr>
-                        <th >日期</th>
-                        <th >事項</th>
-                        <th >主辦機關</th>
-                        <th >結果</th>
+                        <th>日期</th>
+                        <th>事項</th>
+                        <th>主辦機關</th>
+                        <th>結果</th>
                         <th>修改</th>
                     </tr>
                     <tr>

@@ -41,6 +41,9 @@ return [
     'GrievanceMachinery' => '申訴管道',
     'UBGM' => '不道德行為檢舉制度',
     'Energysaving' => '節能減碳',
+    'EnvironmentalUnit' => '環保單位查核行程',
+    'EnvironmentMonitoring' => '環境監測',
+    'css' => 'sub-sunfriend.css',
 
     //關於日友
     'CompanyProfile' => '關於日友',
@@ -405,6 +408,7 @@ return [
     'BoardofDirectors-3' => '初次選任日期',
     'BoardofDirectors-4' => '選任時持有股份',
     'BoardofDirectors-5' => '截至民國106.04.17止',
+    'BoardofDirectors-5-1' => '持有股數',
     'BoardofDirectors-6' => '目前兼任本公司及其他公司之職務',
     'BoardofDirectors-7' => '股數',
     'BoardofDirectors-8' => '持有比例',
@@ -495,7 +499,7 @@ return [
     'BoardofDirectors-92' => '1.00%',
     'BoardofDirectors-93' => '1,120,496',
     'BoardofDirectors-94' => '1.00%',
-    'BoardofDirectors-95' => '111',
+    'BoardofDirectors-95' => '1.潤泰創新國際(股)公司會計部副總經理',
     'BoardofDirectors-96' => '2.潤泰全球(股)公司監察人',
     'BoardofDirectors-97' => '3.潤泰精密材料(股)公司監察人',
     'BoardofDirectors-98' => '監察人',
@@ -1041,6 +1045,12 @@ return [
     'Energysaving-60' => 'c.影印背面紙的重覆使用。',
     'Energysaving-61' => 'd.自備杯子及餐具以減少免洗餐具的使用量。',
 
+
+    //環保單位查核行程
+
+
+    //環境監測
+    'EnvironmentMonitoring-1' => '環境監測',
 
 
 

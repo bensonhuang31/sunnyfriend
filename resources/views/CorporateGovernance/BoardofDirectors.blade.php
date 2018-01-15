@@ -45,7 +45,7 @@
                                     <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-2')}}</td>
                                     <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-3')}}</td>
                                     <td class="middle" class="middle" colspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-4')}}</td>
-                                    <td class="middle" colspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-5')}}<br>持有股數</td>
+                                    <td class="middle" colspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-5')}}<br>{{Lang::get('sunnyfriend.BoardofDirectors-5.1')}}</td>
                                     <td style="text-align: left;" class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-6')}}</td>
                                 </tr>
                                 <tr style="background-color: #AACD03;text-align: center;">

@@ -15,7 +15,7 @@
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/ihover2.css" rel="stylesheet">
     <link href="../css/sunfriend2.css" rel="stylesheet">
-    <link href="../css/sub-sunfriend.css" rel="stylesheet">
+    <link href="../css/{{Lang::get('sunnyfriend.css')}}" rel="stylesheet">
     <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
     <link href="../css/bootstrap-select.css" rel="stylesheet">
     <!--思源黑體 -->
