@@ -30,7 +30,7 @@
                     @endif
                 </div>
                     <div class="col-sm-12 col-md-12">
-                        <h3>企業社會責任報告書</h3>
+                        <h3>土豆鳥文學誌</h3>
                         <!-- Page Heading -->
                     </div>
                 </div>
@@ -43,39 +43,39 @@
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/index','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
-                                    {{csrf_field()}}
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">
-                                            <span aria-hidden="true">&times;</span>
-                                            <span class="sr-only">Close</span>
-                                        </button>
-                                        <h4 class="modal-title" id="myModalLabel">企業社會責任報告書</h4>
-                                    </div>
-                                    <!-- Modal Body -->
-                                    <div class="modal-body">
+                                    {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/AdminVanellusLiterature','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                        {{csrf_field()}}
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">&times;</span>
+                                                <span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">土豆鳥文學誌</h4>
+                                        </div>
+                                        <!-- Modal Body -->
+                                        <div class="modal-body"> 
                                             <div class="form-row form-group">
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
-                                                    <label class="control-label" >*請選擇PDF檔案</label>
-                                                    {!! Form::file('file', array('class' => 'filestyle','style'=>'width:100%','accept'=>'application/pdf')) !!}
+                                                    <label class="control-label">*請選擇PDF檔案</label>
+                                                    {!! Form::file('file', array('class' => 'btn btn-default filestyle','style'=>'width:100%','accept'=>'application/pdf')) !!}
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                     </br>
-                                                    <label class="control-label" >*請選擇圖片</label>
-                                                    {!! Form::file('image', array('class' => 'filestyle','style'=>'width:100%','accept'=>'application/image/*')) !!}
+                                                    <label class="control-label">*請選擇圖片</label>
+                                                    {!! Form::file('image', array('class' => 'btn btn-default filestyle','style'=>'width:100%')) !!}
                                                 </div>
                                             </div>
-                                    </div>
-                                    <!-- Modal Footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            Close
-                                        </button>
-                                        {!! Form::submit('確認上傳', array('class'=>'btn btn-primary')) !!}
-                                    </div>
-                                {!! Form::close() !!}
+                                        </div>
+                                        <!-- Modal Footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                Close
+                                            </button>
+                                            {!! Form::submit('確認上傳', array('class'=>'btn btn-primary')) !!}
+                                        </div>
+                                    {!! Form::close() !!}
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
             <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
-        <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
+        <div class="back2 ack3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
@@ -101,13 +101,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($data as $csr)
+                                @foreach($data as $potato)
                                     <tr>
-                                        <!--<td data-th="年度">{{$csr->id}}</td>-->
-                                        <td data-th="檔案名稱">{{$csr->OriFileName}}</td>
-                                        <td data-th="圖片名稱">{{$csr->OriImageName}}</td>
-                                        <td data-th="圖片"><a href="#" class=""><img src="../../resources/assets/images/CorporateSocialResponsibility/csr報告書/{{$csr->ImageName}}" alt="..."  width="72" height="100"></a></td>
-                                        <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$csr->id}}" data-target='#DelInfo'>刪除</button><td>
+                                        <!--<td data-th="年度">{{$potato->id}}</td>-->
+                                        <td data-th="檔案名稱">{{$potato->OriFileName}}</td>
+                                        <td data-th="圖片名稱">{{$potato->OriImageName}}</td>
+                                        <td data-th="圖片"><a href="#" class=""><img src="../../resources/assets/images/CorporateSocialResponsibility/土豆鳥雜誌/{{$potato->ImageName}}" alt="..."  width="72" height="100"></a></td>
+                                        <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$potato->id}}" data-target='#DelInfo'>刪除</button><td>
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -116,11 +116,10 @@
                 </div>
             </div>
         </div>
-    </div>
 
         <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-            {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/index/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+            {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/AdminVanellusLiterature/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
             {{csrf_field()}}
             <input name="id" type="hidden">
                 <div class="modal-content">
@@ -143,7 +142,6 @@
             {!! Form::close() !!}
             </div>
         </div>
-
 @endsection
 
 @section('script')

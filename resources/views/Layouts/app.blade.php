@@ -8,18 +8,6 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>日友環保科技股份有限公司</title>
     <!-- Bootstrap -->
-<<<<<<< HEAD
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/owl.carousel.min.css" rel="stylesheet">
-    <link href="../css/owl.theme.default.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/animate.css" rel="stylesheet">
-    <link href="../css/ihover2.css" rel="stylesheet">
-    <link href="../css/sunfriend2.css" rel="stylesheet">
-    <link href="../css/{{Lang::get('sunnyfriend.css')}}" rel="stylesheet">
-    <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
-    <link href="../css/bootstrap-select.css" rel="stylesheet">
-=======
     <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="../resources/css/owl.carousel.min.css" rel="stylesheet">
     <link href="../resources/css/owl.theme.default.css" rel="stylesheet">
@@ -27,10 +15,9 @@
     <link href="../resources/css/animate.css" rel="stylesheet">
     <link href="../resources/css/ihover2.css" rel="stylesheet">
     <link href="../resources/css/sunfriend2.css" rel="stylesheet">
-    <link href="../resources/css/sub-sunfriend.css" rel="stylesheet">
+    <link href="../resources/css/{{Lang::get('sunnyfriend.css')}}" rel="stylesheet">
     <link href="../resources/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
     <link href="../resources/css/bootstrap-select.css" rel="stylesheet">
->>>>>>> 1074507bcaf82651cbc1510acd4d97d6e64eacca
     <!--思源黑體 -->
     <style type="text/css">
     @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);

@@ -29,7 +29,7 @@ class CorporateSocialResponsibilityController extends Controller
     //後台土豆鳥文學誌 首頁
     public function AdminPotatoIndex(){        
         $potatomagazine = PotatoMagazine::orderBy('id', 'desc')->get();
-        return view('Admin.CorporateSocialResponsibility.index2')->with('data',$potatomagazine);
+        return view('Admin.CorporateSocialResponsibility.AdminVanellusLiterature')->with('data',$potatomagazine);
     }
 
     //後台土豆鳥文學誌 新增
@@ -83,7 +83,7 @@ class CorporateSocialResponsibilityController extends Controller
     //後台企業社會責任報告書 首頁
     public function AdminCsrIndex(){        
         $csrmagazine = CSRMagazine::orderBy('id', 'desc')->get();
-        return view('Admin.CorporateSocialResponsibility.index')->with('data',$csrmagazine);
+        return view('Admin.CorporateSocialResponsibility.CSRReport')->with('data',$csrmagazine);
     }
 
     //後台企業社會責任報告書 新增

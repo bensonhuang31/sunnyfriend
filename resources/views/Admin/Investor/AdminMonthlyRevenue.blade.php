@@ -54,7 +54,7 @@
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
-                            {!! Form::open(array('url'=>'/Admin/Investor/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                            {!! Form::open(array('url'=>'/Admin/Investor/AdminMonthlyRevenue','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                             {{csrf_field()}}
                                 <div class="modal-content">
                                     <!-- Modal Header -->
@@ -149,7 +149,7 @@
 
     <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-        {!! Form::open(array('url'=>'/Admin/Investor/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+        {!! Form::open(array('url'=>'/Admin/Investor/AdminMonthlyRevenue/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
         {{csrf_field()}}
         <input name="id" type="hidden">
             <div class="modal-content">
@@ -186,7 +186,7 @@
 
     <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-        {!! Form::open(array('url'=>'/Admin/Investor/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+        {!! Form::open(array('url'=>'/Admin/Investor/AdminMonthlyRevenue/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
         {{csrf_field()}}
         <input name="id" type="hidden"> 
             <div class="modal-content">

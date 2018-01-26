@@ -42,7 +42,7 @@
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
-                            {!! Form::open(array('url'=>'/Admin/News/index','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                            {!! Form::open(array('url'=>'/Admin/News/AdminNews','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                             {{csrf_field()}}
                                 <div class="modal-content">
                                     <!-- Modal Header -->
@@ -131,7 +131,7 @@
 
         <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                            {!! Form::open(array('url'=>'/Admin/News/index/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                            {!! Form::open(array('url'=>'/Admin/News/AdminNews/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                             {{csrf_field()}}
                             <input name="id" type="hidden">
                                 <div class="modal-content">
@@ -187,7 +187,7 @@
 
         <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-            {!! Form::open(array('url'=>'/Admin/News/index/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+            {!! Form::open(array('url'=>'/Admin/News/AdminNews/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
             {{csrf_field()}}
             <input name="id" type="hidden">
                 <div class="modal-content">

@@ -26,7 +26,7 @@ class NewsController extends Controller
     //後台最新消息 首頁
     public function AdminNewsIndex(){        
         $latestnews = LatestNews::orderBy('id', 'desc')->get();
-        return view('Admin.News.index')->with('data',$latestnews);
+        return view('Admin.News.AdminNews')->with('data',$latestnews);
     }
 
     //後台最新消息 新增

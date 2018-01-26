@@ -67,7 +67,7 @@
                                 <div class="modal-body">
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane active" id="enflue">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="enflue"></input>
                                             <div class="form-row form-group">
@@ -87,7 +87,7 @@
                                             {!! Form::close() !!}
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="enrawwater">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="enrawwater"></input>
                                             <div class="form-row form-group">
@@ -107,7 +107,7 @@
                                             {!! Form::close() !!}
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="enairquality">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="enairquality"></input>
                                             <div class="form-row form-group">
@@ -127,7 +127,7 @@
                                             {!! Form::close() !!}
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="ennoisevibration">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="ennoisevibration"></input>
                                             <div class="form-row form-group">
@@ -147,7 +147,7 @@
                                             {!! Form::close() !!}
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="ensoil">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="ensoil"></input>
                                             <div class="form-row form-group">
@@ -167,7 +167,7 @@
                                             {!! Form::close() !!}                                 
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="enflyash">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="enflyash"></input>                                    
                                             <div class="form-row form-group">
@@ -187,7 +187,7 @@
                                             {!! Form::close() !!}
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="enincineratorbottom">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="enincineratorbottom"></input>
                                             <div class="form-row form-group">
@@ -207,7 +207,7 @@
                                             {!! Form::close() !!}
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="engroundwater">
-                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                            {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                             {{csrf_field()}}
                                             <input type="hidden" name="title" value="engroundwater"></input>                                    
                                             <div class="form-row form-group">
@@ -259,7 +259,7 @@
                         <div class="modal-body">
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="delenflue">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="enflue"></input>
                                                 <div class="form-row form-group">
@@ -279,7 +279,7 @@
                                                 {!! Form::close() !!}
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delenrawwater">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="enrawwater"></input>
                                                 <div class="form-row form-group">
@@ -299,7 +299,7 @@
                                                 {!! Form::close() !!}
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delenairquality">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="enairquality"></input>
                                                 <div class="form-row form-group">
@@ -319,7 +319,7 @@
                                                 {!! Form::close() !!}
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delennoisevibration">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="ennoisevibration"></input>
                                                 <div class="form-row form-group">
@@ -339,7 +339,7 @@
                                                 {!! Form::close() !!}
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delensoil">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="ensoil"></input>
                                                 <div class="form-row form-group">
@@ -359,7 +359,7 @@
                                                 {!! Form::close() !!}                                 
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delenflyash">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="enflyash"></input>                                    
                                                 <div class="form-row form-group">
@@ -379,7 +379,7 @@
                                                 {!! Form::close() !!}
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delenincineratorbottom">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="enincineratorbottom"></input>
                                                 <div class="form-row form-group">
@@ -399,7 +399,7 @@
                                                 {!! Form::close() !!}
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delengroundwater">
-                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                                 {{csrf_field()}}
                                                 <input type="hidden" name="title" value="engroundwater"></input>                                    
                                                 <div class="form-row form-group">
@@ -479,7 +479,7 @@
 
             <div class="modal fade" id="EditFlueInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input type="hidden" name="id" >
                     <input type="hidden" name="title" value="enflue">
@@ -559,7 +559,7 @@
 
             <div class="modal fade" id="DelFlueInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input name="id" type="hidden">         
                         <div class="modal-content">
@@ -615,7 +615,7 @@
     
             <div class="modal fade" id="EditRawwaterInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog">
-                        {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                        {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                         {{csrf_field()}}
                         <input type="hidden" name="id" >
                         <input type="hidden" name="title" value="enrawwater">
@@ -680,7 +680,7 @@
     
             <div class="modal fade" id="DelRawwaterInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input name="id" type="hidden">    
                         <div class="modal-content">
@@ -754,7 +754,7 @@
 
             <div class="modal fade" id="EditAirqualityInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input type="hidden" name="id" >
                     <input type="hidden" name="title" value="enairquality">
@@ -858,7 +858,7 @@
 
             <div class="modal fade" id="DelAirqualityInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input name="id" type="hidden">
                         <div class="modal-content">
@@ -916,7 +916,7 @@
 
             <div class="modal fade" id="EditNoisevibrationInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input type="hidden" name="id" >
                     <input type="hidden" name="title" value="ennoisevibration">
@@ -981,7 +981,7 @@
 
             <div class="modal fade" id="DelNoisevibrationInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input name="id" type="hidden">
                         <div class="modal-content">
@@ -1034,7 +1034,7 @@
 
             <div class="modal fade" id="EditSoilInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input type="hidden" name="id" >
                     <input type="hidden" name="title" value="ensoil">
@@ -1086,7 +1086,7 @@
 
             <div class="modal fade" id="DelSoilInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input name="id" type="hidden">
                         <div class="modal-content">
@@ -1153,7 +1153,7 @@
     
             <div class="modal fade" id="EditFlyashInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog">
-                        {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                        {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                         {{csrf_field()}}
                         <input type="hidden" name="id" >
                         <input type="hidden" name="title" value="enflyash">
@@ -1241,7 +1241,7 @@
     
             <div class="modal fade" id="DelFlyashInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input name="id" type="hidden">
                         <div class="modal-content">
@@ -1309,7 +1309,7 @@
 
             <div class="modal fade" id="EditIncineratorbottomInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input type="hidden" name="id" >
                     <input type="hidden" name="title" value="enincineratorbottom">
@@ -1397,7 +1397,7 @@
 
             <div class="modal fade" id="DelIncineratorbottomInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                 {{csrf_field()}}
                 <input name="id" type="hidden">
                     <div class="modal-content">
@@ -1495,7 +1495,7 @@
 
             <div class="modal fade" id="EditEngroundwaterInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog">
-                        {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                        {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                         {{csrf_field()}}
                         <input type="hidden" name="id" >
                         <input type="hidden" name="title" value="engroundwater">
@@ -1655,7 +1655,7 @@
 
             <div class="modal fade" id="DelEngroundwaterInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/index2/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                    {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
                     <input name="id" type="hidden">
                         <div class="modal-content">

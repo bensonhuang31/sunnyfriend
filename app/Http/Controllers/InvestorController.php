@@ -37,7 +37,7 @@ class InvestorController extends Controller
     //後台股東會相關資訊 首頁
     public function AdminShareholdersIndex(){        
         $shareholdersinfo = ShareholdersInfo::orderBy('Year', 'desc')->get();
-        return view('Admin.Investor.index')->with('data',$shareholdersinfo);
+        return view('Admin.Investor.AdminIFSM')->with('data',$shareholdersinfo);
     }
 
     //後台股東會相關資訊 新增
@@ -112,7 +112,7 @@ class InvestorController extends Controller
     //後台營收公告 首頁
     public function AdminRevenueIndex(){        
         $revenueinfo = RevenueInfo::orderBy('Month', 'asc')->get();
-        return view('Admin.Investor.index2')->with('data',$revenueinfo);
+        return view('Admin.Investor.AdminMonthlyRevenue')->with('data',$revenueinfo);
     }
 
     //後台營收公告 新增
@@ -197,7 +197,7 @@ class InvestorController extends Controller
     //後台財務資訊 首頁
     public function AdminFinanceIndex(){        
         $financeinfo = FinanceInfo::orderBy('Year', 'desc')->get();
-        return view('Admin.Investor.index3')->with('data',$financeinfo);
+        return view('Admin.Investor.AdminFinancialInformation')->with('data',$financeinfo);
     }
 
     //後台財務資訊 新增

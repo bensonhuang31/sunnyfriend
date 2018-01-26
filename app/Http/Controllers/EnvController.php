@@ -29,7 +29,7 @@ class EnvController extends Controller
         $enrawwater = EnRawwater::all();
         $ensoil = EnSoil::all();
         $engroundwater = EnGroundwater::all();
-        return view('Admin.Environmentalprotection.index2')->with('data', ['enairquality' => $enairquality, 'enflue' => $enflue, 'enflyash' => $enflyash, 
+        return view('Admin.Environmentalprotection.AdminEnvMonitoring')->with('data', ['enairquality' => $enairquality, 'enflue' => $enflue, 'enflyash' => $enflyash, 
                                                                   'enincineratorbottom' => $enincineratorbottom, 'ennoisevibration' => $ennoisevibration, 
                                                                   'enrawwater' => $enrawwater, 'ensoil' => $ensoil, 'engroundwater' => $engroundwater]);
    

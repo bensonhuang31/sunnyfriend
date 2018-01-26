@@ -76,46 +76,46 @@ Route::group(['middlewareGroups' => ['web']], function () {
     Route::get('/Admin/Logout','LoginController@logout');
     Route::get('/Admin', 'LoginController@Admin');
 
-    Route::get('/Admin/Investor/index', 'InvestorController@AdminShareholdersIndex');
-    Route::post('/Admin/Investor/index','InvestorController@AdminShareholdersCreate');
-    Route::post('/Admin/Investor/index/edit','InvestorController@AdminShareholdersEdit');
-    Route::post('/Admin/Investor/index/delete','InvestorController@AdminShareholdersDelete');
+    Route::get('/Admin/Investor/AdminIFSM', 'InvestorController@AdminShareholdersIndex');
+    Route::post('/Admin/Investor/AdminIFSM','InvestorController@AdminShareholdersCreate');
+    Route::post('/Admin/Investor/AdminIFSM/edit','InvestorController@AdminShareholdersEdit');
+    Route::post('/Admin/Investor/AdminIFSM/delete','InvestorController@AdminShareholdersDelete');
     
 
-    Route::get('/Admin/Investor/index2', 'InvestorController@AdminRevenueIndex');
-    Route::post('/Admin/Investor/index2','InvestorController@AdminRevenueCreate');
-    Route::post('/Admin/Investor/index2/edit','InvestorController@AdminRevenueEdit');
-    Route::post('/Admin/Investor/index2/delete','InvestorController@AdminRevenueDelete');
+    Route::get('/Admin/Investor/AdminMonthlyRevenue', 'InvestorController@AdminRevenueIndex');
+    Route::post('/Admin/Investor/AdminMonthlyRevenue','InvestorController@AdminRevenueCreate');
+    Route::post('/Admin/Investor/AdminMonthlyRevenue/edit','InvestorController@AdminRevenueEdit');
+    Route::post('/Admin/Investor/AdminMonthlyRevenue/delete','InvestorController@AdminRevenueDelete');
 
 
-    Route::get('/Admin/Investor/index3', 'InvestorController@AdminFinanceIndex');
-    Route::post('/Admin/Investor/index3','InvestorController@AdminFinanceCreate');
-    Route::post('/Admin/Investor/index3/edit','InvestorController@AdminFinanceEdit');
-    Route::post('/Admin/Investor/index3/delete','InvestorController@AdminFinanceDelete');
+    Route::get('/Admin/Investor/AdminFinancialInformation', 'InvestorController@AdminFinanceIndex');
+    Route::post('/Admin/Investor/AdminFinancialInformation','InvestorController@AdminFinanceCreate');
+    Route::post('/Admin/Investor/AdminFinancialInformation/edit','InvestorController@AdminFinanceEdit');
+    Route::post('/Admin/Investor/AdminFinancialInformation/delete','InvestorController@AdminFinanceDelete');
 
 
-    Route::get('/Admin/CorporateSocialResponsibility/index', 'CorporateSocialResponsibilityController@AdminCsrIndex');
-    Route::post('/Admin/CorporateSocialResponsibility/index','CorporateSocialResponsibilityController@AdminCsrCreate');
-    Route::post('/Admin/CorporateSocialResponsibility/index/delete','CorporateSocialResponsibilityController@AdminCsrDelete');
+    Route::get('/Admin/CorporateSocialResponsibility/CSRReport', 'CorporateSocialResponsibilityController@AdminCsrIndex');
+    Route::post('/Admin/CorporateSocialResponsibility/CSRReport','CorporateSocialResponsibilityController@AdminCsrCreate');
+    Route::post('/Admin/CorporateSocialResponsibility/CSRReport/delete','CorporateSocialResponsibilityController@AdminCsrDelete');
 
-    Route::get('/Admin/CorporateSocialResponsibility/index2', 'CorporateSocialResponsibilityController@AdminPotatoIndex');
-    Route::post('/Admin/CorporateSocialResponsibility/index2','CorporateSocialResponsibilityController@AdminPotatoCreate');
-    Route::post('/Admin/CorporateSocialResponsibility/index2/delete','CorporateSocialResponsibilityController@AdminPotatoDelete');
+    Route::get('/Admin/CorporateSocialResponsibility/AdminVanellusLiterature', 'CorporateSocialResponsibilityController@AdminPotatoIndex');
+    Route::post('/Admin/CorporateSocialResponsibility/AdminVanellusLiterature','CorporateSocialResponsibilityController@AdminPotatoCreate');
+    Route::post('/Admin/CorporateSocialResponsibility/AdminVanellusLiterature/delete','CorporateSocialResponsibilityController@AdminPotatoDelete');
 
-    Route::get('/Admin/News/index', 'NewsController@AdminNewsIndex');
-    Route::post('/Admin/News/index','NewsController@AdminNewsCreate');
-    Route::post('/Admin/News/index/edit','NewsController@AdminNewsEdit');
-    Route::post('/Admin/News/index/delete','NewsController@AdminNewsDelete');
+    Route::get('/Admin/News/AdminNews', 'NewsController@AdminNewsIndex');
+    Route::post('/Admin/News/AdminNews','NewsController@AdminNewsCreate');
+    Route::post('/Admin/News/AdminNews/edit','NewsController@AdminNewsEdit');
+    Route::post('/Admin/News/AdminNews/delete','NewsController@AdminNewsDelete');
 
-    Route::get('/Admin/Environmentalprotection/index', 'EnvironmentalprotectionController@AdminAlUnitIndex');
-    Route::post('/Admin/Environmentalprotection/index', 'EnvironmentalprotectionController@AdminAlUnitCreate');
-    Route::post('/Admin/Environmentalprotection/index/edit','EnvironmentalprotectionController@AdminAlUnitEdit');
-    Route::post('/Admin/Environmentalprotection/index/delete','EnvironmentalprotectionController@AdminAlUnitDelete');
+    Route::get('/Admin/Environmentalprotection/AdminEnvUnit', 'EnvironmentalprotectionController@AdminAlUnitIndex');
+    Route::post('/Admin/Environmentalprotection/AdminEnvUnit', 'EnvironmentalprotectionController@AdminAlUnitCreate');
+    Route::post('/Admin/Environmentalprotection/AdminEnvUnit/edit','EnvironmentalprotectionController@AdminAlUnitEdit');
+    Route::post('/Admin/Environmentalprotection/AdminEnvUnit/delete','EnvironmentalprotectionController@AdminAlUnitDelete');
 
-    Route::get('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringIndex');
-    Route::post('/Admin/Environmentalprotection/index2', 'EnvironmentalprotectionController@AdminMonitoringCreate');
-    Route::post('/Admin/Environmentalprotection/index2/edit','EnvironmentalprotectionController@AdminMonitoringEdit');
-    Route::post('/Admin/Environmentalprotection/index2/delete','EnvironmentalprotectionController@AdminMonitoringDelete');
+    Route::get('/Admin/Environmentalprotection/AdminEnvMonitoring', 'EnvironmentalprotectionController@AdminMonitoringIndex');
+    Route::post('/Admin/Environmentalprotection/AdminEnvMonitoring', 'EnvironmentalprotectionController@AdminMonitoringCreate');
+    Route::post('/Admin/Environmentalprotection/AdminEnvMonitoring/edit','EnvironmentalprotectionController@AdminMonitoringEdit');
+    Route::post('/Admin/Environmentalprotection/AdminEnvMonitoring/delete','EnvironmentalprotectionController@AdminMonitoringDelete');
 });
 
 

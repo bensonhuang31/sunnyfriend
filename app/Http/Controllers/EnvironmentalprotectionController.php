@@ -44,7 +44,7 @@ class EnvironmentalprotectionController extends Controller
     public function AdminAlUnitIndex()
     {
         $alunit = AlUnit::orderBy('Date', 'desc')->get();
-        return view('Admin.Environmentalprotection.index')->with('data',$alunit);
+        return view('Admin.Environmentalprotection.AdminEnvUnit')->with('data',$alunit);
     }
 
     //後台環境保護查核行程 新增
@@ -124,7 +124,7 @@ class EnvironmentalprotectionController extends Controller
         $enrawwater = EnRawwater::all();
         $ensoil = EnSoil::all();
         $engroundwater = EnGroundwater::all();
-        return view('Admin.Environmentalprotection.index2')->with('data', ['enairquality' => $enairquality, 'enflue' => $enflue, 'enflyash' => $enflyash, 
+        return view('Admin.Environmentalprotection.AdminEnvMonitoring')->with('data', ['enairquality' => $enairquality, 'enflue' => $enflue, 'enflyash' => $enflyash, 
                                                                   'enincineratorbottom' => $enincineratorbottom, 'ennoisevibration' => $ennoisevibration, 
                                                                   'enrawwater' => $enrawwater, 'ensoil' => $ensoil, 'engroundwater' => $engroundwater]);
     }
