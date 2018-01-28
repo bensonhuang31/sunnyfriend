@@ -60,72 +60,72 @@
                     @endif
                         <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="fadeInUp" data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown">
                             <li class=" dropdown ">
-                                <a href="AboutSF/CompanyProfile" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
+                                <a href="AboutSF/CompanyProfile" class="dropdown-toggle " data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-1')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="AboutSF/CompanyProfile">基本資料</a></li>
-                                    <li><a href="AboutSF/ServiceAndArea">營業項目與範圍</a></li>
-                                    <li><a href="AboutSF/Structure">公司架構圖</a></li>
-                                    <li><a href="AboutSF/ManagingTeam">經營團隊</a></li>
-                                    <li><a href="AboutSF/Organization">公司組織圖</a></li>
-                                    <li><a href="AboutSF/Shareholding">股權結構</a></li>
-                                    <li><a href="AboutSF/IIC">法說會</a></li>
+                                    <li><a href="AboutSF/CompanyProfile">{{Lang::get('sunnyfriend.Home-2')}}</a></li>
+                                    <li><a href="AboutSF/ServiceAndArea">{{Lang::get('sunnyfriend.Home-3')}}</a></li>
+                                    <li><a href="AboutSF/Structure">{{Lang::get('sunnyfriend.Home-4')}}</a></li>
+                                    <li><a href="AboutSF/ManagingTeam">{{Lang::get('sunnyfriend.Home-5')}}</a></li>
+                                    <li><a href="AboutSF/Organization">{{Lang::get('sunnyfriend.Home-6')}}</a></li>
+                                    <li><a href="AboutSF/Shareholding">{{Lang::get('sunnyfriend.Home-7')}}</a></li>
+                                    <li><a href="AboutSF/IIC">{{Lang::get('sunnyfriend.Home-8')}}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                             <a href="News/NewsCenter" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
+                             <a href="News/NewsCenter" class="dropdown-toggle" data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-9')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="News/latestNews">最新消息</a></li>
-                                    <li><a href="News/ImportantNews">重大訊息</a></li>
-                                    <li><a href="News/WebsiteLinks">環保連結</a></li>
+                                    <li><a href="News/latestNews">{{Lang::get('sunnyfriend.Home-10')}}</a></li>
+                                    <li><a href="News/ImportantNews">{{Lang::get('sunnyfriend.Home-11')}}</a></li>
+                                    <li><a href="News/WebsiteLinks">{{Lang::get('sunnyfriend.Home-12')}}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="CorporateGovernance/GovernancePreface" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
+                                <a href="CorporateGovernance/GovernancePreface" class="dropdown-toggle" data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-13')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="CorporateGovernance/GovernancePreface">公司治理</a></li>
-                                    <li><a href="CorporateGovernance/Regulations">運作規章</a></li>
-                                    <li><a href="CorporateGovernance/InternalAuditing">內稽組織運作</a></li>
-                                    <li><a href="CorporateGovernance/BoardofDirectors">董事會</a></li>
-                                    <li><a href="CorporateGovernance/Diversification">董事成員多元化</a></li>
+                                    <li><a href="CorporateGovernance/GovernancePreface">{{Lang::get('sunnyfriend.Home-14')}}</a></li>
+                                    <li><a href="CorporateGovernance/Regulations">{{Lang::get('sunnyfriend.Home-15')}}</a></li>
+                                    <li><a href="CorporateGovernance/InternalAuditing">{{Lang::get('sunnyfriend.Home-16')}}</a></li>
+                                    <li><a href="CorporateGovernance/BoardofDirectors">{{Lang::get('sunnyfriend.Home-17')}}</a></li>
+                                    <li><a href="CorporateGovernance/Diversification">{{Lang::get('sunnyfriend.Home-18')}}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                      <a href="Investor/IFSM" class="dropdown-toggle" data-toggle="dropdown">投資人專區 <i class="fa fa-angle-down"></i></a>
+                                      <a href="Investor/IFSM" class="dropdown-toggle" data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-19')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="Investor/IFSM">股東會相關資訊</a></li>
-                                    <li><a href="Investor/MonthlyRevenue">盈收公告</a></li>
-                                    <li><a href="Investor/FinancialInformation">財務資訊</a></li>
-                                    <li><a href="Investor/ExchangeLink">重大訊息參考網站</a></li>
-                                    <li><a href="Investor/DividendPolicy">股利資訊</a></li>
-                                    <li><a href="Investor/InvestmentCentre">投資人連絡窗口</a></li>
+                                    <li><a href="Investor/IFSM">{{Lang::get('sunnyfriend.Home-20')}}</a></li>
+                                    <li><a href="Investor/MonthlyRevenue">{{Lang::get('sunnyfriend.Home-21')}}</a></li>
+                                    <li><a href="Investor/FinancialInformation">{{Lang::get('sunnyfriend.Home-22')}}</a></li>
+                                    <li><a href="Investor/ExchangeLink">{{Lang::get('sunnyfriend.Home-23')}}</a></li>
+                                    <li><a href="Investor/DividendPolicy">{{Lang::get('sunnyfriend.Home-24')}}</a></li>
+                                    <li><a href="Investor/InvestmentCentre">{{Lang::get('sunnyfriend.Home-25')}}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="CorporateSocialResponsibility/Preface" class="dropdown-toggle" data-toggle="dropdown">企業社會責任 <i class="fa fa-angle-down"></i></a>
+                                <a href="CorporateSocialResponsibility/Preface" class="dropdown-toggle" data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-26')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
-                                    <li><a href="CorporateSocialResponsibility/Preface">導言</a></li>
-                                    <li><a href="CorporateSocialResponsibility/Policy">企業社會責任政策</a></li>
-                                    <li><a href="CorporateSocialResponsibility/ResultsAndplans">具體作為及計畫</a></li>
-                                    <li><a href="CorporateSocialResponsibility/CSRReport">企業社會責任報告書</a></li>
-                                    <li><a href="CorporateSocialResponsibility/VanellusLiterature">土豆鳥文學誌</a></li>
+                                    <li><a href="CorporateSocialResponsibility/Preface">{{Lang::get('sunnyfriend.Home-27')}}</a></li>
+                                    <li><a href="CorporateSocialResponsibility/Policy">{{Lang::get('sunnyfriend.Home-28')}}</a></li>
+                                    <li><a href="CorporateSocialResponsibility/ResultsAndplans">{{Lang::get('sunnyfriend.Home-29')}}</a></li>
+                                    <li><a href="CorporateSocialResponsibility/CSRReport">{{Lang::get('sunnyfriend.Home-30')}}</a></li>
+                                    <li><a href="CorporateSocialResponsibility/VanellusLiterature">{{Lang::get('sunnyfriend.Home-31')}}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                    <a href="Stakeholder/MaterialIssues" class="dropdown-toggle" data-toggle="dropdown">利害關係人  <i class="fa fa-angle-down"></i></a>
+                                    <a href="Stakeholder/MaterialIssues" class="dropdown-toggle" data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-32')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="Stakeholder/MaterialIssues">關係人鑑別議題與措施</a></li>
-                                    <li><a href="Stakeholder/EmployeeBenefits">員工福利措施</a></li>
-                                    <li><a href="Stakeholder/SMP">供應商管理政策</a></li>
-                                    <li><a href="Stakeholder/GrievanceMachinery">申訴管道</a></li>
-                                    <li><a href="Stakeholder/UBGM">不道德行為檢舉制度</a></li>
+                                    <li><a href="Stakeholder/MaterialIssues">{{Lang::get('sunnyfriend.Home-33')}}</a></li>
+                                    <li><a href="Stakeholder/EmployeeBenefits">{{Lang::get('sunnyfriend.Home-34')}}</a></li>
+                                    <li><a href="Stakeholder/SMP">{{Lang::get('sunnyfriend.Home-35')}}</a></li>
+                                    <li><a href="Stakeholder/GrievanceMachinery">{{Lang::get('sunnyfriend.Home-36')}}</a></li>
+                                    <li><a href="Stakeholder/UBGM">{{Lang::get('sunnyfriend.Home-37')}}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="Environmentalprotection/EnvironmentalUnit" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
+                                <a href="Environmentalprotection/EnvironmentalUnit" class="dropdown-toggle" data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-38')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="Environmentalprotection/EnvironmentalUnit">環保單位查核行程</a></li>
-                                    <li><a href="Environmentalprotection/EnvironmentMonitoring">環境監測</a></li>
-                                    <li><a href="Environmentalprotection/Energysaving">節能減碳</a></li>
+                                    <li><a href="Environmentalprotection/EnvironmentalUnit">{{Lang::get('sunnyfriend.Home-39')}}</a></li>
+                                    <li><a href="Environmentalprotection/EnvironmentMonitoring">{{Lang::get('sunnyfriend.Home-40')}}</a></li>
+                                    <li><a href="Environmentalprotection/Energysaving">{{Lang::get('sunnyfriend.Home-41')}}</a></li>
                                 </ul>
                             </li>
                 
@@ -246,9 +246,9 @@
                 <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-delay="1s">
                     <div class="service-box1">
                         <div class="about-text">
-                            <h3><em>關於日友&nbsp;<span>About sunny friend</span></em></h3>
-                            <p>日友公司成立於1994年，是臺灣第一家專業生物醫療廢棄物焚化處理廠，2012年取得中區事業廢棄物綜合處理中心經營權(日友彰濱廠)，並於2015年正式掛牌上市，這也是日友永續經營的重要里程碑，日友公司成立二十多年來，以「新環境創造者」為目標穩健經營，本著自主管理、技術創新、環保意識提昇、環境維護及持續改善之核心價值，為員工健康生活及環境保護盡最大之努力。</p>
-                            <a target="_blank" href="assets/file/app/SFCP(CH).pdf"><div class="btn btn-default btnn ">日友公司中文簡介</div></a>
+                            <h3><em>{{Lang::get('sunnyfriend.Home-42')}}&nbsp;</em></h3>
+                            <p>{{Lang::get('sunnyfriend.Home-43')}}</p>
+                            <a target="_blank" href="assets/file/app/SFCP(CH).pdf"><div class="btn btn-default btnn ">{{Lang::get('sunnyfriend.Home-44')}}</div></a>
                         </div>
                     </div>
                 </div>
@@ -443,29 +443,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 footerleft">
-                    <div class="logofooter">關於日友</div>
+                    <div class="logofooter">{{Lang::get('sunnyfriend.Footer-1')}}</div>
                     <p>日友公司成立於1994年，2000年成為潤泰集團環保產業基地，也是臺灣第一家專業生物醫療廢棄物焚化處理公司，日友公司擁有從研發、設計、製圖、操作、系統改良等全方位的廢棄物處理經驗，不斷革新並擴展海外市場，使日友公司營運得以穩定成長。</p>
-                    <div><img alt="Brand" class="img-responsive" src="resources/assets/images/footerLOGO.svg"></div>
+                    <div><img alt="Brand" class="img-responsive" src="../resources/assets/images/footerLOGO.svg"></div>
                 </div>
                 <div class="col-md-8 col-sm-6 paddingtop-bottom">
-                    <div class="heading7">聯繫我們</div>
+                    <div class="heading7">{{Lang::get('sunnyfriend.Footer-2')}}</div>
                     <ul class="footer-ul">
                         <li>
-                            <h6> <i class="fa fa-home" aria-hidden="true"></i>總公司</h6></li>
+                            <h6> <i class="fa fa-home" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-3')}}</h6></li>
                         <li>
-                            <p>雲林縣元長鄉元東路1-20號 TEL：(05)7885788(代表號) FAX：(05)7887933</p>
+                            <p>{{Lang::get('sunnyfriend.Footer-4')}}</p>
                         </li>
                         <li>
-                            <h6> <i class="fa fa-home" aria-hidden="true"></i>台北</h6></li>
+                            <h6> <i class="fa fa-home" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-5')}}</h6></li>
                         <li>
-                            <p>台北市八德路三段20號10F-3 TEL：(02)25795580(代表號) FAX：(02)25794015</p>
+                            <p>{{Lang::get('sunnyfriend.Footer-6')}}</p>
                         </li>
                         <li>
-                            <h6><i class="fa fa-phone" aria-hidden="true"></i>陳情專線</h6></li>
-                        <li><a href="#"> 05-7885788-111</a></li>
+                            <h6><i class="fa fa-phone" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-7')}}</h6></li>
+                        <li><a href="#">{{Lang::get('sunnyfriend.Footer-8')}}</a></li>
                         <li>
-                            <h6><i class="fa fa-envelope" aria-hidden="true"></i>Email Address</h6></li>
-                        <li><a href="#"> sf@sunnyfriend.com.tw</a></li>
+                            <h6><i class="fa fa-envelope" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-9')}}</h6></li>
+                        <li><a href="#">{{Lang::get('sunnyfriend.Footer-10')}}</a></li>
                     </ul>
                 </div>
             </div>

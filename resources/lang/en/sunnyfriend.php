@@ -3,6 +3,7 @@
 return [
     //共用
     'Home' => 'Home',
+    'Footer' => 'Footer',
     'Profile' => 'Company profile',
     'News' => 'News',
     'CorporateGovernance' => 'Governance',
@@ -44,6 +45,52 @@ return [
     'EnvironmentalUnit' => 'Environmental Protection Unit',
     'EnvironmentMonitoring' => 'Environment Monitoring',
     'css' => 'sub-sunfriendEN.css',
+
+        //首頁
+    'Home-1' =>'About SF',
+    'Home-2' =>'Company Profile',
+    'Home-3' =>'Service and Area',
+    'Home-4' =>'Structure',
+    'Home-5' =>'Managing Team',
+    'Home-6' =>'Organization',
+    'Home-7' =>'Shareholding',
+    'Home-8' =>'Institutional Investors Conference',
+    'Home-9' =>'News Center',
+    'Home-10' =>'Major Information',
+    'Home-11' =>'Important information',
+    'Home-12' =>'Website links',
+    'Home-13' =>'Governance',
+    'Home-14' =>'Governance Preface',
+    'Home-15' =>'Regulations',
+    'Home-16' =>'Internal Auditing',
+    'Home-17' =>'Board of Directors',
+    'Home-18' =>'Diversification of Directors',
+    'Home-19' =>'Investors',
+    'Home-20' =>'Information for Shareholder Meeting',
+    'Home-21' =>'Monthly Revenue',
+    'Home-22' =>'Financial Information',
+    'Home-23' =>'Taiwan Stock Exchange Link',
+    'Home-24' =>'Dividend Policy',
+    'Home-25' =>'Investment Centre',
+    'Home-26' =>'CSR',
+    'Home-27' =>'Preface',
+    'Home-28' =>'Policy',
+    'Home-29' =>'Results and plans',
+    'Home-30' =>'CSR Report',
+    'Home-31' =>'Vanellus Student Literature Collection',
+    'Home-32' =>'Stakeholder',
+    'Home-33' =>'Material Issues',
+    'Home-34' =>'Employee Benefits',
+    'Home-35' =>'Supplier Management Policy',
+    'Home-36' =>'Grievance Machinery',
+    'Home-37' =>'Unethical behavior grievance machinery',
+    'Home-38' =>'Environment',
+    'Home-39' =>'Environmental Protection Unit Check',
+    'Home-40' =>'Environment Monitoring',
+    'Home-41' =>'Energy Saving',
+    'Home-42' =>'About Sunny Friend',
+    'Home-43' =>'Sunny Friend Environmental Technology co., ltd. is the first professional bio-medical waste incineration plant in Taiwan. The company has the most advanced leading technologies. The company has successfully employed the technologies imported from abroad to the handling of all types of hazardous waste at home and abroad. In the meantime,the company also engages in collection, incineration, solidification, physicochemical and landfill of hazardous waste and it has effectively integrated a stream-line one-stop professional service from upper, middle and lower reaches.',
+    'Home-44' =>'English Company Profile',
 
     //關於日友
     'CompanyProfile' => 'About SF',
@@ -1056,6 +1103,18 @@ return [
 
     //環境監測
     'EnvironmentMonitoring-1' => '環境監測',
+
+    //Footer
+    'Footer-1' => 'About SF',
+    'Footer-2' => 'Contact Us',
+    'Footer-3' => 'Headquarters',
+    'Footer-4' => 'No.1-20, Yuan Dong Rd., Yuanchang Township, Yunlin County 655, Taiwan (R.O.C.) TEL：+886-5-7885788 FAX：+886-5-7887933',
+    'Footer-5' => 'Taipei branch',
+    'Footer-6' => '10F.-3, No.20, Sec. 3, Bade Rd., Songshan Dist.,Taipei City 10559, Taiwan (R.O.C.) TEL：+886-2-25795580 FAX：+886-2-25794015',
+    'Footer-7' => 'Petitions Number',
+    'Footer-8' => '+886-5-7885788#111',
+    'Footer-9' => 'Email Address',
+    'Footer-10' => 'sf@sunnyfriend.com.tw',
 
 
 

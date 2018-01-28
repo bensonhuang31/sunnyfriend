@@ -144,29 +144,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 footerleft">
-                    <div class="logofooter">關於日友</div>
+                    <div class="logofooter">{{Lang::get('sunnyfriend.Footer-1')}}</div>
                     <p>日友公司成立於1994年，2000年成為潤泰集團環保產業基地，也是臺灣第一家專業生物醫療廢棄物焚化處理公司，日友公司擁有從研發、設計、製圖、操作、系統改良等全方位的廢棄物處理經驗，不斷革新並擴展海外市場，使日友公司營運得以穩定成長。</p>
                     <div><img alt="Brand" class="img-responsive" src="../resources/assets/images/footerLOGO.svg"></div>
                 </div>
                 <div class="col-md-8 col-sm-6 paddingtop-bottom">
-                    <div class="heading7">聯繫我們</div>
+                    <div class="heading7">{{Lang::get('sunnyfriend.Footer-2')}}</div>
                     <ul class="footer-ul">
                         <li>
-                            <h6> <i class="fa fa-home" aria-hidden="true"></i>總公司</h6></li>
+                            <h6> <i class="fa fa-home" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-3')}}</h6></li>
                         <li>
-                            <p>雲林縣元長鄉元東路1-20號 TEL：(05)7885788(代表號) FAX：(05)7887933</p>
+                            <p>{{Lang::get('sunnyfriend.Footer-4')}}</p>
                         </li>
                         <li>
-                            <h6> <i class="fa fa-home" aria-hidden="true"></i>台北</h6></li>
+                            <h6> <i class="fa fa-home" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-5')}}</h6></li>
                         <li>
-                            <p>台北市八德路三段20號10F-3 TEL：(02)25795580(代表號) FAX：(02)25794015</p>
+                            <p>{{Lang::get('sunnyfriend.Footer-6')}}</p>
                         </li>
                         <li>
-                            <h6><i class="fa fa-phone" aria-hidden="true"></i>陳情專線</h6></li>
-                        <li><a href="#"> 05-7885788-111</a></li>
+                            <h6><i class="fa fa-phone" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-7')}}</h6></li>
+                        <li><a href="#">{{Lang::get('sunnyfriend.Footer-8')}}</a></li>
                         <li>
-                            <h6><i class="fa fa-envelope" aria-hidden="true"></i>Email Address</h6></li>
-                        <li><a href="#"> sf@sunnyfriend.com.tw</a></li>
+                            <h6><i class="fa fa-envelope" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-9')}}</h6></li>
+                        <li><a href="#">{{Lang::get('sunnyfriend.Footer-10')}}</a></li>
                     </ul>
                 </div>
             </div>
