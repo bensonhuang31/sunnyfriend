@@ -83,7 +83,7 @@ class CorporateSocialResponsibilityController extends Controller
     //後台企業社會責任報告書 首頁
     public function AdminCsrIndex(){        
         $csrmagazine = CSRMagazine::orderBy('id', 'desc')->get();
-        return view('Admin.CorporateSocialResponsibility.CSRReport')->with('data',$csrmagazine);
+        return view('Admin.CorporateSocialResponsibility.AdminCSRReport')->with('data',$csrmagazine);
     }
 
     //後台企業社會責任報告書 新增

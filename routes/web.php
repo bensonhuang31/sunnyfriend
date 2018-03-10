@@ -94,9 +94,9 @@ Route::group(['middlewareGroups' => ['web']], function () {
     Route::post('/Admin/Investor/AdminFinancialInformation/delete','InvestorController@AdminFinanceDelete');
 
 
-    Route::get('/Admin/CorporateSocialResponsibility/CSRReport', 'CorporateSocialResponsibilityController@AdminCsrIndex');
-    Route::post('/Admin/CorporateSocialResponsibility/CSRReport','CorporateSocialResponsibilityController@AdminCsrCreate');
-    Route::post('/Admin/CorporateSocialResponsibility/CSRReport/delete','CorporateSocialResponsibilityController@AdminCsrDelete');
+    Route::get('/Admin/CorporateSocialResponsibility/AdminCSRReport', 'CorporateSocialResponsibilityController@AdminCsrIndex');
+    Route::post('/Admin/CorporateSocialResponsibility/AdminCSRReport','CorporateSocialResponsibilityController@AdminCsrCreate');
+    Route::post('/Admin/CorporateSocialResponsibility/AdminCSRReport/delete','CorporateSocialResponsibilityController@AdminCsrDelete');
 
     Route::get('/Admin/CorporateSocialResponsibility/AdminVanellusLiterature', 'CorporateSocialResponsibilityController@AdminPotatoIndex');
     Route::post('/Admin/CorporateSocialResponsibility/AdminVanellusLiterature','CorporateSocialResponsibilityController@AdminPotatoCreate');

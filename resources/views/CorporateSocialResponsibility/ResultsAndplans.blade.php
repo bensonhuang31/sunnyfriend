@@ -173,7 +173,7 @@
             </div>
             <div class="back99"> </div>
             <div class="text-center">
-                <a href="CSRReport.html"><div class="btn btn-default ">{{Lang::get('sunnyfriend.ResultsAndplans-56')}}</div></a>
+                <a href="../CorporateSocialResponsibility/CSRReport"><div class="btn btn-default ">{{Lang::get('sunnyfriend.ResultsAndplans-56')}}</div></a>
             </div>
         </div>
     </div>

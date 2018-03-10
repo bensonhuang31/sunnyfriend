@@ -128,7 +128,6 @@
                                     <li><a href="Environmentalprotection/Energysaving">{{Lang::get('sunnyfriend.Home-41')}}</a></li>
                                 </ul>
                             </li>
-                
                         </ul>
                     </div>
                 </div>
@@ -149,6 +148,7 @@
             <li data-target="#myCarousel" data-slide-to="5"></li>
             <li data-target="#myCarousel" data-slide-to="6"></li>
             <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -183,6 +183,14 @@
             </div>
             <div class="item">
                 <img src="resources/assets/images/slider/007.jpg" alt="Second slide">
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+                <img src="resources/assets/images/slider/008.jpg" alt="Second slide">
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+                <img src="resources/assets/images/slider/009.jpg" alt="Second slide">
                 <div class="carousel-caption"></div>
             </div>
         </div>
@@ -246,16 +254,18 @@
                 <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-delay="1s">
                     <div class="service-box1">
                         <div class="about-text">
-                            <h3><em>{{Lang::get('sunnyfriend.Home-42')}}&nbsp;</em></h3>
-                            <p>{{Lang::get('sunnyfriend.Home-43')}}</p>
-                            <a target="_blank" href="assets/file/app/SFCP(CH).pdf"><div class="btn btn-default btnn ">{{Lang::get('sunnyfriend.Home-44')}}</div></a>
+                            <h3><em>{{Lang::get('sunnyfriend.Home-42')}}&nbsp;<span>{{Lang::get('sunnyfriend.Home-45')}}</span></em></h3>
+                            <p style="margin-bottom: 0px">{{Lang::get('sunnyfriend.Home-43')}}<div id="demo" class="collapse">
+                                <p style="margin-top: 0px">{{Lang::get('sunnyfriend.Home-46')}}</p></div>
+                                    <p data-toggle="collapse" data-target="#demo" style="color: #0f58de">{{Lang::get('sunnyfriend.Home-47')}}</p>
+                                    <a target="_blank" href="resources/assets/file/app/SFCP(CH).pdf"><div class="btn btn-default btnn ">{{Lang::get('sunnyfriend.Home-44')}}</div></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
- <!---三個地點-->
+    <!---三個地點-->
     <div id="location" class="back section-padding wow fadeInDown">
         <div class="container">
             <div class="row">
@@ -305,8 +315,8 @@
     <div id="service" class="back01  wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
-                <h1>主要服務項目</h1>
-                <h2>以下為本公司之業務內容</h2>
+                <h1>{{Lang::get('sunnyfriend.Home-48')}}</h1>
+                <h2>{{Lang::get('sunnyfriend.Home-49')}}</h2>
                 <div id="owl-one" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="ih-item square effect13">
@@ -369,14 +379,14 @@
     <div id="news" class="back2  wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
-                <h1>最新消息</h1>
-                <h2>日友最新資訊</h2>
+                <h1>{{Lang::get('sunnyfriend.Home-50')}}</h1>
+                <h2>{{Lang::get('sunnyfriend.Home-51')}}</h2>
                 <div id="owl-two" class="owl-theme owl-carousel">
-                    <div class="item"><a href="News/ImportantNews.html">
+                    <div class="item"><a href="News/ImportantNews">
                         <img class=" icon_img" src="resources/assets/images/owl_icon/newsLOGO-02.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
-                                <h1>重要消息</h1>
+                                <h1>{{Lang::get('sunnyfriend.Home-52')}}</h1>
                                 <h4>公開資訊觀測站</h4>
                                 <p>投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。(查詢代號：8341)......</p>
                             </div>
@@ -389,21 +399,21 @@
 
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-btn">
-                                <h1>簡介影片</h1>
+                                <h1>{{Lang::get('sunnyfriend.Home-53')}}</h1>
                                 <h4>公司介紹</h4>
-                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看中文版</div></a>
-                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=" target="_blank"><div class="btn btn-default newsbtn1 ">觀看英文版</div></a>
-                                <a href="AboutSF/IIC.html"><div class="btn btn-default newsbtn2 ">法人說明會相關資訊</div></a>
+                                <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" target="_blank"><div class="btn btn-default newsbtn1 ">{{Lang::get('sunnyfriend.Home-54')}}</div></a>
+                                <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=" target="_blank"><div class="btn btn-default newsbtn1 ">{{Lang::get('sunnyfriend.Home-55')}}</div></a>
+                                <a href="AboutSF/IIC"><div class="btn btn-default newsbtn2 ">{{Lang::get('sunnyfriend.Home-56')}}</div></a>
                             </div>
                             <img class="img-responsive img" src="resources/assets/images/news/new02.jpg">
                             <div class="info"></div>
                         </div>
                     </div>
-                    <div class="item"><a href="News/WebsiteLinks.html">
+                    <div class="item"><a href="News/WebsiteLinks">
                       <img class=" icon_img" src="resources/assets/images/owl_icon/newsLOGO-04.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
-                                <h1>環保連結</h1>
+                                <h1>{{Lang::get('sunnyfriend.Home-57')}}</h1>
                                 <h4>相關環保資訊</h4>
                                 <p>日友彰濱廠(中區事業廢棄物綜合處理中心)青新環境工程(股)公司......</p>
                             </div>
@@ -445,7 +455,7 @@
                 <div class="col-md-4 col-sm-6 footerleft">
                     <div class="logofooter">{{Lang::get('sunnyfriend.Footer-1')}}</div>
                     <p>日友公司成立於1994年，2000年成為潤泰集團環保產業基地，也是臺灣第一家專業生物醫療廢棄物焚化處理公司，日友公司擁有從研發、設計、製圖、操作、系統改良等全方位的廢棄物處理經驗，不斷革新並擴展海外市場，使日友公司營運得以穩定成長。</p>
-                    <div><img alt="Brand" class="img-responsive" src="../resources/assets/images/footerLOGO.svg"></div>
+                    <div><img alt="Brand" class="img-responsive" src="resources/assets/images/footerLOGO.svg"></div>
                 </div>
                 <div class="col-md-8 col-sm-6 paddingtop-bottom">
                     <div class="heading7">{{Lang::get('sunnyfriend.Footer-2')}}</div>
@@ -453,12 +463,12 @@
                         <li>
                             <h6> <i class="fa fa-home" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-3')}}</h6></li>
                         <li>
-                            <p>{{Lang::get('sunnyfriend.Footer-4')}}</p>
+                            <p>{{Lang::get('sunnyfriend.Footer-4')}}</br>{{Lang::get('sunnyfriend.Footer-11')}}{{Lang::get('sunnyfriend.Footer-12')}}</p>
                         </li>
                         <li>
                             <h6> <i class="fa fa-home" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-5')}}</h6></li>
                         <li>
-                            <p>{{Lang::get('sunnyfriend.Footer-6')}}</p>
+                            <p>{{Lang::get('sunnyfriend.Footer-6')}}</br>{{Lang::get('sunnyfriend.Footer-13')}}{{Lang::get('sunnyfriend.Footer-14')}}</p>
                         </li>
                         <li>
                             <h6><i class="fa fa-phone" aria-hidden="true"></i>{{Lang::get('sunnyfriend.Footer-7')}}</h6></li>

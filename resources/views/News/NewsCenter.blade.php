@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="item">
-                                    <img class=" icon_img" src="../assets/images/owl_icon/newsLOGO-03.svg">
+                                    <img class=" icon_img" src="../resources/assets/images/owl_icon/newsLOGO-03.svg">
 
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-btn">
@@ -52,14 +52,14 @@
                                 <h4>{{Lang::get('sunnyfriend.NewsCenter-5')}}</h4>
                                 <a href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" target="_blank"><div class="btn btn-default newsbtn1 ">{{Lang::get('sunnyfriend.NewsCenter-6')}}</div></a>
                                 <a href="https://www.youtube.com/watch?v=gbnIhcsq_6c&t=" target="_blank"><div class="btn btn-default newsbtn1 ">{{Lang::get('sunnyfriend.NewsCenter-7')}}</div></a>
-                                <a href="../AboutSF/IIC.html"><div class="btn btn-default newsbtn2 ">{{Lang::get('sunnyfriend.NewsCenter-8')}}</div></a>
+                                <a href="../AboutSF/IIC"><div class="btn btn-default newsbtn2 ">{{Lang::get('sunnyfriend.NewsCenter-8')}}</div></a>
                             </div>
                             <img class="img-responsive img" src="../resources/assets/images/news/new02.jpg">
                             <div class="info"></div>
                         </div>
                     </div>
-                    <div class="item"><a href="../News/WebsiteLinks.html">
-                      <img class=" icon_img" src="../assets/images/owl_icon/newsLOGO-04.svg">
+                    <div class="item"><a href="../News/WebsiteLinks">
+                      <img class=" icon_img" src="../resources/assets/images/owl_icon/newsLOGO-04.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
                                 <h1>{{Lang::get('sunnyfriend.NewsCenter-9')}}</h1>

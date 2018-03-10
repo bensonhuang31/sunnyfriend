@@ -43,7 +43,7 @@
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/CSRReport','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+                                    {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/AdminCSRReport','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                                     {{csrf_field()}}
                                     <!-- Modal Header -->
                                     <div class="modal-header">
@@ -120,7 +120,7 @@
 
         <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-            {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/CSRReport/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
+            {!! Form::open(array('url'=>'/Admin/CorporateSocialResponsibility/AdminCSRReport/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
             {{csrf_field()}}
             <input name="id" type="hidden">
                 <div class="modal-content">

@@ -44,7 +44,7 @@
                         </tr>
                         <tr>
                             <td data-th="檔案名稱">{{Lang::get('sunnyfriend.InternalAuditing-5')}}</td>
-                            <td data-th="檔案下載"><a href='../assets/file/InternalAuditing/InternalAuditing.pdf' target='_blank'><img class="img-responsive center-block" src="../assets/images/CorporateGovernance/pdf_download.png"></a></td>
+                            <td data-th="檔案下載"><a href='../resources/assets/file/InternalAuditing/InternalAuditing.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></a></td>
                         </tr>
                     </table>
                 </div>

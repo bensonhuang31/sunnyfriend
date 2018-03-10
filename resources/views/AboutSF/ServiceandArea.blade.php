@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="back1992">
                     <div class="col-md-6 col-sm-12 col-md-push-6">
-                        <img alt="Brand" class="img-responsive center-block" src="../resources/assets/images/about/BusinessItems.png">
+                        <img alt="Brand" class="img-responsive center-block" src="{{Lang::get('sunnyfriend.ServiceandArea-5')}}">
                     </div>
                     <div class="col-md-3 col-sm-6 col-md-pull-6">
                         <img class="img-responsive center-block back1991" src="../resources/assets/images/house-01.svg">

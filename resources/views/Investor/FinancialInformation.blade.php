@@ -22,7 +22,7 @@
         </div>
     </div>
     <!--重大消息-->
-    <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
+    <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
@@ -133,7 +133,7 @@
             $.each(CHvalues, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/FinancialInformation/"+ element.FilePath +"'><img class='img-responsive center-block' src='../resources/assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                    "<td data-th='檔案下載'><a href='../resources/assets/file/Investor/FinancialInformation/"+ element.FilePath +"'><img class='img-responsive center-block' src='../resources/assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
 
@@ -141,7 +141,7 @@
             $.each(ENvalues, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
-                                    "<td data-th='檔案下載'><a href='../assets/file/Investor/FinancialInformation/"+ element.FilePath +"'><img class='img-responsive center-block' src='../resources/assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
+                                    "<td data-th='檔案下載'><a href='../resources/assets/file/Investor/FinancialInformation/"+ element.FilePath +"'><img class='img-responsive center-block' src='../resources/assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
     }
