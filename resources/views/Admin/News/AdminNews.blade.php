@@ -59,18 +59,18 @@
                                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                                     <label class="control-label" for="inputEmail3">*日期</label>
                                                     <div class='input-group date' id='datetimCreate'>
-                                                        <input type='text' class="form-control" name="date"/>
-                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                                        <input type='text' class="form-control" name="date" required/>
+                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time" ></span></span>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                                     <label class="control-label" for="inputEmail3">*標題</label>
-                                                    <input type="input" class="form-control" id="inputEmail3" placeholder="請輸入名稱" name="title" />
+                                                    <input type="input" class="form-control" id="inputEmail3" placeholder="請輸入名稱" name="title" required/>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                                         <label class="control-label" for="inputContent">*內容</label>
-                                                        <textarea type="input" class="form-control" rows="20" cols="50" id="inputContent" name="content"></textarea>
+                                                        <textarea type="input" class="form-control" rows="20" cols="50" id="inputContent" name="content" required></textarea>
                                                     </div>
                                                     <div class="col-lg-6 col-md-12 col-sm-12">
                                                         </br>
@@ -149,19 +149,19 @@
                                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                                     <label class="control-label" for="inputEmail3">*日期</label>
                                                     <div class='input-group date' id='datetimeEdit'>
-                                                        <input type='text' class="form-control" name="date"/>
+                                                        <input type='text' class="form-control" name="date" required/>
                                                         <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                                     <label class="control-label" for="inputEmail3">*標題</label>
-                                                    <input type="input" class="form-control" id="inputtitle" placeholder="請輸入名稱" name="title"/>
+                                                    <input type="input" class="form-control" id="inputtitle" placeholder="請輸入名稱" name="title" required/>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                                         <label class="control-label" for="inputContent">*內容</label>
-                                                        <textarea type="input" class="form-control" rows="20" cols="50" id="inputContent" name="content"></textarea>
+                                                        <textarea type="input" class="form-control" rows="20" cols="50" id="inputContent" name="content" required></textarea>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                                         <label class="control-label">*原檔案名稱</label>

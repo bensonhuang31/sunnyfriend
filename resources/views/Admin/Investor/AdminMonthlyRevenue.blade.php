@@ -262,7 +262,7 @@
                 eachTable.append("<tr>" +
                                     "<td data-th='月' class='Month' style='text-align: center;'>"+ element.Month +"</td>"+
                                     "<td data-th='營收金額' class='Amount' style='text-align: center;'>"+ element.Amount +"</td>"+
-                                    "<td data-th='年度增減比例' class='Consolidated' style='text-align: center;'>"+ element.Consolidated +"</td>"+
+                                    "<td data-th='年度增減比例' class='Consolidated' style='text-align: center;'>"+ element.Consolidated +" %</td>"+
                                     "<td>"+
                                         "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
                                         "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+

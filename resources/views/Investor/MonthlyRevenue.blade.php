@@ -182,7 +182,7 @@
                 eachTable.append("<tr>" +
                                     "<td>"+ element.Month +"</td>"+
                                     "<td>"+ fnc_format(element.Amount) +"</td>"+
-                                    "<td>"+ element.Consolidated +"</td>"+
+                                    "<td>"+ element.Consolidated +" %</td>"+
                                 "</tr>");
                 AmountTotal+=parseInt(element.Amount);
                 

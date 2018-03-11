@@ -12,7 +12,7 @@ class NewsController extends Controller
     //最新消息首頁
     public function index()
     {        
-        $latestnews = LatestNews::all();
+        $latestnews = LatestNews::orderBy('Date', 'desc')->get();
         return view('News.latestNews')->with('data',$latestnews);
     }
 
@@ -40,37 +40,41 @@ class NewsController extends Controller
             'date'=> 'required|date_format:Y-m-d',
             'title'=> 'required',
             'content'=> 'required|max:1000',
-            'file'=> 'required|mimes:pdf',
+            'file'=> 'mimes:pdf',
         ];
 
         $message=[
             'date.required'=> '日期不能為空白',
             'title.required'=> '標題不能為空白',
             'content.required'=> '內容不能為空白',
-            'file.required'=> '檔案不能為空白',
+            //'file.required'=> '檔案不能為空白',
             'content.max'=> '內容最多為1000字',
-            'file.mimes'=> '上傳檔案為PDF檔',
+            'file.mimes'=> '上傳檔案需為PDF檔',
         ];
 
         $Validator=Validator::make($input,$rules,$message);
         
         if($Validator->passes()){
-            //Move Uploaded File
-            $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
-        
-            //Uploaded File Path 待修改
-            $destinationPath = 'assets\images\CorporateGovernance';
-
             $latestnews = new LatestNews;
             $latestnews->Date = $input['date'];
             $latestnews->Title = $input['title'];
             $latestnews->Content = $input['content'];
-            $latestnews->FileName = $file->getClientOriginalName();
-            $latestnews->FilePath = $newFileName;
+
+            if($file!=NULL){
+                //Move Uploaded File
+                $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
+                        
+                //Uploaded File Path 待修改
+                $destinationPath = 'assets\images\CorporateGovernance';
+
+                
+                $latestnews->FileName = $file->getClientOriginalName();
+                $latestnews->FilePath = $newFileName;
+                $latestnews->save();
+                    
+                $file->move($destinationPath,$newFileName);
+            }
             $latestnews->save();
-                 
-            $file->move($destinationPath,$newFileName);
-        
             return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
         }else{
             return back()->withErrors($Validator);
