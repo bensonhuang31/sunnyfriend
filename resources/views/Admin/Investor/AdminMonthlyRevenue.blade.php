@@ -261,8 +261,8 @@
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='月' class='Month' style='text-align: center;'>"+ element.Month +"</td>"+
-                                    "<td data-th='營收金額' class='Amount' style='text-align: center;'>"+ element.Amount +"</td>"+
-                                    "<td data-th='年度增減比例' class='Consolidated' style='text-align: center;'>"+ element.Consolidated +" %</td>"+
+                                    "<td data-th='營收金額' class='Amount' style='text-align: center;'>"+ fnc_format(element.Amount) +"</td>"+
+                                    "<td data-th='年度增減比例' class='Consolidated' style='text-align: center;'>"+ element.Consolidated +"</td>"+
                                     "<td>"+
                                         "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
                                         "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+
@@ -274,7 +274,7 @@
 
             eachTable.append("<tr>" +
                                 "<td>本年累計(Total)</td>"+
-                                "<td>"+ AmountTotal +"</td>"+
+                                "<td>"+ fnc_format(AmountTotal.toString()) +"</td>"+
                                 "<td></td>"+"<td></td>"+"<td></td>"+
                             "</tr>");
 
@@ -292,6 +292,55 @@
         });
     }
 
+    function fnc_format(str){    
+        var newStr="";  
+        for(var m=0;m<str.length;m++){
+            var c=str.charAt(m);
+            if(c=='.')
+            break;
+        }
+        var b=m%3; 
+        switch(b){
+            case 1:{
+                for(var i=0;i<str.length;i++){
+                newStr=newStr+str.charAt(i);
+                    if(i==0){
+                    newStr=newStr+',';
+                    }
+                    else {
+                    if(i%3==0 && i<m-1){
+                            newStr=newStr+',' ;
+                            }
+                        }
+                    }
+                break;
+                }
+            case 2:{
+                for(var i=0;i<str.length;i++){
+                newStr=newStr+str.charAt(i);
+                    if(i==1){
+                    newStr=newStr+',';
+                    }
+                    else {
+                    if((i+2)%3==0 && i<m-1){
+                        newStr=newStr+',' ;
+                            }
+                        }
+                    }
+                break;
+                }
+            case 0:{
+                for(var i=0;i<str.length;i++){
+                newStr=newStr+str.charAt(i);
+                if((i+1)%3==0 && i<m-1){
+                        newStr=newStr+',';
+                            }
+                    }
+                break;
+                }         
+        }
+        return newStr;
+    }
     
 
 </script>

@@ -281,7 +281,6 @@
         });
         $('.opendel').on("click", function () {           
             $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
-            
         });
     }
 

@@ -63,8 +63,8 @@ class InvestorController extends Controller
         $shareholdersinfo->FilePath = $newFileName;
         $shareholdersinfo->save();
         
-        //Uploaded File Path 待修改
-        $destinationPath = 'assets\images\CorporateGovernance';
+        //Uploaded File Path
+        $destinationPath = 'resources\assets\file\Investor\IFSM';
         $file->move($destinationPath,$newFileName);
 
         return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
@@ -81,15 +81,16 @@ class InvestorController extends Controller
             $shareholders->Type = $input['type'];
             $shareholders->save();
         }else{//New File
+            //Uploaded File Path
+            $destinationPath = 'resources\assets\file\Investor\IFSM';
+            $newFileName = date("YmdHis").'shareholders.'.$file->getClientOriginalExtension();
+
             $shareholders->Year = $input['year'];
             $shareholders->Type = $input['type'];
             $shareholders->FileName = $file->getClientOriginalName();
             $shareholders->FilePath = $newFileName;
             $shareholders->save();
 
-            //Uploaded File Path 待修改
-            $destinationPath = 'assets\images\CorporateGovernance';
-            $newFileName = date("YmdHis").'shareholders.'.$file->getClientOriginalExtension();
             //Move Uploaded File
             $file->move($destinationPath,$newFileName);            
         }
@@ -121,14 +122,15 @@ class InvestorController extends Controller
         
         $rules =[
             'amount'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
-            'consolidated'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
+            'consolidated'=> 'required',
+            //|regex:/^\d*(\[-]\d{1,2}\%)?$/'
         ];
 
         $message=[
             'amount.required'=> '營收金額不能為空白',
             'consolidated.required'=> '年度增減比例不能為空白',
             'amount.regex'=> '營收金額請輸入數字',
-            'consolidated.regex'=> '年度增減比例請輸入數字',
+            //'consolidated.regex'=> '年度增減比例請輸入數字',
         ];
 
         $Validator=Validator::make($input,$rules,$message);
@@ -159,14 +161,14 @@ class InvestorController extends Controller
 
         $rules =[
             'amount'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
-            'consolidated'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
+            'consolidated'=> 'required',
         ];
 
         $message=[
             'amount.required'=> '營收金額不能為空白',
             'consolidated.required'=> '年度增減比例不能為空白',
             'amount.regex'=> '營收金額請輸入數字',
-            'consolidated.regex'=> '年度增減比例請輸入數字',
+            //'consolidated.regex'=> '年度增減比例請輸入數字',
         ];
 
         $Validator=Validator::make($input,$rules,$message);
@@ -224,9 +226,9 @@ class InvestorController extends Controller
         $financeinfo->FilePath = $newFileName;
         $financeinfo->save();
         
-        //Uploaded File Path 待修改
-        $destinationPath = 'assets\images\CorporateGovernance';
-        //$file->move($destinationPath,$newFileName);
+        //Uploaded File Path
+        $destinationPath = 'resources\assets\file\Investor\FinancialInformation';
+        $file->move($destinationPath,$newFileName);
 
         return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
     }
@@ -253,8 +255,8 @@ class InvestorController extends Controller
             $financeinfo->FilePath = $newFileName;
             $financeinfo->save();
 
-            //Uploaded File Path 待修改
-            $destinationPath = 'assets\images\CorporateGovernance';
+            //Uploaded File Path
+            $destinationPath = 'resources\assets\file\Investor\FinancialInformation';
             $file->move($destinationPath,$newFileName);            
         }
 

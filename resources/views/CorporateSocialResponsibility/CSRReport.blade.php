@@ -41,7 +41,7 @@
                 @foreach($data as $img)
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="{{url('resources/assets/images/CorporateSocialResponsibility/csr報告書/'.$img->OriFileName)}}">
+                            <a href="{{url('resources/assets/file/CSRReport/'.$img->FileName)}}"  target="_blank"><img class="img-responsive img" src="{{url('resources/assets/images/CorporateSocialResponsibility/csr報告書/'.$img->ImageName)}}"></a>
                         </div>
                     </div>
                 @endforeach

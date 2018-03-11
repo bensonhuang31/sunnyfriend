@@ -65,7 +65,7 @@ class NewsController extends Controller
                 $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
                         
                 //Uploaded File Path 待修改
-                $destinationPath = 'assets\images\CorporateGovernance';
+                $destinationPath = 'resources\assets\file\News';
 
                 
                 $latestnews->FileName = $file->getClientOriginalName();
@@ -112,7 +112,7 @@ class NewsController extends Controller
                 $latestnews->save();
             }else{
                 $newFileName = date("YmdHis").'file.'.$file->getClientOriginalExtension();
-                $destinationPath = 'assets\images\CorporateGovernance';
+                $destinationPath = 'resources\assets\file\News';
                 $latestnews->Date = $input['date'];
                 $latestnews->Title = $input['title'];
                 $latestnews->Content = $input['content'];
