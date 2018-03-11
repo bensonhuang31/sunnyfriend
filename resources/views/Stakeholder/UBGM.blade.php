@@ -3,7 +3,7 @@
 @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../resources/assets/images/stackholder/Business People Meeting Discussion Working Concept.jpg">
+        <img class="img-responsive" src="../resources/assets/images/stackholder/Stackholder banner.jpg">
         <div class="titleBox clearfix">
             <h2>{{Lang::get('sunnyfriend.Stackholder')}}</h2>
         </div>
@@ -36,7 +36,7 @@
                     </p>
                 
                 <p style="color:#009943">{{Lang::get('sunnyfriend.UBGM-2')}}</br>{{Lang::get('sunnyfriend.UBGM-3')}}</br>{{Lang::get('sunnyfriend.UBGM-4')}}</br>{{Lang::get('sunnyfriend.UBGM-5')}}</p>
-                <img class="img-responsive center-block" src="../assets/images/stackholder/039.png">
+                <img class="img-responsive center-block" src="../resources/assets/images/stackholder/039.png">
             </div>
         </div>
     </div>

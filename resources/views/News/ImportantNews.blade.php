@@ -35,7 +35,7 @@
                             </br>
                             </br>
                         </p>
-                        <h4>({{Lang::get('sunnyfriend.ImportantNews-3')}}<span>{{Lang::get('sunnyfriend.ImportantNews-4')}}</span>)</h4>
+                        <h4>{{Lang::get('sunnyfriend.ImportantNews-3')}}<span>{{Lang::get('sunnyfriend.ImportantNews-4')}}</span></h4>
                 <br>
                 <a target="_blank" class="btn btn-default btn-block" href="http://mops.twse.com.tw/mops/web/t146sb05" role="button" style="z-index:999;">{{Lang::get('sunnyfriend.ImportantNews-5')}}</a>
             </div>

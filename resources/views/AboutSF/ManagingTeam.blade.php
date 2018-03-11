@@ -141,6 +141,14 @@
                 </center> 
             </div>
         </div>
-    </div>
+            <div class="back99"> </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <img class="img-responsive" src="../resources/assets/images/about/IMG_0439OK.jpg"><p>▲日友環保科技股份有限公司(8341) 2015年3月23日上市掛牌典禮，經營團隊合影。</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img class="img-responsive" src="../resources/assets/images/about/DSC07036OK.jpg"><p>▲日友環保科技股份有限公司(8341) 2015年3月23日上市掛牌典禮花絮。</p>
+                </div>
+            </div>
     </div>
     @endsection

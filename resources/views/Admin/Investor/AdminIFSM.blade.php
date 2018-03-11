@@ -138,12 +138,12 @@
             <!-- Modal Body -->
             <div class="modal-body">
                 <div class="form-row form-group">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <label class="control-label">*年度</label>
+                    <div class="col-md-6 col-sm-6">
+                        <label class="control-label">*編輯年度</label>
                         <select class="selectpicker selectbtn edityear" name="year" id="edityear">
                         </select>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <label class="control-label">*股東會性質</label>
                         <input type="stakeholder" class="form-control Type" id="inputclass1" placeholder="請輸入性質" name="type" required/>
                     </div>
@@ -215,7 +215,7 @@
     function getYear(){
         $("#changeyear #addyear #edityear").html("");
         var d = new Date();
-        var n = d.getFullYear()+1;
+        var n = d.getFullYear();
         var years = [];
         for(var y=0; y<5; y++){
             years.push(n);

@@ -35,7 +35,7 @@
                         </br>
                     </p>
                     <p>{{Lang::get('sunnyfriend.CompanyProfile-2')}}</br>{{Lang::get('sunnyfriend.CompanyProfile-3')}}</br>{{Lang::get('sunnyfriend.CompanyProfile-4')}}</br>{{Lang::get('sunnyfriend.CompanyProfile-5')}}</p>
-                    <a target="_blank" class="btn btn-default btn-block" href="../assets/file/app/SFCP(CH).pdf" role="button" style="z-index:999;">{{Lang::get('sunnyfriend.CompanyProfile-6')}}</a>
+                    <a target="_blank" class="btn btn-default btn-block" href="../resources/assets/file/app/SFCP(CH).pdf" role="button" style="z-index:999;">{{Lang::get('sunnyfriend.CompanyProfile-6')}}</a>
                     <a target="_blank" class="btn btn-default btn-block" href="https://www.youtube.com/watch?v=nzoY7HRWAew&t=" role="button" style="z-index:999;">{{Lang::get('sunnyfriend.CompanyProfile-7')}}</a>
                 </div>
                 <div class="col-md-8 col-sm-6">

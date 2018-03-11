@@ -1,9 +1,9 @@
-@extends('Layouts/app')
+    @extends('Layouts/app')
 
-@section('content')
+    @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
-        <img class="img-responsive" src="../assets/images/news/new_banner.jpg">
+        <img class="img-responsive" src="../resources/assets/images/news/new_banner.jpg">
         <div class="titleBox clearfix">
             <h2>{{Lang::get('sunnyfriend.Investor')}}</h2>
         </div>
@@ -35,9 +35,9 @@
             <a target="_blank" class="btn btn-default btn-block" href="http://mops.twse.com.tw/mops/web/t146sb05" role="button" style="z-index:999;">{{Lang::get('sunnyfriend.DividendPolicy-6')}}</a>
         </div>
         <div class="col-md-8 col-sm-6">
-            <img class="img-responsive" src="../assets/images/Investor/query.jpg">
+            <img class="img-responsive" src="../resources/assets/images/Investor/query.jpg">
         </div>
     </div>
     </div>
     </div>
-@endsection
+    @endsection

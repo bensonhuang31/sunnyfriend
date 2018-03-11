@@ -226,7 +226,7 @@
     function getYear(){
         $("#changeyear").html("");
         var d = new Date();
-        var n = d.getFullYear()+1;
+        var n = d.getFullYear();
         var years = [];
         for(var y=0; y<5; y++){
             years.push(n);
