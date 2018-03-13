@@ -44,9 +44,9 @@
                                     <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-1')}}</td>
                                     <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-2')}}</td>
                                     <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-3')}}</td>
-                                    <td class="middle" class="middle" colspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-4')}}</td>
-                                    <td class="middle" colspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-5')}}<br>{{Lang::get('sunnyfriend.BoardofDirectors-5.1')}}</td>
-                                    <td style="text-align: left;" class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-6')}}</td>
+                                    <td class="middle" class="middle" colspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-4')}}<br/>{{Lang::get('sunnyfriend.BoardofDirectors-4.1')}}</td>
+                                    <td class="middle" colspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-5')}}<br/>{{Lang::get('sunnyfriend.BoardofDirectors-5.1')}}</td>
+                                    <td style="text-align: left;" class="middle" rowspan="2">{{Lang::get('sunnyfriend.BoardofDirectors-6')}}<br/>{{Lang::get('sunnyfriend.BoardofDirectors-6.1')}}</td>
                                 </tr>
                                 <tr style="background-color: #AACD03;text-align: center;">
                                     <td class="middle" >{{Lang::get('sunnyfriend.BoardofDirectors-7')}}</td>

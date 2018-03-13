@@ -111,7 +111,7 @@
                             </tr>
                             <tr>
                                 <td data-th="法人股東名稱">{{Lang::get('sunnyfriend.Shareholding-43')}}</td>
-                                <td data-th="法人股東之主要股東">{{Lang::get('sunnyfriend.Shareholding-4')}}</td>
+                                <td data-th="法人股東之主要股東">{{Lang::get('sunnyfriend.Shareholding-44')}}</td>
                             </tr>
                             <tr>
                                 <td data-th="法人股東名稱">{{Lang::get('sunnyfriend.Shareholding-45')}}</td>

@@ -80,7 +80,7 @@
                                 <td data-th="職稱">{{Lang::get('sunnyfriend.Diversification-26')}}</td>
                                 <td data-th="姓名">{{Lang::get('sunnyfriend.Diversification-27')}}</td>
                                 <td data-th="代表人">{{Lang::get('sunnyfriend.Diversification-28')}}</td>
-                                <td data-th="專業背景">{{Lang::get('sunnyfriend.Diversification-9')}}</td>
+                                <td data-th="專業背景">{{Lang::get('sunnyfriend.Diversification-29')}}</td>
                             </tr>
                             <tr>
                                 <td data-th="職稱">{{Lang::get('sunnyfriend.Diversification-30')}}</td>

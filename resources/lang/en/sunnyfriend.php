@@ -5,7 +5,7 @@ return [
     'Home' => 'Home',
     'Footer' => 'Footer',
     'Profile' => 'Company profile',
-    'News' => 'News',
+    'News' => 'News Center',
     'CorporateGovernance' => 'Governance',
     'Investor' => 'Investors',
     'CorporateSocialResponsibility' => 'CSR',
@@ -104,6 +104,7 @@ return [
     'Home-55' => 'English',
     'Home-56' => 'Investors Conference',
     'Home-57' => 'Website Links',
+    'Home-58' => 'SFCP(EN)-20170610.pdf',
 
     //關於日友
     'CompanyProfile' => 'About SF',
@@ -371,7 +372,7 @@ return [
     'Shareholding-45' => '潤泰創新國際(股)公司',
     'Shareholding-46' => '潤泰全球股份有限公司(25.70%)、匯弘投資股份有限公司(6.55%)、長春投資股份有限公司(4.50%)、',
     'Shareholding-47' => '宜泰投資股份有限公司(4.44%)、潤華染織廠股份有限公司(1.51%)、公務人員退休撫卹基金管理委員會(1.40%)、',
-    'Shareholding-48' => '、台銀人壽保險股份有限公司(1.13%)、',
+    'Shareholding-48' => '盈加投資股份有限公司(1.22%)、台銀人壽保險股份有限公司(1.13%)、',
     'Shareholding-49' => '渣打託管梵加德新興市場股票指數基金專戶(1.11%)、財團法人唐獎教育基金會(0.93%)',
     'Shareholding-50' => '大崙投資有限公司',
     'Shareholding-51' => '陳吉夫(32%)、劉宜齡(12%)、陳果宏(28%)、陳啟東(28%)',
@@ -433,7 +434,7 @@ return [
 
 
     //重大消息
-    'ImportantNews-1' => '重大消息-公開資訊觀測站',
+    'ImportantNews-1' => '重要訊息-公開資訊觀測站',
     'ImportantNews-2' => '投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。',
     'ImportantNews-3' => '(查詢代號：',
     'ImportantNews-4' => '8341)',
@@ -472,10 +473,12 @@ return [
     'BoardofDirectors-1' => 'Title',
     'BoardofDirectors-2' => 'Name',
     'BoardofDirectors-3' => 'Date First Elected',
-    'BoardofDirectors-4' => 'Shareholding When Elected',
+    'BoardofDirectors-4' => 'Shareholding',
+    'BoardofDirectors-4.1' => 'When Elected',
     'BoardofDirectors-5' => 'Current Shareholding',
     'BoardofDirectors-5.1' => ' (106.04.17止)',
-    'BoardofDirectors-6' => 'Selected Current Positions in the Company and Other Companies',
+    'BoardofDirectors-6' => 'Selected Current Positions in the',
+    'BoardofDirectors-6.1' => 'Company and Other Companies',
     'BoardofDirectors-7' => 'Share',
     'BoardofDirectors-8' => '%',
     'BoardofDirectors-9' => 'Share',
@@ -673,14 +676,14 @@ return [
     //內稽組織運作
     'InternalAuditing-1' => '本公司設置隸屬於董事會之內部稽核單位，專職於內部稽核之工作，檢查及評估公司內部各單位內部控制制度設計及執行的有效性，其目的在於協助董事會、管理階層檢查與覆核內部控制制度之缺失與營運效果、效率，並適時提供改善建議，以確保內部控制制度得以持續有效實施及作為檢討修正內部控制制度之依據。',
     'InternalAuditing-2' => '內部稽核單位依風險評估結果擬訂年度稽核計畫，包括每月應稽核之項目、年度稽核計畫並應確實執行，據以評估公司之內部控制制度，並檢附工作底稿及相關資料等作成稽核報告。每年年底前擬訂次年度稽核計畫，並提報董事會核准後執行。',
-    'InternalAuditing-3' => '檔案名稱',
-    'InternalAuditing-4' => '檔案下載',
+    'InternalAuditing-3' => 'File name',
+    'InternalAuditing-4' => 'Download',
     'InternalAuditing-5' => '內部稽核之組織及運作',
 
     //運作規章
     'Regulations-1' => '本公司基於公平、誠實、守信、透明原則從事商業活動，為落實誠信經營政策，並積極防範不誠信行為，依「上市上櫃公司誠信經營守則」及本公司及集團企業與組織之營運所在地相關法令，訂定本守則，具體規範本公司人員於執行業務時應注意之事項。',
-    'Regulations-2' => '檔案下載',
-    'Regulations-3' => '公司章程',
+    'Regulations-2' => 'File Name',
+    'Regulations-3' => 'Download',
     'Regulations-4' => '董事會議事規範',
     'Regulations-5' => '道德行為準則',
     'Regulations-6' => '企業社會責任實務守則',
@@ -725,7 +728,7 @@ return [
     'InvestmentCentre-2' => '電話：(02) 25795580 分機307',
     'InvestmentCentre-3' => 'E-mail：sf@sunnyfriend.com.tw',
     'InvestmentCentre-4' => '股務相關聯絡資訊',
-    'InvestmentCentre-5' => '股務相關聯絡資訊',
+    'InvestmentCentre-5' => 'Stock Related Contact Information',
     'InvestmentCentre-6' => '台北公司',
     'InvestmentCentre-7' => '電話：(02) 25795580 分機307',
     'InvestmentCentre-8' => '股務專員：蘇郁淳',
@@ -765,6 +768,7 @@ return [
     'Policy-13' => '日友獎助學金',
     'Policy-14' => '日友文學寫作營',
     'Policy-15' => '兒童育樂活動',
+    'Policy-16' => 'Policy',
 
     //導言
     'Preface-1' => 'Waste disposal has long been a subject of concern to people. It is not easy to set up a waste treatment plant with a scale comparable to our company. In addition to relevant legal restrictions, the public opinion is also the most important key to its success. Conflicts often arise because of misunderstandings between the treatment plant and people. Therefore, increasing the two-way communication is the focus of local relations.',
@@ -784,7 +788,7 @@ return [
     'ResultsAndplans-3' => '(一)急難救助及喪葬補助',
     'ResultsAndplans-4' => '扶助元長地區因天然災害、意外事故、重病、死亡或家庭變故，而生活陷入困境的家庭度過難關，予以捐助急難救助金或喪葬補助金。',
     'ResultsAndplans-5' => '(二)冬令救濟活動',
-    'ResultsAndplans-6' => '日友公司每年歲末年終與元長鄉公所配合，捐贈鄉內低收入戶白米、食用油、麵條等民生物資。企業社會具體作為及計畫',
+    'ResultsAndplans-6' => '每年歲末年終與元長鄉公所配合，捐贈鄉內低收入戶白米、食用油、麵條等民生物資。',
     'ResultsAndplans-7' => '(三)清明節環境義工',
     'ResultsAndplans-8' => '每逢清明節，本公司為體恤元長鄉親掃墓的辛勞，免費提供飲料、杯水及環境整潔維護的服務，一直以來獲得地方鄉親一致好評。',
     'ResultsAndplans-9' => '(四)社團活動贊助',

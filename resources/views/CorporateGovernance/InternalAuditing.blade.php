@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 <div class="breads">
-                    <a href="../index.php">首頁</a>
+                    <a href="../index.php">{{Lang::get('sunnyfriend.Home')}}</a>
                     <span>></span>
                     <span>{{Lang::get('sunnyfriend.CorporateGovernance')}}</span>
                     <span>></span>

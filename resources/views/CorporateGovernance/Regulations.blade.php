@@ -41,36 +41,40 @@
                             <th width="10%" style="text-align: center;">{{Lang::get('sunnyfriend.Regulations-3')}}</th>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-4')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-12')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/company policy.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-5')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-4')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/BoardofDirectorsrulesofprocedure.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-6')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-5')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/Ethical Conduct.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-7')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-6')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/Social Responsibility Code of Practice.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-8')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-7')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/Integrity management.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-9')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-8')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/Procure or dispose of assets.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-10')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-9')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/Corporate Governance Code of Practice.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                         <tr>
-                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-11')}}</td>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-10')}}</td>
                             <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/Prevention of insider trading management practices.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
+                        </tr>
+                        <tr>
+                            <td data-th="檔案名稱">{{Lang::get('sunnyfriend.Regulations-11')}}</td>
+                            <td data-th="檔案下載"><a href='../resources/assets/file/Regulations/Report handling procedures for incidents.pdf' target='_blank'><img class="img-responsive center-block" src="../resources/assets/images/CorporateGovernance/pdf_download.png"></td>
                         </tr>
                     </table>
                 </div>

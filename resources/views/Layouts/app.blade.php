@@ -210,8 +210,13 @@
 <script src="../resources/js/jquery.easing.1.3.js"></script>
 <script src="../resources/js/scrollanimated.js"></script>
 <script src="../resources/js/bootstrap-dropdownhover.min.js"></script>
+<script src="../resources/js/imagesLoaded.js"></script>
+<script src="../resources/js/masonry.js"></script>
+<script src="../resources/js/index.js"></script>
 <script src="../resources/js/dragscroll.js"></script>
 <script src="../resources/js/bootstrap-select.js"></script>
+
+
 
 
 @yield('script')

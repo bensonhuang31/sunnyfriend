@@ -33,7 +33,7 @@
                         </br>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-md-offset-2">
+                <div class="col-md-6 col-sm-6 col-md-offset-2">
                     <h3>{{Lang::get('sunnyfriend.InvestmentCentre-5')}}<div class="titleline"></div></h3>
                     <div class="contentbox">
                         <h4>{{Lang::get('sunnyfriend.InvestmentCentre-6')}}</h4>

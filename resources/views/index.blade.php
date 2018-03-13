@@ -60,7 +60,7 @@
                     @endif
                         <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="fadeInUp" data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown">
                             <li class=" dropdown ">
-                                <a href="AboutSF/CompanyProfile" class="dropdown-toggle " data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-1')}}<i class="fa fa-angle-down"></i></a>
+                                <a href="index.php" class="dropdown-toggle " data-toggle="dropdown">{{Lang::get('sunnyfriend.Home-1')}}<i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="AboutSF/CompanyProfile">{{Lang::get('sunnyfriend.Home-2')}}</a></li>
                                     <li><a href="AboutSF/ServiceAndArea">{{Lang::get('sunnyfriend.Home-3')}}</a></li>
@@ -258,7 +258,7 @@
                             <p style="margin-bottom: 0px">{{Lang::get('sunnyfriend.Home-43')}}<div id="demo" class="collapse">
                                 <p style="margin-top: 0px">{{Lang::get('sunnyfriend.Home-46')}}</p></div>
                                     <p data-toggle="collapse" data-target="#demo" style="color: #0f58de">{{Lang::get('sunnyfriend.Home-47')}}</p>
-                                    <a target="_blank" href="resources/assets/file/app/SFCP(CH).pdf"><div class="btn btn-default btnn ">{{Lang::get('sunnyfriend.Home-44')}}</div></a>
+                                    <a target="_blank" href="resources/assets/file/app/{{Lang::get('sunnyfriend.Home-58')}}"><div class="btn btn-default btnn1 ">{{Lang::get('sunnyfriend.Home-44')}}</div></a>
                                 </div>
                             </div>
                         </div>

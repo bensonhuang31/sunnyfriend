@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                <h3>{{Lang::get('sunnyfriend.Policy')}}<div class="titleline"></div></h3>
+                <h3>{{Lang::get('sunnyfriend.Policy-16')}}<div class="titleline"></div></h3>
                     <p>{{Lang::get('sunnyfriend.Policy-1')}}
                     </p>
                     <h5 style="color:#009943">{{Lang::get('sunnyfriend.Policy-2')}}</br>{{Lang::get('sunnyfriend.Policy-3')}}</br>{{Lang::get('sunnyfriend.Policy-4')}}</br>{{Lang::get('sunnyfriend.Policy-5')}}</br>{{Lang::get('sunnyfriend.Policy-6')}}</h5>
