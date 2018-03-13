@@ -1764,8 +1764,8 @@
         var enflueTable = $(".table-flue tbody");
         $.each(enfluevalues, function(index, element) {
             enflueTable.append("<tr>" +
-                "<td class=''>第"+ element.Season +"季</td>"+
-                "<td class='Location'>"+ element.Location +"</td>"+
+                "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class=''>第"+ element.Season +"季</td>"+
+                "<td style='border: 1px solid #aacd03;' class='Location'>"+ element.Location +"</td>"+
                 "<td class='Granular'>"+ element.Granular +"</td>"+
                 "<td class='Sulfurdioxide'>"+ element.Sulfurdioxide +"</td>"+
                 "<td class='Nitroxides'>"+ element.Nitroxides +"</td>"+
@@ -1813,8 +1813,8 @@
         var rawwaterTable = $(".table-rawwater tbody");
         $.each(enrawwatervalues, function(index, element) {
             rawwaterTable.append("<tr>" +
-                "<td class='middle'>第"+ element.Season +"季</td>"+
-                "<td class='middle Location'>"+ element.Location +"</td>"+
+                "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle'>第"+ element.Season +"季</td>"+
+                "<td style='border: 1px solid #aacd03;' class='middle Location'>"+ element.Location +"</td>"+
                 "<td class='middle Watertemperature'>"+ element.Watertemperature +"</td>"+
                 "<td class='middle PHvalue'>"+ element.PHvalue +"</td>"+
                 "<td class='middle Suspendedsolids'>"+ element.Suspendedsolids +"</td>"+
@@ -1851,8 +1851,8 @@
         var airqualityTable = $(".table-airquality tbody");
         $.each(enairqualityvalues, function(index, element) {
             airqualityTable.append("<tr>" +
-                "<td class='middle'>第"+ element.Season +"季</td>"+
-                "<td class='middle Location'>"+ element.Location +"</td>"+
+                "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle'>第"+ element.Season +"季</td>"+
+                "<td style='border: 1px solid #aacd03;' class='middle Location'>"+ element.Location +"</td>"+
                 "<td class='middle Windspeed'>"+ element.Windspeed +"</td>"+
                 "<td class='middle Winddirection'>"+ element.Winddirection +"</td>"+
                 "<td class='middle Humidity'>"+ element.Humidity +"</td>"+
@@ -1906,8 +1906,8 @@
         var noisevibrationTable = $(".table-noisevibration tbody");
         $.each(ennoisevibrationvalues, function(index, element) {
             noisevibrationTable.append("<tr>" +
-                "<td class='middle'>第"+ element.Season +"季</td>"+
-                "<td class='middle Location'>"+ element.Location +"</td>"+
+                "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle'>第"+ element.Season +"季</td>"+
+                "<td style='border: 1px solid #aacd03;' class='middle Location'>"+ element.Location +"</td>"+
                 "<td class='middle Lmorning'>"+ element.Lmorning +"</td>"+
                 "<td class='middle Levening'>"+ element.Levening +"</td>"+
                 "<td class='middle Lnight'>"+ element.Lnight +"</td>"+
@@ -1944,7 +1944,7 @@
         var soilTable = $(".table-soil tbody");
         $.each(ensoilvalues, function(index, element) {
             soilTable.append("<tr>" +
-                "<td class='middle Location'>"+ element.Location +"</td>"+
+                "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle Location'>"+ element.Location +"</td>"+
                 "<td class='middle Pb'>"+ element.Pb +"</td>"+
                 "<td class='middle Cd'>"+ element.Cd +"</td>"+
                 "<td class='middle Hg'>"+ element.Hg +"</td>"+
@@ -1976,8 +1976,8 @@
         var enflyashTable = $(".table-flyash tbody");
         $.each(enflyashvalues, function(index, element) {
             enflyashTable.append("<tr>" +
-               "<td class='middle'>"+ element.Season +"</td>"+
-               "<td class='middle Location'>"+ element.Location +"</td>"+
+               "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle'>"+ element.Season +"</td>"+
+               "<td style='border: 1px solid #aacd03;' class='middle Location'>"+ element.Location +"</td>"+
                "<td class='middle Type'>"+ element.Type +"</td>"+
                "<td class='middle Cr6'>"+ element.Cr6 +"</td>"+
                "<td class='middle TotalCd'>"+ element.TotalCd +"</td>"+
@@ -2029,8 +2029,8 @@
         var incineratorbottomTable = $(".table-incineratorbottom tbody");
         $.each(enincineratorbottomvalues, function(index, element) {
             incineratorbottomTable.append("<tr>" +
-                "<td class='middle'>"+ element.Season +"</td>"+
-                "<td class='middle Location'>"+ element.Location +"</td>"+
+                "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle'>"+ element.Season +"</td>"+
+                "<td style='border: 1px solid #aacd03;' class='middle Location'>"+ element.Location +"</td>"+
                 "<td class='middle Type'>"+ element.Type +"</td>"+
                 "<td class='middle Cr6'>"+ element.Cr6 +"</td>"+
                 "<td class='middle TotalCd'>"+ element.TotalCd +"</td>"+
@@ -2082,7 +2082,7 @@
         var engroundwaterTable = $(".table-groundwater tbody");
         $.each(engroundwatervalues, function(index, element) {
             engroundwaterTable.append("<tr>" +
-                "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
+                "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
                 "<td class='middle Location' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
                 "<td class='middle Toc'>"+ element.Toc +"</td>"+
                 "<td class='middle TDS'>"+ element.TDS +"</td>"+

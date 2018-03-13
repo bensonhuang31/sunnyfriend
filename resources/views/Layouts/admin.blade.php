@@ -7,11 +7,11 @@
     <title>日友環保科技股份有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../resources/css/backside.css" rel="stylesheet">
     <script src="../../resources/js/jquery-1.11.1.min.js"></script>
     <script src="../../resources/js/bootstrap.min.js"></script>
     <link href="../../resources/css/bootstrap-select.css" rel="stylesheet">
     <link href="../../resources/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../resources/css/backside.css" rel="stylesheet">
 </head>
 
 <body>

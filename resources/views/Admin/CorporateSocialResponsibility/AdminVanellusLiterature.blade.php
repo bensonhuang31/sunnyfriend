@@ -93,10 +93,10 @@
                             <thead>
                                 <tr>
                                     <!--<th>上傳順序</th>-->
-                                    <th>檔案名稱</th>
-                                    <th>圖片名稱</th>
-                                    <th>圖片</th>
-                                    <th></th>
+                                    <th style='text-align: center'>檔案名稱</th>
+                                    <th style='text-align: center'>圖片名稱</th>
+                                    <th style='text-align: center'>圖片</th>
+                                    <th style='text-align: center'>編輯</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -104,10 +104,10 @@
                                 @foreach($data as $potato)
                                     <tr>
                                         <!--<td data-th="年度">{{$potato->id}}</td>-->
-                                        <td data-th="檔案名稱">{{$potato->OriFileName}}</td>
-                                        <td data-th="圖片名稱">{{$potato->OriImageName}}</td>
-                                        <td data-th="圖片"><a href="#" class=""><img src="../../resources/assets/images/CorporateSocialResponsibility/土豆鳥雜誌/{{$potato->ImageName}}" alt="..."  width="72" height="100"></a></td>
-                                        <td style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$potato->id}}" data-target='#DelInfo'>刪除</button><td>
+                                        <td style='text-align: center' data-th="檔案名稱">{{$potato->OriFileName}}</td>
+                                        <td style='text-align: center' data-th="圖片名稱">{{$potato->OriImageName}}</td>
+                                        <td style='text-align: center' data-th="圖片"><a href="#" class=""><img src="../../resources/assets/images/CorporateSocialResponsibility/土豆鳥雜誌/{{$potato->ImageName}}" alt="..."  width="72" height="100"></a></td>
+                                        <td style='text-align: center' data-th="編輯" style='text-align: center;'><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$potato->id}}" data-target='#DelInfo'>刪除</button><td>
                                     </tr>
                                 @endforeach
                             </tbody>

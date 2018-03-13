@@ -39,6 +39,7 @@
                             <h4>選擇年度</h4>
                             <select class="selectpicker selectbtn" id="changeyear">
                             </select>
+                            <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
                         </div>
                     </div>
                     <!--
@@ -55,7 +56,6 @@
                     <div class="col-sm-2 col-md-2" id="content">
                         </br>
                         </br>
-                        <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">

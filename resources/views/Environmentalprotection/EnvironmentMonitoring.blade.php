@@ -107,7 +107,6 @@
                                     <th class="middle" >CH4</th>
                                     <th class="middle" >NMHC</th>
                                     <th class="middle" >PM10</th>
-                                    <th class="middle" >PM2.5</th>
                                 </tr>
                                 <tr style="background-color: #cce166;">
                                     <th class="middle" colspan="2">內容</th>
@@ -122,7 +121,6 @@
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
-                                    <th class="middle" >(ug/m3)</th>
                                     <th class="middle" >(ug/m3)</th>
                                 </tr>
 
@@ -506,8 +504,8 @@
         var eachTable = $(".table-enflue tbody");
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
-                                    "<td class='middle'>第"+ element.Season +"季</td>"+
-                                    "<td class='middle'>"+ element.Location +"</td>"+
+                                    "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
+                                    "<td class='middle' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
                                     "<td class='middle'>"+ element.Granular +"</td>"+
                                     "<td class='middle'>"+ element.Sulfurdioxide +"</td>"+
                                     "<td class='middle'>"+ element.Nitroxides +"</td>"+
@@ -526,8 +524,8 @@
         var eachTable2 = $(".table-airquality tbody");
             $.each(values2, function(index, element) {
                 eachTable2.append("<tr>" +
-                                    "<td class='middle'>第"+ element.Season +"季</td>"+
-                                    "<td class='middle'>"+ element.Location +"</td>"+
+                                    "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
+                                    "<td class='middle' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
                                     "<td class='middle'>"+ element.Windspeed +"</td>"+
                                     "<td class='middle'>"+ element.Winddirection +"</td>"+
                                     "<td class='middle'>"+ element.Humidity +"</td>"+
@@ -540,15 +538,14 @@
                                     "<td class='middle'>"+ element.CH4 +"</td>"+
                                     "<td class='middle'>"+ element.NMHC +"</td>"+
                                     "<td class='middle'>"+ element.PM10 +"</td>"+
-                                    "<td class='middle'>"+ element.PM25 +"</td>"+
                                 "</tr>");
             });
 
         var eachTable3 = $(".table-noisevibration tbody");
             $.each(values3, function(index, element) {
                 eachTable3.append("<tr>" +
-                                    "<td class='middle'>第"+ element.Season +"季</td>"+
-                                    "<td class='middle'>"+ element.Location +"</td>"+
+                                    "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
+                                    "<td class='middle' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
                                     "<td class='middle'>"+ element.Lmorning +"</td>"+
                                     "<td class='middle'>"+ element.Levening +"</td>"+
                                     "<td class='middle'>"+ element.Lnight +"</td>"+
@@ -560,7 +557,7 @@
         var eachTable4 = $(".table-soil tbody");
             $.each(values4, function(index, element) {
                 eachTable4.append("<tr>" +
-                                    "<td class='middle'>"+ element.Location +"</td>"+
+                                    "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>"+ element.Location +"</td>"+
                                     "<td class='middle'>"+ element.Pb +"</td>"+
                                     "<td class='middle'>"+ element.Cd +"</td>"+
                                     "<td class='middle'>"+ element.Hg +"</td>"+
@@ -570,8 +567,8 @@
         var eachTable5 = $(".table-rawwater tbody");
             $.each(values5, function(index, element) {
                 eachTable5.append("<tr>" +
-                                    "<td class='middle'>第"+ element.Season +"季</td>"+
-                                    "<td class='middle'>"+ element.Location +"</td>"+
+                                    "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
+                                    "<td class='middle' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
                                     "<td class='middle'>"+ element.Watertemperature +"</td>"+
                                     "<td class='middle'>"+ element.PHvalue +"</td>"+
                                     "<td class='middle'>"+ element.Suspendedsolids +"</td>"+
@@ -583,8 +580,8 @@
         var eachTable6 = $(".table-incineratorbottom tbody");
             $.each(values6, function(index, element) {
                 eachTable6.append("<tr>" +
-                                    "<td class='middle'>"+ element.Season +"</td>"+
-                                    "<td class='middle'>"+ element.Location +"</td>"+
+                                    "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>"+ element.Season +"</td>"+
+                                    "<td class='middle' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
                                     "<td class='middle'>"+ element.Type +"</td>"+
                                     "<td class='middle'>"+ element.Cr6 +"</td>"+
                                     "<td class='middle'>"+ element.TotalCd +"</td>"+
@@ -605,8 +602,8 @@
         var eachTable7 = $(".table-enflyash tbody");
             $.each(values7, function(index, element) {
                 eachTable7.append("<tr>" +
-                                     "<td class='middle'>"+ element.Season +"</td>"+
-                                    "<td class='middle'>"+ element.Location +"</td>"+
+                                    "<td class='middle' style='background-color: #AACD03;border: 1px solid #AACD03;'>第"+ element.Season +"季</td>"+
+                                    "<td class='middle' style='border: 1px solid #aacd03;'>"+ element.Location +"</td>"+
                                     "<td class='middle'>"+ element.Type +"</td>"+
                                     "<td class='middle'>"+ element.Cr6 +"</td>"+
                                     "<td class='middle'>"+ element.TotalCd +"</td>"+

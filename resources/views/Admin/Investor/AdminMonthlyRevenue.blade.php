@@ -135,7 +135,7 @@
                                             <br>(New Revenue)</td>
                                         <td class="middle">年度增(減)比例
                                             <br>(YoY Change)</td>
-                                        <td class="middle" colspan="2"></td>
+                                        <td class="middle" colspan="2">修改</td>
                                 </tr>
                             </thead>
                             <tbody class="middle" style="text-align: center;">
@@ -266,7 +266,7 @@
                                     "<td>"+
                                         "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
                                         "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+
-                                    "<td>"+
+                                    "</td>"+
                                 "</tr>");
                 AmountTotal+=parseInt(element.Amount);
                 

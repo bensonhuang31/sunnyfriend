@@ -109,7 +109,7 @@
                             <th style="text-align: center;">年度</th>
                             <th style="text-align: center;">股東會性質</th>
                             <th style="text-align: center;">檔案名稱</th>
-                            <th></th>
+                            <th style="text-align: center;">修改</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -260,7 +260,7 @@
                 "<td data-th='年度' class='Year' style='text-align: center;'>"+ element.Year +"</td>"+
                 "<td data-th='股東會性質' class='Type' style='text-align: center;'>"+ element.Type +"</td>"+
                 "<td data-th='檔案名稱' class='FileName' style='text-align: center;'>"+ element.FileName +"</td>"+
-                "<td data-th='修改' style='text-align: right;'>"+
+                "<td data-th='修改' style='text-align: center;'>"+
                 "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
                 "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+
                 "<td>"+
