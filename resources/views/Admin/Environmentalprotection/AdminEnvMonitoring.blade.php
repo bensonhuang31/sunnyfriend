@@ -719,7 +719,6 @@
                                 <th class="middle" >CH4</th>
                                 <th class="middle" >NMHC</th>
                                 <th class="middle" >PM10</th>
-                                <th class="middle" >PM2.5</th>
                                 <th class="middle" colspan="1"></th>
                                 <th class="middle" colspan="1"></th>
                             </tr>
@@ -736,7 +735,6 @@
                                 <th class="middle" >(ppm)</th>
                                 <th class="middle" >(ppm)</th>
                                 <th class="middle" >(ppm)</th>
-                                <th class="middle" >(ug/m3)</th>
                                 <th class="middle" >(ug/m3)</th>
                                 <th class="middle"></th>
                                 <th class="middle"></th>
@@ -834,12 +832,6 @@
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*PM10</label>
                                         <input type="text" class="form-control" placeholder="輸入內容" name="PM10" required/>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <label class="control-label" >*PM2.5</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="PM25" required/>
                                     </div>
                                 </div>
                             </div>
@@ -1580,7 +1572,7 @@
                                     <div class="form-row">
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label">*砷</label>
-                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="As" required/>
+                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Arsenic" required/>
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label">*鎳</label>
@@ -1865,7 +1857,6 @@
                 "<td class='middle CH4'>"+ element.CH4 +"</td>"+
                 "<td class='middle NMHC'>"+ element.NMHC +"</td>"+
                 "<td class='middle PM10'>"+ element.PM10 +"</td>"+
-                "<td class='middle PM25'>"+ element.PM25 +"</td>"+
                 "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default airqualityedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditAirqualityInfo'>編輯</button>"+
@@ -1893,7 +1884,6 @@
             $("#EditAirqualityInfo").find("input[name='CH4']").val(tr.find(".CH4").text());
             $("#EditAirqualityInfo").find("input[name='NMHC']").val(tr.find(".NMHC").text());
             $("#EditAirqualityInfo").find("input[name='PM10']").val(tr.find(".PM10").text());
-            $("#EditAirqualityInfo").find("input[name='PM25']").val(tr.find(".PM25").text());
         });
 
         //噪音振動
@@ -2096,7 +2086,7 @@
                 "<td class='middle Mn'>"+ element.Mn +"</td>"+
                 "<td class='middle Iron'>"+ element.Iron +"</td>"+
                 "<td class='middle Hg'>"+ element.Hg +"</td>"+
-                "<td class='middle As'>"+ element.As +"</td>"+
+                "<td class='middle Arsenic'>"+ element.Arsenic +"</td>"+
                 "<td class='middle Ni'>"+ element.Ni +"</td>"+
                 "<td class='middle Zn'>"+ element.Zn +"</td>"+
                 "<td class='middle Cu'>"+ element.Cu +"</td>"+
@@ -2140,7 +2130,7 @@
             $("#EditEngroundwaterInfo").find("input[name='Mn']").val(tr.find(".Mn").text());
             $("#EditEngroundwaterInfo").find("input[name='Iron']").val(tr.find(".Iron").text());
             $("#EditEngroundwaterInfo").find("input[name='Hg']").val(tr.find(".Hg").text());
-            $("#EditEngroundwaterInfo").find("input[name='As']").val(tr.find(".As").text());
+            $("#EditEngroundwaterInfo").find("input[name='Arsenic']").val(tr.find(".Arsenic").text());
             $("#EditEngroundwaterInfo").find("input[name='Ni']").val(tr.find(".Ni").text());
             $("#EditEngroundwaterInfo").find("input[name='Zn']").val(tr.find(".Zn").text());
             $("#EditEngroundwaterInfo").find("input[name='Cu']").val(tr.find(".Cu").text());

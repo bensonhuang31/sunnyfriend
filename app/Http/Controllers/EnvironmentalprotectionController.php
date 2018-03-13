@@ -320,7 +320,6 @@ class EnvironmentalprotectionController extends Controller
                 $enairquality->CH4 = $input['CH4'];
                 $enairquality->NMHC = $input['NMHC'];
                 $enairquality->PM10 = $input['PM10'];
-                $enairquality->PM25 = $input['PM25'];
                 $enairquality->save();
                 return redirect()->back()->with(['status' => 'success','message' => '空氣監測編輯成功']);
             break;
@@ -386,7 +385,7 @@ class EnvironmentalprotectionController extends Controller
                 $engroundwater->Mn = $input['Mn'];
                 $engroundwater->Iron = $input['Iron'];
                 $engroundwater->Hg = $input['Hg'];
-                $engroundwater->As = $input['As'];
+                $engroundwater->As = $input['Arsenic'];
                 $engroundwater->Ni = $input['Ni'];
                 $engroundwater->Zn = $input['Zn'];
                 $engroundwater->Cu = $input['Cu'];
