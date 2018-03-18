@@ -178,19 +178,21 @@
 
         var eachTable = $(".each-table tbody");
         var AmountTotal = 0;
+        var ConsolidatedTotal = 0;
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td>"+ element.Month +"</td>"+
                                     "<td>"+ fnc_format(element.Amount) +"</td>"+
-                                    "<td>"+ element.Consolidated +"</td>"+
+                                    "<td>"+ element.Consolidated +" %</td>"+
                                 "</tr>");
                 AmountTotal+=parseInt(element.Amount);
+                ConsolidatedTotal+=parseFloat(element.Consolidated);
             });
             
             eachTable.append("<tr>" +
                                 "<td>本年累計(Total)</td>"+
                                 "<td>"+ fnc_format(AmountTotal.toString()) +"</td>"+
-                                "<td></td>"+
+                                "<td>"+ ConsolidatedTotal.toFixed(2) +" %</td>"+
                             "</tr>");
     }
 

@@ -10,6 +10,7 @@ use App\Http\Model\ShareholdersInfo;
 use App\Http\Model\RevenueInfo;
 use App\Http\Model\FinanceInfo;
 use Validator;
+use DB;
 
 class InvestorController extends Controller
 {
@@ -122,13 +123,13 @@ class InvestorController extends Controller
         
         $rules =[
             'amount'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
-            'consolidated'=> 'required',
+            //'consolidated'=> 'required',
             //|regex:/^\d*(\[-]\d{1,2}\%)?$/'
         ];
 
         $message=[
             'amount.required'=> '營收金額不能為空白',
-            'consolidated.required'=> '年度增減比例不能為空白',
+            //'consolidated.required'=> '年度增減比例不能為空白',
             'amount.regex'=> '營收金額請輸入數字',
             //'consolidated.regex'=> '年度增減比例請輸入數字',
         ];
@@ -137,12 +138,14 @@ class InvestorController extends Controller
         
         if($Validator->passes()){
             $revenueinfo = RevenueInfo::all()->where('Year', '=', $input['year'])->where('Month', '=', $input['month']);
+            $lastrevenueinfo=DB::table('revenueInfo')->where('Year', '=', $input['year']-1)->where('Month', '=', $input['month'])->value('Amount');
+            $consolidated = round(($input['amount']-(($lastrevenueinfo==null)?0:$lastrevenueinfo))/(($lastrevenueinfo==null)?1:$lastrevenueinfo),2);
             if($revenueinfo->isEmpty()){
                 $revenue = new RevenueInfo;
                 $revenue->Year = $input['year'];
                 $revenue->Month = $input['month'];
                 $revenue->Amount = $input['amount'];
-                $revenue->Consolidated = $input['consolidated'];
+                $revenue->Consolidated = $consolidated;
                 $revenue->save();
     
                 return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
@@ -161,12 +164,10 @@ class InvestorController extends Controller
 
         $rules =[
             'amount'=> 'required|regex:/^\d*(\.\d{1,2})?$/',
-            'consolidated'=> 'required',
         ];
 
         $message=[
             'amount.required'=> '營收金額不能為空白',
-            'consolidated.required'=> '年度增減比例不能為空白',
             'amount.regex'=> '營收金額請輸入數字',
             //'consolidated.regex'=> '年度增減比例請輸入數字',
         ];

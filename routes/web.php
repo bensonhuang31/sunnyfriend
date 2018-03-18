@@ -73,6 +73,10 @@ Route::post('/Admin/Login','LoginController@login');
 Route::any('/Admin/crypt','LoginController@crypt');
 
 Route::group(['middlewareGroups' => ['web']], function () {
+});
+
+
+Route::group(['middleware' => ['web','admin.login']],function(){
     Route::get('/Admin/Logout','LoginController@logout');
     Route::get('/Admin', 'LoginController@Admin');
 
@@ -116,10 +120,6 @@ Route::group(['middlewareGroups' => ['web']], function () {
     Route::post('/Admin/Environmentalprotection/AdminEnvMonitoring', 'EnvironmentalprotectionController@AdminMonitoringCreate');
     Route::post('/Admin/Environmentalprotection/AdminEnvMonitoring/edit','EnvironmentalprotectionController@AdminMonitoringEdit');
     Route::post('/Admin/Environmentalprotection/AdminEnvMonitoring/delete','EnvironmentalprotectionController@AdminMonitoringDelete');
-});
 
-
-Route::group(['middleware' => ['web','admin.login']],function(){
-    
     
 });

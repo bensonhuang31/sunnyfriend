@@ -87,10 +87,6 @@
                                 <label class="control-label">*營收金額</label>
                                 <input type="text" class="form-control" id="inputmoney" placeholder="請輸入營收金額" name="amount" required/>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <label class="control-label">*年度增(減)比例</label>
-                                <input type="text" class="form-control" id="inputradio" placeholder="請輸入年度增(減)比例" name="consolidated" required/>
-                            </div>
                         </div>
                     </div>
                     <!-- Modal Footer -->
@@ -156,10 +152,6 @@
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <label class="control-label">*營收金額</label>
                                         <input type="text" class="form-control" id="inputfilename2" placeholder="營收金額"  name="amount" required/>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <label class="control-label">*年度增(減)比例</label>
-                                        <input type="text" class="form-control" id="inputfilename2" placeholder="年度增(減)比例" name="consolidated" required/>
                                     </div>
                                 </div>
                             </div>
@@ -247,24 +239,25 @@
 
             var eachTable = $(".each-table tbody");
             var AmountTotal = 0;
+            var ConsolidatedTotal = 0;
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                     "<td data-th='月' class='Month' style='text-align: center;'>"+ element.Month +"</td>"+
                     "<td data-th='營收金額' class='Amount' style='text-align: center;'>"+ fnc_format(element.Amount) +"</td>"+
-                    "<td data-th='年度增減比例' class='Consolidated' style='text-align: center;'>"+ element.Consolidated +"</td>"+
+                    "<td data-th='年度增減比例' class='Consolidated' style='text-align: center;'>"+ element.Consolidated +" %</td>"+
                     "<td>"+
                     "<button class='btn btnn btn-default openedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditInfo'>編輯</button>"+
                     "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#DelInfo'>刪除</button>"+
                     "</td>"+
                     "</tr>");
                 AmountTotal+=parseInt(element.Amount);
-                
+                ConsolidatedTotal+=parseFloat(element.Consolidated);
             });
 
             eachTable.append("<tr>" +
                 "<td>本年累計(Total)</td>"+
                 "<td>"+ fnc_format(AmountTotal.toString()) +"</td>"+
-                "<td></td>"+"<td></td>"+
+                "<td>"+ ConsolidatedTotal.toFixed(2) +" %</td>"+"<td></td>"+
                 "</tr>");
 
             $('.openedit').on("click", function () {
