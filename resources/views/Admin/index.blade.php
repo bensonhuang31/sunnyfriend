@@ -7,7 +7,7 @@
     <title>日友環保科技股份有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="resources/css/backside.css" rel="stylesheet">
+    <link href="resources/css/AdminBackside.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -27,7 +27,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="pull-left" style="color:white;">
-                    <a href="Admin"><h2 style="color:white">日友環保科技股份有限公司</h2></a>
+                    <a href="Admin"><h2 style="color:white; margin-top: 10px; margin-left: 10px;">日友環保科技股份有限公司</h2></a>
                 </div>
             </div>
             <!-- Top Menu Items -->
