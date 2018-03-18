@@ -430,6 +430,7 @@ return [
     'Struture-22' => '台南市仁德區一甲里忠義三街55號',
     'Struture-23' => 'TEL：(06)2709121(代表號)',
     'Struture-24' => 'FAX：(06)2709494',
+    'Struture-25' => 'CompanyStructure.png',
 
 
     //重大消息
@@ -441,6 +442,7 @@ return [
     'ImportantNews-6' => '返回上一頁',
 
     //最新消息
+    'latestNews' => 'Major Information',
     'latestNews-1' => '閱讀更多',
 
     //最新消息子頁
@@ -944,7 +946,7 @@ return [
     'GrievanceMachinery-7'=> '股東會、公司網站',
     'GrievanceMachinery-8'=> '年報、公開資訊觀測站',
     'GrievanceMachinery-9'=> '營運資訊揭露',
-    'GrievanceMachinery-10'=> '發言人：楊希聖副總經理 電話：(02) 25795580 分機307s',
+    'GrievanceMachinery-10'=> '發言人：楊希聖副總經理 電話：(02) 25795580 分機307',
     'GrievanceMachinery-11'=> '股務相關聯絡資訊',
     'GrievanceMachinery-12'=> '台北公司 電話：(02) 25795580 分機307 蘇專員',
     'GrievanceMachinery-13'=> '雲林總公司 電話：(05) 7885788 分機505 李專員',

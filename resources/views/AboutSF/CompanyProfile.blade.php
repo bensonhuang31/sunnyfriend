@@ -129,12 +129,12 @@
                                     <td data-th="產業類別：其他">{{Lang::get('sunnyfriend.CompanyProfile-64')}}</td>
                                 </tr>
                                 <tr>
-                                    <td data-th="股票代號：8341">{{Lang::get('sunnyfriend.CompanyProfile-65')}}</td>
+                                    <td data-th="股票代號：8341">{{Lang::get('sunnyfriend.CompanyProfile-65')}}</br>{{Lang::get('sunnyfriend.CompanyProfile-65.1')}}</td>
                                     <td data-th="產業類別：其他">{{Lang::get('sunnyfriend.CompanyProfile-66')}}</td>
                                 </tr>
                                 <tr>
                                     <td data-th="股票代號：8341">{{Lang::get('sunnyfriend.CompanyProfile-67')}}</td>
-                                    <td data-th="產業類別：其他">{{Lang::get('sunnyfriend.CompanyProfile-68')}}</td>
+                                    <td data-th="產業類別：其他">{{Lang::get('sunnyfriend.CompanyProfile-68')}}</br>{{Lang::get('sunnyfriend.CompanyProfile-68.1')}}</td>
                                 </tr>
                                 <tr>
                                     <td data-th="股票代號：8341">{{Lang::get('sunnyfriend.CompanyProfile-69')}}</td>

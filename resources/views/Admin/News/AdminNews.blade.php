@@ -35,10 +35,8 @@
                     </div>
                 </div>
                 <div class="row" id="main">
-                    <div class="col-sm-8 col-md-10" id="content">
+                    <div class="col-sm-12 col-md-12" id="content">
                         <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
-                        </br>
-                        </br>
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -93,7 +91,7 @@
                 </div>
             </div>
             <!-- /.row -->
-        </div>
+        </br>
 
         <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">

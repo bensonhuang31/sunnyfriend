@@ -15,6 +15,8 @@
                     <a href="../index.html">{{Lang::get('sunnyfriend.Home')}}</a>
                     <span>></span>
                     <span>{{Lang::get('sunnyfriend.News')}}</span>
+                    <span>></span>
+                    <b>{{Lang::get('sunnyfriend.latestNews')}}</b>
                 </div>
             </div>
         </div>

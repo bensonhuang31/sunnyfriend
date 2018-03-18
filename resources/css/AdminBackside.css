@@ -270,7 +270,7 @@ thead>tr>td {
     vertical-align: middle;
     padding-left: 8px;
     line-height: 1.7;
-    padding: 0px !important;
+    padding:5px ;
 }
 
 .table5>thead>tr>th {
@@ -317,7 +317,7 @@ tr:nth-child(odd) {
 .table2 th {
     background-color: #AACD03;
     white-space: nowrap;
-    padding: 20px 8px 20px 20px!important;
+    padding: 20px 20px!important;
     line-height: 1.7;
     font-weight: 500;
     color: #555555;
@@ -356,7 +356,6 @@ tr:nth-child(odd) {
     line-height: 1.7!important;
     text-align: center;
 }
-
 
 
 .middle {

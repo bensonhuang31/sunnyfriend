@@ -35,10 +35,8 @@
                     </div>
                 </div>
                 <div class="row" id="main">
-                    <div class="col-sm-8 col-md-10" id="content">
+                    <div class="col-sm-12 col-md-12" id="content">
                         <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增檔案</button>
-                        </br>
-                        </br>
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -83,7 +81,7 @@
                 </div>
             </div>
             <!-- /.row -->
-        </div>
+        </br>
         <!-- /.container-fluid -->
         <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">
             <div class="container-fluid">
@@ -93,10 +91,10 @@
                             <thead>
                                 <tr>
                                     <!--<th>上傳順序</th>-->
-                                    <th style='text-align: center'>檔案名稱</th>
-                                    <th style='text-align: center'>圖片名稱</th>
-                                    <th style='text-align: center'>圖片</th>
-                                    <th style='text-align: center'>編輯</th>
+                                    <th style="text-align: center;">檔案名稱</th>
+                                    <th style="text-align: center;">圖片名稱</th>
+                                    <th style="text-align: center;">圖片</th>
+                                    <th style="text-align: center;">編輯</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -104,10 +102,10 @@
                                 @foreach($data as $csr)
                                     <tr>
                                         <!--<td data-th="年度">{{$csr->id}}</td>-->
-                                        <td style='text-align: center' data-th="檔案名稱">{{$csr->OriFileName}}</td>
-                                        <td style='text-align: center' data-th="圖片名稱">{{$csr->OriImageName}}</td>
-                                        <td style='text-align: center' data-th="圖片"><a href="#" class=""><img src="../../resources/assets/images/CorporateSocialResponsibility/csr報告書/{{$csr->ImageName}}" alt="..."  width="72" height="100"></a></td>
-                                        <td style='text-align: center;' data-th="編輯"><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$csr->id}}" data-target='#DelInfo'>刪除</button><td>
+                                        <td style="text-align: center;" data-th="檔案名稱">{{$csr->OriFileName}}</td>
+                                        <td style="text-align: center;" data-th="圖片名稱">{{$csr->OriImageName}}</td>
+                                        <td style="text-align: center;" data-th="圖片"><a href="#" class=""><img src="../../resources/assets/images/CorporateSocialResponsibility/csr報告書/{{$csr->ImageName}}" alt="..."  width="72" height="100"></a></td>
+                                        <td style="text-align: center;" data-th="編輯"><button class='btn btn-default opendel' data-toggle='modal' data-id="{{$csr->id}}" data-target='#DelInfo'>刪除</button><td>
                                     </tr>
                                 @endforeach
                             </tbody>

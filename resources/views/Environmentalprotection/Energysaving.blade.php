@@ -47,9 +47,9 @@
                                 <table class="table table1">
                                     <tr>
                                         <th>{{Lang::get('sunnyfriend.Energysaving-3')}}</th>
-                                        <th>{{Lang::get('sunnyfriend.Energysaving-4')}}</th>
-                                        <th>{{Lang::get('sunnyfriend.Energysaving-5')}}</th>
-                                        <th>{{Lang::get('sunnyfriend.Energysaving-6')}}</th>
+                                        <th>CO<sub>2</sub>（kg）</th>
+                                        <th>CH<sub>4</sub>（kg）</th>
+                                        <th>N<sub>2</sub>O（kg）</th>
                                     </tr>
                                     <tr>
                                         <td data-th="溫室氣體種類">{{Lang::get('sunnyfriend.Energysaving-7')}}</td>
@@ -93,9 +93,9 @@
                                 <table class="table table1">
                                     <tr>
                                         <th>{{Lang::get('sunnyfriend.Energysaving-23')}}</th>
-                                        <th>{{Lang::get('sunnyfriend.Energysaving-24')}}</th>
-                                        <th>{{Lang::get('sunnyfriend.Energysaving-25')}}</th>
-                                        <th>{{Lang::get('sunnyfriend.Energysaving-26')}}</th>
+                                        <th>CO<sub>2</sub>（kg）</th>
+                                        <th>CH<sub>4</sub>（kg）</th>
+                                        <th>N<sub>2</sub>O（kg）</th>
                                     </tr>
                                     <tr>
                                         <td data-th="溫室氣體種類">{{Lang::get('sunnyfriend.Energysaving-27')}}</td>
@@ -116,7 +116,7 @@
                                         <td data-th="N2O（kg）">{{Lang::get('sunnyfriend.Energysaving-38')}}</td>
                                     </tr>
                                     <tr>
-                                        <td >{{Lang::get('sunnyfriend.Energysaving-39')}}</td>
+                                        <td >合計排放當量(kg CO2e)</td>
                                         <td colspan="3">{{Lang::get('sunnyfriend.Energysaving-40')}}</td>
                                     </tr>
                                 </table>

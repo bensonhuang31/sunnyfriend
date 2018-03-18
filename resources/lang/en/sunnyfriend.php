@@ -40,9 +40,9 @@ return [
     'SMP' => 'Supplier Management Policy',
     'MaterialIssues' => 'Material Issues',
     'GrievanceMachinery' => 'Grievance machinery',
-    'UBGM' => 'Unethical behavior grievance machinery',
+    'UBGM' => 'Unethical Behavior Grievance Machinery',
     'Energysaving' => 'Energy Saving',
-    'EnvironmentalUnit' => 'Environmental Protection Unit',
+    'EnvironmentalUnit' => 'Environmental Protection Unit Check',
     'EnvironmentMonitoring' => 'Environment Monitoring',
     'css' => 'sub-sunfriendEN.css',
 
@@ -115,7 +115,7 @@ return [
     'CompanyProfile-2' => 'Year of Establishment: 1994',
     'CompanyProfile-3' => 'Chairman of the Board and General Manager: Chang Fang-Cheng',
     'CompanyProfile-4' => 'Capital: Paid-in capital 1.115 billion NT',
-    'CompanyProfile-5' => 'Number of employees: 407 (as of 2016/12/31) Company Address: No.1-20, Yuan Dong Rd., Yuanchang Township, Yunlin County Business Scope: Professional waste collection and treatment,engineering consultation ,equipment design and manufacturing',   
+    'CompanyProfile-5' => 'Company Address: No.1-20, Yuan Dong Rd., Yuanchang Township, Yunlin County 655, Taiwan (R.O.C.)',   
     'CompanyProfile-6' => 'English Company profile',
     'CompanyProfile-7' => 'Company Introduction Video',
     'CompanyProfile-8' => 'Company History',
@@ -173,13 +173,15 @@ return [
     'CompanyProfile-59' => 'Board Chairman：張芳正',
     'CompanyProfile-60' => 'General Manager：張芳正',
     'CompanyProfile-61' => 'Spokesperson：楊希聖',
-    'CompanyProfile-62' => '發Tel. of Transfer Agent：+886-2-25795580 #307',
+    'CompanyProfile-62' => 'Tel. of Transfer Agent：+886-2-25795580 #307',
     'CompanyProfile-63' => 'Acting Spokesperson：張永典',
     'CompanyProfile-64' => '',
-    'CompanyProfile-65' => 'Major Business Items：Professional waste collection and treatment, engineering consultation,</br>equipment design and manufacturing',
+    'CompanyProfile-65' => 'Major Business Items：Professional waste collection and treatment, engineering consultation,',
+    'CompanyProfile-65.1' => 'equipment design and manufacturing',
     'CompanyProfile-66' => '',
     'CompanyProfile-67' => 'Establishment Date：1994.11.29',
-    'CompanyProfile-68' => 'Business Registration Number or Government Uniform Invoice (GUI) Number：89922041',
+    'CompanyProfile-68' => 'Business Registration Number or',
+    'CompanyProfile-68.1' => 'Government Uniform Invoice (GUI) Number：89922041',
     'CompanyProfile-69' => 'Paid-in Capital：1,115,000,000元',
     'CompanyProfile-70' => '興櫃日期：103.03.28',
     'CompanyProfile-71' => 'Date of Listing：2015.03.23',
@@ -431,6 +433,7 @@ return [
     'Struture-22' => '',
     'Struture-23' => '',
     'Struture-24' => '',
+    'Struture-25' => '1_EN.png',
 
 
     //重大消息
@@ -442,6 +445,7 @@ return [
     'ImportantNews-6' => '返回上一頁',
 
     //最新消息
+    'latestNews' => 'Major Information',
     'latestNews-1' => '閱讀更多',
 
     //最新消息子頁
@@ -695,7 +699,7 @@ return [
 
 
     //股利資訊
-    'DividendPolicy-1' => '股利資訊-公開資訊觀測站',
+    'DividendPolicy-1' => 'Dividend Policy',
     'DividendPolicy-2' => '投資人可以透過『公開資訊觀測站』，查詢本公司之最新或歷史股利訊息。',
     'DividendPolicy-3' => '(查詢代號：',
     'DividendPolicy-4' => '8341',
@@ -703,7 +707,7 @@ return [
     'DividendPolicy-6' => '前往公開資訊觀測站',
 
     //重大資訊參考網站
-    'ExchangeLink-1' => '重要訊息-公開資訊觀測站',
+    'ExchangeLink-1' => ' Taiwan Stock Exchange Link',
     'ExchangeLink-2' => '投資人可以透過『公開資訊觀測站』，查詢本公司之重大訊息。',
     'ExchangeLink-3' => '(查詢代號：',
     'ExchangeLink-4' => '8341',
@@ -861,7 +865,7 @@ return [
     'EmployeeBenefits-14' => '依公司法相關規定，提撥當年度獲利之一定比例作為員工酬勞，並依本公司相關發放辦法予以發放。',
     'EmployeeBenefits-15' => '(7)現金增資員工認股：',
     'EmployeeBenefits-17' => '為凝聚員工對公司向心力，參與公司經營，並分享公司未來經營成果，依照公司法規定，保留部分發行新股之股份由公司員工承購，並依本公司『員工認股辦法』辦理。',
-    'EmployeeBenefits-18' => '退休制度及實施狀況',
+    'EmployeeBenefits-18' => 'Retirement System',
     'EmployeeBenefits-19' => '本公司依據「勞動基準法」訂定本公司員工退休辦法。並按規定由公司按月提撥薪資總額適當比例之退休準備金至臺灣銀行勞工退休準備金監督委員會專戶保管。並從2005年7月1日起全面施行「勞工退休金條例」，由公司按月提繳員工工資之6%至勞工退休金個人專戶。其適用規定如下：',
     'EmployeeBenefits-20' => '(1)2005年7月1日(含)以後到職者，全面適用「勞工退休金條例」。',
     'EmployeeBenefits-21' => '(2)2005年7月1日(不含)以前到職者，均已依員工個人選擇，全數選擇適用新制「勞工退休金條例」。',
@@ -873,7 +877,7 @@ return [
     'EmployeeBenefits-27' => 'A.2005年7月1日(不含)以前到職者，選用勞工退休金條例前保留之工作年資，按其工作年資，每滿一年給與兩個基數。但超過十五年之工作年資，每滿一年給與一個基數，最高總數以四十五個基數為限。未滿半年者以半年計；滿半年者以一年計。',
     'EmployeeBenefits-28' => 'B.如依勞動基準法第54條第1項第2款規定強制退休之勞工，其心神喪失或身體殘廢係因執行職務所致，依前款規定加給百分之二十。',
     'EmployeeBenefits-29' => 'C.退休金基數之標準，係指核准退休時一個月平均工資。',
-    'EmployeeBenefits-30' => '員工工作環境與人身安全保護措施',
+    'EmployeeBenefits-30' => 'Work Environment Protection Measures',
     'EmployeeBenefits-31' => '建立符合ISO-14001之國際環境管理系統',
     'EmployeeBenefits-32' => '本公司已建立符合ISO-14001之國際環境管理系統，提供本公司完善的環境管理架構。並於每年訂定環境管理目標、標的以及方案，以達到落實污染預防及持續改善的目標，以追求永續經營。',
     'EmployeeBenefits-33' => '設置安全衛生管理組織',
@@ -946,7 +950,7 @@ return [
     'GrievanceMachinery-7'=> '股東會、公司網站',
     'GrievanceMachinery-8'=> '年報、公開資訊觀測站',
     'GrievanceMachinery-9'=> '營運資訊揭露',
-    'GrievanceMachinery-10'=> '發言人：楊希聖副總經理 電話：(02) 25795580 分機307s',
+    'GrievanceMachinery-10'=> '發言人：楊希聖副總經理 電話：(02) 25795580 分機307',
     'GrievanceMachinery-11'=> '股務相關聯絡資訊',
     'GrievanceMachinery-12'=> '台北公司 電話：(02) 25795580 分機307 蘇專員',
     'GrievanceMachinery-13'=> '雲林總公司 電話：(05) 7885788 分機505 李專員',

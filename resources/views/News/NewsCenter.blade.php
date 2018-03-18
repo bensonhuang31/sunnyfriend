@@ -30,22 +30,20 @@
         <div class="container">
             <div class="row">
                 <div id="owl-two" class="owl-theme owl-carousel">
-                    <div class="item"><a href="../News/ImportantNews.html">
-                                    <img class=" icon_img" src="../resources/assets/images/owl_icon/newsLOGO-02.svg">
-
+                    <div class="item">
+                            <img class=" icon_img" src="../resources/assets/images/owl_icon/newsLOGO-02.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
                                 <h1>{{Lang::get('sunnyfriend.NewsCenter-1')}}</h1>
                                 <h4>{{Lang::get('sunnyfriend.NewsCenter-2')}}</h4>
                                 <p>{{Lang::get('sunnyfriend.NewsCenter-3')}}</p>
                             </div>
-                            <img class="img-responsive img" src="../resources/assets/images/news/new01.jpg"></a>
+                            <a href="../News/ImportantNews"><img class="img-responsive img" src="../resources/assets/images/news/new01.jpg"></a>
                             <div class="info"></div>
                         </div>
                     </div>
                     <div class="item">
-                                    <img class=" icon_img" src="../resources/assets/images/owl_icon/newsLOGO-03.svg">
-
+                        <img class=" icon_img" src="../resources/assets/images/owl_icon/newsLOGO-03.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-btn">
                                 <h1>{{Lang::get('sunnyfriend.NewsCenter-4')}}</h1>
@@ -58,7 +56,7 @@
                             <div class="info"></div>
                         </div>
                     </div>
-                    <div class="item"><a href="../News/WebsiteLinks">
+                    <div class="item">
                       <img class=" icon_img" src="../resources/assets/images/owl_icon/newsLOGO-04.svg">
                         <div class="ih-item square effect13 bottom_to_top">
                             <div class="news-caption">
@@ -66,7 +64,7 @@
                                 <h4>{{Lang::get('sunnyfriend.NewsCenter-10')}}</h4>
                                 <p>{{Lang::get('sunnyfriend.NewsCenter-11')}}</p>
                             </div>
-                            <img class="img-responsive img" src="../resources/assets/images/news/new03.jpg">
+                            <a href="../News/WebsiteLinks"><img class="img-responsive img" src="../resources/assets/images/news/new03.jpg"></a>
                             <div class="info"></div>
                         </div>
                     </div>

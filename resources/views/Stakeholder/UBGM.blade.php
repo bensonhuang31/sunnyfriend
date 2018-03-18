@@ -25,7 +25,7 @@
     <div class="back3 wow fadeInDown" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-6 col-sm-4">
                     <h3>{{Lang::get('sunnyfriend.UBGM')}}<div class="titleline"></div></h3>
                 </div>
             </div>

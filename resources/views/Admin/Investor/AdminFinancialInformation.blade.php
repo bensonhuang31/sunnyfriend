@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="row" id="main">
-                    <div class="col-sm-2 col-md-2" id="content">
+                    <div class="col-sm-12 col-md-12" id="content">
                         <div class="dropdown">
                             <h4>選擇年度</h4>
                             <select class="selectpicker selectbtn" id="changeyear">
@@ -54,8 +54,6 @@
                     </div>
                     -->
                     <div class="col-sm-2 col-md-2" id="content">
-                        </br>
-                        </br>
                         <!-- Modal -->
                         <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -114,8 +112,8 @@
                     </div>
                 </div>
             </div>
+        </br>
             <!-- /.row -->
-        </div>
 
         <!-- /.container-fluid -->
         <div class="back2 back3 wow fadeInDown" data-wow-delay="0.5s">

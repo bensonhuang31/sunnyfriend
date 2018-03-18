@@ -111,7 +111,7 @@
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                                     "<td data-th='股東會性質' style='text-align: center;'>"+ element.Type +"</td>"+
-                                    "<td data-th='檔案名稱'>"+ element.FileName +"</td>"+
+                                    "<td data-th='檔案名稱'>"+ element.FileName.replace('.pdf','') +"</td>"+
                                     "<td data-th='檔案下載'><a href='../resources/assets/file/Investor/IFSM/"+ element.FilePath +"' target='_blank'><img class='img-responsive center-block' src='../resources/assets/images/CorporateGovernance/pdf_download.png'></a></td>"+
                                 "</tr>");
             });
