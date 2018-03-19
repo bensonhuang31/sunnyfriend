@@ -1768,7 +1768,6 @@
                 "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default flueedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditFlueInfo'>編輯</button>"+
-                "<button class='btn btn-default enfluedel' data-toggle='modal' data-id="+ element.id +" data-target='#DelFlueInfo'>刪除</button>"+
                 "<td>"+
                 "</tr>");
         });
@@ -1814,7 +1813,6 @@
                 "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default rawwateredit' data-toggle='modal' data-id="+ element.id +" data-target='#EditRawwaterInfo'>編輯</button>"+
-                "<button class='btn btn-default opendel' data-toggle='modal' data-id="+ element.id +" data-target='#EditRawwaterInfo'>刪除</button>"+
                 "<td>"+
                 "</tr>");
         });
@@ -1859,7 +1857,6 @@
                 "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default airqualityedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditAirqualityInfo'>編輯</button>"+
-                "<button class='btn btn-default airqualitydel' data-toggle='modal' data-id="+ element.id +" data-target='#EditAirqualityInfo'>刪除</button>"+
                 "<td>"+
                 "</tr>");
         });
@@ -1905,7 +1902,6 @@
                 "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default noisevibrationedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditNoisevibrationInfo'>編輯</button>"+
-                "<button class='btn btn-default noisevibrationdel' data-toggle='modal' data-id="+ element.id +" data-target='#EditNoisevibrationInfo'>刪除</button>"+
                 "<td>"+
                 "</tr>");
         });
@@ -1939,7 +1935,6 @@
                 "<td class='middle Hg'>"+ element.Hg +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default soiledit' data-toggle='modal' data-id="+ element.id +" data-target='#EditSoilInfo'>編輯</button>"+
-                "<button class='btn btn-default soildel' data-toggle='modal' data-id="+ element.id +" data-target='#EditSoilInfo'>刪除</button>"+
                 "<td>"+
                 "</tr>");
         });
@@ -1980,7 +1975,6 @@
              "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
              "<td data-th='修改' style='text-align: right;'>"+
              "<button class='btn btnn btn-default flyashedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditFlyashInfo'>編輯</button>"+
-             "<button class='btn btn-default flyashdel' data-toggle='modal' data-id="+ element.id +" data-target='#DelFlyashInfo'>刪除</button>"+
              "<td>"+
              "</tr>");
         });
@@ -2033,7 +2027,6 @@
                 "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default ineratorbottomedit' data-toggle='modal' data-id="+ element.id +" data-target='#EditIncineratorbottomInfo'>編輯</button>"+
-                "<button class='btn btn-default ineratorbottomdel' data-toggle='modal' data-id="+ element.id +" data-target='#EditIncineratorbottomInfo'>刪除</button>"+
                 "<td>"+
                 "</tr>");
         });
@@ -2101,7 +2094,6 @@
                 "<td style='display:none;' class='Season'>"+ element.Season +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default groundwateredit' data-toggle='modal' data-id="+ element.id +" data-target='#EditEngroundwaterInfo'>編輯</button>"+
-                "<button class='btn btn-default groundwaterdel' data-toggle='modal' data-id="+ element.id +" data-target='#DelEngroundwaterInfo'>刪除</button>"+
                 "<td>"+
                 "</tr>");
         });

@@ -228,18 +228,26 @@
         }
 
         function changeYear(year){
-            var values = [];
+            var values = [],lastvalues = [];
             var json = @json($data);
+
+            var lastAmountTotal = 0;//去年盈收金額
 
             for(var i = 0; i < json.length; i++){
                 if(json[i].Year==year){
                     values.push(json[i]);
+                }else if(json[i].Year==year-1){
+                    lastvalues.push(json[i]);
                 }
             }
 
+            for(var j = 0; j < lastvalues.length; j++){
+                lastAmountTotal+=parseFloat(lastvalues[j].Amount);
+            }
+
             var eachTable = $(".each-table tbody");
-            var AmountTotal = 0;
-            var ConsolidatedTotal = 0;
+            var AmountTotal = 0;//今年盈收金額
+            var ConsolidatedTotal = 0;//今年年度增減比例
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
                     "<td data-th='月' class='Month' style='text-align: center;'>"+ element.Month +"</td>"+
@@ -251,7 +259,7 @@
                     "</td>"+
                     "</tr>");
                 AmountTotal+=parseInt(element.Amount);
-                ConsolidatedTotal+=parseFloat(element.Consolidated);
+                ConsolidatedTotal=(AmountTotal-lastAmountTotal)/lastAmountTotal;
             });
 
             eachTable.append("<tr>" +
