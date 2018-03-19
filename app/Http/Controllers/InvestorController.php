@@ -65,7 +65,7 @@ class InvestorController extends Controller
         $shareholdersinfo->save();
         
         //Uploaded File Path
-        $destinationPath = 'resources\assets\file\Investor\IFSM';
+        $destinationPath = 'resources/assets/file/Investor/IFSM';
         $file->move($destinationPath,$newFileName);
 
         return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
@@ -83,7 +83,7 @@ class InvestorController extends Controller
             $shareholders->save();
         }else{//New File
             //Uploaded File Path
-            $destinationPath = 'resources\assets\file\Investor\IFSM';
+            $destinationPath = 'resources/assets/file/Investor/IFSM';
             $newFileName = date("YmdHis").'shareholders.'.$file->getClientOriginalExtension();
 
             $shareholders->Year = $input['year'];
@@ -228,7 +228,7 @@ class InvestorController extends Controller
         $financeinfo->save();
         
         //Uploaded File Path
-        $destinationPath = 'resources\assets\file\Investor\FinancialInformation';
+        $destinationPath = 'resources/assets/file/Investor/FinancialInformation';
         $file->move($destinationPath,$newFileName);
 
         return redirect()->back()->with(['status' => 'success','message' => '新增成功']);
@@ -257,7 +257,7 @@ class InvestorController extends Controller
             $financeinfo->save();
 
             //Uploaded File Path
-            $destinationPath = 'resources\assets\file\Investor\FinancialInformation';
+            $destinationPath = 'resources/assets/file/Investor/FinancialInformation';
             $file->move($destinationPath,$newFileName);            
         }
 

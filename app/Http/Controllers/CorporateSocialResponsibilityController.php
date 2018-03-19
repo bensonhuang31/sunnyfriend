@@ -59,8 +59,8 @@ class CorporateSocialResponsibilityController extends Controller
         $potatomagazine->save();
         
         //Uploaded File Path
-        $destinationPathFile = 'resources\assets\file\CorporateSocialResponsibility';
-        $destinationPathImg = 'resources\assets\images\CorporateSocialResponsibility\土豆鳥雜誌';
+        $destinationPathFile = 'resources/assets/file/CorporateSocialResponsibility';
+        $destinationPathImg = 'resources/assets/images/CorporateSocialResponsibility/土豆鳥雜誌';
         //Move Uploaded File
         $image->move($destinationPathImg,$newImgName);
         $file->move($destinationPathFile,$newFileName);
@@ -114,8 +114,8 @@ class CorporateSocialResponsibilityController extends Controller
         $csrmagazine->save();
         
         //Uploaded File Path
-        $destinationPathFile = 'resources\assets\file\CSRReport';
-        $destinationPathImg = 'resources\assets\images\CorporateSocialResponsibility\csr報告書';
+        $destinationPathFile = 'resources/assets/file/CSRReport';
+        $destinationPathImg = 'resources/assets/images/CorporateSocialResponsibility/csr報告書';
         //Move Uploaded File
         $image->move($destinationPathImg,$newImgName);
         $file->move($destinationPathFile,$newFileName);

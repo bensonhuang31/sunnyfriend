@@ -76,7 +76,7 @@
                 <!-- Page Heading -->
                 <div class="row" id="main">
                     <div class="col-sm-12 col-md-12" id="content">
-                        <h3>日友環保科技股份有限公司後台</h3>
+                        <h3>Welcome!</h3>
                     </div>
                 </div>
                 <!-- /.row -->

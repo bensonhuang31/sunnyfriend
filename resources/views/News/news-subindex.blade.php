@@ -56,7 +56,7 @@
                     <div class="lan"><i class=" wow fa fa-globe" aria-hidden="true"></i> ENGLISH</div>
                         <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="fadeInUp" data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown">
                             <li class=" dropdown ">
-                                <a href="../AboutSF/CompanyProfile" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../AboutSF/CompanyProfile" class="dropdown-toggle " data-toggle="dropdown">關於日友 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="../../AboutSF/CompanyProfile">基本資料</a></li>
                                     <li><a href="../../AboutSF/ServiceAndArea">營業項目與範圍</a></li>
@@ -68,7 +68,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../News/NewsCenter" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../News/NewsCenter" class="dropdown-toggle" data-toggle="dropdown">最新消息 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="../../News/latestNews">最新消息</a></li>
                                     <li><a href="../../News/ImportantNews">重大訊息</a></li>
@@ -76,7 +76,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../CorporateGovernance/GovernancePreface" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../CorporateGovernance/GovernancePreface" class="dropdown-toggle" data-toggle="dropdown">公司治理 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="../../CorporateGovernance/GovernancePreface">公司治理</a></li>
                                     <li><a href="../../CorporateGovernance/Regulations">運作規章</a></li>
@@ -86,7 +86,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../Investor/IFSM" class="dropdown-toggle" data-toggle="dropdown">投資人專區 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../Investor/IFSM" class="dropdown-toggle" data-toggle="dropdown">投資人專區 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="../../Investor/IFSM">股東會相關資訊</a></li>
                                     <li><a href="../../Investor/MonthlyRevenue">盈收公告</a></li>
@@ -97,7 +97,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../CorporateSocialResponsibility/Preface" class="dropdown-toggle" data-toggle="dropdown">企業社會責任 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../CorporateSocialResponsibility/Preface" class="dropdown-toggle" data-toggle="dropdown">企業社會責任 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-left ">
                                     <li><a href="../../CorporateSocialResponsibility/Preface">導言</a></li>
                                     <li><a href="../../CorporateSocialResponsibility/Policy">企業社會責任政策</a></li>
@@ -107,7 +107,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../Stakeholder/MaterialIssues" class="dropdown-toggle" data-toggle="dropdown">利害關係人  <i class="fa fa-angle-down"></i></a>
+                                <a href="../../Stakeholder/MaterialIssues" class="dropdown-toggle" data-toggle="dropdown">利害關係人  <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="../../Stakeholder/MaterialIssues">關係人鑑別議題與措施</a></li>
                                     <li><a href="../../Stakeholder/EmployeeBenefits">員工福利措施</a></li>
@@ -117,7 +117,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../Environmentalprotection/EnvironmentalUnit" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
+                                <a href="../../Environmentalprotection/EnvironmentalUnit" class="dropdown-toggle" data-toggle="dropdown">環境保護 <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="../../Environmentalprotection/EnvironmentalUnit">環保單位查核行程</a></li>
                                     <li><a href="../../Environmentalprotection/EnvironmentMonitoring">環境監測</a></li>

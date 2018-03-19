@@ -210,7 +210,6 @@
         </div>
 
         <!-- /.container-fluid -->
-        <link href="../../resources/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
         <script src="../../resources/js/moment.min.js"></script>
         <script src="../../resources/js/bootstrap-datetimepicker.min.js"></script>
 @endsection

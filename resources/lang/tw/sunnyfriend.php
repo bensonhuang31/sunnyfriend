@@ -442,7 +442,7 @@ return [
     'ImportantNews-6' => '返回上一頁',
 
     //最新消息
-    'latestNews' => 'Major Information',
+    'latestNews' => '重要消息',
     'latestNews-1' => '閱讀更多',
 
     //最新消息子頁
