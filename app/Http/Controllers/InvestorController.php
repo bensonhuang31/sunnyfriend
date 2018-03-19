@@ -175,8 +175,10 @@ class InvestorController extends Controller
         $Validator=Validator::make($input,$rules,$message);
         
         if($Validator->passes()){
+            $lastrevenueinfo=DB::table('revenueInfo')->where('Year', '=', $revenueinfo->Year-1)->where('Month', '=', $revenueinfo->Month)->value('Amount');
+            $consolidated = round(($input['amount']-(($lastrevenueinfo==null)?0:$lastrevenueinfo))/(($lastrevenueinfo==null)?1:$lastrevenueinfo),2);
             $revenueinfo->Amount = $input['amount'];
-            $revenueinfo->Consolidated = $input['consolidated'];
+            $revenueinfo->Consolidated = $consolidated;
             $revenueinfo->save();
             return redirect()->back()->with(['status' => 'success','message' => '編輯成功']);
         }else{

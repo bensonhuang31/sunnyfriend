@@ -241,10 +241,17 @@
                 }
             }
 
-            for(var j = 0; j < lastvalues.length; j++){
-                lastAmountTotal+=parseFloat(lastvalues[j].Amount);
+            var monthAmount=0,lastmonthAmount=0;
+            for(var a = 0; a < values.length; a++){
+                for(var b = 0; b < 12; b++){
+                    if(values[a].Month==lastvalues[b].Month)
+                    {
+                        monthAmount+=parseInt(values[a].Amount);
+                        lastmonthAmount+=parseInt(lastvalues[b].Amount);
+                    }
+                }
             }
-
+            
             var eachTable = $(".each-table tbody");
             var AmountTotal = 0;//今年盈收金額
             var ConsolidatedTotal = 0;//今年年度增減比例
@@ -259,7 +266,7 @@
                     "</td>"+
                     "</tr>");
                 AmountTotal+=parseInt(element.Amount);
-                ConsolidatedTotal=(AmountTotal-lastAmountTotal)/lastAmountTotal;
+                ConsolidatedTotal=(monthAmount-lastmonthAmount)/lastmonthAmount;
             });
 
             eachTable.append("<tr>" +
@@ -270,11 +277,10 @@
 
             $('.openedit').on("click", function () {
                 var tr = $(this).closest('tr');
-                var amount = tr.find(".Amount").text();
+                var amount = tr.find(".Amount").text().replace(',','');
                 var consolidated = tr.find(".Consolidated").text();
                 $("#EditInfo").find("input[name='id']").val($(this).attr('data-id'));
                 $("#EditInfo").find("input[name='amount']").val(amount);
-                $("#EditInfo").find("input[name='consolidated']").val(consolidated);
             });
 
             $('.opendel').on("click", function () {           

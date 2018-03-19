@@ -205,8 +205,8 @@ class EnvironmentalprotectionController extends Controller
             break;
             case "ensoil":
                 $ensoil = array(
-                    array('Year'=>$input['Year'],'Location'=>'廠址','Pb'=>'','Cd'=>'','Hg'=>''),
-                    array('Year'=>$input['Year'],'Location'=>'廠址','Pb'=>'','Cd'=>'','Hg'=>''),   
+                    array('Year'=>$input['Year'],'Location'=>'廠址','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),
+                    array('Year'=>$input['Year'],'Location'=>'廠址','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),   
                 );
                 $ensoilinfo = EnSoil::all()->where('Year', '=', $input['Year']);
                 if($ensoilinfo->isEmpty()){
@@ -338,6 +338,7 @@ class EnvironmentalprotectionController extends Controller
                 $ensoil->Pb = $input['Pb'];
                 $ensoil->Cd = $input['Cd'];
                 $ensoil->Hg = $input['Hg'];
+                $ensoil->Dioxin = $input['Dioxin'];
                 $ensoil->save();
                 return redirect()->back()->with(['status' => 'success','message' => '土壤編輯成功']);
             break;
