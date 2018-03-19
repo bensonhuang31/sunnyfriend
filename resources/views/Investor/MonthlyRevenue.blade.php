@@ -1,6 +1,6 @@
-@extends('Layouts/app')
+    @extends('Layouts/app')
 
-@section('content')
+    @section('content')
     <!--banner-->
     <div class="bannerArea b-box  wow fadeInDown" data-wow-delay="0.5s ">
         <img class="img-responsive" src="../resources/assets/images/news/new_banner.jpg">
@@ -34,98 +34,98 @@
                     <select class="selectpicker selectbtn"  id="changeyear">
                     </select>
                 </div>
-                </br>
-                </br>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p id="changename">{{Lang::get('sunnyfriend.MonthlyRevenus-1')}}</p>
-                    <p>{{Lang::get('sunnyfriend.MonthlyRevenus-2')}}</p>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="table-responsive dragscroll">
-                        <table class="table table2 each-table">
-                            <thead>
-                                <tr style="background-color: #AACD03;text-align: center;">
-                                    <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.MonthlyRevenus-3')}}
-                                        <br>{{Lang::get('sunnyfriend.MonthlyRevenus-4')}}</td>
-                                    <td class="middle" class="middle" colspan="2">{{Lang::get('sunnyfriend.MonthlyRevenus-5')}}
-                                        <br>{{Lang::get('sunnyfriend.MonthlyRevenus-6')}}</td>
+            </br>
+        </br>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <p id="changename">{{Lang::get('sunnyfriend.MonthlyRevenus-1')}}</p>
+            <p>{{Lang::get('sunnyfriend.MonthlyRevenus-2')}}</p>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="table-responsive dragscroll">
+                <table class="table table2 each-table">
+                    <thead>
+                        <tr style="background-color: #AACD03;text-align: center;">
+                            <td class="middle" rowspan="2">{{Lang::get('sunnyfriend.MonthlyRevenus-3')}}
+                                <br>{{Lang::get('sunnyfriend.MonthlyRevenus-4')}}</td>
+                                <td class="middle" class="middle" colspan="2">{{Lang::get('sunnyfriend.MonthlyRevenus-5')}}
+                                    <br>{{Lang::get('sunnyfriend.MonthlyRevenus-6')}}</td>
                                     <tr style="background-color: #AACD03;text-align: center;">
                                         <td class="middle">{{Lang::get('sunnyfriend.MonthlyRevenus-7')}}
                                             <br>{{Lang::get('sunnyfriend.MonthlyRevenus-8')}}</td>
-                                        <td class="middle">{{Lang::get('sunnyfriend.MonthlyRevenus-9')}}
-                                            <br>{{Lang::get('sunnyfriend.MonthlyRevenus-10')}}</td>
+                                            <td class="middle">{{Lang::get('sunnyfriend.MonthlyRevenus-9')}}
+                                                <br>{{Lang::get('sunnyfriend.MonthlyRevenus-10')}}</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="middle" style="text-align: center;">
+                                <!--
+                                    <tr>
+                                        <td>一月(Jan.)</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
-                            </thead>
-                            <tbody class="middle" style="text-align: center;">
-                            <!--
-                                <tr>
-                                    <td>一月(Jan.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>二月(Feb.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>三月(Mar.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>四月(Apr.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>五月(May)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>六月(Jun.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>七月(Jul.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>八月(Aug.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>九月(Sept.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>十月(Oct.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>十一月(Nov.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>十二月(Dec.)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>本年累計(Total)</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                                    <tr>
+                                        <td>二月(Feb.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>三月(Mar.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>四月(Apr.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>五月(May)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>六月(Jun.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>七月(Jul.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>八月(Aug.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>九月(Sept.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>十月(Oct.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>十一月(Nov.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>十二月(Dec.)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>本年累計(Total)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                 -->
                             </tbody>
                         </table>
@@ -134,125 +134,132 @@
             </div>
         </div>
     </div>
-@endsection
+    @endsection
 
-@section('script')
+    @section('script')
 
-<script>
-    $( document ).ready(function() {
-        getYear();
-        changeYear($("#changeyear").val());
-        $("#changename").text($("#changeyear").val()+"每月營收("+$("#changeyear").val()+" Monthly Revenue)");
-        $('#changeyear').on('change',function(){
-            $("#changename").text($(this).val()+"每月營收("+$(this).val()+" Monthly Revenue)");
-            $(".each-table tbody").html("");
-            changeYear($(this).val());
+    <script>
+        $( document ).ready(function() {
+            getYear();
+            changeYear($("#changeyear").val());
+            $("#changename").text($("#changeyear").val()+"每月營收("+$("#changeyear").val()+" Monthly Revenue)");
+            $('#changeyear').on('change',function(){
+                $("#changename").text($(this).val()+"每月營收("+$(this).val()+" Monthly Revenue)");
+                $(".each-table tbody").html("");
+                changeYear($(this).val());
+            });
         });
-    });
 
-    function getYear(){
-        $("#changeyear").html("");
-        var d = new Date();
-        var n = d.getFullYear();
-        var years = [];
-        for(var y=0; y<5; y++){
-            years.push(n);
-            n--;
-        }
+        function getYear(){
+            $("#changeyear").html("");
+            var d = new Date();
+            var n = d.getFullYear();
+            var years = [];
+            for(var y=0; y<5; y++){
+                years.push(n);
+                n--;
+            }
 
-        var eachTable = $("#changeyear");
+            var eachTable = $("#changeyear");
             $.each(years, function(index, element) {
                 eachTable.append("<option>"+ element +"</option>");
             });
-    }
+        }
 
-    function changeYear(year){
-        var values = [],lastvalues = [];
-        var json = @json($data);
+        function changeYear(year){
+            var values = [],lastvalues = [];
+            var json = @json($data);
 
-        var lastAmountTotal = 0;//去年盈收金額
+            var lastAmountTotal = 0;//去年盈收金額
 
-        for(var i = 0; i < json.length; i++){
-            if(json[i].Year==year){
-                values.push(json[i]);
-            }else if(json[i].Year==year-1){
-                lastvalues.push(json[i]);
+            for(var i = 0; i < json.length; i++){
+                if(json[i].Year==year){
+                    values.push(json[i]);
+                }else if(json[i].Year==year-1){
+                    lastvalues.push(json[i]);
+                }
             }
-        }
 
-        for(var j = 0; j < lastvalues.length; j++){
-            lastAmountTotal+=parseFloat(lastvalues[j].Amount);
-        }
+            var monthAmount=0,lastmonthAmount=0;
+            for(var a = 0; a < values.length; a++){
+                for(var b = 0; b < 12; b++){
+                    if(values[a].Month==lastvalues[b].Month)
+                    {
+                        monthAmount+=parseInt(values[a].Amount);
+                        lastmonthAmount+=parseInt(lastvalues[b].Amount);
+                    }
+                }
+            }
 
-        var eachTable = $(".each-table tbody");
-        var AmountTotal = 0;//今年盈收金額
-        var ConsolidatedTotal = 0;//今年年度增減比例
+            var eachTable = $(".each-table tbody");
+            var AmountTotal = 0;//今年盈收金額
+            var ConsolidatedTotal = 0;//今年年度增減比例
             $.each(values, function(index, element) {
                 eachTable.append("<tr>" +
-                                    "<td>"+ element.Month +"</td>"+
-                                    "<td>"+ fnc_format(element.Amount) +"</td>"+
-                                    "<td>"+ element.Consolidated +" %</td>"+
-                                "</tr>");
+                    "<td>"+ element.Month +"</td>"+
+                    "<td>"+ fnc_format(element.Amount) +"</td>"+
+                    "<td>"+ element.Consolidated +" %</td>"+
+                    "</tr>");
                 AmountTotal+=parseInt(element.Amount);
-                ConsolidatedTotal=(AmountTotal-lastAmountTotal)/lastAmountTotal;
+                ConsolidatedTotal=(monthAmount-lastmonthAmount)/lastmonthAmount;
             });
             
             eachTable.append("<tr>" +
-                                "<td>本年累計(Total)</td>"+
-                                "<td>"+ fnc_format(AmountTotal.toString()) +"</td>"+
-                                "<td>"+ (ConsolidatedTotal*100).toFixed(2) +" %</td>"+
-                            "</tr>");
-    }
-
-    function fnc_format(str){    
-        var newStr="";  
-        for(var m=0;m<str.length;m++){
-            var c=str.charAt(m);
-            if(c=='.')
-            break;
+                "<td>本年累計(Total)</td>"+
+                "<td>"+ fnc_format(AmountTotal.toString()) +"</td>"+
+                "<td>"+ (ConsolidatedTotal*100).toFixed(2) +" %</td>"+
+                "</tr>");
         }
-        var b=m%3; 
-        switch(b){
-            case 1:{
-                for(var i=0;i<str.length;i++){
-                newStr=newStr+str.charAt(i);
-                    if(i==0){
-                    newStr=newStr+',';
-                    }
-                    else {
-                    if(i%3==0 && i<m-1){
-                            newStr=newStr+',' ;
+
+        function fnc_format(str){    
+            var newStr="";  
+            for(var m=0;m<str.length;m++){
+                var c=str.charAt(m);
+                if(c=='.')
+                    break;
+            }
+            var b=m%3; 
+            switch(b){
+                case 1:{
+                    for(var i=0;i<str.length;i++){
+                        newStr=newStr+str.charAt(i);
+                        if(i==0){
+                            newStr=newStr+',';
+                        }
+                        else {
+                            if(i%3==0 && i<m-1){
+                                newStr=newStr+',' ;
                             }
                         }
                     }
-                break;
+                    break;
                 }
-            case 2:{
-                for(var i=0;i<str.length;i++){
-                newStr=newStr+str.charAt(i);
-                    if(i==1){
-                    newStr=newStr+',';
-                    }
-                    else {
-                    if((i+2)%3==0 && i<m-1){
-                        newStr=newStr+',' ;
+                case 2:{
+                    for(var i=0;i<str.length;i++){
+                        newStr=newStr+str.charAt(i);
+                        if(i==1){
+                            newStr=newStr+',';
+                        }
+                        else {
+                            if((i+2)%3==0 && i<m-1){
+                                newStr=newStr+',' ;
                             }
                         }
                     }
-                break;
+                    break;
                 }
-            case 0:{
-                for(var i=0;i<str.length;i++){
-                newStr=newStr+str.charAt(i);
-                if((i+1)%3==0 && i<m-1){
-                        newStr=newStr+',';
-                            }
+                case 0:{
+                    for(var i=0;i<str.length;i++){
+                        newStr=newStr+str.charAt(i);
+                        if((i+1)%3==0 && i<m-1){
+                            newStr=newStr+',';
+                        }
                     }
-                break;
+                    break;
                 }         
+            }
+            return newStr;
         }
-        return newStr;
-    }
-</script>
+    </script>
 
-@endsection
+    @endsection

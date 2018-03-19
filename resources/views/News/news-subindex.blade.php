@@ -172,11 +172,12 @@
                 </div>
             </div>
             <div class="back99"> </div>
+            <div class="text-center">
+                <div class="btn btn-default " onclick="window.history.go(-1);">{{Lang::get('sunnyfriend.subindex-2')}}</div>
+            </div>
         </div>
     </div>
-    <div class="text-center">
-        <div class="btn btn-default " onclick="window.history.go(-1);">{{Lang::get('sunnyfriend.subindex-2')}}</div>
-    </div>
+
 </div>
 </div>
 

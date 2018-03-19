@@ -111,16 +111,16 @@
                             <tr style="background-color: #AACD03;text-align: center;">
                                 <td class="middle" rowspan="4">月
                                     <br>(Month)</td>
-                                <td class="middle" class="middle" colspan="2">合併營收
-                                    <br>(Consolidated)</td>
-                                <td class="middle" class="middle" colspan="1"></td>
+                                    <td class="middle" class="middle" colspan="2">合併營收
+                                        <br>(Consolidated)</td>
+                                        <td class="middle" class="middle" colspan="1"></td>
                                     </tr>
                                     <tr style="background-color: #AACD03;text-align: center;">
                                         <td class="middle">營收金額
                                             <br>(New Revenue)</td>
-                                        <td class="middle">年度增(減)比例
+                                            <td class="middle">年度增(減)比例
                                                 <br>(YoY Change)</td>
-                                        <td class="middle" colspan="2">修改</td>
+                                                <td class="middle" colspan="2">修改</td>
                                             </tr>
                                         </thead>
                                         <tbody class="middle" style="text-align: center;">
