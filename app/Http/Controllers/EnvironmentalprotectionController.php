@@ -205,8 +205,8 @@ class EnvironmentalprotectionController extends Controller
             break;
             case "ensoil":
                 $ensoil = array(
-                    array('Year'=>$input['Year'],'Location'=>'廠址','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),
-                    array('Year'=>$input['Year'],'Location'=>'廠址','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),   
+                    array('Year'=>$input['Year'],'Location'=>'廠外表土','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),
+                    array('Year'=>$input['Year'],'Location'=>'廠外裡土','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),   
                 );
                 $ensoilinfo = EnSoil::all()->where('Year', '=', $input['Year']);
                 if($ensoilinfo->isEmpty()){
