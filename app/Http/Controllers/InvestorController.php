@@ -139,7 +139,7 @@ class InvestorController extends Controller
         if($Validator->passes()){
             $revenueinfo = RevenueInfo::all()->where('Year', '=', $input['year'])->where('Month', '=', $input['month']);
             $lastrevenueinfo=DB::table('revenueInfo')->where('Year', '=', $input['year']-1)->where('Month', '=', $input['month'])->value('Amount');
-            $consolidated = round(($input['amount']-(($lastrevenueinfo==null)?0:$lastrevenueinfo))/(($lastrevenueinfo==null)?1:$lastrevenueinfo),2);
+            $consolidated = (($input['amount']-(($lastrevenueinfo==null)?0:$lastrevenueinfo))/(($lastrevenueinfo==null)?1:$lastrevenueinfo))*100;
             if($revenueinfo->isEmpty()){
                 $revenue = new RevenueInfo;
                 $revenue->Year = $input['year'];

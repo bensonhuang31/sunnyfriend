@@ -507,39 +507,39 @@
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*粒狀汙染物</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Granular" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Granular" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*二氧化硫</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Sulfurdioxide" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Sulfurdioxide" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*氮氧化合物</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Nitroxides" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Nitroxides" />
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*一氧化碳</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Carbonmonoxide" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Carbonmonoxide" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*氯化氫</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Hydrogenchloride" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Hydrogenchloride" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*鉛</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Pb" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Pb" />
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*鎘</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Cd" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Cd" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*汞</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Hg" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Hg" />
                                     </div>
                                 </div>
                             </div>
@@ -643,24 +643,24 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <label class="control-label">*水溫</label></br>
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Watertemperature" required/>
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Watertemperature"/>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <label class="control-label">*pH值</label></br>
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="PHvalue" required/>
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="PHvalue"/>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*懸浮固體</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Suspendedsolids" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Suspendedsolids"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*化學需氧量</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="COD" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="COD"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*大腸桿菌群</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Coliform" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Coliform"/>
                                     </div>
                                 </div>
                             </div>
@@ -780,57 +780,57 @@
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*風速</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Windspeed" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Windspeed" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*風向</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Winddirection" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Winddirection" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*濕度</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Humidity" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Humidity"/>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*溫度</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Temperature" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Temperature" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*TSP</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="TSP" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="TSP"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*SO2</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="SO2" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="SO2"/>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*NOx</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="NOx" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="NOx"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*CO</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="CO" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="CO"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*THC</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="THC" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="THC"/>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*CH4</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="CH4" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="CH4"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*NMHC</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="NMHC" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="NMHC"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*PM10</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="PM10" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="PM10"/>
                                     </div>
                                 </div>
                             </div>
@@ -935,24 +935,24 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <label class="control-label">*L日</label></br>
-                                    <input type="text" class="form-control" placeholder="輸入內容" name="Lmorning" required/>
+                                    <input type="text" class="form-control" placeholder="輸入內容" name="Lmorning"/>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <label class="control-label">*L晚</label></br>
-                                    <input type="text" class="form-control" placeholder="輸入內容" name="Levening" required/>
+                                    <input type="text" class="form-control" placeholder="輸入內容" name="Levening"/>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*L夜</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Lnight" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Lnight"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*LV日</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Lvmorning" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Lvmorning"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*LV夜</label>
-                                        <input type="text" class="form-control" placeholder="輸入內容" name="Lvnight" required/>
+                                        <input type="text" class="form-control" placeholder="輸入內容" name="Lvnight"/>
                                     </div>
                                 </div>
 
@@ -1002,6 +1002,7 @@
                                 <th class="middle" >鉛</th>
                                 <th class="middle" >鎘</th>
                                 <th class="middle" >汞</th>
+                                <th class="middle">戴奧辛</th>
                                 <th class="middle"></th>
                                 <th class="middle"></th>
                             </tr>
@@ -1009,6 +1010,7 @@
                                 <th class="middle" >(mg/kg)</th>
                                 <th class="middle" >(mg/kg)</th>
                                 <th class="middle" >(mg/kg)</th>
+                                <th class="middle">(ng-TEQ/Nm3)</th>
                                 <th class="middle"></th>
                                 <th class="middle"></th>
                             </tr>
@@ -1049,16 +1051,20 @@
                             <div class="form-row form-group">
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <label class="control-label">*鉛</label></br>
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Pb" required/>
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Pb" />
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <label class="control-label">*鎘</label></br>
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Cd" required/>
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Cd" />
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*汞</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Hg" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Hg" />
+                                    </div>
+                                   <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <label class="control-label" >*戴奧辛</label>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Dioxin" />
                                     </div>
                                 </div>
                             </div>
@@ -1172,48 +1178,48 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <label class="control-label" >*種類</label>
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Type" required/>
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Type"/>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label" >*六價鉻</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Cr6" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Cr6" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總鎘</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalCd" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalCd"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總鉻</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalCr" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalCr"/>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總銅</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalCu" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalCu"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總鉛</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalPb" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalPb" />
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總鋇</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalBa" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalBa"/>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總砷</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalAs" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalAs"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總汞</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalHg" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalHg"/>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <label class="control-label">*總硒</label>
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalSe" required/>
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TotalSe"/>
                                     </div>
                                 </div>
                             </div>
@@ -1515,29 +1521,29 @@
                                     <div class="form-row">
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label" >*總有機碳</label>
-                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Toc" required/>
+                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Toc"/>
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label">*TDS</label>
-                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TDS" required/>
+                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="TDS"/>
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label">*硫酸鹽</label>
-                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Sulfate" required/>
+                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Sulfate"/>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label">*氯鹽</label>
-                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="NaCl" required/>
+                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="NaCl"/>
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label">*總硬度</label>
-                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Totalhardness" required/>
+                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Totalhardness"/>
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <label class="control-label">*硝酸鹽氮</label>
-                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Nitratenitrogen" required/>
+                                            <input type="text" class="form-control" id="inputEmail3" placeholder="輸入內容" name="Nitratenitrogen"/>
                                         </div>
                                     </div>
                                     <div class="form-row">
@@ -1933,6 +1939,7 @@
                 "<td class='middle Pb'>"+ element.Pb +"</td>"+
                 "<td class='middle Cd'>"+ element.Cd +"</td>"+
                 "<td class='middle Hg'>"+ element.Hg +"</td>"+
+                "<td class='middle Dioxin'>"+ element.Dioxin +"</td>"+
                 "<td data-th='修改' style='text-align: right;'>"+
                 "<button class='btn btnn btn-default soiledit' data-toggle='modal' data-id="+ element.id +" data-target='#EditSoilInfo'>編輯</button>"+
                 "<td>"+
@@ -1948,6 +1955,7 @@
             $("#EditSoilInfo").find("input[name='Pb']").val(tr.find(".Pb").text());
             $("#EditSoilInfo").find("input[name='Cd']").val(tr.find(".Cd").text());
             $("#EditSoilInfo").find("input[name='Hg']").val(tr.find(".Hg").text());
+            $("#EditSoilInfo").find("input[name='Dioxin']").val(tr.find(".Dioxin").text());
         });
 
         //TCLP飛灰
@@ -1960,7 +1968,7 @@
         var enflyashTable = $(".table-flyash tbody");
         $.each(enflyashvalues, function(index, element) {
             enflyashTable.append("<tr>" +
-             "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle'>"+ element.Season +"</td>"+
+             "<td style='background-color: #AACD03;border: 1px solid #AACD03;' class='middle'>第"+ element.Season +"季</td>"+
              "<td style='border: 1px solid #aacd03;' class='middle Location'>"+ element.Location +"</td>"+
              "<td class='middle Type'>"+ element.Type +"</td>"+
              "<td class='middle Cr6'>"+ element.Cr6 +"</td>"+
