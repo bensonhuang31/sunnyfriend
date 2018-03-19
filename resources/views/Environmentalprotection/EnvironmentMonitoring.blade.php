@@ -170,11 +170,13 @@
                                     <th class="middle" >鉛</th>
                                     <th class="middle" >鎘</th>
                                     <th class="middle" >汞</th>
+                                    <th class="middle" >戴奧辛</th>
                                 </tr>
                                 <tr style="background-color: #cce166;">
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
+                                    <th class="middle">(ng-TEQ/Nm3)</th>
                                 </tr>
 
                             </thead>
@@ -561,6 +563,7 @@
                                     "<td class='middle'>"+ element.Pb +"</td>"+
                                     "<td class='middle'>"+ element.Cd +"</td>"+
                                     "<td class='middle'>"+ element.Hg +"</td>"+
+                                    "<td class='middle'>"+ element.Dioxin +"</td>"+
                                 "</tr>");
             });
 

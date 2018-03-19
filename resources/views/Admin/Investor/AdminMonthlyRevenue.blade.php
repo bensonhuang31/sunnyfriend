@@ -272,7 +272,7 @@
             eachTable.append("<tr>" +
                 "<td>本年累計(Total)</td>"+
                 "<td>"+ fnc_format(AmountTotal.toString()) +"</td>"+
-                "<td>"+ ConsolidatedTotal.toFixed(2) +" %</td>"+"<td></td>"+
+                "<td>"+ (ConsolidatedTotal*100).toFixed(2) +" %</td>"+"<td></td>"+
                 "</tr>");
 
             $('.openedit').on("click", function () {
