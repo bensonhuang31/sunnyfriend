@@ -243,7 +243,7 @@
 
             var monthAmount=0,lastmonthAmount=0;
             for(var a = 0; a < values.length; a++){
-                for(var b = 0; b < 12; b++){
+                for(var b = 0; b < lastvalues.length; b++){
                     if(values[a].Month==lastvalues[b].Month)
                     {
                         monthAmount+=parseInt(values[a].Amount);
@@ -272,7 +272,7 @@
             eachTable.append("<tr>" +
                 "<td>本年累計(Total)</td>"+
                 "<td>"+ fnc_format(AmountTotal.toString()) +"</td>"+
-                "<td>"+ (ConsolidatedTotal*100).toFixed(2) +" %</td>"+"<td></td>"+
+                "<td>"+ ((isNaN((ConsolidatedTotal*100).toFixed(2)))?0:(ConsolidatedTotal*100).toFixed(2)) +" %</td>"+"<td></td>"+
                 "</tr>");
 
             $('.openedit').on("click", function () {
