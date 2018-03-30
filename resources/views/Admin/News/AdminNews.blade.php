@@ -6,13 +6,13 @@
                 <div class="row">
                 <div>
                     @if (session('status')=='success')
-                        <div class="alert alert-success">
+                        <div style="margin-top:50px;" class="alert alert-success">
                             <ul>
                                 <li>{{session('message')}}</li>
                             </ul>
                         </div>
                     @elseif (session('status')=='failed')
-                        <div class="alert alert-danger">
+                        <div style="margin-top:50px;" class="alert alert-danger">
                             <ul>
                                 <li>{{session('message')}}</li>
                             </ul>
@@ -20,7 +20,7 @@
                     @endif
 
                     @if (count($errors) > 0)
-                        <div class="alert alert-danger">
+                        <div style="margin-top:50px;" class="alert alert-danger">
                             <ul>
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
@@ -29,6 +29,7 @@
                         </div>
                     @endif
                 </div>
+            </br></br>
                     <div class="col-sm-12 col-md-12">
                         <h3>最新消息</h3>
                         <!-- Page Heading -->
@@ -38,7 +39,7 @@
                     <div class="col-sm-12 col-md-12" id="content">
                         <button class="btnn btn btn-primary" data-toggle="modal" data-target="#AddInvetorInfo">新增</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="AddInvetorInfo" tabindex="-1" style="margin-top:50px;" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                             {!! Form::open(array('url'=>'/Admin/News/AdminNews','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                             {{csrf_field()}}
@@ -67,7 +68,7 @@
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12">
-                                                        <label class="control-label" for="inputContent">*內容</label>
+                                                        <label class="control-label" for="inputContent" >*內容</label>
                                                         <textarea type="input" class="form-control" rows="20" cols="50" id="inputContent" name="content" required></textarea>
                                                     </div>
                                                     <div class="col-lg-6 col-md-12 col-sm-12">
@@ -127,7 +128,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="EditInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                             {!! Form::open(array('url'=>'/Admin/News/AdminNews/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                             {{csrf_field()}}
@@ -183,22 +184,22 @@
             </div>
         </div>
 
-        <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="DelInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
             {!! Form::open(array('url'=>'/Admin/News/AdminNews/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
             {{csrf_field()}}
             <input name="id" type="hidden">
                 <div class="modal-content">
                     <!-- Modal Body -->
-                    <div class="modal-body">
-                                        <form class="form-horizontal" role="form">
-                                            <div class="form-row form-group">
-                                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                                    <label class="control-label">確認刪除嗎？</label>
+                        <div class="modal-body">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-row form-group">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <label class="control-label">確認刪除嗎？</label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </form>
-                    </div>
+                                            </form>
+                        </div>
                     <!-- Modal Footer -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
@@ -210,8 +211,8 @@
         </div>
 
         <!-- /.container-fluid -->
-        <script src="../../resources/js/moment.min.js"></script>
-        <script src="../../resources/js/bootstrap-datetimepicker.min.js"></script>
+
+
 @endsection
 
 @section('script')
@@ -221,12 +222,24 @@
     $( document ).ready(function() {
         $(function() {              
            // Bootstrap DateTimePicker v4
-           $('#datetimCreate').datetimepicker({
-                 format: 'YYYY-MM-DD'
+           $('#datetimCreate').datepicker({
+                 format: 'yyyy-mm-dd',
+                 autoclose: true,
+                 orientation: "bottom left"
            });
-           $('#datetimeEdit').datetimepicker({
-                 format: 'YYYY-MM-DD'
+           $('#datetimeEdit').datepicker({
+                 format: 'yyyy-mm-dd',
+                 autoclose: true,
+                 orientation: "bottom left"
            });
+            $('#edit')
+          .on('froalaEditor.initialized', function (e, editor) {
+            $('#edit').parents('form').on('submit', function () {
+              console.log($('#edit').val());
+              return false;
+            })
+          })
+          .froalaEditor({enter: $.FroalaEditor.ENTER_P, placeholderText: null})
         });    
 
         $('.each-table').DataTable( {
@@ -247,6 +260,9 @@
         $('.opendel').on("click", function () {           
             $("#DelInfo").find("input[name='id']").val($(this).attr('data-id'));
         });
+
+
+
     });
 
 </script>

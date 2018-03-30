@@ -73,14 +73,14 @@
                                     <tr style="background-color: #cce166;text-align: center;">
                                 
                                         <th class="middle" colspan="2">廠別</th>
-                                        <th class="middle">(mg/Nm^3)</th>
+                                        <th class="middle">(mg/Nm<sup>3</sup>)</th>
                                         <th class="middle">(ppm)</th>
                                         <th class="middle">(ppm)</th>
                                         <th class="middle">(ppm)</th>
                                         <th class="middle">(ppm)</th>
-                                        <th class="middle">(mg/Nm^3)</th>
-                                        <th class="middle">(mg/Nm^3)</th>
-                                        <th class="middle">(mg/Nm^3)</th>
+                                        <th class="middle">(mg/Nm<sup>3</sup>)</th>
+                                        <th class="middle">(mg/Nm<sup>3</sup>)</th>
+                                        <th class="middle">(mg/Nm<sup>3</sup>)</th>
                                     </tr>        
                                 </thead>
                                 <tbody class="middle" style="text-align: center;">
@@ -114,14 +114,14 @@
                                     <th class="middle" >-</th>
                                     <th class="middle" >%</th>
                                     <th class="middle" >(°C)</th>
-                                    <th class="middle" >(ug/m3)</th>
+                                    <th class="middle" >(ug/m<sup>3</sup>)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
                                     <th class="middle" >(ppm)</th>
-                                    <th class="middle" >(ug/m3)</th>
+                                    <th class="middle" >(ug/m<sup>3</sup>)</th>
                                 </tr>
 
                             </thead>
@@ -149,7 +149,7 @@
                                     <th class="middle" >(dB)</th>
                                     <th class="middle" >(dB)</th>
                                     <th class="middle" >(°C)</th>
-                                    <th class="middle" >(ug/m3)</th>
+                                    <th class="middle" >(ug/m<sup>3</sup>)</th>
 
                                 </tr>
 
@@ -176,7 +176,7 @@
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
                                     <th class="middle" >(mg/kg)</th>
-                                    <th class="middle">(ng-TEQ/Nm3)</th>
+                                    <th class="middle">(ng-TEQ/Nm<sup>3</sup>)</th>
                                 </tr>
 
                             </thead>
@@ -331,7 +331,7 @@
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>
-                                    <th class="middle">(mgCaCO3/L)</th>
+                                    <th class="middle">(mgCaCO<sub>3</sub>/L)</th>
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>

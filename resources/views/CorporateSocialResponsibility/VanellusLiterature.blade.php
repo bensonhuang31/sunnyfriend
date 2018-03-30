@@ -40,39 +40,12 @@
              <h5 style="color: #009943;">{{Lang::get('sunnyfriend.VanellusLiterature-2')}}&nbsp;<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h5>
             <div class="row">
                 @foreach($data as $img)
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="ih-item square effect14 csrshadow potatobirdmargin">
                             <a href="{{url('resources/assets/file/CorporateSocialResponsibility/'.$img->FileName)}}" target="_blank"><img class="img-responsive img" src="{{url('resources/assets/images/CorporateSocialResponsibility/土豆鳥雜誌/'.$img->ImageName)}}"></a>
                         </div>
                     </div>
                 @endforeach
-                <!--測試
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第一期.jpg">
-                        </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第二期.jpg">
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第三期.jpg">
-                        </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第四期.jpg">
-                        </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="ih-item square effect14  csrshadow potatobirdmargin">
-                            <img class="img-responsive img" src="../assets/images/CorporateSocialResponsibility/土豆鳥雜誌/土豆鳥第五期.jpg">
-                        </div>
-                </div>
-                -->
             </div>
         </div>
     </div>

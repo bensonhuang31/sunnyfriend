@@ -6,13 +6,13 @@
         <div class="row">
             <div>
                 @if (session('status')=='success')
-                <div class="alert alert-success">
+                <div style="margin-top:50px;" class="alert alert-success">
                     <ul>
                         <li>{{session('message')}}</li>
                     </ul>
                 </div>
                 @elseif (session('status')=='failed')
-                <div class="alert alert-danger">
+                <div style="margin-top:50px;" class="alert alert-danger">
                     <ul>
                         <li>{{session('message')}}</li>
                     </ul>
@@ -20,7 +20,7 @@
                 @endif
 
                 @if (count($errors) > 0)
-                <div class="alert alert-danger">
+                <div style="margin-top:50px;" class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -28,6 +28,7 @@
                     </ul>
                 </div>
                 @endif
+            </br></br>
             </div>
             <div class="col-sm-12 col-md-12">
                 <h3>盈收公告</h3>
@@ -43,7 +44,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="AddInvetorInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 {!! Form::open(array('url'=>'/Admin/Investor/AdminMonthlyRevenue','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                 {{csrf_field()}}
@@ -132,7 +133,7 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal fade" id="EditInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         {!! Form::open(array('url'=>'/Admin/Investor/AdminMonthlyRevenue/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                         {{csrf_field()}}
@@ -165,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal fade" id="DelInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         {!! Form::open(array('url'=>'/Admin/Investor/AdminMonthlyRevenue/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                         {{csrf_field()}}

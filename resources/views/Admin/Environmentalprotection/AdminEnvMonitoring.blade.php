@@ -1,23 +1,25 @@
 @extends('Layouts/admin')
 
 @section('content')
+<link href="../../resources/css/onlyforenv.css" rel="stylesheet">
 <div id="page-wrapper">
     <div class="container-fluid">
         <div class="row">
             <div>
                 @if (session('status')=='success')
-                <div class="alert alert-success">
+                <div style="margin-top:50px;" class="alert alert-success">
                     <ul>
                         <li>{{session('message')}}</li>
                     </ul>
                 </div>
                 @elseif (session('status')=='failed')
-                <div class="alert alert-danger">
+                <div style="margin-top:50px;" class="alert alert-danger">
                     <ul>
                         <li>{{session('message')}}</li>
                     </ul>
                 </div>
                 @endif
+            </br></br>
             </div>
             <div class="col-sm-12 col-md-12">
                 <h3>環境監測</h3>
@@ -38,7 +40,7 @@
         </div>
     <div class="row">
         <div>
-            <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="AddInvetorInfo" aria-hidden="true">
+            <div class="modal fade" id="AddInvetorInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="AddInvetorInfo" aria-hidden="true">
                 <div class="modal-dialog" style="width: 60%;">
                     <div class="modal-content">
                         <!-- Modal Header -->
@@ -229,7 +231,7 @@
             </div>
         </div>
         <div >
-            <div class="modal fade" id="DelInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="DelInvetorInfo" aria-hidden="true">
+            <div class="modal fade" id="DelInvetorInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="DelInvetorInfo" aria-hidden="true">
                 <div class="modal-dialog" style="width: 60%;">
                     <div class="modal-content">
                         <!-- Modal Header -->
@@ -461,9 +463,9 @@
                                 <th class="middle">(ppm)</th>
                                 <th class="middle">(ppm)</th>
                                 <th class="middle">(ppm)</th>
-                                <th class="middle">(mg/Nm^3)</th>
-                                <th class="middle">(mg/Nm^3)</th>
-                                <th class="middle">(mg/Nm^3)</th>
+                                <th class="middle">(mg/Nm<sup>3</sup>)</th>
+                                <th class="middle">(mg/Nm<sup>3</sup>)</th>
+                                <th class="middle">(mg/Nm<sup>3</sup>)</th>
                                 <th class="middle"></th>
                                 <th class="middle"></th>
                             </tr>        
@@ -474,7 +476,7 @@
                 </div>
             </center>
 
-            <div class="modal fade" id="EditFlueInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="EditFlueInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
                     {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
@@ -610,7 +612,7 @@
                 </div>
             </center>
 
-            <div class="modal fade" id="EditRawwaterInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="EditRawwaterInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
                     {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
@@ -734,7 +736,7 @@
                                 <th class="middle" >(ppm)</th>
                                 <th class="middle" >(ppm)</th>
                                 <th class="middle" >(ppm)</th>
-                                <th class="middle" >(ug/m3)</th>
+                                <th class="middle" >(ug/m<sup>3</sup>)</th>
                                 <th class="middle"></th>
                                 <th class="middle"></th>
                             </tr>
@@ -747,7 +749,7 @@
                 </div>
             </center>
 
-            <div class="modal fade" id="EditAirqualityInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="EditAirqualityInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
                     {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
@@ -889,7 +891,7 @@
                                 <th class="middle" >(dB)</th>
                                 <th class="middle" >(dB)</th>
                                 <th class="middle" >(°C)</th>
-                                <th class="middle" >(ug/m3)</th>
+                                <th class="middle" >(ug/m<sup>3</sup>)</th>
                                 <th class="middle"></th>
                                 <th class="middle"></th>
 
@@ -903,7 +905,7 @@
                 </div>
             </center>
 
-            <div class="modal fade" id="EditNoisevibrationInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="EditNoisevibrationInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
                     {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
@@ -1010,7 +1012,7 @@
                                 <th class="middle" >(mg/kg)</th>
                                 <th class="middle" >(mg/kg)</th>
                                 <th class="middle" >(mg/kg)</th>
-                                <th class="middle">(ng-TEQ/Nm3)</th>
+                                <th class="middle">(ng-TEQ/Nm<sup>3</sup>)</th>
                                 <th class="middle"></th>
                                 <th class="middle"></th>
                             </tr>
@@ -1023,7 +1025,7 @@
                 </div>
             </center>
 
-            <div class="modal fade" id="EditSoilInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="EditSoilInfo" style="margin-top:50px;"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
                     {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
@@ -1146,7 +1148,7 @@
                 </div>
             </center>
 
-            <div class="modal fade" id="EditFlyashInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="EditFlyashInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
                     {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
@@ -1302,7 +1304,7 @@
                 </div>
             </center>
 
-            <div class="modal fade" id="EditIncineratorbottomInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="EditIncineratorbottomInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog">
                     {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                     {{csrf_field()}}
@@ -1456,7 +1458,7 @@
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>
-                                    <th class="middle">(mgCaCO3/L)</th>
+                                    <th class="middle">(mgCaCO<sub>3</sub>/L)</th>
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>
                                     <th class="middle">(mg/L)</th>
@@ -1488,7 +1490,7 @@
                     </div>
                 </center>
 
-                <div class="modal fade" id="EditEngroundwaterInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal fade" id="EditEngroundwaterInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog">
                         {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvMonitoring/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                         {{csrf_field()}}

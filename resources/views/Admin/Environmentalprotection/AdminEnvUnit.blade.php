@@ -7,18 +7,19 @@
             <div class="row">
                 <div>
                     @if (session('status')=='success')
-                    <div class="alert alert-success">
+                    <div style="margin-top:50px;" class="alert alert-success">
                         <ul>
                             <li>{{session('message')}}</li>
                         </ul>
                     </div>
                     @elseif (session('status')=='failed')
-                    <div class="alert alert-danger">~
+                    <div style="margin-top:50px;" class="alert alert-danger">~
                         <ul>
                             <li>{{session('message')}}</li>
                         </ul>
                     </div>
                     @endif
+                </br></br>
                 </div>
                 <div class="col-sm-12 col-md-12">
                     <h3>環境保護查核行程</h3>
@@ -34,7 +35,7 @@
                 </div>
                 <div class="col-sm-12 col-md-12" id="content">
                     <!-- Modal -->
-                    <div class="modal fade" id="AddInvetorInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="AddInvetorInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvUnit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
                             {{csrf_field()}}
@@ -111,7 +112,7 @@
     </div>
 
 
-    <div class="modal fade" id="EditInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="EditInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvUnit/edit','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
             {{csrf_field()}}
@@ -163,7 +164,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="DelInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" aria-hidden="true">
+    <div class="modal fade" id="DelInfo" style="margin-top:50px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" aria-hidden="true">
         <div class="modal-dialog">
             {!! Form::open(array('url'=>'/Admin/Environmentalprotection/AdminEnvUnit/delete','method'=>'POST','files'=>true,'class'=>'form-horizontal')) !!}
             {{csrf_field()}}
@@ -188,17 +189,19 @@
             {!! Form::close() !!}
         </div>
     </div>
-    <script src="../../resources/js/moment.min.js"></script>
-    <script src="../../resources/js/bootstrap-datetimepicker.min.js"></script>
 
     <script>
         $( document ).ready(function() {
         // Bootstrap DateTimePicker v4
-        $('#datetimCreate').datetimepicker({
-            format: 'YYYY-MM-DD'
+        $('#datetimCreate').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            orientation: "bottom left"
         });
-        $('#datetimeEdit').datetimepicker({
-            format: 'YYYY-MM-DD'
+        $('#datetimeEdit').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            orientation: "bottom left"
         });
         $
         //取得年份

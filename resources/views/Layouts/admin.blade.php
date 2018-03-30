@@ -11,7 +11,8 @@
     <script src="../../resources/js/jquery-1.11.1.min.js"></script>
     <script src="../../resources/js/bootstrap.min.js"></script>
     <link href="../../resources/css/bootstrap-select.css" rel="stylesheet">
-    <link href="../../resources/css/AdminBackside.css" rel="stylesheet">
+    <link href="../../resources/css/AdminSunnyfriend.css" rel="stylesheet">
+    <link href="../../resources/css/bootstrap-datepicker.css" rel="stylesheet">
 </head>
 
 <body>
@@ -90,6 +91,7 @@
     <script src="../../resources/js/bootstrap-select.min.js"></script>
     <script src="../../resources/js/bootstrap-filestyle.min.js"></script>
     <script src="../../resources/js/jquery.dataTables.min.js"></script>
+    <script src="../../resources/js/bootstrap-datepicker.js"></script>
     @yield('script')
 </body>
 

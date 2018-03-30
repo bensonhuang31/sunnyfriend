@@ -7,7 +7,7 @@
     <title>日友環保科技股份有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="resources/css/AdminBackside.css" rel="stylesheet">
+    <link href="resources/css/AdminSunnyfriend.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -74,6 +74,7 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <!-- Page Heading -->
+            </br></br>
                 <div class="row" id="main">
                     <div class="col-sm-12 col-md-12" id="content">
                         <h3>Welcome!</h3>

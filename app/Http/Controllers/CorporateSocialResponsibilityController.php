@@ -15,7 +15,7 @@ class CorporateSocialResponsibilityController extends Controller
     //土豆鳥文學誌
     public function index()
     {        
-        $potatomagazine = PotatoMagazine::all();
+        $potatomagazine = PotatoMagazine::orderBy('id', 'DESC')->get();
         return view('CorporateSocialResponsibility.VanellusLiterature')->with('data',$potatomagazine);
     }
 

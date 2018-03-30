@@ -164,7 +164,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-12 col-sm-12" style="word-break: break-all;">
                     <p>{{$data->Content}}</p>
                     @if ($data->FilePath != "")
                         <a href="{{url('resources/assets/file/News/'.$data->FilePath)}}"  target="_blank"><div class="btn btn-default">{{Lang::get('sunnyfriend.subindex-1')}}</div></a>
