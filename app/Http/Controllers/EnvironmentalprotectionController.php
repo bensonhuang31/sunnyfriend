@@ -134,7 +134,7 @@ class EnvironmentalprotectionController extends Controller
         $input = Input::all();
         switch($input['title'])
         {
-            case "enflue":
+            case "enflue"://煙道
                 $enflue = array(
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'一廠','Granular'=>'','Sulfurdioxide'=>'','Nitroxides'=>'','Carbonmonoxide'=>'','Hydrogenchloride'=>'','Pb'=>'','Cd'=>'','Hg'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'二廠','Granular'=>'','Sulfurdioxide'=>'','Nitroxides'=>'','Carbonmonoxide'=>'','Hydrogenchloride'=>'','Pb'=>'','Cd'=>'','Hg'=>''),
@@ -157,7 +157,7 @@ class EnvironmentalprotectionController extends Controller
                     return redirect()->back()->with(['status' => 'failed','message' => '煙道新增失敗']);
                 }
                
-            case "enrawwater":
+            case "enrawwater"://原水
                 $enrawwater = array(
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'廠址','Watertemperature'=>'','PHvalue'=>'','Suspendedsolids'=>'','COD'=>'','Coliform'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '2','Location'=>'廠址','Watertemperature'=>'','PHvalue'=>'','Suspendedsolids'=>'','COD'=>'','Coliform'=>''),
@@ -173,7 +173,7 @@ class EnvironmentalprotectionController extends Controller
                     return redirect()->back()->with(['status' => 'failed','message' => '原水新增失敗']);
                 }
             break;
-            case "enairquality":
+            case "enairquality"://空氣監測
                 $enairquality = array(
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'廠址','Windspeed'=>'','Winddirection'=>'','Humidity'=>'','Temperature'=>'','TSP'=>'','SO2'=>'','NOx'=>'','CO'=>'','THC'=>'','CH4'=>'','NMHC'=>'','PM10'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '2','Location'=>'廠址','Windspeed'=>'','Winddirection'=>'','Humidity'=>'','Temperature'=>'','TSP'=>'','SO2'=>'','NOx'=>'','CO'=>'','THC'=>'','CH4'=>'','NMHC'=>'','PM10'=>''),
@@ -188,7 +188,7 @@ class EnvironmentalprotectionController extends Controller
                     return redirect()->back()->with(['status' => 'failed','message' => '空氣監測新增失敗']);
                 }
             break;
-            case "ennoisevibration":
+            case "ennoisevibration"://噪音振動
                 $ennoisevibration = array(
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'廠址','Lmorning'=>'','Levening'=>'','Lnight'=>'','Lvmorning'=>'','Lvnight'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '2','Location'=>'廠址','Lmorning'=>'','Levening'=>'','Lnight'=>'','Lvmorning'=>'','Lvnight'=>''),
@@ -203,7 +203,7 @@ class EnvironmentalprotectionController extends Controller
                     return redirect()->back()->with(['status' => 'failed','message' => '噪音振動新增失敗']);
                 }
             break;
-            case "ensoil":
+            case "ensoil"://土壤
                 $ensoil = array(
                     array('Year'=>$input['Year'],'Location'=>'廠外表土','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),
                     array('Year'=>$input['Year'],'Location'=>'廠外裡土','Pb'=>'','Cd'=>'','Hg'=>'','Dioxin'=>''),   
@@ -216,7 +216,7 @@ class EnvironmentalprotectionController extends Controller
                     return redirect()->back()->with(['status' => 'failed','message' => '土壤新增失敗']);
                 }
             break;
-            case "enflyash":
+            case "enflyash"://TCLP飛灰
                 $enflyash = array(
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'一廠','Type'=>'','Cr6'=>'','TotalCd'=>'','TotalCr'=>'','TotalCu'=>'','TotalPb'=>'','TotalBa'=>'','TotalAs'=>'','TotalHg'=>'','TotalSe'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'二廠','Type'=>'','Cr6'=>'','TotalCd'=>'','TotalCr'=>'','TotalCu'=>'','TotalPb'=>'','TotalBa'=>'','TotalAs'=>'','TotalHg'=>'','TotalSe'=>''),
@@ -239,7 +239,7 @@ class EnvironmentalprotectionController extends Controller
                     return redirect()->back()->with(['status' => 'failed','message' => 'TCLP飛灰新增失敗']);
                 }
             break;
-            case "enincineratorbottom":
+            case "enincineratorbottom"://TCLP底渣
                 $enincineratorbottom = array(
                     array('Year'=>$input['Year'], 'Season'=> '上半年','Location'=>'一廠','Type'=>'','Cr6'=>'','TotalCd'=>'','TotalCr'=>'','TotalCu'=>'','TotalPb'=>'','TotalBa'=>'','TotalAs'=>'','TotalHg'=>'','TotalSe'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '上半年','Location'=>'二廠','Type'=>'','Cr6'=>'','TotalCd'=>'','TotalCr'=>'','TotalCu'=>'','TotalPb'=>'','TotalBa'=>'','TotalAs'=>'','TotalHg'=>'','TotalSe'=>''),
@@ -256,7 +256,7 @@ class EnvironmentalprotectionController extends Controller
                     return redirect()->back()->with(['status' => 'failed','message' => 'TCLP底渣新增失敗']);
                 }
             break;
-            case "engroundwater":
+            case "engroundwater"://地下水
                 $engroundwater = array(
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'一號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','Arsenic'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
                     array('Year'=>$input['Year'], 'Season'=> '1','Location'=>'二號井','Toc'=>'','TDS'=>'','Sulfate'=>'','NaCl'=>'','Totalhardness'=>'','Nitratenitrogen'=>'','Ammonianitrogen'=>'','Pb'=>'','Cr'=>'','Mn'=>'','Iron'=>'','Hg'=>'','Arsenic'=>'','Ni'=>'','Zn'=>'','Cu'=>'','PHvalue'=>'','Temperature'=>'','Turbidity'=>'','Conductivity'=>'','Specificconductivity'=>'','Grease'=>'','Cd'=>'','TotalN'=>'','TotalP'=>''),
@@ -357,7 +357,7 @@ class EnvironmentalprotectionController extends Controller
                 $enflyash->save();
                 return redirect()->back()->with(['status' => 'success','message' => 'TCLP飛灰編輯成功']);
             break;
-            case "enincineratorbottom":
+            case "enincineratorbottom"://TCLP底渣
                 $enincineratorbottom = EnIncineratorbottom::find($input['id']);
                 $enincineratorbottom->Type = $input['Type'];
                 $enincineratorbottom->Cr6 = $input['Cr6'];
@@ -386,7 +386,7 @@ class EnvironmentalprotectionController extends Controller
                 $engroundwater->Mn = $input['Mn'];
                 $engroundwater->Iron = $input['Iron'];
                 $engroundwater->Hg = $input['Hg'];
-                $engroundwater->As = $input['Arsenic'];
+                $engroundwater->Arsenic = $input['Arsenic'];
                 $engroundwater->Ni = $input['Ni'];
                 $engroundwater->Zn = $input['Zn'];
                 $engroundwater->Cu = $input['Cu'];
